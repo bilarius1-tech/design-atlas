@@ -1,0 +1,14 @@
+---
+description: Философия Design Atlas — Visual first, Agent ready, без AI slop
+alwaysApply: true
+---
+
+# Философия проекта
+
+- **Продукт:** knowledge platform + design system library ([docs/PRODUCT.md](docs/PRODUCT.md), [AGENTS.md](AGENTS.md)).
+- **Порядок:** сначала **дизайн-система приложения** (`design/`, `src/`), потом библиотека визуальных стилей (`content/styles/`). Не наоборот.
+- **Источник истины:** Git — `docs/`, `content/`, `design/`; **без БД/CMS в v1** ([docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)).
+- **Референс-стиль:** `swiss-international` — эталон для будущего контента; **не реализовывать** без тикета.
+- **Качество:** редакторский тон, проверяемые факты; запрещён шаблонный «AI slop» ([CONTRIBUTING.md](CONTRIBUTING.md)).
+- **Фаза 1:** документация и каркас; **без** публичного каталога, playground, массового наполнения `content/`.
+- Менять философию или bans из [AGENTS.md](AGENTS.md) — **только** с явным одобрением человека + ADR.

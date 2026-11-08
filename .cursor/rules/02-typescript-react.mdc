@@ -1,0 +1,17 @@
+---
+description: TypeScript strict, React 19, App Router, минимальный diff
+globs: "{src,tests,design}/**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+# TypeScript и React
+
+- **TS:** `strict`; без `any` без комментария/ADR ([CONTRIBUTING.md](CONTRIBUTING.md)).
+- **Импорты:** `@/` для `src/`; не тянуть `content/` в клиент без явного слоя загрузки.
+- **Компоненты:** function components; логику — в hooks/`src/core/`; `assertNever` / `invariant` из `src/core/utilities/assert.ts` для exhaustive checks.
+- **Данные:** Zod v4; схемы зеркалят [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md).
+- **Стили:** Tailwind v4 + CSS variables из токенов; **не** хардкодить палитру в JSX.
+- **UI-примитивы:** Radix — только при реальной need a11y/поведения; иконки — Lucide (когда в зависимостях).
+- **Next.js:** читать актуальный API в `node_modules/next/dist/docs/` перед `fetch`, caching, `metadata`.
+
+Проверка: `pnpm typecheck`, `pnpm lint`.

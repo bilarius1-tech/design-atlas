@@ -1,0 +1,24 @@
+---
+description: Design System First — design/, токены, темы, без дублирования
+globs: "{design,src}/**/*"
+alwaysApply: false
+---
+
+# Дизайн-система
+
+Полное описание: [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md).
+
+```
+design/
+├── foundations/   # типографика, сетка, принципы
+├── tokens/        # SSOT для CSS vars и export pipeline
+├── themes/        # связывание токенов с поверхностями
+└── components/    # спеки/примитивы DS приложения
+```
+
+- **Приложение** потребляет токены через CSS variables + Tailwind v4 (`src/app/globals.css`).
+- **Стили библиотеки** — отдельные `content/styles/<id>/tokens.json`; не смешивать с app theme без ADR.
+- **Экспорт** (DESIGN.md, JSON, CSS): генерировать **из** token-файлов, не из JSX ([docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md)).
+- Новый примитив UI: сначала запись в `design/components/`, потом реализация в `src/`.
+
+Скиллы: `design-tokens`, `component-authoring`.

@@ -1,0 +1,23 @@
+---
+description: PLAN→ACCEPT, skills в .agents/skills, отчёт AGENT-REPORT
+alwaysApply: true
+---
+
+# Workflow агента
+
+Детали: [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md).
+
+```
+PLAN → IMPLEMENT → TEST → REVIEW → DOCUMENT → ACCEPT
+```
+
+1. **PLAN:** прочитать `docs/` + ADR; scope по [docs/templates/TASK-TEMPLATE.md](docs/templates/TASK-TEMPLATE.md).
+2. **IMPLEMENT:** минимальный diff; скиллы из `.agents/skills/<name>/`.
+3. **TEST:** `pnpm lint && pnpm typecheck && pnpm test` (затронутый код).
+4. **REVIEW:** CONTRIBUTING + STYLE/CONTENT-ревью при необходимости.
+5. **DOCUMENT:** `docs/`, `CHANGELOG.md`, ADR при архитектурных сдвигах.
+6. **ACCEPT:** [docs/templates/AGENT-REPORT.md](docs/templates/AGENT-REPORT.md).
+
+**Запреты:** менять философию без одобрения; deps без обоснования; casual «any»; фейковая интерактивность; force-push `main`.
+
+**Верификация UI по DESIGN.md:** скилл `agent-result-verification`.

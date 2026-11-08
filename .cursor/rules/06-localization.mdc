@@ -1,0 +1,15 @@
+---
+description: i18n — id/slug не локализуются, locale в маршрутах позже
+globs: "{content,src}/**/*"
+alwaysApply: false
+---
+
+# Локализация
+
+- **ID и slug** (`swiss-international`, пути в Git) — **всегда** language-independent ([AGENTS.md](AGENTS.md), ADR-0006 в [docs/decisions/](docs/decisions/)).
+- **Переводимый текст** — в полях `title`, `summary`, `body` по locale-ключам в JSON или отдельных MDX с суффиксом `.en.mdx` (см. [docs/CONTENT_MODEL.md](docs/CONTENT_MODEL.md)).
+- **UI-строки приложения** — будущий слой `src/i18n/`; не хардкодить RU/EN в компонентах без каталога.
+- **Форматирование:** даты/числа — `Intl.*`; не конкатенировать вручную.
+- **RTL/LTR:** закладывать логические свойства (`margin-inline`) при новой вёрстке.
+
+Проверка: скилл `content-validation` для JSON-полей locale.

@@ -1,0 +1,22 @@
+---
+description: Контент визуальных стилей — content/styles, контракты, ревью
+globs: "content/**/*.{json,md,mdx}"
+alwaysApply: false
+---
+
+# Контент стилей
+
+Структура каталога стиля: `content/styles/<id>/` ([docs/CONTENT_MODEL.md](docs/CONTENT_MODEL.md)).
+
+| Файл | Назначение |
+|------|------------|
+| `style.json` | Метаданные, связи, версия |
+| `tokens.json` | Токены стиля (экспортный SSOT для стиля) |
+| `*.md` / `*.mdx` | Нарратив, промпты, глоссарий |
+
+- **slug/id:** kebab-case, не переводить (`swiss-international`).
+- **Валидация:** Zod по [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md); после правок — скилл `content-validation`.
+- **Тон:** факты, источники; без выдуманных дат/имён и маркетингового шума.
+- **Массовая генерация** без CONTENT-REVIEW — запрещена ([AGENTS.md](AGENTS.md)).
+
+Шаблон ревью: [docs/templates/CONTENT-REVIEW.md](docs/templates/CONTENT-REVIEW.md).

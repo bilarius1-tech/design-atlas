@@ -1,0 +1,15 @@
+---
+description: Визуальное качество — не generic AI UI, швейцарская сетка как ориентир
+globs: "{src,design,content}/**/*"
+alwaysApply: false
+---
+
+# Визуальное качество
+
+- **Anti-slop:** никаких «gradient hero + три одинаковые карточки + stock emoji» без задачи.
+- **Сетка и типографика:** ясная иерархия, щедрые поля, ограниченная палитра — ориентир Swiss International ([docs/specification/README.md](docs/specification/README.md)); не копировать historical Swiss 1:1 в Phase 1.
+- **Токены:** размеры, цвета, радиусы — только из `design/tokens/` или style `tokens.json`.
+- **Motion:** умеренно; без декоративной анимации «для красоты».
+- **Демо/лендинги:** показывают **стиль**, а не фичи продукта; без фейковых CTA и псевдо-интерактива.
+
+Ревью: [docs/templates/STYLE-REVIEW.md](docs/templates/STYLE-REVIEW.md). Скилл: `.agents/skills/visual-quality-audit/`.

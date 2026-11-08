@@ -1,0 +1,17 @@
+---
+description: Без секретов в Git, валидация входа, безопасный рендер
+globs: "{src,content}/**/*"
+alwaysApply: false
+---
+
+# Безопасность
+
+[docs/SECURITY.md](docs/SECURITY.md).
+
+- **Секреты:** не коммитить `.env*`; не вставлять API keys в промпты/контент.
+- **Внешний контент:** URL в JSON — только `https:`; без `javascript:`.
+- **MDX/MD:** без raw HTML без санитизации (когда pipeline появится).
+- **Зависимости:** новый пакет — обоснование в PR; `pnpm` только из заявленного стека ([AGENTS.md](AGENTS.md)).
+- **Server actions / API:** валидировать body через Zod; deny-by-default.
+
+Скилл `release-check` включает security sanity перед тегом.

@@ -1,0 +1,22 @@
+---
+description: Vitest, RTL, ci-скрипт — когда писать тесты
+globs: "{src,tests}/**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+# Тестирование
+
+Политика: [docs/TESTING.md](docs/TESTING.md).
+
+| Слой | Команда | Обязательно для |
+|------|---------|-----------------|
+| Unit | `pnpm test` | `src/core/**`, Zod-схемы, export |
+| Types | `pnpm typecheck` | любые `.ts` |
+| Lint | `pnpm lint` | весь репозиторий |
+| CI | `pnpm ci` | перед релизом / крупным PR |
+
+- Тесты лежат в `tests/` (`tests/unit/*.test.ts`).
+- RTL — для компонентов с состоянием/вариантами; не тестировать снапшоты «ради снапшотов».
+- Playwright — **не** в Phase 1 без тикета.
+
+Новая логика без теста — обосновать в PR или покрыть.

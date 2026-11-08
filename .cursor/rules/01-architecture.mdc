@@ -1,0 +1,23 @@
+---
+description: Модульный монолит Next.js, контент в Git, Design System First
+alwaysApply: true
+---
+
+# Архитектура
+
+Сверяться с [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) и ADR в [docs/decisions/](docs/decisions/).
+
+| Слой | Путь | Роль |
+|------|------|------|
+| Приложение | `src/` | Next.js App Router, `@/*` → `src/*` |
+| DS продукта | `design/` | foundations, tokens, themes, components |
+| Контент стилей | `content/styles/<id>/` | `style.json`, `tokens.json`, MD/MDX |
+| Спеки | `docs/`, `docs/specification/` | Контракты и процессы |
+
+**Запрещено без ADR:** БД, CMS, GraphQL, микросервисы, отдельный репозиторий контента.
+
+**Экспорт:** единый источник токенов для артефактов — `design/tokens/` и `content/styles/<id>/tokens.json` ([docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md)); не дублировать hex/spacing в UI.
+
+**ID:** kebab-case, language-independent (`swiss-international`).
+
+Перед правками Next.js 16 — гайды в `node_modules/next/dist/docs/` (см. блок в [AGENTS.md](AGENTS.md)).

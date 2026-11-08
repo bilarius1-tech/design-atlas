@@ -1,0 +1,18 @@
+---
+description: a11y — семантика, focus, Radix по необходимости
+globs: "src/**/*.{tsx,css}"
+alwaysApply: false
+---
+
+# Доступность
+
+Стандарт: [docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md).
+
+- Интерактив ≠ `<div onClick>`; кнопки/ссылки — нативные или Radix.
+- Видимый **focus**; не `outline: none` без замены.
+- Контраст текста — по токенам темы; не осветлять «на глаз».
+- Изображения: meaningful `alt`; декоративные — `alt=""`.
+- Формы: `<label>` + `aria-describedby` для ошибок (когда появятся).
+- **Запрещено:** фейковые табы, «интерактив» без клавиатуры, `role` без поведения.
+
+Перед сдачей интерактива: скилл `accessibility-audit`. E2E a11y — позже Playwright.
