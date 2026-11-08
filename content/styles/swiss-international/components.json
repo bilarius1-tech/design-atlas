@@ -5,43 +5,121 @@
     {
       "id": "typography",
       "label": "Typography",
-      "items": ["display", "h1", "h2", "h3", "body", "caption", "label", "quote", "code"],
-      "notes": "Draft matrix — expand to full mandatory set before publish."
+      "items": [
+        "display",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "body-large",
+        "body",
+        "caption",
+        "label",
+        "quote",
+        "code",
+        "link"
+      ],
+      "notes": "Flush-left; hierarchy via scale/weight."
     },
     {
       "id": "buttons",
       "label": "Buttons",
-      "items": ["primary", "secondary", "ghost", "disabled", "focus"]
+      "items": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "ghost",
+        "icon",
+        "disabled",
+        "loading",
+        "hover",
+        "focus",
+        "active"
+      ],
+      "notes": "Primary is near-black fill; accent reserved for critical actions."
     },
     {
       "id": "forms",
       "label": "Forms",
-      "items": ["text-input", "textarea", "checkbox", "radio", "validation-error"]
+      "items": [
+        "text-input",
+        "email-input",
+        "search-input",
+        "textarea",
+        "select",
+        "checkbox",
+        "radio",
+        "switch",
+        "range",
+        "validation-error",
+        "success"
+      ]
+    },
+    {
+      "id": "shapes",
+      "label": "Shapes & geometry",
+      "items": [
+        "circle",
+        "square",
+        "rectangle",
+        "divider",
+        "horizontal-line",
+        "vertical-line",
+        "dots",
+        "grid",
+        "hairline-rule"
+      ],
+      "notes": "Radius stays 0 except true circles."
     },
     {
       "id": "cards",
       "label": "Cards",
-      "items": ["feature", "article"]
+      "items": [
+        "feature",
+        "product",
+        "article",
+        "profile",
+        "pricing",
+        "testimonial",
+        "statistics"
+      ],
+      "notes": "Use cards sparingly; prefer open modules on the grid."
     },
     {
       "id": "navigation",
       "label": "Navigation",
-      "items": ["header", "tabs", "breadcrumbs"]
+      "items": [
+        "header",
+        "main-nav",
+        "mobile-nav",
+        "tabs",
+        "breadcrumbs",
+        "pagination"
+      ]
     },
     {
       "id": "feedback",
       "label": "Feedback",
-      "items": ["badge", "alert", "empty-state"]
-    },
-    {
-      "id": "shapes",
-      "label": "Shapes",
-      "items": ["square", "rectangle", "divider", "grid"]
+      "items": [
+        "badge",
+        "tag",
+        "alert",
+        "tooltip",
+        "progress",
+        "skeleton",
+        "empty-state"
+      ]
     },
     {
       "id": "icons",
       "label": "Icons",
-      "items": ["functional", "navigation", "status"]
+      "items": [
+        "functional",
+        "navigation",
+        "status",
+        "action"
+      ],
+      "notes": "Geometric, monochrome; no decorative sticker packs."
     }
   ]
 }

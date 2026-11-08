@@ -26,4 +26,4 @@
 
 | Дата | Фокус |
 |------|--------|
-| [2026-11-09](./2026-11-09.md) | Foundation → Playground → Demo Landing |
+| [2026-11-09](./2026-11-09.md) | Foundation → Engines → Swiss reference (review) |

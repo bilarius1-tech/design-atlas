@@ -114,11 +114,11 @@ describe("style schemas", () => {
 });
 
 describe("content registry against repo fixtures", () => {
-  it("loads swiss-international draft bundle", () => {
+  it("loads swiss-international reference bundle", () => {
     const bundle = loadStyleBundle("swiss-international");
-    expect(bundle.style.status).toBe("draft");
-    expect(bundle.tokens.colors.accent).toBe("#E34234");
-    expect(bundle.typography?.roles.h1.size).toBe("40px");
+    expect(bundle.style.status).toBe("review");
+    expect(bundle.tokens.colors.accent).toBe("#E30613");
+    expect(bundle.typography?.roles.h1.size).toBe("44px");
   });
 
   it("builds registry entry from disk", () => {

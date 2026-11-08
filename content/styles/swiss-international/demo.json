@@ -28,8 +28,8 @@
         "en": "An objective communication system"
       },
       "body": {
-        "ru": "Сетка, типографика и функциональный контраст вместо декора. Черновик композиции для эталонного стиля.",
-        "en": "Grid, typography, and functional contrast instead of decoration. Draft composition for the reference style."
+        "ru": "Сетка, типографика и функциональный контраст вместо декора. Эталонная цифровая интерпретация International Typographic Style для людей и AI-агентов.",
+        "en": "Grid, typography, and functional contrast instead of decoration. A reference digital interpretation of the International Typographic Style for humans and AI agents."
       },
       "ctaLabel": {
         "ru": "Смотреть принципы",
@@ -221,12 +221,12 @@
       "items": [
         {
           "title": {
-            "ru": "Это уже эталонный Swiss International?",
-            "en": "Is this the finished Swiss International reference?"
+            "ru": "Это финальный published-стиль?",
+            "en": "Is this the final published style?"
           },
           "body": {
-            "ru": "Нет. Это draft demo landing для проверки движка. Полный эталон — PHASE 6.",
-            "en": "No. This is a draft demo landing to verify the engine. Full reference is PHASE 6."
+            "ru": "Пакет эталона готов и находится в статусе review: ждёт human accept перед published.",
+            "en": "The reference package is complete and in review status—awaiting human accept before published."
           }
         },
         {

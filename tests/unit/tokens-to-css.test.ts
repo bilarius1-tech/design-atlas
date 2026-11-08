@@ -11,7 +11,7 @@ const sampleTokens: StyleTokens = {
     text: "#171717",
     muted: "#6B6B6B",
     primary: "#171717",
-    accent: "#E34234",
+    accent: "#E30613",
     border: "#D8D5CD",
   },
   typography: {
@@ -36,7 +36,7 @@ const sampleTokens: StyleTokens = {
 describe("tokensToCssVars", () => {
   it("maps accent and radius into scoped --sp variables", () => {
     const vars = tokensToCssVars(sampleTokens);
-    expect(vars["--sp-color-accent"]).toBe("#E34234");
+    expect(vars["--sp-color-accent"]).toBe("#E30613");
     expect(vars["--sp-radius"]).toBe("0px");
     expect(vars["--sp-font-heading"]).toContain("Helvetica");
   });

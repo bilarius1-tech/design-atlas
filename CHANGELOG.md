@@ -7,6 +7,7 @@
 
 ### Added
 
+- PHASE 6 Swiss International reference package (`review` v1.0.0): research, full export docs, RU/EN prompts, STYLE-REVIEW.
 - PHASE 5 Demo Landing Engine: compositions, section renderer, `/demo/[styleId]`, expanded Swiss draft landing.
 - PHASE 4 Visual Playground: scoped `StylePreviewFrame`, interactive groups, `/playground/[styleId]`.
 - PHASE 3 Content Engine: Zod schemas, style loader/registry/validator, `pnpm content:validate`, draft `swiss-international` fixture.

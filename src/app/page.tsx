@@ -5,8 +5,8 @@ import Link from "next/link";
 const phases = [
   { id: "P0", title: "Фундамент", status: "done", note: "Репозиторий и harness" },
   { id: "P1", title: "Design System Core", status: "done", note: "Оболочка продукта" },
-  { id: "P2", title: "Content + Playground", status: "done", note: "Движок данных и демо" },
-  { id: "P3", title: "Demo + эталон", status: "active", note: "Landing engine → Swiss" },
+  { id: "P2", title: "Engines", status: "done", note: "Content · Playground · Demo" },
+  { id: "P3", title: "Эталон Swiss", status: "active", note: "review → human accept" },
 ] as const;
 
 export default function Home() {

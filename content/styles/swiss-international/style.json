@@ -2,42 +2,72 @@
   "schemaVersion": "1.0.0",
   "id": "swiss-international",
   "slug": "swiss-international",
-  "status": "draft",
-  "version": "0.1.0",
+  "status": "review",
+  "version": "1.0.0",
   "title": {
     "ru": "Швейцарский интернациональный стиль",
     "en": "Swiss International Style"
   },
   "shortDescription": {
-    "ru": "Объективная типографика, строгая сетка и высокий контраст без декоративного шума.",
-    "en": "Objective typography, strict grid, and high contrast without decorative noise."
+    "ru": "Интернациональный типографический стиль: объективная сетка, гротескная иерархия и функциональный контраст без орнамента.",
+    "en": "International Typographic Style: objective grid, grotesk hierarchy, and functional contrast without ornament."
   },
   "philosophy": {
-    "ru": "Форма следует содержанию. Коммуникация важнее орнамента. Сетка и иерархия — главный инструмент.",
-    "en": "Form follows content. Communication over ornament. Grid and hierarchy are the primary tools."
+    "ru": "Коммуникация важнее украшения. Содержание задаёт структуру. Сетка, типографика и ограниченная палитра создают ясность, которую можно проверить и передать AI-агенту как набор правил, а не как настроение.",
+    "en": "Communication over decoration. Content drives structure. Grid, typography, and a limited palette create clarity that can be verified and handed to an AI agent as rules—not vibes."
   },
   "category": "modernism",
-  "tags": ["typography", "grid", "modernism", "editorial"],
+  "tags": [
+    "typography",
+    "grid",
+    "modernism",
+    "editorial",
+    "international-typographic-style",
+    "objectivity"
+  ],
   "complexity": "medium",
   "visualDensity": "balanced",
   "contrast": "high",
   "bestUseCases": [
-    "Editorial and institutional sites",
-    "Design system documentation",
-    "Product marketing with strong hierarchy"
+    "Institutional, cultural, and editorial websites",
+    "Design-system and documentation products",
+    "SaaS marketing that needs authority and hierarchy",
+    "Agent handoff packages with strict visual bans"
   ],
   "avoidFor": [
-    "Playful consumer brands that rely on soft decoration",
-    "Dense dashboard UIs that need compact density first"
+    "Playful consumer brands built on soft decoration",
+    "Dense operational dashboards that prioritize compact density over editorial grid",
+    "Campaigns that require ornamental illustration as the primary voice"
   ],
   "relatedStyles": [],
-  "fontFamilies": ["Helvetica Neue", "Arial", "IBM Plex Sans"],
+  "fontFamilies": [
+    "Helvetica Neue",
+    "Arial",
+    "IBM Plex Sans",
+    "IBM Plex Mono"
+  ],
   "author": "design-atlas",
-  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "updatedAt": "2026-11-09T02:00:00.000Z",
   "sources": [
     {
       "title": "Josef Müller-Brockmann — Grid Systems in Graphic Design",
-      "note": "Canonical reference for grid discipline; research source only."
+      "note": "Primary manual for modular grid discipline."
+    },
+    {
+      "title": "Armin Hofmann — Graphic Design Manual",
+      "note": "Reduction, point/line/plane, photographic objectivity."
+    },
+    {
+      "title": "Karl Gerstner — Designing Programmes",
+      "note": "Systematic / programmatic visual decision-making."
+    },
+    {
+      "title": "Neue Grafik / New Graphic Design (periodical)",
+      "note": "Historical discourse of the International Typographic Style."
+    },
+    {
+      "title": "Max Miedinger with Eduard Hoffmann — Helvetica (1957)",
+      "note": "Type lineage often associated with later reception of the style; web stacks need license-aware fallbacks."
     }
   ]
 }
