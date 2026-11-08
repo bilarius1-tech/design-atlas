@@ -52,9 +52,12 @@ Lucide React. Размер через `className` (`size-4` и т.п.).
 
 Пока только CSS transitions на controls. `prefers-reduced-motion` обнуляет duration в theme.
 
-## Style preview (будущее)
+## Style preview / Playground
 
-`StylePreviewFrame` появится в PHASE 4; токены стиля не смешиваются с shell theme.
+- `StylePreviewFrame` + `StylePlayground` — `src/features/style-playground/`
+- Токены стиля → scoped CSS vars `--sp-*` (не смешиваются с shell `--da-*`)
+- Маршруты: `/playground`, `/playground/<styleId>`
+
 
 ## Качество
 

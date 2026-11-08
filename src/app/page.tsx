@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const phases = [
   { id: "P0", title: "Фундамент", status: "done", note: "Репозиторий и harness" },
-  { id: "P1", title: "Design System Core", status: "active", note: "Оболочка продукта" },
-  { id: "P2", title: "Эталон", status: "next", note: "Swiss International" },
-  { id: "P3", title: "Продукт", status: "queued", note: "Каталог и страницы" },
+  { id: "P1", title: "Design System Core", status: "done", note: "Оболочка продукта" },
+  { id: "P2", title: "Content + Playground", status: "active", note: "Движок данных и демо" },
+  { id: "P3", title: "Эталон", status: "next", note: "Swiss International" },
 ] as const;
 
 export default function Home() {

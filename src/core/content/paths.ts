@@ -1,7 +1,7 @@
 import path from "node:path";
 
 export function getRepoRoot(): string {
-  return path.resolve(process.cwd());
+  return path.resolve(/* turbopackIgnore: true */ process.cwd());
 }
 
 export function getContentRoot(): string {

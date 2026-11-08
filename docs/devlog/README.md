@@ -26,4 +26,4 @@
 
 | Дата | Фокус |
 |------|--------|
-| [2026-11-09](./2026-11-09.md) | Foundation + DS Core + Content Engine |
+| [2026-11-09](./2026-11-09.md) | Foundation → Content Engine → Playground |
