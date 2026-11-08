@@ -2,39 +2,281 @@
   "schemaVersion": "1.0.0",
   "styleId": "swiss-international",
   "compositionId": "swiss-editorial-grid",
+  "localeDefault": "ru",
   "sections": [
     {
       "id": "header",
+      "eyebrow": {
+        "ru": "Демо-лендинг",
+        "en": "Demo landing"
+      },
+      "ctaLabel": {
+        "ru": "К системе",
+        "en": "To system"
+      },
+      "ctaHref": "#demo-cta",
       "notes": "Strict top navigation with hairline border."
     },
     {
       "id": "hero",
+      "eyebrow": {
+        "ru": "Swiss International",
+        "en": "Swiss International"
+      },
       "headline": {
-        "ru": "Объективная система",
-        "en": "An objective system"
+        "ru": "Объективная система коммуникации",
+        "en": "An objective communication system"
       },
       "body": {
-        "ru": "Черновик композиции для будущего демо-лендинга.",
-        "en": "Draft composition for the future demo landing."
-      }
+        "ru": "Сетка, типографика и функциональный контраст вместо декора. Черновик композиции для эталонного стиля.",
+        "en": "Grid, typography, and functional contrast instead of decoration. Draft composition for the reference style."
+      },
+      "ctaLabel": {
+        "ru": "Смотреть принципы",
+        "en": "See principles"
+      },
+      "ctaHref": "#demo-features"
     },
     {
       "id": "features",
-      "notes": "Three functional feature rows on a modular grid."
+      "eyebrow": {
+        "ru": "Принципы",
+        "en": "Principles"
+      },
+      "headline": {
+        "ru": "Три опоры стиля",
+        "en": "Three foundations"
+      },
+      "body": {
+        "ru": "Каждый блок должен работать как самостоятельный модуль сетки.",
+        "en": "Each block should work as an independent grid module."
+      },
+      "items": [
+        {
+          "title": { "ru": "Модульная сетка", "en": "Modular grid" },
+          "body": {
+            "ru": "Выравнивание важнее симметрии. Поля и колонки задают ритм.",
+            "en": "Alignment over symmetry. Margins and columns set the rhythm."
+          }
+        },
+        {
+          "title": { "ru": "Типографическая иерархия", "en": "Typographic hierarchy" },
+          "body": {
+            "ru": "Вес и масштаб передают смысл раньше цвета.",
+            "en": "Weight and scale carry meaning before color."
+          }
+        },
+        {
+          "title": { "ru": "Функциональный цвет", "en": "Functional color" },
+          "body": {
+            "ru": "Акцент используется для действия и статуса, не для украшения.",
+            "en": "Accent marks action and status, not ornament."
+          }
+        }
+      ]
     },
     {
       "id": "editorial",
-      "notes": "Large typography + photography placeholder."
+      "eyebrow": {
+        "ru": "Editorial",
+        "en": "Editorial"
+      },
+      "headline": {
+        "ru": "Содержание определяет форму",
+        "en": "Content determines form"
+      },
+      "body": {
+        "ru": "Фотография и текст живут в одной сетке. Никаких плавающих бейджей поверх изображения.",
+        "en": "Photography and text share one grid. No floating badges over imagery."
+      }
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Модули интерфейса",
+        "en": "Interface modules"
+      },
+      "body": {
+        "ru": "Карточки — только когда нужна отдельная единица смысла.",
+        "en": "Cards only when a unit of meaning needs its own container."
+      },
+      "items": [
+        {
+          "title": { "ru": "Навигация", "en": "Navigation" },
+          "body": {
+            "ru": "Чистая структура, понятные состояния focus.",
+            "en": "Clear structure and visible focus states."
+          }
+        },
+        {
+          "title": { "ru": "Формы", "en": "Forms" },
+          "body": {
+            "ru": "Плоские поля, явная ошибка, без декоративных теней.",
+            "en": "Flat fields, explicit errors, no decorative shadows."
+          }
+        },
+        {
+          "title": { "ru": "Документация", "en": "Documentation" },
+          "body": {
+            "ru": "Плотность информации выше, чем в маркетинговом шаблоне.",
+            "en": "Higher information density than a marketing template."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": {
+        "ru": "Метрики смысла",
+        "en": "Meaningful metrics"
+      },
+      "items": [
+        {
+          "title": { "ru": "1 сетка", "en": "1 grid" },
+          "body": { "ru": "Единый каркас страницы", "en": "One page framework" }
+        },
+        {
+          "title": { "ru": "0 радиус", "en": "0 radius" },
+          "body": { "ru": "Геометрия без скруглений", "en": "Geometry without rounding" }
+        },
+        {
+          "title": { "ru": "AA+", "en": "AA+" },
+          "body": { "ru": "Контраст как требование", "en": "Contrast as a requirement" }
+        }
+      ],
+      "notes": "Не путать с фальшивой статистикой: здесь качественные маркеры стиля."
+    },
+    {
+      "id": "testimonials",
+      "headline": {
+        "ru": "Голоса практики",
+        "en": "Practitioner notes"
+      },
+      "items": [
+        {
+          "title": { "ru": "Дизайн-система", "en": "Design system" },
+          "body": {
+            "ru": "«Сетка снимает половину споров ещё до выбора цвета.»",
+            "en": "\"The grid removes half the arguments before color is chosen.\""
+          },
+          "meta": { "ru": "Product designer", "en": "Product designer" }
+        },
+        {
+          "title": { "ru": "AI handoff", "en": "AI handoff" },
+          "body": {
+            "ru": "«Агенту нужны правила и запреты, а не настроение.»",
+            "en": "\"Agents need rules and bans, not vibes.\""
+          },
+          "meta": { "ru": "AI engineer", "en": "AI engineer" }
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "headline": {
+        "ru": "Пакеты передачи",
+        "en": "Handoff packages"
+      },
+      "body": {
+        "ru": "Условные уровни для демонстрации секции pricing — не коммерческое предложение.",
+        "en": "Illustrative tiers for the pricing section — not a commercial offer."
+      },
+      "ctaLabel": {
+        "ru": "Выбрать",
+        "en": "Select"
+      },
+      "items": [
+        {
+          "title": { "ru": "Tokens", "en": "Tokens" },
+          "body": {
+            "ru": "Палитра, типографика, интервалы.",
+            "en": "Palette, typography, spacing."
+          },
+          "meta": { "ru": "База", "en": "Base" }
+        },
+        {
+          "title": { "ru": "System", "en": "System" },
+          "body": {
+            "ru": "Токены + компоненты + правила.",
+            "en": "Tokens + components + rules."
+          },
+          "meta": { "ru": "Основной", "en": "Core" }
+        },
+        {
+          "title": { "ru": "Agent pack", "en": "Agent pack" },
+          "body": {
+            "ru": "DESIGN.md, промпты, инструкции.",
+            "en": "DESIGN.md, prompts, instructions."
+          },
+          "meta": { "ru": "Полный", "en": "Full" }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": {
+        "ru": "Вопросы",
+        "en": "FAQ"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Это уже эталонный Swiss International?",
+            "en": "Is this the finished Swiss International reference?"
+          },
+          "body": {
+            "ru": "Нет. Это draft demo landing для проверки движка. Полный эталон — PHASE 6.",
+            "en": "No. This is a draft demo landing to verify the engine. Full reference is PHASE 6."
+          }
+        },
+        {
+          "title": {
+            "ru": "Почему секции идут в таком порядке?",
+            "en": "Why this section order?"
+          },
+          "body": {
+            "ru": "Порядок задаёт demo.json. Композиция влияет на раскладку, но не подменяет данные.",
+            "en": "Order comes from demo.json. Composition affects layout, not the data."
+          }
+        },
+        {
+          "title": {
+            "ru": "Можно ли другую композицию?",
+            "en": "Can we use another composition?"
+          },
+          "body": {
+            "ru": "Да: modular-stack, swiss-editorial-grid, editorial-split. Стиль выбирает compositionId.",
+            "en": "Yes: modular-stack, swiss-editorial-grid, editorial-split. Style picks compositionId."
+          }
+        }
+      ]
     },
     {
       "id": "cta",
       "headline": {
-        "ru": "Передать агенту",
-        "en": "Hand off to an agent"
-      }
+        "ru": "Передать стиль агенту",
+        "en": "Hand the style to an agent"
+      },
+      "body": {
+        "ru": "Экспорт ZIP появится в PHASE 7. Сейчас доступны playground и этот demo landing.",
+        "en": "ZIP export arrives in PHASE 7. Playground and this demo landing are available now."
+      },
+      "ctaLabel": {
+        "ru": "Открыть playground",
+        "en": "Open playground"
+      },
+      "ctaHref": "/playground/swiss-international"
     },
     {
-      "id": "footer"
+      "id": "footer",
+      "headline": {
+        "ru": "DESIGN ATLAS",
+        "en": "DESIGN ATLAS"
+      },
+      "body": {
+        "ru": "Демонстрация собрана движком Demo Landing из проверенных блоков.",
+        "en": "Demo assembled by the Demo Landing engine from validated blocks."
+      }
     }
   ]
 }

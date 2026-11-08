@@ -69,7 +69,13 @@ type Source = { title: string; url?: string; note?: string };
 
 ## DemoDefinition (`demo.json`)
 
-Секции лендинга: `header`, `hero`, `features`, `editorial`, `showcase`, `statistics`, `testimonials`, `pricing`, `faq`, `cta`, `footer`.
+- `compositionId`: `modular-stack` | `swiss-editorial-grid` | `editorial-split`
+- `localeDefault`: `ru` | `en`
+- Секции (порядок = порядок на лендинге): `header`, `hero`, `features`, `editorial`, `showcase`, `statistics`, `testimonials`, `pricing`, `faq`, `cta`, `footer`
+- Поля секции: `eyebrow?`, `headline?`, `body?`, `ctaLabel?`, `ctaHref?`, `items[]?`, `notes?`
+- `items[]`: `{ title, body?, meta? }` с LocalizedString
+
+Движок: `src/features/demo-landing/` · маршруты `/demo`, `/demo/<styleId>`.
 
 ## Markdown companions
 

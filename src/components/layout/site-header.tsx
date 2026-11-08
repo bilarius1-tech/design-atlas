@@ -4,6 +4,7 @@ import { Container } from "./container";
 const navItems = [
   { href: "/design-system", label: "Дизайн-система" },
   { href: "/playground", label: "Playground" },
+  { href: "/demo", label: "Demo" },
   { href: "/#roadmap", label: "Дорожная карта" },
 ] as const;
 

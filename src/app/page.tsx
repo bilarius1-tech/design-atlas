@@ -5,8 +5,8 @@ import Link from "next/link";
 const phases = [
   { id: "P0", title: "Фундамент", status: "done", note: "Репозиторий и harness" },
   { id: "P1", title: "Design System Core", status: "done", note: "Оболочка продукта" },
-  { id: "P2", title: "Content + Playground", status: "active", note: "Движок данных и демо" },
-  { id: "P3", title: "Эталон", status: "next", note: "Swiss International" },
+  { id: "P2", title: "Content + Playground", status: "done", note: "Движок данных и демо" },
+  { id: "P3", title: "Demo + эталон", status: "active", note: "Landing engine → Swiss" },
 ] as const;
 
 export default function Home() {
@@ -74,13 +74,7 @@ export default function Home() {
                         : "neutral"
                   }
                 >
-                  {phase.status === "done"
-                    ? "готово"
-                    : phase.status === "active"
-                      ? "сейчас"
-                      : phase.status === "next"
-                        ? "далее"
-                        : "очередь"}
+                  {phase.status === "done" ? "готово" : "сейчас"}
                 </Badge>
               </div>
               <h3 className="font-serif text-xl tracking-tight">{phase.title}</h3>

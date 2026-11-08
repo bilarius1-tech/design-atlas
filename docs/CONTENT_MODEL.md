@@ -52,5 +52,6 @@ style.relatedStyles[] ──► другие style id
 - Не переводить id/slug.
 - Новый стиль: папка + запись в `content/index.json` + `pnpm content:validate`.
 - Эталон `swiss-international` до PHASE 6 остаётся `draft` (не published).
+- `demo.json.compositionId` выбирает раскладку; движок **не** подменяет порядок секций — он берётся из массива `sections`.
 
 Детали полей: [DATA_CONTRACTS.md](DATA_CONTRACTS.md).

@@ -1,0 +1,118 @@
+/* Demo landing compositions — scoped inside .style-preview */
+
+.style-preview.dl-root {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.style-preview .dl-shell {
+  width: min(100%, var(--sp-size-container));
+  margin-inline: auto;
+  padding-inline: calc(var(--sp-space-unit) * 4);
+}
+
+.style-preview .dl-section {
+  padding-block: calc(var(--sp-space-unit) * 12);
+  border-top: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-section:first-child {
+  border-top: 0;
+}
+
+.style-preview .dl-kicker {
+  font-size: var(--sp-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sp-color-muted);
+}
+
+.style-preview .dl-grid-2 {
+  display: grid;
+  gap: calc(var(--sp-space-unit) * 6);
+}
+
+.style-preview .dl-grid-3 {
+  display: grid;
+  gap: calc(var(--sp-space-unit) * 4);
+}
+
+@media (min-width: 768px) {
+  .style-preview .dl-grid-2 {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .style-preview .dl-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Swiss: asymmetric hero and hairline modules */
+.style-preview.dl-composition-swiss .dl-hero {
+  display: grid;
+  gap: calc(var(--sp-space-unit) * 8);
+}
+
+@media (min-width: 900px) {
+  .style-preview.dl-composition-swiss .dl-hero {
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: end;
+  }
+
+  .style-preview.dl-composition-swiss .dl-editorial {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+}
+
+.style-preview.dl-composition-swiss .dl-feature-item {
+  border-top: var(--sp-border-width) solid var(--sp-color-border);
+  padding-top: calc(var(--sp-space-unit) * 4);
+}
+
+/* Editorial split: oversized type */
+.style-preview.dl-composition-editorial .dl-hero-title {
+  font-size: clamp(2.5rem, 8vw, var(--sp-text-display));
+}
+
+.style-preview.dl-composition-editorial .dl-media {
+  min-height: 280px;
+  background:
+    linear-gradient(135deg, var(--sp-color-primary), transparent 60%),
+    var(--sp-color-surface);
+  border: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+/* Stack: calm rhythm */
+.style-preview.dl-composition-stack .dl-hero {
+  max-width: 46rem;
+}
+
+.style-preview .dl-faq-item {
+  border-top: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-faq-item:last-child {
+  border-bottom: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-faq-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: calc(var(--sp-space-unit) * 4) 0;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.style-preview .dl-faq-panel {
+  padding-bottom: calc(var(--sp-space-unit) * 4);
+  color: var(--sp-color-muted);
+}
