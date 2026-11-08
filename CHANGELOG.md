@@ -7,6 +7,7 @@
 
 ### Added
 
+- PHASE 2 Core Design System: `design/system/tokens.json`, editorial UI primitives, layout chrome, `/design-system`.
 - Bootstrap репозитория: Next.js App Router, TypeScript strict, Tailwind v4, Zod, Vitest (зависимости).
 - Phase 1 документация: `docs/`, ADR `0001–0007`, шаблоны в `docs/templates/`, governance в `AGENTS.md`.
 - Заготовки каталогов `content/` и `design/` (placeholder, без наполнения).
@@ -14,10 +15,11 @@
 ### Changed
 
 - `README.md` заменён с шаблона create-next-app на описание Design Atlas.
+- Оболочка использует Source Serif 4 / Source Sans 3 вместо Geist Sans.
 
 ### Notes
 
-- Публичные страницы, playground и каталог визуальных стилей **не** входят в этот релиз — только фундамент и docs.
+- Каталог стилей, playground и demo landing **ещё не** реализованы — следующий шаг Content Engine.
 
 ## [0.1.0] - 2026-11-09
 

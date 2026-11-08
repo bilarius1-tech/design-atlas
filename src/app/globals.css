@@ -1,23 +1,86 @@
 @import "tailwindcss";
-
-:root {
-  --background: #f7f6f2;
-  --foreground: #171717;
-  --muted: #5c5c5c;
-  --border: #d8d5cd;
-}
+@import "../../design/system/themes/light.css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--da-color-bg);
+  --color-surface: var(--da-color-surface);
+  --color-surface-muted: var(--da-color-surface-muted);
+  --color-foreground: var(--da-color-fg);
+  --color-muted: var(--da-color-fg-muted);
+  --color-inverse: var(--da-color-fg-inverse);
+  --color-accent: var(--da-color-accent);
+  --color-accent-hover: var(--da-color-accent-hover);
+  --color-border: var(--da-color-border);
+  --color-border-strong: var(--da-color-border-strong);
+  --color-focus: var(--da-color-focus);
+  --color-danger: var(--da-color-danger);
+  --color-danger-bg: var(--da-color-danger-bg);
+  --color-success: var(--da-color-success);
+  --color-success-bg: var(--da-color-success-bg);
+  --color-warning: var(--da-color-warning);
+  --color-warning-bg: var(--da-color-warning-bg);
+
+  --font-sans: var(--da-font-sans);
+  --font-serif: var(--da-font-serif);
+  --font-mono: var(--da-font-mono);
+
+  --text-xs: var(--da-text-xs);
+  --text-sm: var(--da-text-sm);
+  --text-base: var(--da-text-base);
+  --text-lg: var(--da-text-lg);
+  --text-xl: var(--da-text-xl);
+  --text-2xl: var(--da-text-2xl);
+  --text-3xl: var(--da-text-3xl);
+  --text-4xl: var(--da-text-4xl);
+  --text-display: var(--da-text-display);
+
+  --radius-sm: var(--da-radius-sm);
+  --radius-md: var(--da-radius-md);
+  --radius-lg: var(--da-radius-lg);
+
+  --shadow-sm: var(--da-shadow-sm);
+  --shadow-md: var(--da-shadow-md);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
+@layer base {
+  * {
+    border-color: var(--da-color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background: var(--da-color-bg);
+    color: var(--da-color-fg);
+    font-family: var(--da-font-sans);
+    font-size: var(--da-text-base);
+    line-height: var(--da-leading-normal);
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--da-color-focus);
+    outline-offset: 2px;
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 0.18em;
+  }
 }

@@ -27,6 +27,7 @@ Design Atlas — **Knowledge Platform + Design System Library**. Агенты п
 | Рабочий процесс | [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md) |
 | Решения | [docs/decisions/](docs/decisions/) |
 | Дорожная карта | [docs/ROADMAP.md](docs/ROADMAP.md) |
+| Devlog | [docs/devlog/](docs/devlog/) |
 
 **Запрет:** не вводить БД, CMS, микросервисы, GraphQL, отдельные репозитории контента без нового ADR и явного запроса человека.
 

@@ -6,77 +6,58 @@
 
 ```
 design/
-├── system/                 # Платформа
-│   ├── tokens.json         # Базовые токены
+├── system/
+│   ├── tokens.json         # SSOT токенов оболочки
 │   └── themes/
-│       ├── light.css       # CSS variables
-│       └── dark.css
-└── styles/
-    └── <style-id>/
-        └── tokens.json     # Переопределения / палитра стиля
+│       └── light.css       # CSS variables (--da-*)
+├── foundations/            # принципы сетки и типографики
+├── components/             # спеки примитивов
+└── tokens/                 # reserved / legacy placeholder
 ```
+
+Каталожные стили (позже): `content/styles/<id>/tokens.json`.
 
 ## Token model (ADR-0004)
 
-| Категория | Примеры ключей |
-|-----------|----------------|
-| color | `color.bg`, `color.fg`, `color.accent`, `color.border` |
-| typography | `font.family.sans`, `font.size.base`, `font.lineheight.normal` |
-| space | `space.1` … `space.16` (4px scale) |
-| radius | `radius.sm`, `radius.md`, `radius.lg` |
-| shadow | `shadow.sm`, `shadow.md` |
-| motion | `motion.duration.fast`, `motion.easing.default` |
+Источник: [`design/system/tokens.json`](../design/system/tokens.json).
 
-Значения: CSS-совместимые строки или числа (для ms, unitless line-height).
+| Категория | Примеры |
+|-----------|---------|
+| color | `bg`, `surface`, `fg`, `accent`, `border`, `danger` |
+| font | `family.sans/serif/mono`, `size.*`, `lineHeight.*` |
+| space | `1`…`24` (4px scale) |
+| size | `container`, `header`, `controlMd` |
+| radius / shadow / motion / zIndex | shell geometry and motion |
 
-## Tailwind v4
+CSS prefix: `--da-...`. Tailwind mapping: `src/app/globals.css` (`@theme inline`).
 
-- Глобальные стили: `src/app/globals.css`.
-- Подключение: `@import "tailwindcss";` + `@theme` маппинг на CSS variables из `design/system/`.
-- **Не** хардкодить произвольные цвета в JSX; использовать утилиты, привязанные к переменным.
+## Реализованные компоненты
 
-Пример маппинга (целевой):
+| Компонент | Путь |
+|-----------|------|
+| Button | `src/components/ui/button.tsx` |
+| Input / Textarea / Label | `src/components/ui/` |
+| Badge / Alert / Divider | `src/components/ui/` |
+| Card / Table / EmptyState | `src/components/ui/` |
+| Container / Stack / Section | `src/components/layout/` |
+| SiteHeader / SiteFooter / SkipLink | `src/components/layout/` |
 
-```css
-@theme {
-  --color-background: var(--da-color-bg);
-  --color-foreground: var(--da-color-fg);
-  --font-sans: var(--da-font-sans);
-}
-```
-
-## Компоненты (план)
-
-| Компонент | База | Примечание |
-|-----------|------|------------|
-| Button | нативный + tokens | focus ring обязателен |
-| Link | Next `Link` | внешние — `rel` |
-| Card | div + border token | без лишней тени |
-| Dialog | Radix Dialog | focus trap |
-| Navigation | семантический `nav` | skip link в layout |
-
-Каталог компонентов появится в `src/components/ui/` на P1.
+Gallery: `/design-system`.
 
 ## Иконки
 
-Lucide React; размер по `className` из шкалы `icon-*` (определить в tokens).
+Lucide React. Размер через `className` (`size-4` и т.п.).
 
 ## Motion
 
-Framer Motion / Motion — только для:
-
-- смены темы (optional),
-- раскрытия панелей,
-- stagger списков (ограниченно).
-
-`prefers-reduced-motion: reduce` — отключать анимации.
+Пока только CSS transitions на controls. `prefers-reduced-motion` обнуляет duration в theme.
 
 ## Style preview (будущее)
 
-Компонент `StylePreviewFrame` принимает `styleId`, подгружает `design/styles/<id>/tokens.json`, применяет scope class `.style-<id>` на контейнер (см. ADR-0003).
+`StylePreviewFrame` появится в PHASE 4; токены стиля не смешиваются с shell theme.
 
 ## Качество
 
-Ревью: [templates/STYLE-REVIEW.md](templates/STYLE-REVIEW.md).
-
-Контраст пар text/bg ≥ WCAG AA для shell; для style preview — предупреждение в UI если ниже AA.
+- Контраст shell ≥ WCAG AA для текста.
+- Focus-visible обязателен.
+- Ревью: [templates/STYLE-REVIEW.md](templates/STYLE-REVIEW.md).
