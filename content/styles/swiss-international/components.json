@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "swiss-international",
+  "groups": [
+    {
+      "id": "typography",
+      "label": "Typography",
+      "items": ["display", "h1", "h2", "h3", "body", "caption", "label", "quote", "code"],
+      "notes": "Draft matrix — expand to full mandatory set before publish."
+    },
+    {
+      "id": "buttons",
+      "label": "Buttons",
+      "items": ["primary", "secondary", "ghost", "disabled", "focus"]
+    },
+    {
+      "id": "forms",
+      "label": "Forms",
+      "items": ["text-input", "textarea", "checkbox", "radio", "validation-error"]
+    },
+    {
+      "id": "cards",
+      "label": "Cards",
+      "items": ["feature", "article"]
+    },
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "items": ["header", "tabs", "breadcrumbs"]
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback",
+      "items": ["badge", "alert", "empty-state"]
+    },
+    {
+      "id": "shapes",
+      "label": "Shapes",
+      "items": ["square", "rectangle", "divider", "grid"]
+    },
+    {
+      "id": "icons",
+      "label": "Icons",
+      "items": ["functional", "navigation", "status"]
+    }
+  ]
+}

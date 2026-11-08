@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "swiss-international",
+  "compositionId": "swiss-editorial-grid",
+  "sections": [
+    {
+      "id": "header",
+      "notes": "Strict top navigation with hairline border."
+    },
+    {
+      "id": "hero",
+      "headline": {
+        "ru": "Объективная система",
+        "en": "An objective system"
+      },
+      "body": {
+        "ru": "Черновик композиции для будущего демо-лендинга.",
+        "en": "Draft composition for the future demo landing."
+      }
+    },
+    {
+      "id": "features",
+      "notes": "Three functional feature rows on a modular grid."
+    },
+    {
+      "id": "editorial",
+      "notes": "Large typography + photography placeholder."
+    },
+    {
+      "id": "cta",
+      "headline": {
+        "ru": "Передать агенту",
+        "en": "Hand off to an agent"
+      }
+    },
+    {
+      "id": "footer"
+    }
+  ]
+}

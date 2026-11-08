@@ -7,19 +7,21 @@
 
 ### Added
 
+- PHASE 3 Content Engine: Zod schemas, style loader/registry/validator, `pnpm content:validate`, draft `swiss-international` fixture.
 - PHASE 2 Core Design System: `design/system/tokens.json`, editorial UI primitives, layout chrome, `/design-system`.
 - Bootstrap репозитория: Next.js App Router, TypeScript strict, Tailwind v4, Zod, Vitest (зависимости).
 - Phase 1 документация: `docs/`, ADR `0001–0007`, шаблоны в `docs/templates/`, governance в `AGENTS.md`.
-- Заготовки каталогов `content/` и `design/` (placeholder, без наполнения).
+- Devlog: `docs/devlog/`.
 
 ### Changed
 
 - `README.md` заменён с шаблона create-next-app на описание Design Atlas.
 - Оболочка использует Source Serif 4 / Source Sans 3 вместо Geist Sans.
+- `DATA_CONTRACTS.md` / `CONTENT_MODEL.md` приведены к модели `style.json` + tokens в `content/styles/<id>/`.
 
 ### Notes
 
-- Каталог стилей, playground и demo landing **ещё не** реализованы — следующий шаг Content Engine.
+- Playground и demo landing engine — следующий шаг (PHASE 4–5). `swiss-international` остаётся draft до PHASE 6.
 
 ## [0.1.0] - 2026-11-09
 

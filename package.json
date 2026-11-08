@@ -16,7 +16,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+    "content:validate": "tsx scripts/validate-content.ts",
+    "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm content:validate && pnpm build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -43,6 +44,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "3.2.4"
   },

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "swiss-international",
+  "slug": "swiss-international",
+  "status": "draft",
+  "version": "0.1.0",
+  "title": {
+    "ru": "Швейцарский интернациональный стиль",
+    "en": "Swiss International Style"
+  },
+  "shortDescription": {
+    "ru": "Объективная типографика, строгая сетка и высокий контраст без декоративного шума.",
+    "en": "Objective typography, strict grid, and high contrast without decorative noise."
+  },
+  "philosophy": {
+    "ru": "Форма следует содержанию. Коммуникация важнее орнамента. Сетка и иерархия — главный инструмент.",
+    "en": "Form follows content. Communication over ornament. Grid and hierarchy are the primary tools."
+  },
+  "category": "modernism",
+  "tags": ["typography", "grid", "modernism", "editorial"],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Editorial and institutional sites",
+    "Design system documentation",
+    "Product marketing with strong hierarchy"
+  ],
+  "avoidFor": [
+    "Playful consumer brands that rely on soft decoration",
+    "Dense dashboard UIs that need compact density first"
+  ],
+  "relatedStyles": [],
+  "fontFamilies": ["Helvetica Neue", "Arial", "IBM Plex Sans"],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "sources": [
+    {
+      "title": "Josef Müller-Brockmann — Grid Systems in Graphic Design",
+      "note": "Canonical reference for grid discipline; research source only."
+    }
+  ]
+}

@@ -26,4 +26,4 @@
 
 | Дата | Фокус |
 |------|--------|
-| [2026-11-09](./2026-11-09.md) | Foundation + Core Design System |
+| [2026-11-09](./2026-11-09.md) | Foundation + DS Core + Content Engine |

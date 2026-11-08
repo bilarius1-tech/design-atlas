@@ -2,81 +2,55 @@
 
 ## Принципы
 
-- Каждая сущность имеет стабильный `id` (kebab-case, ASCII, language-independent).
-- Человекочитаемые названия — в localized полях или в Markdown, не в id.
-- Одна каноническая JSON-запись на сущность; нарратив — опционально в MD/MDX.
+- Стабильный `id` (kebab-case, ASCII, language-independent).
+- Названия — в localized полях / Markdown, не в id.
+- Данные стиля не содержат React/JSX.
+- Токены стиля живут рядом с метаданными: `content/styles/<id>/tokens.json`.
 
-## Дерево каталогов (целевое)
+## Дерево
 
 ```
 content/
-├── styles/                 # Визуальные стили
+├── index.json
+├── styles/
 │   └── <id>/
-│       ├── meta.json       # Обязательно
-│       ├── article.mdx     # Опционально
-│       └── references.json # Опционально
-├── movements/              # Движения/школы (опционально v2)
-├── glossary/               # Термины
-└── index.json              # Реестр id → путь, версия схемы
-```
-
-Phase 1: каталоги пустые; структура фиксируется документацией.
-
-## Сущность: Style
-
-Минимальный каркас (детали — [DATA_CONTRACTS.md](DATA_CONTRACTS.md)):
-
-| Поле | Тип | Примечание |
-|------|-----|------------|
-| `id` | string | `swiss-international` |
-| `schemaVersion` | string | Semver схемы |
-| `status` | enum | `draft` \| `published` \| `archived` |
-| `title` | localized object | `{ "en": "...", "ru": "..." }` |
-| `summary` | localized object | Кратко, ≤ 320 символов на локаль |
-| `tags` | string[] | lowercase, без пробелов |
-| `era` | object? | `{ start?: number, end?: number, label?: string }` |
-| `tokensRef` | string | Путь от корня репо, напр. `design/styles/swiss-international/tokens.json` |
-| `promptRefs` | object? | Ключи по [ADR-0005](decisions/ADR-0005-prompt-generation.md) |
-| `sources` | array | `{ title, url?, note? }` |
-
-## Сущность: GlossaryTerm
-
-| Поле | Тип |
-|------|-----|
-| `id` | string |
-| `term` | localized |
-| `definition` | localized |
-| `relatedStyles` | string[] (style ids) |
-
-## MDX frontmatter
-
-```yaml
----
-id: swiss-international
-contentType: style-article
-locale: ru
----
-```
-
-`id` должен совпадать с `meta.json` в той же папке.
-
-## Связи
-
-```
-Style ──tokensRef──► design/styles/<id>/tokens.json
-Style ──promptRefs──► content/styles/<id>/prompts/*.json (будущее)
-Style ──related──► Style[] (ids)
-GlossaryTerm ──► Style[]
+│       ├── style.json              # обязательно
+│       ├── tokens.json             # обязательно
+│       ├── typography.json         # обязательно для review/published
+│       ├── components.json         # обязательно для review/published
+│       ├── demo.json               # обязательно для review/published
+│       ├── rules.md
+│       ├── prompt.ru.md
+│       ├── prompt.en.md
+│       ├── DESIGN.md
+│       ├── TOKENS.md
+│       ├── AGENT-INSTRUCTIONS.md
+│       ├── CHANGELOG.md
+│       └── assets/
+├── glossary/
+└── categories/ | collections/      # позже
 ```
 
 ## Жизненный цикл
 
-1. `draft` — валидация в CI может быть warning-only до P1.
-2. `published` — обязательны title, summary, tokensRef, минимум один source.
-3. `archived` — не показывать в индексе; экспорт с флагом `deprecated`.
+1. `draft` — минимально `style.json` + `tokens.json`; прочие файлы warning.
+2. `review` — полный набор JSON + markdown; готовность к аудиту.
+3. `published` — проходит `pnpm content:validate` без error; публичный каталог.
+4. `archived` — остаётся в Git, скрыт из публичного индекса (UI — позже).
+
+## Связи
+
+```
+content/index.json ──► content/styles/<id>/
+style.json.id === folder name === tokens.meta.styleId
+style.relatedStyles[] ──► другие style id
+```
 
 ## Правила для агентов
 
-- Не создавать параллельные id (`swiss`, `swiss-style`) для одной сущности.
-- Не переводить id; переводить только localized поля.
-- Новые сущности — сначала обновить DATA_CONTRACTS + PR на схему, потом JSON.
+- Не создавать параллельные id одной сущности.
+- Не переводить id/slug.
+- Новый стиль: папка + запись в `content/index.json` + `pnpm content:validate`.
+- Эталон `swiss-international` до PHASE 6 остаётся `draft` (не published).
+
+Детали полей: [DATA_CONTRACTS.md](DATA_CONTRACTS.md).

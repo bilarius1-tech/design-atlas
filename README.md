@@ -25,8 +25,9 @@ pnpm install
 | `pnpm lint` | ESLint |
 | `pnpm typecheck` | TypeScript (`tsc --noEmit`) |
 | `pnpm test` | Unit-тесты (Vitest) |
+| `pnpm content:validate` | Валидация `content/` по Zod-контрактам |
 | `pnpm format` / `pnpm format:check` | Prettier |
-| `pnpm ci` | lint + typecheck + test + build |
+| `pnpm ci` | lint + typecheck + test + content:validate + build |
 
 Спецификация: [docs/specification/](docs/specification/). Тесты: [docs/TESTING.md](docs/TESTING.md).
 
