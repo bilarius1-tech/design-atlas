@@ -640,3 +640,43 @@
   font-weight: 500;
   letter-spacing: -0.03em;
 }
+
+/* Neo-brutalism — butter stage, hard rules, dark ink on acid CTAs */
+.style-preview[data-style-id="neo-brutalism"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 31px,
+      rgba(17, 17, 17, 0.035) 32px 33px
+    ),
+    linear-gradient(165deg, #fff8e4, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="neo-brutalism"] .sp-btn-primary,
+.style-preview[data-style-id="neo-brutalism"] .sp-btn-accent,
+.style-preview[data-style-id="neo-brutalism"] .sp-badge-accent,
+.style-preview[data-style-id="neo-brutalism"] .dl-brand-mark {
+  color: #111111;
+}
+
+.style-preview[data-style-id="neo-brutalism"] .sp-heading,
+.style-preview[data-style-id="neo-brutalism"] .sp-display {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.style-preview[data-style-id="neo-brutalism"] .sp-card,
+.style-preview[data-style-id="neo-brutalism"] .dl-feature-card,
+.style-preview[data-style-id="neo-brutalism"] .dl-stat {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #111111;
+}
+
+.style-preview[data-style-id="neo-brutalism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #111111;
+}

@@ -72,7 +72,7 @@ export function googleFontsCssUrl(families: readonly string[]): string | null {
   const unique = [...new Set(families.map((f) => f.trim()).filter(Boolean))];
   if (unique.length === 0) return null;
   const params = unique
-    .map((family) => `family=${encodeURIComponent(family).replace(/%20/g, "+")}:wght@400;500;600;700`)
+    .map((family) => `family=${encodeURIComponent(family).replace(/%20/g, "+")}:wght@400;500;600;700;800`)
     .join("&");
   return `https://fonts.googleapis.com/css2?${params}&display=swap&subset=cyrillic,cyrillic-ext,latin`;
 }

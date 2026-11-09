@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neo-brutalism",
+  "slug": "neo-brutalism",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Необрутализм",
+    "en": "Neo-brutalism"
+  },
+  "shortDescription": {
+    "ru": "Масляный фон, толстые чёрные рамки, жёсткий offset без blur и кислотные pink/mint плоскости.",
+    "en": "Butter ground, thick black rules, hard no-blur offsets, and acid pink/mint planes."
+  },
+  "philosophy": {
+    "ru": "Характер через рамку и сдвиг, не через мягкую тень. Unbounded кричит заголовком; Rubik держит тело; акценты — плоские пятна, а не градиенты.",
+    "en": "Character through frame and shift, not soft shadow. Unbounded shouts the headline; Rubik holds the body; accents are flat planes, not gradients."
+  },
+  "category": "campaign",
+  "tags": [
+    "neo-brutalism",
+    "brutal",
+    "hard-shadow",
+    "startup",
+    "youth",
+    "high-contrast"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Startup and creative-agency landings",
+    "Youth / product brands that need to stand out",
+    "Campaign pages with chunky bordered cards"
+  ],
+  "avoidFor": [
+    "Quiet Swiss / clinical systems",
+    "Soft clay / neu / glass volume UIs",
+    "Dense-tile industrial mosaics that erase offset shadows"
+  ],
+  "relatedStyles": [
+    "poster-brutal",
+    "streetwear",
+    "swiss-international"
+  ],
+  "fontFamilies": [
+    "Unbounded",
+    "Rubik",
+    "Space Grotesk"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:30:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Neo-brutalism (owned catalog)",
+      "note": "SSOT for #FFF4D6 / #FF5C8A / #3DDC97 / #111, Unbounded+Rubik, 3px rules, 6px hard offset. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/neo-brutalism.md",
+      "note": "Atlas research note: traits, anti-patterns, distinction from poster-brutal."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Pink/mint CTAs use #111 labels; acid fills are not light-on-light decoration."
+    }
+  ]
+}

@@ -97,7 +97,7 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 7 | `vintage-gold` | InfoStyle `vintage` | done |
 | 8 | `industrial-power` | InfoStyle `industrial` | done — `dense-tile` + `gap: 0px` |
 | 9 | `scandi-calm` | InfoStyle `scandi` | done |
-| 10 | `neo-brutalism` | dizain-prompty | next (≠ `poster-brutal`; dense optional) |
+| 10 | `neo-brutalism` | dizain-prompty | done (≠ `poster-brutal`; modular-stack, not dense-tile) |
 | 11 | `aurora-mesh` | dizain-prompty | queued |
 | 12 | `y2k` | dizain-prompty | queued |
 | 13 | `retro-terminal` | dizain-prompty | queued |

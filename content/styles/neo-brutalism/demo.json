@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "neo-brutalism",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Neo-brutalism", "en": "Neo-brutalism" },
+      "headline": {
+        "ru": "Толстая рамка. Жёсткий сдвиг",
+        "en": "Thick frame. Hard shift"
+      },
+      "body": {
+        "ru": "Масляный фон, pink/mint плоскости и offset без blur — необрутал для стартапов и агентств.",
+        "en": "Butter ground, pink/mint planes, and no-blur offsets — neo-brutal for startups and agencies."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Butter stage", "en": "Butter stage" },
+          "body": { "ru": "Ground `#FFF4D6`, ink `#111`.", "en": "Ground `#FFF4D6`, ink `#111`." }
+        },
+        {
+          "title": { "ru": "Pink + mint", "en": "Pink + mint" },
+          "body": { "ru": "Dual acid flats, не градиент.", "en": "Dual acid flats, not gradients." }
+        },
+        {
+          "title": { "ru": "Hard offset", "en": "Hard offset" },
+          "body": { "ru": "`6px 6px 0` + рамка `3px`.", "en": "`6px 6px 0` + `3px` rule." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "3px", "en": "3px" }, "body": { "ru": "border / hard rule", "en": "border / hard rule" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1080", "en": "1080" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=neo-brutalism"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Neo-brutalism · DESIGN ATLAS", "en": "Neo-brutalism · DESIGN ATLAS" }
+    }
+  ]
+}
