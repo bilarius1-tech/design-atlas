@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "warm-premium",
+  "families": {
+    "heading": "Playfair Display",
+    "body": "Manrope",
+    "mono": "IBM Plex Mono",
+    "fallbacks": ["DM Sans", "Georgia", "system-ui", "sans-serif"]
+  },
+  "roles": {
+    "display": {
+      "family": "heading",
+      "size": "57px",
+      "weight": "600",
+      "lineHeight": "1.08",
+      "letterSpacing": "-0.02em"
+    },
+    "h1": {
+      "family": "heading",
+      "size": "40px",
+      "weight": "600",
+      "lineHeight": "1.12",
+      "letterSpacing": "-0.02em"
+    },
+    "h2": {
+      "family": "heading",
+      "size": "28px",
+      "weight": "600",
+      "lineHeight": "1.2"
+    },
+    "h3": {
+      "family": "heading",
+      "size": "20px",
+      "weight": "600",
+      "lineHeight": "1.25"
+    },
+    "h4": {
+      "family": "heading",
+      "size": "16px",
+      "weight": "600",
+      "lineHeight": "1.3"
+    },
+    "bodyLarge": {
+      "family": "body",
+      "size": "18px",
+      "weight": "400",
+      "lineHeight": "1.6"
+    },
+    "body": {
+      "family": "body",
+      "size": "16px",
+      "weight": "400",
+      "lineHeight": "1.6"
+    },
+    "caption": {
+      "family": "body",
+      "size": "12px",
+      "weight": "500",
+      "lineHeight": "1.4"
+    },
+    "label": {
+      "family": "body",
+      "size": "11px",
+      "weight": "600",
+      "lineHeight": "1.2",
+      "letterSpacing": "0.12em"
+    },
+    "quote": {
+      "family": "heading",
+      "size": "24px",
+      "weight": "500",
+      "lineHeight": "1.35"
+    },
+    "code": {
+      "family": "mono",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "1.45"
+    }
+  },
+  "rules": [
+    "Playfair Display for display/headings; Manrope for body with Cyrillic.",
+    "Keep display at 57px.",
+    "Prefer airy line-height; avoid dense streetwear stacking."
+  ],
+  "constraints": [
+    "Do not replace Playfair with Inter for display.",
+    "Do not invent awards, seals, or fake logos.",
+    "Do not flood gold accents across every surface."
+  ]
+}

@@ -15,5 +15,6 @@
 | [neon-tech.md](./neon-tech.md) | Dark neon / tech proof style (InfoStyle adapted) | authored |
 | [streetwear.md](./streetwear.md) | Bold streetwear campaign (InfoStyle market) | authored |
 | [blueprint-grid.md](./blueprint-grid.md) | Engineering blueprint grid (InfoStyle) | authored |
+| [warm-premium.md](./warm-premium.md) | Warm dark premium (InfoStyle) | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

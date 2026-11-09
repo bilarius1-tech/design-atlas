@@ -450,3 +450,24 @@
 .style-preview[data-style-id="blueprint-grid"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #102631;
 }
+
+/* Warm Premium — radial vignette + dark ink on gold CTAs */
+.style-preview[data-style-id="warm-premium"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 35%, #51453a 0%, transparent 68%),
+    var(--sp-color-background);
+}
+
+.style-preview[data-style-id="warm-premium"] .sp-btn-primary,
+.style-preview[data-style-id="warm-premium"] .sp-btn-accent,
+.style-preview[data-style-id="warm-premium"] .sp-badge-accent,
+.style-preview[data-style-id="warm-premium"] .dl-brand-mark {
+  color: #26211f;
+}
+
+.style-preview[data-style-id="warm-premium"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #26211f;
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "warm-premium",
+  "groups": [
+    {
+      "id": "typography",
+      "label": "Typography",
+      "items": [
+        "display",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "body-large",
+        "body",
+        "caption",
+        "label",
+        "quote",
+        "code",
+        "link"
+      ],
+      "notes": "Playfair display; airy Manrope body."
+    },
+    {
+      "id": "buttons",
+      "label": "Buttons",
+      "items": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "ghost",
+        "icon",
+        "disabled",
+        "loading",
+        "hover",
+        "focus",
+        "active"
+      ],
+      "notes": "Gold primary pill; blush/sage as soft signals."
+    },
+    {
+      "id": "forms",
+      "label": "Forms",
+      "items": [
+        "text-input",
+        "email-input",
+        "search-input",
+        "textarea",
+        "select",
+        "checkbox",
+        "radio",
+        "switch",
+        "range",
+        "validation-error",
+        "success"
+      ]
+    },
+    {
+      "id": "shapes",
+      "label": "Shapes & geometry",
+      "items": [
+        "circle",
+        "square",
+        "rectangle",
+        "divider",
+        "horizontal-line",
+        "vertical-line",
+        "dots",
+        "grid",
+        "hairline-rule"
+      ],
+      "notes": "Soft radii; thin warm borders."
+    },
+    {
+      "id": "cards",
+      "label": "Cards",
+      "items": [
+        "feature",
+        "product",
+        "article",
+        "profile",
+        "pricing",
+        "testimonial",
+        "statistics"
+      ],
+      "notes": "Raised warm panels; soft shadow; restraint."
+    },
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "items": [
+        "header",
+        "main-nav",
+        "mobile-nav",
+        "tabs",
+        "breadcrumbs",
+        "pagination"
+      ]
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback",
+      "items": [
+        "badge",
+        "tag",
+        "alert",
+        "tooltip",
+        "progress",
+        "skeleton",
+        "empty-state"
+      ]
+    },
+    {
+      "id": "icons",
+      "label": "Icons",
+      "items": [
+        "functional",
+        "navigation",
+        "status",
+        "action"
+      ],
+      "notes": "Light icons; gold sparingly."
+    }
+  ]
+}

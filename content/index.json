@@ -36,6 +36,10 @@
     {
       "id": "blueprint-grid",
       "path": "content/styles/blueprint-grid"
+    },
+    {
+      "id": "warm-premium",
+      "path": "content/styles/warm-premium"
     }
   ],
   "glossary": []

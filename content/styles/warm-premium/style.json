@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "warm-premium",
+  "slug": "warm-premium",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Тёплый премиум",
+    "en": "Warm Premium"
+  },
+  "shortDescription": {
+    "ru": "Глубокий тёплый фон, золотые акценты и Playfair — сдержанная премиальная подача для веба.",
+    "en": "Deep warm ground, gold accents, and Playfair — restrained premium presentation for the web."
+  },
+  "philosophy": {
+    "ru": "Качество через материал и воздух, не через блёстки. Тёплый dark stage, спокойный serif display и дозированное золото.",
+    "en": "Quality through material and air, not glitter. A warm dark stage, calm serif display, and gold used sparingly."
+  },
+  "category": "premium",
+  "tags": [
+    "premium",
+    "warm",
+    "luxury",
+    "serif",
+    "dark",
+    "editorial"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Premium lifestyle and home brand landings",
+    "Hospitality / craft product sites",
+    "Quiet luxury SaaS marketing"
+  ],
+  "avoidFor": [
+    "Youth streetwear campaigns",
+    "Neon tech gadget shells",
+    "Playful clay consumer UIs"
+  ],
+  "relatedStyles": [
+    "midnight-console",
+    "swiss-international",
+    "glassmorphism"
+  ],
+  "fontFamilies": [
+    "Playfair Display",
+    "Manrope",
+    "DM Sans"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:45:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Warm premium (owned catalog)",
+      "note": "SSOT for #26211F ground, gold/blush/sage, Playfair. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/warm-premium.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Cream text on warm dark and gold CTAs must remain AA."
+    }
+  ]
+}

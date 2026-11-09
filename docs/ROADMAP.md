@@ -90,8 +90,8 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 |---|------------|--------|--------|
 | 1 | `streetwear` | InfoStyle `market` | done |
 | 2 | `blueprint-grid` | InfoStyle `blueprint` | done |
-| 3 | `warm-premium` | InfoStyle `premium` | next |
-| 4 | `soft-editorial` | InfoStyle `catalog` | queued |
+| 3 | `warm-premium` | InfoStyle `premium` | done |
+| 4 | `soft-editorial` | InfoStyle `catalog` | next |
 | 5 | `clinical-minimal` | InfoStyle `clinical` | queued |
 | 6 | `eco-botanical` | InfoStyle `eco` | queued |
 | 7 | `vintage-gold` | InfoStyle `vintage` | queued |
