@@ -50,6 +50,7 @@ export const GOOGLE_FONTS_CYRILLIC: readonly GoogleFontOption[] = [
   { family: "Philosopher", category: "serif" },
   { family: "Poiret One", category: "display" },
   { family: "Unbounded", category: "display" },
+  { family: "Russo One", category: "display" },
   { family: "Onest", category: "sans" },
   { family: "Golos Text", category: "sans" },
   { family: "Commissioner", category: "sans" },

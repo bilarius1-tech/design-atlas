@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "y2k",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Y2K", "en": "Y2K" },
+      "headline": {
+        "ru": "Хром. Блеск. Нулевые",
+        "en": "Chrome. Shine. Y2K"
+      },
+      "body": {
+        "ru": "Лавандовый stage, хромированный display и pink/cyan стикеры — игривый веб эпохи нулевых.",
+        "en": "Lavender stage, chrome display, and pink/cyan stickers — playful early-2000s web."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Lavender stage", "en": "Lavender stage" },
+          "body": { "ru": "Ground `#FDE7FF` + glitter dots.", "en": "Ground `#FDE7FF` + glitter dots." }
+        },
+        {
+          "title": { "ru": "Chrome type", "en": "Chrome type" },
+          "body": { "ru": "Unbounded gradient + pink stroke.", "en": "Unbounded gradient + pink stroke." }
+        },
+        {
+          "title": { "ru": "Pink / cyan pills", "en": "Pink / cyan pills" },
+          "body": { "ru": "Двойные обводки и blob-радиусы.", "en": "Double outlines and blob radii." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "28px", "en": "28px" }, "body": { "ru": "card radius", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1080", "en": "1080" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=y2k"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Y2K · DESIGN ATLAS", "en": "Y2K · DESIGN ATLAS" }
+    }
+  ]
+}

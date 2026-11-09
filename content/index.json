@@ -72,6 +72,10 @@
     {
       "id": "aurora-mesh",
       "path": "content/styles/aurora-mesh"
+    },
+    {
+      "id": "y2k",
+      "path": "content/styles/y2k"
     }
   ],
   "glossary": []

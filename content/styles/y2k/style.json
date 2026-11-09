@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "y2k",
+  "slug": "y2k",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Y2K",
+    "en": "Y2K"
+  },
+  "shortDescription": {
+    "ru": "Лавандовый фон, хромированные заголовки, кислотный розовый и голубой — игривый веб эпохи нулевых.",
+    "en": "Lavender ground, chrome headlines, acid pink and cyan — playful early-2000s web."
+  },
+  "philosophy": {
+    "ru": "Блеск и форма важнее «серьёзного» минимализма. Хром на display, таблетки и двойные обводки создают характер; акценты pink/cyan — как стикеры, не как шум.",
+    "en": "Shine and shape beat serious minimalism. Chrome on display, pills and double outlines create character; pink/cyan accents act as stickers, not noise."
+  },
+  "category": "campaign",
+  "tags": [
+    "y2k",
+    "chrome",
+    "youth",
+    "fashion",
+    "party",
+    "playful",
+    "high-energy"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Fashion / beauty / merch landings",
+    "Music and party campaign pages",
+    "Youth brands that want early-2000s chrome energy"
+  ],
+  "avoidFor": [
+    "Clinical / Swiss calm systems",
+    "Dark neon-tech grid shells",
+    "Industrial dense-tile mosaics"
+  ],
+  "relatedStyles": [
+    "streetwear",
+    "neon-tech",
+    "aurora-mesh"
+  ],
+  "fontFamilies": [
+    "Unbounded",
+    "Nunito",
+    "Russo One"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:50:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Y2K (owned catalog)",
+      "note": "SSOT for #FDE7FF / #FF4FD8 / #3DD6FF / #C0C0C0, Unbounded+Nunito, chrome type, pills, double outlines. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/y2k.md",
+      "note": "Atlas research note: traits, distinction from streetwear / neon-tech."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Pink/cyan surfaces and chrome display must keep readable ink pairs."
+    }
+  ]
+}
