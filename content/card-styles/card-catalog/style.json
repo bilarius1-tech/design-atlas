@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-catalog",
+  "status": "published",
+  "title": {
+    "ru": "Спокойный журнал",
+    "en": "Calm editorial"
+  },
+  "tag": {
+    "ru": "МЯГКИЙ EDITORIAL",
+    "en": "SOFT EDITORIAL"
+  },
+  "category": {
+    "ru": "Журнальный",
+    "en": "Editorial"
+  },
+  "description": {
+    "ru": "Мягкий свет, деликатная типографика и спокойная журнальная композиция.",
+    "en": "Soft light, delicate typography, and a calm editorial composition."
+  },
+  "kind": "catalog",
+  "fonts": [
+    "Playfair Display",
+    "Manrope",
+    "DM Sans"
+  ],
+  "colors": [
+    "#B57956",
+    "#7D8C72",
+    "#7A8FA3"
+  ],
+  "background": "#F5F1E9",
+  "ink": "#302B27",
+  "prompt": {
+    "ru": "Спокойная журнальная подача: тёплый светлый фон, мягкий рассеянный свет и естественная тень. Товар крупно и полностью в кадре, без изменения формы, цвета и материала. Композиция уравновешенная, с широкими полями и свободным местом для текста. Акцент {accent} используется экономно — в коротком подчёркивании и небольших маркерах. Шрифт {font}; элегантная редакционная иерархия, короткий выразительный заголовок и компактные подписи. Ощущение продуманной fashion-журнальной съёмки, без клише и лишнего декора.",
+    "en": "Calm editorial presentation: warm light background, soft diffused light, and a natural shadow. Show the product large and in full without changing its shape, color, or material. Use a balanced composition, generous margins, and clear negative space for copy. Use {accent} sparingly for a small underline or marker. Typography: {font}, refined editorial hierarchy, an expressive headline, and compact supporting labels. The mood is a considered fashion magazine shoot, without clichés or decorative clutter."
+  },
+  "samples": [
+    "/cards/results/card-catalog-editorial-soft-01.png",
+    "/cards/results/card-catalog-editorial-soft-02.png",
+    "/cards/results/card-catalog-editorial-soft-03.png"
+  ],
+  "active": true
+}

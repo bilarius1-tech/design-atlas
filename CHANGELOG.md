@@ -7,6 +7,9 @@
 
 ### Added
 
+- Brand home: H1 **Анти ИИ-слоп**, product name **Дизайн Атлас**; dual CTAs Studio (primary) + Cards.
+- Cards surface `/cards` + `content/card-styles/` (8 styles from stil) with live preview and RU/EN image-gen prompts ([ADR-0012](docs/decisions/ADR-0012-cards-surface.md)).
+- SEO / AI discovery: `sitemap.xml`, `robots.txt`, root `metadataBase` + OG/Twitter, JSON-LD on `/` and `/cards`, `public/llms.txt` ([docs/SEO.md](docs/SEO.md)).
 - Published style pack **`bento-grid`** (light-gray tiles, gap 16px, blue/yellow accents; atmosphere only — no Studio grid editor).
 - Published style pack **`material-design-3`** (Material You tonal surfaces, primary seed `#6750A4`, Roboto).
 - Published style pack **`apple-materials`** (HIG-like gray stage, system blue `#0071E3`, Inter as SF stand-in).

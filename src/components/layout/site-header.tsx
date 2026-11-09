@@ -2,7 +2,7 @@
 
 import { Hint } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import { Boxes, FlaskConical, LayoutTemplate, Sparkles } from "lucide-react";
+import { Boxes, FlaskConical, Images, LayoutTemplate, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "./container";
@@ -18,6 +18,13 @@ const primaryNav = [
 ] as const;
 
 const secondaryNav = [
+  {
+    href: "/cards",
+    match: "/cards",
+    label: "Карточки",
+    icon: Images,
+    hint: "Стили карточек маркетплейса и image-gen промпт во внешний генератор.",
+  },
   {
     href: "/design-system",
     match: "/design-system",
@@ -48,9 +55,9 @@ export function SiteHeader() {
     <header className="sticky top-0 z-[var(--da-z-header)] border-b border-border bg-background/95 backdrop-blur-sm">
       <Container className="flex min-h-[var(--da-size-header)] flex-wrap items-center justify-between gap-x-4 gap-y-2 py-2">
         <Link href="/" className="group flex min-w-0 items-baseline gap-3 no-underline">
-          <span className="font-serif text-xl tracking-tight text-foreground">DESIGN ATLAS</span>
+          <span className="font-serif text-xl tracking-tight text-foreground">Дизайн Атлас</span>
           <span className="hidden text-xs tracking-[0.14em] text-muted uppercase sm:inline">
-            Systems
+            Анти ИИ-слоп
           </span>
         </Link>
         <nav aria-label="Основная навигация" className="max-w-full">

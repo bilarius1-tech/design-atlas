@@ -13,6 +13,7 @@ import {
 import { loadStyleBundle, type LoadedStyleBundle } from "./load-style";
 import { getContentIndexPath, getStylesRoot } from "./paths";
 import { parseJsonFile } from "./read-json";
+import { validateCardStyles } from "./validate-card-styles";
 import { validateStyleDirectory } from "./validate-style";
 
 export type StyleRegistryEntry = {
@@ -132,6 +133,9 @@ export function validateContentRegistry(): ContentValidationResult {
     const result = validateStyleDirectory(id, { knownStyleIds: knownIds });
     issues.push(...result.issues);
   }
+
+  const cardResult = validateCardStyles();
+  issues.push(...cardResult.issues);
 
   return summarizeIssues(issues);
 }

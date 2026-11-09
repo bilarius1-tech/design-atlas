@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-blueprint",
+  "status": "published",
+  "title": {
+    "ru": "Инженерный чертёж",
+    "en": "Engineering blueprint"
+  },
+  "tag": {
+    "ru": "ТЕХНИЧНЫЙ",
+    "en": "TECHNICAL"
+  },
+  "category": {
+    "ru": "Техно и индустриальный",
+    "en": "Tech & industrial"
+  },
+  "description": {
+    "ru": "Точность, схемы и тонкая сетка — для вещей, где важна каждая деталь.",
+    "en": "Precision, diagrams, and a fine grid — for products where every detail matters."
+  },
+  "kind": "blueprint",
+  "fonts": [
+    "Roboto Mono",
+    "Oswald",
+    "DM Sans"
+  ],
+  "colors": [
+    "#62D5FF",
+    "#FFB547",
+    "#A9E66E"
+  ],
+  "background": "#102631",
+  "ink": "#E8F5F5",
+  "prompt": {
+    "ru": "Техническая эстетика инженерного чертежа: глубокий сине-графитовый фон, тонкая координатная сетка, аккуратные размерные линии и выносные подписи вокруг товара. Товар показан крупно и точно, с чистым контурным светом. Акцент {accent} используется для ключевых линий и небольших маркеров. Типографика {font}, строгая и хорошо читаемая. Композиция упорядоченная, много воздуха, ощущение точности и продуманной конструкции.",
+    "en": "Technical engineering blueprint aesthetic: deep blue graphite background, fine coordinate grid, precise dimension lines and callouts around the product. Show the product large and accurately, with clean rim lighting. Use {accent} for key lines and small markers. Typography: {font}, precise and highly legible. Ordered composition, generous negative space, a sense of accuracy and thoughtful construction."
+  },
+  "samples": [
+    "/cards/results/card-blueprint-blueprint-01.png",
+    "/cards/results/card-blueprint-blueprint-02.png"
+  ],
+  "active": true
+}

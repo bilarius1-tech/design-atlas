@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-vintage",
+  "status": "published",
+  "title": {
+    "ru": "Премиум золото винтаж",
+    "en": "Vintage gold"
+  },
+  "tag": {
+    "ru": "ВИНТАЖНЫЙ ЛЮКС",
+    "en": "VINTAGE LUXE"
+  },
+  "category": {
+    "ru": "Премиум",
+    "en": "Premium"
+  },
+  "description": {
+    "ru": "Тёплая бумага, старинная типографика и тонкие золотые детали.",
+    "en": "Warm paper, heritage typography, and fine gold details."
+  },
+  "kind": "vintage",
+  "fonts": [
+    "Playfair Display",
+    "Cormorant Garamond",
+    "Manrope"
+  ],
+  "colors": [
+    "#B58A45",
+    "#8A6B4B",
+    "#6F7A58"
+  ],
+  "background": "#E9DDC6",
+  "ink": "#352A20",
+  "prompt": {
+    "ru": "Премиальная винтажная подача: тёплый оттенок старой бумаги или глубокий кофейный фон, мягкий направленный свет, тонкие золотистые линии и сдержанная типографика с редакционным характером. Сохраняй точный вид товара, не состаривай и не меняй его материалы. Акцент {accent} применяй в изящной рамке, небольшом штампе без текста или тонких разделителях. Шрифт {font}; выразительный заголовок и аккуратные информационные подписи. Ощущение наследия и мастерства без выдуманных наград, дат, печатей, логотипов и исторических утверждений.",
+    "en": "Premium vintage presentation: warm aged-paper tones or a deep coffee background, soft directional light, fine gold details, and restrained editorial typography. Preserve the product exactly; do not age or change its materials. Use {accent} in a delicate frame, a small text-free seal, or fine dividers. Typography: {font}, expressive headline and refined information labels. Suggest heritage and craftsmanship without fictional awards, dates, seals, logos, or historical claims."
+  },
+  "samples": [],
+  "active": true
+}

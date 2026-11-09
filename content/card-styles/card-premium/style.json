@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-premium",
+  "status": "published",
+  "title": {
+    "ru": "Тёплый премиум",
+    "en": "Warm premium"
+  },
+  "tag": {
+    "ru": "ПРЕМИУМ",
+    "en": "PREMIUM"
+  },
+  "category": {
+    "ru": "Премиум",
+    "en": "Premium"
+  },
+  "description": {
+    "ru": "Благородные материалы, мягкий свет и сдержанная дорогая подача.",
+    "en": "Noble materials, soft light, and restrained luxury presentation."
+  },
+  "kind": "premium",
+  "fonts": [
+    "Playfair Display",
+    "Manrope",
+    "DM Sans"
+  ],
+  "colors": [
+    "#C7A66A",
+    "#D6B7B0",
+    "#8DAF9D"
+  ],
+  "background": "#26211F",
+  "ink": "#F3EDE2",
+  "prompt": {
+    "ru": "Тёплая премиальная предметная подача: спокойный глубокий фон или натуральная каменная поверхность, мягкий направленный свет и тонкие блики, подчёркивающие настоящий материал товара. Товар остаётся точным и полностью узнаваемым. Акцент {accent} используй сдержанно — для небольшой метки или тонкой линии. Шрифт {font}; лаконичная редакционная иерархия и достаточно свободного пространства. Впечатление качества и продуманности без выдуманных украшений, логотипов и демонстративной роскоши.",
+    "en": "Warm premium product presentation: a calm deep background or natural stone surface, soft directional light, and delicate highlights that reveal the real product material. Keep the product accurate and fully recognizable. Use {accent} sparingly for a small label or fine line. Typography: {font}, restrained editorial hierarchy and generous negative space. A sense of quality and care without fictional embellishments, logos, or ostentatious luxury."
+  },
+  "samples": [
+    "/cards/results/card-premium-warm-premium-01.png",
+    "/cards/results/card-premium-warm-premium-02.png",
+    "/cards/results/card-premium-warm-premium-03.png"
+  ],
+  "active": true
+}

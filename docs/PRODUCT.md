@@ -6,6 +6,10 @@
 
 DESIGN ATLAS is **not** a site constructor. Users pick a ready **design system**, preview it on a simple landing, then take **Agent + Constructor** prompts so **Cursor or a Tilda-class agent** builds the unique project **elsewhere**.
 
+**Brand (RU UI):** product name **Дизайн Атлас**; marketing H1 **Анти ИИ-слоп**.
+
+**Second surface (same domain):** marketplace **card** style library at `/cards` with image-gen prompts (RU+EN) — content in `content/card-styles/`, not `content/styles/` ([ADR-0012](decisions/ADR-0012-cards-surface.md)). Studio remains the primary product path.
+
 ## 1. What we build
 
 **DESIGN ATLAS** is a **visual design-system library** and **dual prompt generator**.
@@ -98,12 +102,15 @@ Fast visual direction + accurate dual prompts so the built UI matches the chosen
 | Style Customizer | Optional basics (later) |
 | Prompt Generator | Agent + Constructor prompts (RU + EN) |
 | Design Pack Export | ZIP of style materials |
+| Cards (`/cards`) | Marketplace card styles + image-gen prompts (secondary; ADR-0012) |
 
 ## 7. Primary content unit
 
 **Visual Style** — a design system (tokens, type, composition, components, agent + constructor prompts, DESIGN.md, preview).
 
 **Page Template** — page structure + neutral demo copy (Russian). Not a style.
+
+**Card Style** — marketplace card visual language + image-gen prompt (RU+EN) in `content/card-styles/<id>/`. Not a web Studio style.
 
 ## 8. Architecture principle
 
@@ -144,8 +151,10 @@ If the UI forces long design study, dozens of knobs, or building the final site 
 |------|---------|
 | Visual Style / Design system | System in `content/styles/<id>/` |
 | Page Template | Page type in `content/templates/<id>/` |
+| Card Style | Marketplace card system in `content/card-styles/<id>/` |
 | Preview | Live render of template in a style |
 | Agent prompt | Instructions for coding agents |
 | Constructor prompt | Instructions for page-builder / constructor agents |
+| Card prompt | Image-gen instructions for product cards (external generator) |
 | Design Pack | ZIP export of style materials |
 | App shell | Product chrome (not catalog style) |

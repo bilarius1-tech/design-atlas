@@ -1,0 +1,39 @@
+# Дизайн Атлас (Design Atlas)
+
+> Анти ИИ-слоп: готовые визуальные системы без «сгенерируй красиво». Сборка — снаружи.
+
+Product: Дизайн Атлас
+Marketing promise: Анти ИИ-слоп
+Primary language (UI): Russian
+Docs language: English
+
+## Surfaces
+
+- Home: / — brand + entry to Studio (primary) and Cards (secondary)
+- Studio: /studio — Template × Style preview → Agent + Constructor prompts (RU+EN) → build elsewhere (Cursor / constructor agents)
+- Cards: /cards — marketplace product-card visual styles → image-gen prompts (RU+EN) → generate elsewhere
+- Demo landings: /demo and /demo/{styleId}
+- Style QA playground: /playground and /playground/{styleId}
+- App shell / design-system chrome: /design-system
+
+## Content SSOT (Git)
+
+- Web design systems: content/styles/{id}/
+- Page templates: content/templates/{id}/
+- Card styles: content/card-styles/{id}/
+
+## Not this product
+
+- Not a site constructor or page builder canvas
+- Not an in-product image generator
+- Not a design course / encyclopedia-first UX
+
+## Machine-readable maps
+
+- Sitemap: /sitemap.xml
+- Robots: /robots.txt
+- This file: /llms.txt
+
+## Contact / source
+
+- Repository: https://github.com/bilarius1-tech/design-atlas

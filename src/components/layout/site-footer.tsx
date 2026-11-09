@@ -12,14 +12,18 @@ export function SiteFooter() {
     <footer className="mt-auto border-t border-border bg-surface">
       <Container className="flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-1">
-          <p className="font-serif text-lg text-foreground">DESIGN ATLAS</p>
-          <p className="text-sm text-muted">
-            Visual design systems for humans and AI agents.
-          </p>
+          <p className="font-serif text-lg text-foreground">Дизайн Атлас</p>
+          <p className="text-sm text-muted">Анти ИИ-слоп · системы для сайтов и карточек.</p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm">
-          <Link href="/design-system" className="text-muted hover:text-foreground">
-            Дизайн-система
+          <Link href="/studio" className="text-muted hover:text-foreground">
+            Студия
+          </Link>
+          <Link href="/cards" className="text-muted hover:text-foreground">
+            Карточки
+          </Link>
+          <Link href="/llms.txt" className="text-muted hover:text-foreground">
+            llms.txt
           </Link>
           <a
             href="https://github.com/bilarius1-tech/design-atlas"

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-eco",
+  "status": "published",
+  "title": {
+    "ru": "Эко-ботанический",
+    "en": "Eco botanical"
+  },
+  "tag": {
+    "ru": "НАТУРАЛЬНЫЙ",
+    "en": "NATURAL"
+  },
+  "category": {
+    "ru": "Эко и крафт",
+    "en": "Eco & craft"
+  },
+  "description": {
+    "ru": "Бумажные фактуры, мягкие растительные тени и природные оттенки.",
+    "en": "Paper textures, soft botanical shadows, and natural tones."
+  },
+  "kind": "eco",
+  "fonts": [
+    "DM Sans",
+    "Manrope",
+    "Playfair Display"
+  ],
+  "colors": [
+    "#73865B",
+    "#C47A4A",
+    "#D3A84B"
+  ],
+  "background": "#EAE5D8",
+  "ink": "#34372C",
+  "prompt": {
+    "ru": "Эко-ботаническая предметная эстетика: тёплая бумажная или натуральная поверхность, мягкий дневной свет, деликатные растительные тени и спокойная природная палитра. Товар крупный, точный и главный в кадре. Не добавляй рядом ингредиенты, растения или экологические знаки как утверждение о составе или свойствах товара. Акцент {accent} — в небольших подписях и плашках. Шрифт {font}, дружелюбный и ясный; композиция тактильная, свежая и не перегруженная.",
+    "en": "Botanical craft aesthetic: warm paper or natural surface, soft daylight, subtle plant shadows, and a calm natural palette. Keep the product large, accurate, and central. Do not add ingredients, plants, or eco symbols as claims about its composition or properties. Use {accent} for small labels and panels. Typography: {font}, friendly and clear; tactile, fresh, uncluttered composition."
+  },
+  "samples": [],
+  "active": true
+}

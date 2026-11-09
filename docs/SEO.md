@@ -1,40 +1,57 @@
-# SEO
+# SEO & AI discovery
 
-Design Atlas — преимущественно **контентный** продукт; SEO строится на качестве, структуре и метаданных.
+Design Atlas is a **content + tool** product. SEO and AI crawler discovery use Next.js App Router metadata, a generated sitemap, robots rules, JSON-LD, and an `llms.txt` map.
 
-## Технические основы (Next.js App Router)
+## Brand strings (RU)
 
-- `metadata` / `generateMetadata` на маршрутах (P2+).
-- Canonical URL через `metadataBase` в root layout.
-- `robots.txt` / `sitemap.xml` — статическая или generated (P3+).
-- Open Graph: `title`, `description`, `images` (preview стиля ≥ 1200×630 когда доступно).
+| Surface | Value |
+|---------|--------|
+| Product name | Дизайн Атлас |
+| Marketing H1 | Анти ИИ-слоп |
+| Title default | Анти ИИ-слоп · Дизайн Атлас |
 
-## Контент
+## Technical stack
 
-- Уникальный `title` и `description` на стиль (из `meta.json` localized).
-- ЧПУ: `/styles/[id]` где `id` — kebab-case (не локализованный slug).
-- Структурированные данные (JSON-LD): `Article` или `CreativeWork` для страниц стилей (P3).
+| Asset | Implementation |
+|-------|----------------|
+| Canonical base | `metadataBase` from `NEXT_PUBLIC_SITE_URL` ([src/lib/site-url.ts](../src/lib/site-url.ts)) |
+| Per-route metadata | `metadata` / `generateMetadata` |
+| Sitemap | [src/app/sitemap.ts](../src/app/sitemap.ts) → `/sitemap.xml` |
+| Robots | [src/app/robots.ts](../src/app/robots.ts) → `/robots.txt` |
+| Open Graph / Twitter | Root layout + key pages |
+| JSON-LD | `WebSite` + `Organization` on home; `SoftwareApplication` / `CollectionPage` where useful |
+| AI map | [public/llms.txt](../public/llms.txt) — human/AI-readable site map of surfaces |
 
-## Производительность (косвенный SEO)
+## Indexable routes (v1)
 
-- RSC для статического контента.
-- Оптимизация изображений `next/image`.
-- Шрифты: `next/font`, subset.
+- `/` — brand + dual CTAs
+- `/studio` — primary product
+- `/cards` — card styles library
+- `/demo`, `/demo/[styleId]` — style demos
+- `/playground`, `/playground/[styleId]` — QA (lower priority; still listed)
+- `/design-system` — app shell docs surface
 
-## i18n и SEO
+Do **not** index private APIs (`/api/*`) or thin duplicate query variants beyond canonical Studio URL.
 
-- Локализованные маршруты: `/ru/styles/...` vs `?lang=` — решение за ADR-0006; до решения — один URL, localized контент в data layer.
-- `hreflang` — после выбора URL-стратегии.
+## Environment
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://example.com
+```
+
+Required for correct canonicals and sitemap absolute URLs in production.
 
 ## Anti-patterns
 
-- Дублирование тысяч thin pages.
-- Keyword stuffing в `summary`.
-- Скрытый текст для роботов.
+- Thin pages per every filter combination
+- Keyword stuffing in style summaries
+- Hidden text for bots
+- Putting card prompts under web style URLs
 
-## Чеклист перед publish стиля
+## Checklist before public launch
 
-- [ ] `published` в meta
-- [ ] `summary.en` уникален
-- [ ] sources заполнены
-- [ ] OG image (когда pipeline готов)
+- [ ] `NEXT_PUBLIC_SITE_URL` set on host
+- [ ] `/sitemap.xml` and `/robots.txt` return 200
+- [ ] `/llms.txt` lists Studio + Cards accurately
+- [ ] Home OG title/description match brand
+- [ ] No `noindex` on primary surfaces unless intentional

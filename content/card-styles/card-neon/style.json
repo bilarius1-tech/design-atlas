@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-neon",
+  "status": "published",
+  "title": {
+    "ru": "Неоновый техно",
+    "en": "Neon tech"
+  },
+  "tag": {
+    "ru": "NEON TECH",
+    "en": "NEON TECH"
+  },
+  "category": {
+    "ru": "Технологии",
+    "en": "Technology"
+  },
+  "description": {
+    "ru": "Тёмная сцена, световые контуры и технологичная подача электроники.",
+    "en": "Dark stage, light contours, and a tech presentation for electronics."
+  },
+  "kind": "neon",
+  "fonts": [
+    "Unbounded",
+    "Roboto Mono",
+    "Oswald"
+  ],
+  "colors": [
+    "#B6FF00",
+    "#00D5FF",
+    "#FF4FD8"
+  ],
+  "background": "#171A22",
+  "ink": "#F4F4F8",
+  "prompt": {
+    "ru": "Неоновая техно-подача для электроники и гаджетов: глубокий тёмный фон, аккуратные световые контуры, тонкая графическая сетка и локальные отражения. Компьютер, телефон или другое устройство показывай крупно, полностью и с сохранением точной формы, портов, кнопок, маркировки и цвета с референсного фото. Не добавляй несуществующие разъёмы, детали и логотипы. Акцент {accent} — в контурной подсветке, небольших информационных маркерах и выбранных плашках. Шрифт {font}, геометричный и контрастный. Композиция футуристичная, но чистая: устройство и текст легко различимы, свечение не перекрывает товар.",
+    "en": "Neon tech presentation for electronics and gadgets: deep dark background, controlled light contours, a fine graphic grid, and restrained reflections. Show the computer, phone, or other device large and in full, preserving its exact shape, ports, buttons, markings, and color from the reference photo. Do not add fictional ports, components, details, or logos. Use {accent} for rim lighting, small information markers, and selected panels. Typography: {font}, geometric and high-contrast. Futuristic but clean composition; the device and text remain easy to distinguish, and glow must not obscure the product."
+  },
+  "samples": [
+    "/cards/results/card-neon-neon-tech-01.png",
+    "/cards/results/card-neon-neon-tech-02.png",
+    "/cards/results/card-neon-neon-tech-03.png"
+  ],
+  "active": true
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-market",
+  "status": "published",
+  "title": {
+    "ru": "Дерзкий streetwear",
+    "en": "Bold streetwear"
+  },
+  "tag": {
+    "ru": "МОЛОДЁЖНЫЙ",
+    "en": "YOUTH"
+  },
+  "category": {
+    "ru": "Streetwear",
+    "en": "Streetwear"
+  },
+  "description": {
+    "ru": "Контраст, крупная типографика и динамичная подача с уличной энергией.",
+    "en": "Contrast, large type, and dynamic street-campaign energy."
+  },
+  "kind": "market",
+  "fonts": [
+    "Unbounded",
+    "Oswald",
+    "Roboto"
+  ],
+  "colors": [
+    "#FF5A36",
+    "#C7F000",
+    "#6246EA"
+  ],
+  "background": "#FFF3E8",
+  "ink": "#211C1A",
+  "prompt": {
+    "ru": "Дерзкая streetwear-подача: графичный фон с крупными контрастными плоскостями, резкий направленный свет и энергия современной уличной кампании. Товар остаётся главным и полностью видимым; графика не перекрывает важные детали. Акцент {accent} — смело, в большой геометрической плашке или короткой линии. Шрифт {font}, плотный и выразительный; крупный заголовок, асимметричная сетка, короткие подписи. Визуально смело и молодо, без случайных наклеек, логотипов и декоративного шума.",
+    "en": "Bold streetwear campaign presentation: graphic background with large contrasting planes, sharp directional light, and the energy of a contemporary street campaign. Keep the product central and fully visible; graphics must not cover important details. Use {accent} boldly in a geometric panel or short line. Typography: {font}, compact and expressive, with a large headline, asymmetrical grid, and short labels. Make it youthful and confident, without random stickers, logos, or decorative clutter."
+  },
+  "samples": [
+    "/cards/results/card-market-streetwear-01.png",
+    "/cards/results/card-market-streetwear-02.png",
+    "/cards/results/card-market-streetwear-03.png"
+  ],
+  "active": true
+}

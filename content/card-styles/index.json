@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "styles": [
+    {
+      "id": "card-blueprint",
+      "path": "content/card-styles/card-blueprint"
+    },
+    {
+      "id": "card-catalog",
+      "path": "content/card-styles/card-catalog"
+    },
+    {
+      "id": "card-clinical",
+      "path": "content/card-styles/card-clinical"
+    },
+    {
+      "id": "card-eco",
+      "path": "content/card-styles/card-eco"
+    },
+    {
+      "id": "card-market",
+      "path": "content/card-styles/card-market"
+    },
+    {
+      "id": "card-neon",
+      "path": "content/card-styles/card-neon"
+    },
+    {
+      "id": "card-premium",
+      "path": "content/card-styles/card-premium"
+    },
+    {
+      "id": "card-vintage",
+      "path": "content/card-styles/card-vintage"
+    }
+  ]
+}

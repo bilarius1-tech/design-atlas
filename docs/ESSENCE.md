@@ -2,11 +2,18 @@
 
 > **Status:** Locked product north star · 2026-11-09  
 > **Change policy:** explicit human approval + ADR. Do not “softly reinterpret.”  
-> **Canonical long form:** [PRODUCT.md](PRODUCT.md) · [ADR-0011](decisions/ADR-0011-dual-prompt-surfaces.md)
+> **Canonical long form:** [PRODUCT.md](PRODUCT.md) · [ADR-0011](decisions/ADR-0011-dual-prompt-surfaces.md) · [ADR-0012](decisions/ADR-0012-cards-surface.md)
+
+## Brand (product UI)
+
+- Product name: **Дизайн Атлас**
+- Marketing H1: **Анти ИИ-слоп**
+- Primary surface: web design systems (Studio)
+- Secondary surface on the same domain: marketplace **card** styles (`/cards`) — [ADR-0012](decisions/ADR-0012-cards-surface.md)
 
 ## One sentence
 
-**DESIGN ATLAS is not a site constructor.** It is a library of ready **design systems**: the user picks a system, sees it on a simple landing, then takes **Agent + Constructor prompts** so **Cursor or a Tilda-class agent** builds their unique project elsewhere.
+**DESIGN ATLAS is not a site constructor.** It is a library of ready **design systems**: the user picks a system, sees it on a simple landing, then takes **Agent + Constructor prompts** so **Cursor or a Tilda-class agent** builds their unique project elsewhere. A second, lighter loop exists for **product-card** visual styles → image-gen prompts → generate elsewhere ([ADR-0012](decisions/ADR-0012-cards-surface.md)); that loop must not dilute Studio.
 
 ## Pain
 

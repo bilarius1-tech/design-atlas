@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "card-clinical",
+  "status": "published",
+  "title": {
+    "ru": "Клинический минимализм",
+    "en": "Clinical minimal"
+  },
+  "tag": {
+    "ru": "ЧИСТЫЙ МИНИМАЛИЗМ",
+    "en": "CLEAN MINIMAL"
+  },
+  "category": {
+    "ru": "Чистая подача",
+    "en": "Clean presentation"
+  },
+  "description": {
+    "ru": "Светлая чистая сцена, строгая сетка и точные информационные блоки.",
+    "en": "Clean light scene, strict grid, and precise information blocks."
+  },
+  "kind": "clinical",
+  "fonts": [
+    "Manrope",
+    "DM Sans",
+    "Roboto"
+  ],
+  "colors": [
+    "#4386A8",
+    "#58A69A",
+    "#718FC9"
+  ],
+  "background": "#F3F7F8",
+  "ink": "#24333A",
+  "prompt": {
+    "ru": "Клинический минимализм: светлый чистый фон, мягкий равномерный студийный свет, прохладные нейтральные оттенки и строгая сетка. Товар показан крупно, точно и без изменения формы, цвета или материала. Информационные блоки компактные, с ясными подписями и аккуратными линиями; не создавай впечатление медицинского одобрения или лечебного эффекта. Акцент {accent} используй умеренно для маркеров и выбранных плашек. Шрифт {font}, нейтральный и хорошо читаемый. Чистая композиция без визуального шума и случайного реквизита.",
+    "en": "Clinical minimalist presentation: a clean light background, soft even studio lighting, cool neutrals, and a precise grid. Show the product large and accurately, preserving its shape, color, and material. Keep information blocks compact, with clear labels and restrained rules; do not imply medical endorsement or treatment effects. Use {accent} moderately for markers and selected panels. Typography: {font}, neutral and highly legible. Clean composition with no visual noise or random props."
+  },
+  "samples": [],
+  "active": true
+}
