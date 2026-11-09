@@ -12,7 +12,7 @@ Implement an interface in the **Clinical Minimal** style using the DESIGN ATLAS 
 
 - background `#F3F7F8`, surface `#FFFFFF`, text `#24333A`, muted `#587583`
 - primary `#4386A8`, accent `#58A69A`, accentSecondary `#718FC9`, border `#C9D6DC`
-- radius `6px`, radiusButton `6px`, radiusCard `8px`, borderWidth `1px`
+- radius `6px`, radiusButton `999px`, radiusCard `8px`, borderWidth `1px`
 - soft shadow; container `1120px`; display `57px`; base `16px`
 - fonts: Manrope headings/body
 

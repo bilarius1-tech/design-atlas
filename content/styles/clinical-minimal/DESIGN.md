@@ -22,7 +22,7 @@ Cool light clinical stage with Manrope and steel/teal accents. Adapted from owne
 - **Surface:** `#FFFFFF`
 - **Ink:** `#24333A` / muted `#587583`
 - **Signal:** `#4386A8` / `#58A69A` / `#718FC9`
-- **Shape:** card `8px`, button `6px`
+- **Shape:** card `8px`, pill buttons
 - **Type:** Manrope; display `57px`
 
 ## Bans

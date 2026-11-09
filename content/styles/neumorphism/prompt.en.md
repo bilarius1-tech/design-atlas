@@ -14,7 +14,7 @@ Use values only from `tokens.json` / `TOKENS.md`:
 
 - background/surface `#E6EBF2`, text `#2E3440`, muted `#6B7380`
 - primary/accent `#3D5AFE`, border `#D7DDE6` (near-invisible)
-- radius `16px`, radiusButton `16px`, radiusCard `20px`, borderWidth `0px`
+- radius `16px`, radiusButton `999px`, radiusCard `20px`, borderWidth `0px`
 - shadow `8px 8px 16px #C3CAD5, -8px -8px 16px #FFFFFF`
 - shadowInset `inset 6px 6px 12px #C3CAD5, inset -6px -6px 12px #FFFFFF`
 - spacing unit `8`, section `96px`, container `1120px`

@@ -9,7 +9,7 @@
     { "id": "features", "eyebrow": { "ru": "Принципы", "en": "Principles" }, "headline": { "ru": "Три опоры стиля", "en": "Three foundations" }, "items": [
       { "title": { "ru": "Tonal surface", "en": "Tonal surface" }, "body": { "ru": "Ground ``#FEF7FF``.", "en": "Ground ``#FEF7FF``." } },
       { "title": { "ru": "Primary seed", "en": "Primary seed" }, "body": { "ru": "``#6750A4`` actions.", "en": "``#6750A4`` actions." } },
-      { "title": { "ru": "Shape", "en": "Shape" }, "body": { "ru": "12–20px component radii.", "en": "12–20px component radii." } }
+      { "title": { "ru": "Shape", "en": "Shape" }, "body": { "ru": "Cards 12–16px; pill CTA.", "en": "Cards 12–16px; pill CTA." } }
     ]},
     { "id": "statistics", "headline": { "ru": "Ориентиры", "en": "Signals" }, "items": [
       { "title": { "ru": "16px", "en": "16px" }, "body": { "ru": "card radius", "en": "card radius" } },

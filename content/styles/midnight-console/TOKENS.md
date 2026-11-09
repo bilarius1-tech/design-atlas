@@ -46,6 +46,7 @@ Generated from `tokens.json` (SSOT). Do not edit hex values here without updatin
 | Token | Value |
 | --- | --- |
 | geometry.radius | `6px` |
+| geometry.radiusButton | `999px` |
 | geometry.borderWidth | `1px` |
 
 ## Effects

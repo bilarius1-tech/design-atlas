@@ -22,7 +22,7 @@ Dark charcoal stage with controlled neon signals (lime / cyan / magenta), fine g
 - **Surface:** `#222633`
 - **Ink:** `#F4F4F8` / muted `#9AA0B2`
 - **Signal:** `#B6FF00` primary, `#00D5FF` accent, `#FF4FD8` secondary
-- **Shape:** card `12px`, button `8px`
+- **Shape:** card `12px`, pill buttons
 - **Type:** Unbounded; display `57px`
 
 ## Bans

@@ -20,7 +20,7 @@ Canonical source: `tokens.json`.
 | Token | Value |
 |-------|-------|
 | radius | `16px` |
-| radiusButton | `16px` |
+| radiusButton | `999px` |
 | radiusCard | `20px` |
 | borderWidth | `0px` |
 | shadow | `8px 8px 16px #C3CAD5, -8px -8px 16px #FFFFFF` |

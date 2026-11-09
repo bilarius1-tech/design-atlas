@@ -12,7 +12,7 @@ Implement an interface in the **Neon Tech** style using the DESIGN ATLAS system.
 
 - background `#171A22`, surface `#222633`, text `#F4F4F8`, muted `#9AA0B2`
 - primary `#B6FF00`, accent `#00D5FF`, accentSecondary `#FF4FD8`, border `#34384A`
-- radius `8px`, radiusButton `8px`, radiusCard `12px`, borderWidth `1px`
+- radius `8px`, radiusButton `999px`, radiusCard `12px`, borderWidth `1px`
 - shadow: soft dark + subtle lime/cyan glow
 - container `1120px`, display `57px`, base `16px`
 

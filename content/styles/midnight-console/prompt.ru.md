@@ -14,7 +14,7 @@
 
 - background `#0B0F14`, surface `#121821`, text `#E8EEF5`, muted `#8B98A8`
 - primary `#7DD3FC`, accent `#34D399`, border `#243041`
-- radius `6px`, borderWidth `1px`, shadow `0 12px 40px rgba(0, 0, 0, 0.45)`
+- radius `6px`, radiusButton `999px`, borderWidth `1px`, shadow `0 12px 40px rgba(0, 0, 0, 0.45)`
 - spacing unit `8`, section `96px`, container `1120px`
 - type scale: xs 12 / sm 14 / base 16 / lg 18 / xl 24 / 2xl 36 / display 64
 - fonts: IBM Plex Sans; mono IBM Plex Mono

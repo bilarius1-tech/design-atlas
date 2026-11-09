@@ -15,6 +15,7 @@
 
 ### Changed
 
+- **Button radius policy:** pill `999px` by default across styles; sharp exceptions only for kinetic / retro-terminal / neo-brutal / poster-brutal / swiss / industrial / blueprint (`docs/research/button-radius-policy.md`).
 - **`claymorphism` v1.1.0** — multi-pastel kid clay (pink/mint/sky/cream), card radius 38px, dual-shadow preview polish.
 - Published style pack **`y2k`** (lavender ground, chrome Unbounded, pink/cyan pills; dizain-prompty adapted).
 - Published style pack **`aurora-mesh`** (night field, cyan/violet/pink mesh blooms, glass panels, white CTA; dizain-prompty adapted).

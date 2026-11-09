@@ -11,7 +11,7 @@ Implement an interface in the **Streetwear** style using the DESIGN ATLAS system
 
 - background `#FFF3E8`, surface `#FFFFFF`, text `#211C1A`, muted `#6B635E`
 - primary `#FF5A36`, accent `#C7F000`, accentSecondary `#6246EA`, border `#211C1A`
-- radius `8px`, radiusButton `8px`, radiusCard `12px`, borderWidth `2px`
+- radius `8px`, radiusButton `999px`, radiusCard `12px`, borderWidth `2px`
 - shadow `6px 6px 0 #211C1A`
 - container `1100px`, display `57px`, base `16px`
 - fonts: Unbounded headings; Oswald/Roboto/Manrope body

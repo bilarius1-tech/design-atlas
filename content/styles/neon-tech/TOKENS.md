@@ -13,7 +13,7 @@ Canonical: `tokens.json`.
 | accentSecondary | `#FF4FD8` |
 | border | `#34384A` |
 | radiusCard | `12px` |
-| radiusButton | `8px` |
+| radiusButton | `999px` |
 | display | `57px` |
 | container | `1120px` |
 | heading | Unbounded |
