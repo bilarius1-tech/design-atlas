@@ -23,17 +23,20 @@
 | [07-engineering-contracts.md](./07-engineering-contracts.md) | Шаблоны, контракты, экспорт, версии |
 | [08-roadmap.md](./08-roadmap.md) | P0–P5 и порядок запуска агентов |
 
-## Исследовательские источники
+## Research sources
 
-- Предыдущий проект: https://ztim2008.github.io/dizain-prompty/
-- Референс-продукт: https://designprompts.dev/
+- Prior project: https://ztim2008.github.io/dizain-prompty/
+- Reference product: https://designprompts.dev/
+- Open agent references (inspiration): https://github.com/wangpf1129/design-prompts
 
-Нельзя выдавать DESIGN ATLAS за официальный форк DesignPrompts без разрешения.  
-Старую архитектуру не переносить автоматически.
+Do not present DESIGN ATLAS as an official fork of DesignPrompts or design-prompts.  
+Do not copy third-party packs wholesale.
 
-## Текущий статус реализации
+Canonical product docs: [ESSENCE.md](../ESSENCE.md) (locked north star), [PRODUCT.md](../PRODUCT.md), [ROADMAP.md](../ROADMAP.md) (R0–R5).
 
-- [x] Спецификация размещена в репозитории
-- [x] PHASE 0 bootstrap (в работе / проверка)
-- [x] PHASE 1 harness (в работе / проверка)
-- [ ] PHASE 2+ — только после приёмки фундамента
+## Implementation status
+
+- [x] Spec kit in repo
+- [x] Foundation PHASE 0–7 assets (shell, content, swiss published, Free export)
+- [x] R0 Product Direction Alignment (docs)
+- [ ] R1 Template × Style Fast Path

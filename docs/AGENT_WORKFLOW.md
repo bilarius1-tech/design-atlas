@@ -45,6 +45,7 @@ pnpm test   # когда настроен vitest.config
 - `CHANGELOG.md` → `Unreleased` при пользовательских изменениях.
 - Новый ADR при архитектурном решении.
 - Кратко зафиксировать работу в [devlog/](devlog/) (`YYYY-MM-DD.md`): сделано, проверки, next.
+- В начале/конце дня — [sessions/](sessions/) по шаблонам [DAY-OPEN](templates/DAY-OPEN.md) / [DAY-CLOSE](templates/DAY-CLOSE.md).
 
 ### ACCEPT
 

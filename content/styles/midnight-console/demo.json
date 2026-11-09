@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "midnight-console",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": {
+        "ru": "Демо-лендинг",
+        "en": "Demo landing"
+      },
+      "ctaLabel": {
+        "ru": "К системе",
+        "en": "To system"
+      },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": {
+        "ru": "Midnight Console",
+        "en": "Midnight Console"
+      },
+      "headline": {
+        "ru": "Тёмная система для рабочей поверхности",
+        "en": "A dark system for working surfaces"
+      },
+      "body": {
+        "ru": "Консольная ясность: плотные модули, сигнал вместо декора, моноширинные метки для статусов.",
+        "en": "Console clarity: dense modules, signal instead of decoration, mono labels for status."
+      },
+      "ctaLabel": {
+        "ru": "Смотреть принципы",
+        "en": "See principles"
+      },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": {
+        "ru": "Принципы",
+        "en": "Principles"
+      },
+      "headline": {
+        "ru": "Три опоры стиля",
+        "en": "Three foundations"
+      },
+      "body": {
+        "ru": "Каждый блок читается как панель инструмента, а не как постер.",
+        "en": "Each block reads as a tool panel, not a poster."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Тёмные поверхности",
+            "en": "Dark surfaces"
+          },
+          "body": {
+            "ru": "Фон и surface различаются слабо, но достаточно для иерархии.",
+            "en": "Background and surface differ subtly but enough for hierarchy."
+          }
+        },
+        {
+          "title": {
+            "ru": "Сигнальный цвет",
+            "en": "Signal color"
+          },
+          "body": {
+            "ru": "Cyan и mint — для действия и статуса, не для заливок секций.",
+            "en": "Cyan and mint mark action and status, not section washes."
+          }
+        },
+        {
+          "title": {
+            "ru": "Mono-метаданные",
+            "en": "Mono metadata"
+          },
+          "body": {
+            "ru": "ID, статусы и технические подписи живут в IBM Plex Mono.",
+            "en": "IDs, status, and technical captions live in IBM Plex Mono."
+          }
+        }
+      ]
+    },
+    {
+      "id": "editorial",
+      "eyebrow": {
+        "ru": "Operations",
+        "en": "Operations"
+      },
+      "headline": {
+        "ru": "Сначала ясность, потом характер",
+        "en": "Clarity first, character second"
+      },
+      "body": {
+        "ru": "Стиль выдерживает длинные формы и таблицы без перехода в «неоновый» sci-fi.",
+        "en": "The style survives long forms and tables without sliding into neon sci-fi."
+      }
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Модули интерфейса",
+        "en": "Interface modules"
+      },
+      "body": {
+        "ru": "Карточки — рабочие панели. Тень отделяет слой, а не украшает.",
+        "en": "Cards are work panels. Shadow separates layers; it does not decorate."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Навигация",
+            "en": "Navigation"
+          },
+          "body": {
+            "ru": "Плотный header, явный focus на тёмном фоне.",
+            "en": "Dense header with visible focus on dark ground."
+          }
+        },
+        {
+          "title": {
+            "ru": "Формы",
+            "en": "Forms"
+          },
+          "body": {
+            "ru": "Поля на surface; ошибка через accent/signal, не через glow.",
+            "en": "Fields on surface; errors via accent/signal, not glow."
+          }
+        },
+        {
+          "title": {
+            "ru": "Статусы",
+            "en": "Status"
+          },
+          "body": {
+            "ru": "Готово / в работе / риск — короткие mono-метки.",
+            "en": "Ready / in progress / risk — short mono labels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": {
+        "ru": "Метрики смысла",
+        "en": "Meaningful metrics"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "AA+",
+            "en": "AA+"
+          },
+          "body": {
+            "ru": "Контраст текста на тёмном",
+            "en": "Text contrast on dark"
+          }
+        },
+        {
+          "title": {
+            "ru": "6px",
+            "en": "6px"
+          },
+          "body": {
+            "ru": "Мягкий технический радиус",
+            "en": "Soft technical radius"
+          }
+        },
+        {
+          "title": {
+            "ru": "2 сигнала",
+            "en": "2 signals"
+          },
+          "body": {
+            "ru": "Cyan + mint, без радуги",
+            "en": "Cyan + mint, no rainbow"
+          }
+        }
+      ],
+      "notes": "Качественные маркеры стиля, не фальшивая продуктовая статистика."
+    },
+    {
+      "id": "testimonials",
+      "headline": {
+        "ru": "Голоса практики",
+        "en": "Practitioner notes"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Product",
+            "en": "Product"
+          },
+          "body": {
+            "ru": "«Тёмный UI не обязан быть глянцевым — ему нужна иерархия.»",
+            "en": "\"Dark UI does not need gloss—it needs hierarchy.\""
+          },
+          "meta": {
+            "ru": "Product designer",
+            "en": "Product designer"
+          }
+        },
+        {
+          "title": {
+            "ru": "AI handoff",
+            "en": "AI handoff"
+          },
+          "body": {
+            "ru": "«Агенту проще следовать палитре сигналов, чем «атмосфере ночи».»",
+            "en": "\"Agents follow a signal palette more easily than a 'night vibe'.\""
+          },
+          "meta": {
+            "ru": "AI engineer",
+            "en": "AI engineer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "headline": {
+        "ru": "Пакеты передачи",
+        "en": "Handoff packages"
+      },
+      "body": {
+        "ru": "Условные уровни для демонстрации секции pricing — не коммерческое предложение.",
+        "en": "Illustrative tiers for the pricing section — not a commercial offer."
+      },
+      "ctaLabel": {
+        "ru": "Выбрать",
+        "en": "Select"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Tokens",
+            "en": "Tokens"
+          },
+          "body": {
+            "ru": "Палитра, типографика, интервалы.",
+            "en": "Palette, typography, spacing."
+          },
+          "meta": {
+            "ru": "База",
+            "en": "Base"
+          }
+        },
+        {
+          "title": {
+            "ru": "System",
+            "en": "System"
+          },
+          "body": {
+            "ru": "Токены + компоненты + правила.",
+            "en": "Tokens + components + rules."
+          },
+          "meta": {
+            "ru": "Основной",
+            "en": "Core"
+          }
+        },
+        {
+          "title": {
+            "ru": "Agent pack",
+            "en": "Agent pack"
+          },
+          "body": {
+            "ru": "DESIGN.md, промпты, инструкции.",
+            "en": "DESIGN.md, prompts, instructions."
+          },
+          "meta": {
+            "ru": "Полный",
+            "en": "Full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": {
+        "ru": "Вопросы",
+        "en": "FAQ"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Это клон Carbon?",
+            "en": "Is this a Carbon clone?"
+          },
+          "body": {
+            "ru": "Нет. Carbon — источник дисциплины тёмных тем; пакет DESIGN ATLAS оригинален по токенам и правилам.",
+            "en": "No. Carbon informs dark-theme discipline; this DESIGN ATLAS pack is original in tokens and rules."
+          }
+        },
+        {
+          "title": {
+            "ru": "Можно ли светлую тему?",
+            "en": "Can we make a light theme?"
+          },
+          "body": {
+            "ru": "Не в рамках этого стиля. Для светлой редакционной системы используйте swiss-international.",
+            "en": "Not within this style. Use swiss-international for a light editorial system."
+          }
+        },
+        {
+          "title": {
+            "ru": "Где взять промпт?",
+            "en": "Where is the prompt?"
+          },
+          "body": {
+            "ru": "В Studio: Template × Style → Copy Prompt RU/EN, либо Free Design Pack.",
+            "en": "In Studio: Template × Style → Copy Prompt RU/EN, or Free Design Pack."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": {
+        "ru": "Передать стиль агенту",
+        "en": "Hand the style to an agent"
+      },
+      "body": {
+        "ru": "Скопируйте промпт в Studio или скачайте Free Design Pack.",
+        "en": "Copy the prompt in Studio or download the Free Design Pack."
+      },
+      "ctaLabel": {
+        "ru": "Открыть playground",
+        "en": "Open playground"
+      },
+      "ctaHref": "/playground/midnight-console"
+    },
+    {
+      "id": "footer",
+      "headline": {
+        "ru": "DESIGN ATLAS",
+        "en": "DESIGN ATLAS"
+      },
+      "body": {
+        "ru": "Демонстрация собрана движком Demo Landing из проверенных блоков.",
+        "en": "Demo assembled by the Demo Landing engine from validated blocks."
+      }
+    }
+  ]
+}

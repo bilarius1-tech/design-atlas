@@ -5,3 +5,5 @@ export * from "./typography";
 export * from "./components";
 export * from "./demo";
 export * from "./content-index";
+export * from "./export-manifest";
+export * from "./template";

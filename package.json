@@ -17,10 +17,12 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "content:validate": "tsx scripts/validate-content.ts",
+    "export:pack": "tsx scripts/export-pack.ts",
     "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm content:validate && pnpm build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "fflate": "^0.8.3",
     "lucide-react": "^1.70.0",
     "next": "16.4.5",
     "react": "19.3.0",

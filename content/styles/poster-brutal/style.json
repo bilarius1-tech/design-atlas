@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "poster-brutal",
+  "slug": "poster-brutal",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Плакатный брутал",
+    "en": "Poster Brutal"
+  },
+  "shortDescription": {
+    "ru": "Жёсткая плакатная система: жирная антиква-гротеск, толстая обводка, offset-тень и один оранжевый сигнал.",
+    "en": "Hard poster system: heavy grotesk display, thick rules, offset shadow, and one orange signal."
+  },
+  "philosophy": {
+    "ru": "Сила важнее полировки. Крупный тип, толстая линия и честный контраст создают характер, который агент может воспроизвести правилами, а не «вабибом».",
+    "en": "Force over polish. Big type, thick line, and honest contrast create character an agent can reproduce with rules—not vibes."
+  },
+  "category": "poster-expression",
+  "tags": [
+    "brutal",
+    "poster",
+    "high-contrast",
+    "bold-type",
+    "marketing",
+    "raw"
+  ],
+  "complexity": "low",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Launch landing pages and campaign sites",
+    "Portfolio / studio marketing with strong voice",
+    "Agent handoff when the brief asks for raw poster energy"
+  ],
+  "avoidFor": [
+    "Dense operational dashboards",
+    "Long-form documentation that needs quiet reading",
+    "Luxury editorial with delicate ornament"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "midnight-console"
+  ],
+  "fontFamilies": [
+    "Arial Black",
+    "Impact",
+    "Arial",
+    "Helvetica"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "sources": [
+    {
+      "title": "Brutalist Websites (brutalistwebsites.com)",
+      "note": "Contemporary web brutalism as a cultural reference for raw structure — not a style dump."
+    },
+    {
+      "title": "Constructivist / poster display traditions (general design history)",
+      "note": "Oversized type and hard geometry as poster communication tactics."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Orange accent must remain a signal, not low-contrast decoration."
+    }
+  ]
+}

@@ -225,8 +225,8 @@
             "en": "Is this the final published style?"
           },
           "body": {
-            "ru": "Пакет эталона готов и находится в статусе review: ждёт human accept перед published.",
-            "en": "The reference package is complete and in review status—awaiting human accept before published."
+            "ru": "Да. Эталон `swiss-international` v1.0.0 принят и опубликован 2026-11-09. ZIP Export — PHASE 7.",
+            "en": "Yes. The `swiss-international` v1.0.0 reference was accepted and published on 2026-11-09. ZIP Export is PHASE 7."
           }
         },
         {

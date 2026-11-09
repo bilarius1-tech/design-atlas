@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "midnight-console",
+  "slug": "midnight-console",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Полуночная консоль",
+    "en": "Midnight Console"
+  },
+  "shortDescription": {
+    "ru": "Тёмный инженерный UI: спокойные поверхности, сигнал cyan/mint и моноширинные метки для продукта и инструментов.",
+    "en": "Dark engineering UI: calm surfaces, cyan/mint signal color, and mono labels for product and tooling interfaces."
+  },
+  "philosophy": {
+    "ru": "Интерфейс как рабочая консоль: читаемость в низкой освещённости, явные статусы, минимум декора. Цвет — сигнал состояния, а не настроение.",
+    "en": "UI as a working console: readability in low light, explicit status, minimal decoration. Color is a state signal, not a mood."
+  },
+  "category": "product-engineering",
+  "tags": [
+    "dark",
+    "engineering",
+    "console",
+    "saas",
+    "developer-tools",
+    "dense"
+  ],
+  "complexity": "medium",
+  "visualDensity": "dense",
+  "contrast": "high",
+  "bestUseCases": [
+    "Developer tools, dashboards, and operational SaaS",
+    "API / observability product marketing",
+    "Agent handoff for dark product shells"
+  ],
+  "avoidFor": [
+    "Bright lifestyle brands and editorial magazines",
+    "Playful consumer campaigns that need warm illustration",
+    "Print posters that require daylight paper ground"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "poster-brutal"
+  ],
+  "fontFamilies": [
+    "IBM Plex Sans",
+    "IBM Plex Mono",
+    "Helvetica Neue",
+    "Arial"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "sources": [
+    {
+      "title": "IBM Plex typeface family (IBM Design)",
+      "note": "Engineering-oriented grotesk + mono pair used as licensed-aware web stack."
+    },
+    {
+      "title": "Carbon Design System — themes (IBM)",
+      "note": "Reference for dark product surfaces and status color discipline (not a Carbon clone)."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Dark UI text/background pairs must remain verifiable."
+    }
+  ]
+}

@@ -7,7 +7,15 @@
 
 ### Added
 
-- PHASE 6 Swiss International reference package (`review` v1.0.0): research, full export docs, RU/EN prompts, STYLE-REVIEW.
+- Studio UX: right **Система** drawer over preview for system summary + tweak scaffold; left sidebar stays Template|Style selection only.
+- Studio UX foundation (R2.6): Template|Style sidebar tabs, prompt modal with visible text, Lucide + hints, nav/home ESSENCE copy; Style tweak scaffold (disabled until R4).
+- Dual handoff: Agent + Constructor prompts (RU+EN), ADR-0011; Free pack includes constructor prompts.
+- SaaS landing fidelity: typical product chrome (nav, dual CTA, token-driven media frame, email form) on `saas-landing`.
+- Studio shell UX: left style sidebar + right live landing (DesignPrompts-like layout pattern; original Atlas content).
+- R2 Multi-style compare: published `midnight-console` + `poster-brutal` (original packs), shared `saas-landing` preview across looks.
+- R1 Template × Style Fast Path: `content/templates/saas-landing`, `/studio` (preview + copy prompts RU/EN + Free ZIP), home/nav reoriented to Studio.
+- PHASE 7 Design Pack & Export Engine: `src/features/export`, Free ZIP API/CLI, internal Full pack, entitlements, ADR-0008, export skills.
+- PHASE 6 Swiss International reference package (v1.0.0): research, full export docs, RU/EN prompts, STYLE-REVIEW.
 - PHASE 5 Demo Landing Engine: compositions, section renderer, `/demo/[styleId]`, expanded Swiss draft landing.
 - PHASE 4 Visual Playground: scoped `StylePreviewFrame`, interactive groups, `/playground/[styleId]`.
 - PHASE 3 Content Engine: Zod schemas, style loader/registry/validator, `pnpm content:validate`, draft `swiss-international` fixture.
@@ -18,13 +26,17 @@
 
 ### Changed
 
+- **Product Direction Correction (PHASE 6.5 / R0):** Visual Style Library + Prompt Generator; Template × Style preview; No Learning Required. ADR-0009, ADR-0010. Language: UI/demo RU; prompts RU+EN; technical docs EN. Related inspiration: designprompts.dev, wangpf1129/design-prompts (not forks).
+- ROADMAP rewritten to R0–R5; encyclopedia-primary UX retired.
+- `swiss-international` → status `published` after Final Acceptance (2026-11-09); Style Review Score 50/50.
+- Responsive accept fixes: site header wrap, playground flex-wrap/clip, display/heading overflow-wrap.
 - `README.md` заменён с шаблона create-next-app на описание Design Atlas.
 - Оболочка использует Source Serif 4 / Source Sans 3 вместо Geist Sans.
 - `DATA_CONTRACTS.md` / `CONTENT_MODEL.md` приведены к модели `style.json` + tokens в `content/styles/<id>/`.
 
 ### Notes
 
-- Playground и demo landing engine — следующий шаг (PHASE 4–5). `swiss-international` остаётся draft до PHASE 6.
+- Next: **R3 Template library** (`online-store`, `portfolio`). Playwright e2e — later.
 
 ## [0.1.0] - 2026-11-09
 

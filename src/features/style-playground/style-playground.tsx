@@ -334,7 +334,7 @@ export function StylePlayground({ styleId, title, tokens, groups }: StylePlaygro
           <nav aria-label="Breadcrumb example" className="sp-muted text-[length:var(--sp-text-sm)]">
             Styles / {styleId} / playground
           </nav>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <button type="button" className="sp-btn sp-btn-secondary">
               Prev
             </button>
@@ -369,7 +369,7 @@ export function StylePlayground({ styleId, title, tokens, groups }: StylePlaygro
           <div className="sp-card border-dashed">
             <p className="sp-heading sp-h3">Empty state</p>
             <p className="sp-muted mt-2 text-[length:var(--sp-text-sm)]">
-              No exported package yet. Complete PHASE 7 for ZIP download.
+              Download the Free Design Pack from the Export section below.
             </p>
           </div>
         </div>

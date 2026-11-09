@@ -8,45 +8,57 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# AGENTS.md — управление AI-агентами
+# AGENTS.md — AI agent governance
 
-## Миссия
+## Mission
 
-Design Atlas — **Knowledge Platform + Design System Library**. Агенты помогают **реализовывать и документировать** продукт по спецификациям репозитория, а не изобретать параллельную архитектуру. Принципы: **Visual first · Agent ready**.
+Design Atlas is a **design-system library + dual prompt bridge** (AI coding agents **and** page-constructor agents). It is **not** a site constructor. Coding agents in this repo implement Atlas from specs — they do not invent a parallel architecture.
 
-## Источник истины
+**Locked essence:** [docs/ESSENCE.md](docs/ESSENCE.md)  
+Core flow: **Template × Style → Preview → Dual Prompt (Agent + Constructor, RU+EN) → Export → build elsewhere**. Principles: **Visual first · Build elsewhere · Dual handoff · No Learning Required**.
 
-| Область | Документ |
-|---------|----------|
-| Продукт | [docs/PRODUCT.md](docs/PRODUCT.md) |
-| Архитектура | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| Контент | [docs/CONTENT_MODEL.md](docs/CONTENT_MODEL.md) |
-| Контракты данных | [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md) |
-| Дизайн-система | [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) |
-| Экспорт | [docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md) |
-| Рабочий процесс | [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md) |
-| Решения | [docs/decisions/](docs/decisions/) |
-| Дорожная карта | [docs/ROADMAP.md](docs/ROADMAP.md) |
+## Source of truth
+
+| Area | Document |
+|------|----------|
+| Essence (locked) | [docs/ESSENCE.md](docs/ESSENCE.md) |
+| Product | [docs/PRODUCT.md](docs/PRODUCT.md) |
+| Architecture | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| Content | [docs/CONTENT_MODEL.md](docs/CONTENT_MODEL.md) |
+| Data contracts | [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md) |
+| Design system | [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) |
+| Export | [docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md), [docs/PRODUCT_ENTITLEMENTS.md](docs/PRODUCT_ENTITLEMENTS.md), [docs/EXPORT_SECURITY.md](docs/EXPORT_SECURITY.md) |
+| Workflow | [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md) |
+| Decisions | [docs/decisions/](docs/decisions/) |
+| Roadmap | [docs/ROADMAP.md](docs/ROADMAP.md) |
 | Devlog | [docs/devlog/](docs/devlog/) |
 
-**Запрет:** не вводить БД, CMS, микросервисы, GraphQL, отдельные репозитории контента без нового ADR и явного запроса человека.
+**Ban:** no DB, CMS, microservices, GraphQL, or separate content repos without a new ADR and explicit human request.
 
-## Архитектурные ограничения
+## Architecture constraints
 
-- **Монолит модульный:** одно Next.js-приложение, логические модули в `src/`.
-- **Контент в Git:** JSON, MDX, Markdown в `content/`; **нет БД в v1**.
-- **Стек:** Next.js App Router, React, TS strict, Tailwind v4, CSS variables, Radix по необходимости, Lucide, Motion — экономно, Zod, Vitest; Playwright — позже; pnpm; CI — GitHub Actions.
-- **Порядок:** Design System приложения **сначала**, библиотека визуальных стилей **потом**.
-- **ID:** language-independent (`swiss-international`, kebab-case).
-- **Phase 1:** документация и каркас; **не** реализовать публичные страницы каталога, playground, полноценную библиотеку стилей без тикета.
+- **Modular monolith:** one Next.js app, logical modules under `src/`.
+- **Content in Git:** JSON/MDX/Markdown in `content/`; **no DB in v1**.
+- **Stack:** Next.js App Router, React, TS strict, Tailwind v4, CSS variables, Radix as needed, Lucide, Motion sparingly, Zod, Vitest; Playwright later; pnpm; CI GitHub Actions.
+- **IDs:** language-independent (`swiss-international`, kebab-case).
+- **Primary UX:** template + style preview + prompts/export — not an encyclopedia study path.
+- **Playground component matrix:** secondary QA, not the main funnel.
+- **PHASE 7 commerce expansion:** frozen until ROADMAP R1.
 
-Перед правками Next.js — гайды в `node_modules/next/dist/docs/`.
+Before Next.js edits — guides in `node_modules/next/dist/docs/`.
 
-## Правила контента
+## Language policy
 
-- Редакторский тон, без шаблонного «AI slop».
-- Структурные данные валидировать по Zod; схемы не расходятся с [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md).
-- Локализация: см. ADR-0006; slug и id не переводятся.
+- Product UI + demo/template copy: **Russian**
+- Agent prompts: **Russian and English**
+- Technical documentation: **English**
+- See [ADR-0010](docs/decisions/ADR-0010-russian-only-locale.md)
+
+## Content rules
+
+- No template “AI slop”.
+- Validate structured data with Zod; schemas stay aligned with [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md).
+- Slug and id are never translated (ADR-0006).
 
 ## Правила разработки
 
@@ -58,47 +70,49 @@ Design Atlas — **Knowledge Platform + Design System Library**. Агенты п
 
 ## Тесты (требования)
 
-См. [docs/TESTING.md](docs/TESTING.md).
+See [docs/TESTING.md](docs/TESTING.md).
 
-| Уровень | Когда обязательно |
-|---------|-------------------|
-| Vitest | Утилиты, парсеры, Zod, export pipeline |
-| RTL | React-компоненты с нетривиальной логикой |
-| Playwright | Позже — критические user flows |
+| Level | When required |
+|-------|----------------|
+| Vitest | Utils, parsers, Zod, export pipeline |
+| RTL | React components with non-trivial logic |
+| Playwright | Later — critical user flows |
 
-Перед сдачей: `pnpm lint`, `pnpm exec tsc --noEmit`, `pnpm test` (когда скрипт подключён).
+Before handoff: `pnpm lint`, `pnpm exec tsc --noEmit`, `pnpm test` (when script exists).
 
-## Запреты (bans)
+## Bans
 
-1. Выдумывать архитектуру, не описанную в `docs/` и ADR.
-2. Подключать БД, headless CMS, внешнее хранилище контента в v1.
-3. Генерировать массовый контент без human/content review.
-4. Дублировать design tokens вне согласованных путей (`design/`, app theme).
-5. Игнорировать a11y для интерактивных UI (Radix/семантика/focus).
-6. Force-push в `main`, отключение хуков без явного запроса.
-7. Реализовывать playground / публичный каталог стилей в Phase 1.
+1. Invent architecture not described in `docs/` and ADR.
+2. Add DB, headless CMS, or external content store in v1.
+3. Mass-generate content without human/content review.
+4. Duplicate design tokens outside agreed paths (`design/`, app theme).
+5. Ignore a11y for interactive UI.
+6. Force-push `main` or disable hooks without explicit request.
+7. Build encyclopedia / mandatory “learn design” UX as the primary product path.
+8. Drop EN prompts from packs, or force English-only product UI, without ADR.
+9. Copy DesignPrompts or third-party packs (code, texts, style names, graphics) without rights — product reference only; build an original library.
 
-## Порядок верификации изменений
+## Verification order
 
-1. Прочитать релевантные `docs/` и ADR.
-2. PLAN — зафиксировать scope (шаблон [docs/templates/TASK-TEMPLATE.md](docs/templates/TASK-TEMPLATE.md)).
-3. IMPLEMENT — код/контент по контрактам.
-4. TEST — линт, типы, тесты.
-5. REVIEW — self-review по CONTRIBUTING + STYLE/CONTENT при необходимости.
-6. DOCUMENT — обновить docs, CHANGELOG, ADR при архитектурных сдвигах.
-7. ACCEPT — отчёт [docs/templates/AGENT-REPORT.md](docs/templates/AGENT-REPORT.md).
+1. Read relevant `docs/` and ADR.
+2. PLAN — scope via [docs/templates/TASK-TEMPLATE.md](docs/templates/TASK-TEMPLATE.md).
+3. IMPLEMENT — code/content per contracts.
+4. TEST — lint, types, tests.
+5. REVIEW — CONTRIBUTING + STYLE/CONTENT as needed.
+6. DOCUMENT — docs, CHANGELOG, ADR on architecture shifts.
+7. ACCEPT — [docs/templates/AGENT-REPORT.md](docs/templates/AGENT-REPORT.md).
 
-## Роли агентов (сводка)
+## Agent roles
 
-| Роль | Фокус |
+| Role | Focus |
 |------|--------|
-| Planner | Scope, риски, ссылки на docs/ADR |
-| Implementer | Код, контент, токены по контрактам |
-| Tester | Vitest, типы, будущий e2e |
+| Planner | Scope, risks, docs/ADR links |
+| Implementer | Code, content, tokens |
+| Tester | Vitest, types, future e2e |
 | Documenter | docs/, CHANGELOG, ADR |
-| Reviewer | Соответствие bans, качество, DoD из CONTRIBUTING |
+| Reviewer | Bans, quality, DoD |
 
-Один агент может совмещать роли, но фазы PLAN→…→ACCEPT не пропускать.
+Phases PLAN→…→ACCEPT are mandatory.
 
 ## Workflow
 
@@ -106,8 +120,8 @@ Design Atlas — **Knowledge Platform + Design System Library**. Агенты п
 PLAN → IMPLEMENT → TEST → REVIEW → DOCUMENT → ACCEPT
 ```
 
-Детали: [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md).
+Details: [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md).
 
-## Отчётность
+## Reporting
 
-По завершении задачи — заполнить [docs/templates/AGENT-REPORT.md](docs/templates/AGENT-REPORT.md) в теле ответа или PR.
+On task completion — fill [docs/templates/AGENT-REPORT.md](docs/templates/AGENT-REPORT.md) in the reply or PR.

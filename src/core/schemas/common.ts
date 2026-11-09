@@ -22,6 +22,11 @@ export const SourceSchema = z
 
 export const StyleStatusSchema = z.enum(["draft", "review", "published", "archived"]);
 
+export const SemVerSchema = z
+  .string()
+  .regex(/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/, "Expected semver");
+
 export type LocalizedString = z.infer<typeof LocalizedStringSchema>;
 export type Source = z.infer<typeof SourceSchema>;
 export type StyleStatus = z.infer<typeof StyleStatusSchema>;
+export type SemVer = z.infer<typeof SemVerSchema>;

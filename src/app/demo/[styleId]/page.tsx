@@ -61,7 +61,9 @@ export default async function StyleDemoPage({ params }: DemoPageProps) {
               <Badge>{bundle.style.status}</Badge>
               <Badge tone="accent">{composition.id}</Badge>
             </div>
-            <h1 className="font-serif text-4xl tracking-tight">{bundle.style.title.ru}</h1>
+            <h1 className="max-w-full break-words font-serif text-4xl tracking-tight">
+              {bundle.style.title.ru}
+            </h1>
             <p className="max-w-2xl text-muted">{composition.description}</p>
           </div>
           <div className="flex flex-wrap gap-2">

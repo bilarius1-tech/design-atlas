@@ -1,70 +1,64 @@
 # EXPORT FORMAT
 
-Экспорт позволяет забрать стиль в другой проект или скормить агенту **детерминированный** набор артефактов.
+Экспорт превращает **published** стиль в Design Pack (ZIP) из Git SSOT.
 
-## Версия контракта
+См. [ADR-0008](decisions/ADR-0008-design-pack-export-engine.md). Legacy плоский layout ADR-0007 сохранён как исторический контракт; актуальный — **Design Pack format 1.0**.
 
-`exportVersion`: **1.0.0** (см. ADR-0007).
+## Версии
 
-## Bundle layout
+| Поле | Значение |
+|------|----------|
+| `format` | `design-atlas-pack` |
+| `formatVersion` | `1.0` |
+| `generatorVersion` | SemVer генератора (`src/features/export`) |
+| Style version | из `style.json` |
 
-Имя архива: `design-atlas-<styleId>-<exportVersion>.zip` (или директория с тем же корнем).
+Имя архива: `design-atlas-<slug>-v<styleVersion>-<packKind>.zip`  
+Корень внутри: `design-atlas-<slug>-v<styleVersion>-<packKind>/`
 
-```
-design-atlas-swiss-international-1.0.0/
-├── manifest.json           # ExportManifest
-├── meta.json               # Копия StyleMeta (published fields only)
-├── tokens.json             # Design tokens
-├── tokens.css              # :root { --token: value; }
-├── prompt/
-│   ├── system.txt          # Опционально
-│   └── user-template.txt   # Плейсхолдеры {{title}}, {{tokens_summary}}
-└── README.md               # Инструкция по применению
-```
+## Режимы
+
+### Free Export (`packKind: free`)
+
+Полезный agent-ready набор (сценарий DesignPrompts: промпт + правила → UI):
+
+- `README.md`, `manifest.json`
+- `design-system/DESIGN.md`, `TOKENS.md`, `AGENT-INSTRUCTIONS.md`, `STYLE-PHILOSOPHY.md`
+- `prompts/prompt.ru.md`, `prompt.en.md` (coding agent)
+- `prompts/prompt.constructor.ru.md`, `prompt.constructor.en.md` (page constructor / constructor agent)
+- `tokens/*` (json splits + `tokens.css` + `tokens.json`)
+- `components/index.json`
+
+### Full Design Pack (`packKind: full`)
+
+Всё из Free плюс (если есть в SSOT):
+
+- `CHANGELOG.md`
+- `design-system/LAYOUT-RULES.md`, `TYPOGRAPHY.md`, `COMPONENT-GUIDELINES.md`
+- `tokens/typography-roles.json` (из `typography.json`)
+- `examples/demo-landing/demo.json`
+
+PHASE 7: Full доступен только internal (`DESIGN_ATLAS_ALLOW_FULL_EXPORT=1`). Публичный UI честно помечает «в разработке».
 
 ## manifest.json
 
-| Поле | Описание |
-|------|----------|
-| `exportVersion` | Semver формата экспорта |
-| `generatedAt` | ISO 8601 UTC |
-| `styleId` | Канонический id |
-| `includes` | Список включённых секций |
-| `checksums` | SHA-256 по файлам (optional P2) |
+Zod: `ExportManifestSchema` в `src/core/schemas/export-manifest.ts`.
 
-## tokens.css
+Каждый файл в `files[]`: `path`, `bytes`, `sha256`, опционально `contentType`.
 
-Генерация:
+Генерация **детерминирована**: без wall-clock в содержимом файлов (кроме явного `generatedAt` только в manifest — фиксируемый в тестах через inject). По умолчанию `generatedAt` стабилен от version+generator+style hash или опускается из checksums body — в PHASE 7 `generatedAt` = ISO от style `updatedAt` (не Date.now).
 
-1. Для каждого ключа `a.b.c` → CSS variable `--da-a-b-c` (kebab).
-2. Значения — как в JSON (строки).
-3. Корневой селектор `:root` или `.style-<styleId>` если `scoped: true` в опциях экспорта.
+## API
 
-## Промпты
-
-Генерация по ADR-0005:
-
-- Только поля из `meta.json` и сводка токенов (ключевые цвета/шрифты).
-- Запрет включать непроверенные источники.
-- `user-template.txt` — с явными секциями: Context, Visual rules, Tokens, Constraints.
-
-## API (будущее)
-
-CLI: `pnpm exec design-atlas export --style swiss-international --out ./dist`
-
-Реализация в `src/features/export/` (P3).
+- `GET /api/export/[styleId]?pack=free|full` → ZIP
+- CLI: `pnpm export:pack --style <id> --pack free|full --out <dir>`
 
 ## Валидация
 
-Перед упаковкой:
-
-1. Zod `StyleMeta` + `TokenFile`.
-2. `status === published` или флаг `--allow-draft` для внутреннего use.
+Перед ZIP: entitlements → resolver → generator → validator (обязательные пути, banlist, JSON parse).
 
 ## Совместимость
 
-| exportVersion | Изменения |
+| formatVersion | Изменения |
 |---------------|-----------|
-| 1.0.0 | Начальный layout |
-
-Major bump при переименовании обязательных файлов или смене семантики `tokens.css`.
+| 1.0 | Design Pack layout PHASE 7 |

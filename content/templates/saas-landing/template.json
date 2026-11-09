@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "saas-landing",
+  "title": {
+    "ru": "SaaS-лендинг",
+    "en": "SaaS landing"
+  },
+  "shortDescription": {
+    "ru": "Типичный product landing: шапка, hero с медиа, метрики, возможности, тарифы, FAQ и форма заявки.",
+    "en": "Typical product landing: header, hero with media, metrics, features, pricing, FAQ, and a signup form."
+  },
+  "category": "saas",
+  "defaultCompositionId": "modular-stack",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Нордлайн", "en": "Nordline" },
+      "ctaLabel": { "ru": "Начать бесплатно", "en": "Start free" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Рабочее пространство", "en": "Workspace" },
+      "headline": {
+        "ru": "Собирайте релизы без хаоса в команде",
+        "en": "Ship releases without team chaos"
+      },
+      "body": {
+        "ru": "Нордлайн держит задачи, сроки и статусы в одной панели. Выберите дизайн-систему в Studio — этот каркас покажет, как будет выглядеть лендинг продукта.",
+        "en": "Nordline keeps tasks, dates, and status in one panel. Pick a design system in Studio — this frame shows how a product landing will look."
+      },
+      "ctaLabel": { "ru": "Начать бесплатно", "en": "Start free" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры продукта", "en": "Product signals" },
+      "items": [
+        {
+          "title": { "ru": "38%", "en": "38%" },
+          "body": { "ru": "меньше статус-митингов", "en": "fewer status meetings" }
+        },
+        {
+          "title": { "ru": "4.8", "en": "4.8" },
+          "body": { "ru": "оценка от команд", "en": "team rating" }
+        },
+        {
+          "title": { "ru": "48ч", "en": "48h" },
+          "body": { "ru": "до первого релиза", "en": "to first rollout" }
+        },
+        {
+          "title": { "ru": "99.9%", "en": "99.9%" },
+          "body": { "ru": "аптайм панели", "en": "panel uptime" }
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Возможности", "en": "Features" },
+      "headline": {
+        "ru": "Одно пространство для всей команды",
+        "en": "One workspace for the whole team"
+      },
+      "body": {
+        "ru": "Одинаковый контент шаблона — разные дизайн-системы. Сравнивайте looks, не переписывая текст.",
+        "en": "Same template copy — different design systems. Compare looks without rewriting text."
+      },
+      "items": [
+        {
+          "title": { "ru": "Общие дорожные карты", "en": "Shared roadmaps" },
+          "body": {
+            "ru": "Планы квартала и зависимости видны всем ролям без отдельных таблиц.",
+            "en": "Quarter plans and dependencies stay visible without separate spreadsheets."
+          }
+        },
+        {
+          "title": { "ru": "Статусы без шума", "en": "Quiet status" },
+          "body": {
+            "ru": "Короткие сигналы готовности вместо бесконечных чатов.",
+            "en": "Short readiness signals instead of endless chat noise."
+          }
+        },
+        {
+          "title": { "ru": "Handoff для агентов", "en": "Agent handoff" },
+          "body": {
+            "ru": "Тот же визуальный язык уходит в промпт для Cursor или конструктора.",
+            "en": "The same visual language leaves as a prompt for Cursor or a constructor."
+          }
+        }
+      ]
+    },
+    {
+      "id": "editorial",
+      "eyebrow": { "ru": "Как это выглядит", "en": "How it looks" },
+      "headline": {
+        "ru": "Панель продукта на первом экране",
+        "en": "Product panel above the fold"
+      },
+      "body": {
+        "ru": "Медиа-блок — макет интерфейса из токенов стиля: радиус, линия, тень и цвет не выдуманы отдельно от системы.",
+        "en": "The media block is a UI mock built from style tokens: radius, line, shadow, and color stay inside the system."
+      }
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Модули лендинга",
+        "en": "Landing modules"
+      },
+      "body": {
+        "ru": "Карточки и рамки используют геометрию выбранной дизайн-системы.",
+        "en": "Cards and frames use the chosen design system geometry."
+      },
+      "items": [
+        {
+          "title": { "ru": "Навигация", "en": "Navigation" },
+          "body": {
+            "ru": "Логотип, якорные ссылки, вход и главный CTA.",
+            "en": "Logo, anchors, sign-in, and primary CTA."
+          }
+        },
+        {
+          "title": { "ru": "Доказательства", "en": "Proof" },
+          "body": {
+            "ru": "Метрики, отзывы и тарифы на одном каркасе.",
+            "en": "Metrics, quotes, and pricing on one frame."
+          }
+        },
+        {
+          "title": { "ru": "Заявка", "en": "Signup" },
+          "body": {
+            "ru": "Форма email + кнопка — проверка полей и CTA.",
+            "en": "Email form + button — fields and CTA check."
+          }
+        }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "headline": { "ru": "Как используют", "en": "How teams use it" },
+      "items": [
+        {
+          "title": { "ru": "Продукт", "en": "Product" },
+          "body": {
+            "ru": "«Выбрали систему в Atlas, отдали промпт агенту — лендинг совпал с превью.»",
+            "en": "\"Picked a system in Atlas, gave the prompt to an agent — the landing matched the preview.\""
+          },
+          "meta": { "ru": "Основатель SaaS", "en": "SaaS founder" }
+        },
+        {
+          "title": { "ru": "Конструктор", "en": "Constructor" },
+          "body": {
+            "ru": "«Промпт для Тильды закрыл споры про кнопки и отступы за один проход.»",
+            "en": "\"The constructor prompt settled button and spacing debates in one pass.\""
+          },
+          "meta": { "ru": "Маркетолог", "en": "Marketer" }
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "headline": { "ru": "Планы (демо)", "en": "Plans (demo)" },
+      "body": {
+        "ru": "Условные тарифы для секции pricing — не коммерческое предложение DESIGN ATLAS.",
+        "en": "Illustrative tiers for the pricing block — not a DESIGN ATLAS offer."
+      },
+      "ctaLabel": { "ru": "Выбрать", "en": "Select" },
+      "items": [
+        {
+          "title": { "ru": "Старт", "en": "Start" },
+          "body": {
+            "ru": "До 5 человек и базовые доски.",
+            "en": "Up to 5 people and basic boards."
+          },
+          "meta": { "ru": "Free", "en": "Free" }
+        },
+        {
+          "title": { "ru": "Команда", "en": "Team" },
+          "body": {
+            "ru": "Роли, интеграции и общие дорожные карты.",
+            "en": "Roles, integrations, and shared roadmaps."
+          },
+          "meta": { "ru": "Pro", "en": "Pro" }
+        },
+        {
+          "title": { "ru": "Компания", "en": "Company" },
+          "body": {
+            "ru": "SSO, аудит и приоритетная поддержка.",
+            "en": "SSO, audit, and priority support."
+          },
+          "meta": { "ru": "Business", "en": "Business" }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": { "ru": "Вопросы", "en": "FAQ" },
+      "items": [
+        {
+          "title": {
+            "ru": "Это конструктор сайтов?",
+            "en": "Is this a site builder?"
+          },
+          "body": {
+            "ru": "Нет. DESIGN ATLAS показывает дизайн-систему. Сайт собирает Cursor или агент конструктора по промпту.",
+            "en": "No. DESIGN ATLAS shows the design system. Cursor or a constructor agent builds the site from the prompt."
+          }
+        },
+        {
+          "title": {
+            "ru": "Зачем два промпта?",
+            "en": "Why two prompts?"
+          },
+          "body": {
+            "ru": "Один — для AI-агента в коде. Второй — для сборки блоков в Тильде и похожих конструкторах.",
+            "en": "One for a coding AI agent. The second for assembling blocks in Tilda-class constructors."
+          }
+        },
+        {
+          "title": {
+            "ru": "Можно ли менять шрифт позже?",
+            "en": "Can we change the font later?"
+          },
+          "body": {
+            "ru": "Лёгкая кастомизация (акцент, шрифт) запланирована отдельно. Сейчас берите систему как есть.",
+            "en": "Light customize (accent, font) is planned separately. For now take the system as shipped."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": {
+        "ru": "Запустите панель за день",
+        "en": "Launch the panel in a day"
+      },
+      "body": {
+        "ru": "Оставьте рабочий email — в превью это проверка поля и кнопки выбранной системы.",
+        "en": "Leave a work email — in preview this checks the field and button of the chosen system."
+      },
+      "ctaLabel": { "ru": "Получить доступ", "en": "Get access" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Нордлайн", "en": "Nordline" },
+      "body": {
+        "ru": "Демо-каркас SaaS × выбранная дизайн-система DESIGN ATLAS.",
+        "en": "SaaS demo frame × selected DESIGN ATLAS design system."
+      }
+    }
+  ]
+}

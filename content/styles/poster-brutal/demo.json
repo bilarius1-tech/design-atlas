@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "poster-brutal",
+  "compositionId": "editorial-split",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": {
+        "ru": "Демо-лендинг",
+        "en": "Demo landing"
+      },
+      "ctaLabel": {
+        "ru": "К системе",
+        "en": "To system"
+      },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": {
+        "ru": "Poster Brutal",
+        "en": "Poster Brutal"
+      },
+      "headline": {
+        "ru": "Громко. Прямо. Без полировки",
+        "en": "Loud. Direct. Unpolished"
+      },
+      "body": {
+        "ru": "Плакатная сила: жирный тип, толстая линия, один оранжевый удар. Правила вместо «вабиба».",
+        "en": "Poster force: heavy type, thick line, one orange hit. Rules instead of vibes."
+      },
+      "ctaLabel": {
+        "ru": "Смотреть принципы",
+        "en": "See principles"
+      },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": {
+        "ru": "Принципы",
+        "en": "Principles"
+      },
+      "headline": {
+        "ru": "Три опоры стиля",
+        "en": "Three foundations"
+      },
+      "body": {
+        "ru": "Каждый блок работает как плакатный модуль.",
+        "en": "Each block works like a poster module."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Жирный тип",
+            "en": "Heavy type"
+          },
+          "body": {
+            "ru": "Иерархия начинается с масштаба и веса, не с декора.",
+            "en": "Hierarchy starts with scale and weight, not decoration."
+          }
+        },
+        {
+          "title": {
+            "ru": "Толстая линия",
+            "en": "Thick line"
+          },
+          "body": {
+            "ru": "3px обводка и offset-тень вместо soft shadow.",
+            "en": "3px borders and offset shadow instead of soft shadow."
+          }
+        },
+        {
+          "title": {
+            "ru": "Один сигнал",
+            "en": "One signal"
+          },
+          "body": {
+            "ru": "Оранжевый accent — удар CTA, не радуга.",
+            "en": "Orange accent is a CTA hit, not a rainbow."
+          }
+        }
+      ]
+    },
+    {
+      "id": "editorial",
+      "eyebrow": {
+        "ru": "Poster",
+        "en": "Poster"
+      },
+      "headline": {
+        "ru": "Характер важнее гладкости",
+        "en": "Character over smoothness"
+      },
+      "body": {
+        "ru": "Не скругляй «чтобы стало современно». Оставь острые углы и честный контраст.",
+        "en": "Do not round corners to feel modern. Keep sharp edges and honest contrast."
+      }
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Модули интерфейса",
+        "en": "Interface modules"
+      },
+      "body": {
+        "ru": "Карточки — рамки с толстой линией. Тень жёсткая, без blur.",
+        "en": "Cards are thick frames. Shadows are hard, without blur."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Навигация",
+            "en": "Navigation"
+          },
+          "body": {
+            "ru": "Крупные ссылки, явный active, без pill-кластеров.",
+            "en": "Large links, explicit active state, no pill clusters."
+          }
+        },
+        {
+          "title": {
+            "ru": "Формы",
+            "en": "Forms"
+          },
+          "body": {
+            "ru": "Толстая обводка полей; ошибка через accent.",
+            "en": "Thick field borders; errors via accent."
+          }
+        },
+        {
+          "title": {
+            "ru": "CTA",
+            "en": "CTA"
+          },
+          "body": {
+            "ru": "Один главный удар — primary или accent, не оба сразу на всём экране.",
+            "en": "One main hit — primary or accent, not both everywhere."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": {
+        "ru": "Метрики смысла",
+        "en": "Meaningful metrics"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "3px",
+            "en": "3px"
+          },
+          "body": {
+            "ru": "Толщина линии",
+            "en": "Border weight"
+          }
+        },
+        {
+          "title": {
+            "ru": "0 радиус",
+            "en": "0 radius"
+          },
+          "body": {
+            "ru": "Острые углы",
+            "en": "Sharp corners"
+          }
+        },
+        {
+          "title": {
+            "ru": "1 accent",
+            "en": "1 accent"
+          },
+          "body": {
+            "ru": "Оранжевый сигнал",
+            "en": "Orange signal"
+          }
+        }
+      ],
+      "notes": "Качественные маркеры стиля, не фальшивая статистика кампании."
+    },
+    {
+      "id": "testimonials",
+      "headline": {
+        "ru": "Голоса практики",
+        "en": "Practitioner notes"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Studio",
+            "en": "Studio"
+          },
+          "body": {
+            "ru": "«Если убрать тень и жирный тип — стиль исчезает. Значит, правила верные.»",
+            "en": "\"If you remove the shadow and heavy type, the style disappears. That means the rules are right.\""
+          },
+          "meta": {
+            "ru": "Art director",
+            "en": "Art director"
+          }
+        },
+        {
+          "title": {
+            "ru": "AI handoff",
+            "en": "AI handoff"
+          },
+          "body": {
+            "ru": "«Агенту нужны толщина линии и запрет soft shadow — не слово brutal.»",
+            "en": "\"Agents need border weight and a soft-shadow ban—not the word brutal.\""
+          },
+          "meta": {
+            "ru": "AI engineer",
+            "en": "AI engineer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "headline": {
+        "ru": "Пакеты передачи",
+        "en": "Handoff packages"
+      },
+      "body": {
+        "ru": "Условные уровни для демонстрации секции pricing — не коммерческое предложение.",
+        "en": "Illustrative tiers for the pricing section — not a commercial offer."
+      },
+      "ctaLabel": {
+        "ru": "Выбрать",
+        "en": "Select"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Tokens",
+            "en": "Tokens"
+          },
+          "body": {
+            "ru": "Палитра, типографика, интервалы.",
+            "en": "Palette, typography, spacing."
+          },
+          "meta": {
+            "ru": "База",
+            "en": "Base"
+          }
+        },
+        {
+          "title": {
+            "ru": "System",
+            "en": "System"
+          },
+          "body": {
+            "ru": "Токены + компоненты + правила.",
+            "en": "Tokens + components + rules."
+          },
+          "meta": {
+            "ru": "Основной",
+            "en": "Core"
+          }
+        },
+        {
+          "title": {
+            "ru": "Agent pack",
+            "en": "Agent pack"
+          },
+          "body": {
+            "ru": "DESIGN.md, промпты, инструкции.",
+            "en": "DESIGN.md, prompts, instructions."
+          },
+          "meta": {
+            "ru": "Полный",
+            "en": "Full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": {
+        "ru": "Вопросы",
+        "en": "FAQ"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Это neo-brutalism с DesignPrompts?",
+            "en": "Is this DesignPrompts neo-brutalism?"
+          },
+          "body": {
+            "ru": "Нет. Это оригинальный pack DESIGN ATLAS. Сторонние библиотеки — только ориентир структуры, без копирования.",
+            "en": "No. This is an original DESIGN ATLAS pack. Third-party libraries are structural inspiration only—no copying."
+          }
+        },
+        {
+          "title": {
+            "ru": "Подойдёт ли для дашборда?",
+            "en": "Is it good for dashboards?"
+          },
+          "body": {
+            "ru": "Обычно нет. Для плотных инструментов лучше midnight-console или swiss-international.",
+            "en": "Usually no. Prefer midnight-console or swiss-international for dense tools."
+          }
+        },
+        {
+          "title": {
+            "ru": "Где сравнить со Swiss?",
+            "en": "Where to compare with Swiss?"
+          },
+          "body": {
+            "ru": "В Studio на одном шаблоне saas-landing переключайте стили — Same Content, Different Looks.",
+            "en": "In Studio on the saas-landing template, switch styles — Same Content, Different Looks."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": {
+        "ru": "Передать стиль агенту",
+        "en": "Hand the style to an agent"
+      },
+      "body": {
+        "ru": "Скопируйте промпт в Studio или скачайте Free Design Pack.",
+        "en": "Copy the prompt in Studio or download the Free Design Pack."
+      },
+      "ctaLabel": {
+        "ru": "Открыть playground",
+        "en": "Open playground"
+      },
+      "ctaHref": "/playground/poster-brutal"
+    },
+    {
+      "id": "footer",
+      "headline": {
+        "ru": "DESIGN ATLAS",
+        "en": "DESIGN ATLAS"
+      },
+      "body": {
+        "ru": "Демонстрация собрана движком Demo Landing из проверенных блоков.",
+        "en": "Demo assembled by the Demo Landing engine from validated blocks."
+      }
+    }
+  ]
+}

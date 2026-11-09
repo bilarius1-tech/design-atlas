@@ -31,15 +31,16 @@ description: Загружает контекст Design Atlas (docs, фазы, �
 
 ## 6. Пошаговая процедура
 
-1. Прочитать [AGENTS.md](../../../AGENTS.md) — bans и источники истины.
-2. Прочитать [docs/specification/README.md](../../../docs/specification/README.md) — порядок DS → стили.
-3. Открыть релевантные доки из таблицы AGENTS (минимум `ARCHITECTURE`, `DESIGN_SYSTEM` при коде).
-4. Проверить фазу: Phase 1 — **без** каталога/playground/массового `content/`.
-5. Зафиксировать пути:
+1. Прочитать [docs/ESSENCE.md](../../../docs/ESSENCE.md) — locked north star (Atlas ≠ конструктор; dual handoff).
+2. Прочитать [AGENTS.md](../../../AGENTS.md) — bans и источники истины.
+3. Прочитать [docs/specification/README.md](../../../docs/specification/README.md) — порядок DS → стили.
+4. Открыть релевантные доки из таблицы AGENTS (минимум `PRODUCT`, `ARCHITECTURE`, `DESIGN_SYSTEM` при коде).
+5. Проверить фазу / ROADMAP R-track; не превращать Atlas в page builder.
+6. Зафиксировать пути:
    - App: `src/`
    - DS: `design/`
    - Стили: `content/styles/<id>/`
-6. Сформулировать 3–5 bullet scope + явные **вне scope**.
+7. Сформулировать 3–5 bullet scope + явные **вне scope**.
 
 ## 7. Требования к результату
 

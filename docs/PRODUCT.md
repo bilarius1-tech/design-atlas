@@ -1,68 +1,151 @@
 # PRODUCT — Design Atlas
 
-## Vision
+## 0. Essence (locked)
 
-**Design Atlas** — платформа знаний о визуальных стилях, движениях и практиках дизайна, объединённая с **библиотекой дизайн-системы**, которая показывает эти стили вживую. Пользователь (дизайнер, разработчик, исследователь, AI-агент) получает **визуально богатый**, структурированный, экспортируемый контент.
+**Short lock:** [ESSENCE.md](ESSENCE.md)
 
-## Позиционирование
+DESIGN ATLAS is **not** a site constructor. Users pick a ready **design system**, preview it on a simple landing, then take **Agent + Constructor** prompts so **Cursor or a Tilda-class agent** builds the unique project **elsewhere**.
 
-| Аспект | Описание |
-|--------|----------|
-| Тип | Knowledge Platform + Design System Library |
-| Девиз | Visual first · Agent ready |
-| Дифференциатор | Контент и UI из одного Git-репозитория; жёсткие контракты для людей и агентов |
-| Anti-goals | Генеративный «шум», анонимные AI-тексты, хаотичные one-off страницы |
+## 1. What we build
 
-## Аудитории
+**DESIGN ATLAS** is a **visual design-system library** and **dual prompt generator**.
 
-1. **Дизайнеры** — изучение стилей, референсы, токены, промпты для воспроизведения.
-2. **Разработчики** — внедрение через экспорт (CSS, tokens JSON, документация).
-3. **AI-агенты** — чтение структуры, валидация, генерация вариантов **в рамках** контрактов (см. [EXPORT_FORMAT.md](EXPORT_FORMAT.md), [DATA_CONTRACTS.md](DATA_CONTRACTS.md)).
-4. **Редакторы** — кураторство контента в Git с ревью.
+The product helps users pick a ready design system, preview it on a simple page template (SaaS landing, later store/portfolio), then hand precise instructions to **whoever builds the real project elsewhere**:
 
-## Jobs to be done
+- an **AI coding agent** (Cursor and similar), and/or
+- a **page constructor / constructor agent** (Tilda, LPmotor, Creatium, Kraftum, and similar).
 
-- Найти и сравнить визуальный стиль (например, Swiss International).
-- Понять принципы: типографика, сетка, цвет, motion.
-- Экспортировать токены и guidance в проект.
-- Собрать промпт для другой модели **из канонических полей**, не из галлюцинаций.
+Atlas does **not** assemble the final site. It selects and explains the system; the builder (agent or constructor) applies it to the user’s unique project.
 
-## Продуктовые принципы
+### Language policy
 
-1. **Design System First** — оболочка приложения на собственной DS; стили каталога подключаются после.
-2. **Editorial quality** — тексты как у издания, не как у SEO-фермы.
-3. **Stable IDs** — `swiss-international`, не зависят от локали UI.
-4. **No DB v1** — весь контент версионируется в Git.
-5. **Agent contracts** — если поля нет в схеме, агент не добавляет его в прод без ADR.
+| Surface | Language |
+|---------|----------|
+| Product UI | Russian |
+| Demo / template copy | Russian |
+| Agent prompts | **Russian and English** |
+| Constructor prompts | **Russian and English** |
+| Technical docs (`docs/`, ADR) | **English** |
 
-## Scope v1 (Phase 1 — документация)
+See [ADR-0010](decisions/ADR-0010-russian-only-locale.md), [ADR-0011](decisions/ADR-0011-dual-prompt-surfaces.md).
 
-Включено:
+## 2. What we do NOT build
 
-- Документация, ADR, шаблоны процессов.
-- Каркас Next.js, зависимости, пустые `content/` и `design/`.
+DESIGN ATLAS is not:
 
-Не включено (явно отложено):
+- another Tilda / LPmotor / Creatium / Kraftum (no block canvas, no site hosting);
+- an educational platform or UX/UI course;
+- a design encyclopedia users must study;
+- a full visual editor or design-system constructor UI;
+- a site-audit tool;
+- a marketplace of finished sites.
 
-- Публичный каталог стилей.
-- Playground переключения стилей.
-- Наполнение библиотеки стилей.
-- Playwright CI.
+Users must not need to “learn design” to get a result.
 
-См. [ROADMAP.md](ROADMAP.md).
+## 3. Core scenario
 
-## Метрики успеха (будущие)
+```
+SELECT TEMPLATE → SELECT STYLE → PREVIEW → OPTIONAL CUSTOMIZE → GET PROMPT(S) → BUILD ELSEWHERE
+```
 
-- Время от клона до `pnpm dev` < 5 минут.
-- 100% контент-записей проходит Zod-валидацию в CI.
-- Lighthouse a11y ≥ 95 на ключевых шаблонах (после появления UI).
-- Экспорт токенов воспроизводим (snapshot-тесты).
+Target time: a few minutes. Live preview proves the look before handoff.
 
-## Глоссарий
+## 3.1 One product concept
 
-| Термин | Значение |
-|--------|----------|
-| Style | Каноническая запись визуального стиля/направления |
-| Style library | Коллекция стилей с превью и токенами |
-| App shell | Навигация, layout, тема платформы (не стиль каталога) |
-| Export bundle | Артефакт по [EXPORT_FORMAT.md](EXPORT_FORMAT.md) |
+Everything serves this loop:
+
+**see a visual design system on a typical landing → get Agent + Constructor prompts (+ files) → build the unique project in another tool.**
+
+Playground, docs, export, tokens, and research exist only to support that path.
+
+## 3.2 Pain we solve
+
+Page constructors give **blocks**, not a coherent ready **design system**. Users waste time reinventing palette, type, radius, and component rules inside Tilda-class tools or rewriting vague prompts for agents.
+
+Atlas ships many ready systems (light/dark/stylistic). The user picks one, sees it on a simple landing, optionally tweaks basics later, and leaves with prompts that another agent or constructor can follow.
+
+## 3.3 Product reference (no copying)
+
+[designprompts.dev](https://designprompts.dev/) is a **product reference** for selection → preview → prompt flow only.
+
+We **do not** copy without rights: code, marketing/prompt texts, style names, graphics, or assets. DESIGN ATLAS builds an **original** library.
+
+**Differentiator:** live Template × Style preview + **dual handoff** (agent + constructor, RU+EN) + Free Design Pack. Not a CSS framework or drop-in UI kit.
+
+## 4. Core value
+
+Fast visual direction + accurate dual prompts so the built UI matches the chosen system — whether the builder is Cursor or a constructor agent.
+
+## 5. Product principles
+
+1. **Visual First** — see first, then choose.
+2. **Fast Selection** — minimal steps to a result.
+3. **Same Content, Different Looks** — one template, many systems on the same content.
+4. **Build Elsewhere** — Atlas selects the system; construction happens outside.
+5. **Dual Handoff** — Agent prompt + Constructor prompt (RU + EN each).
+6. **Prompt Quality** — concrete instructions, not vague vibes.
+7. **Optional Customization** — basic tweaks allowed, never required.
+8. **No Learning Required** — no mandatory lessons.
+9. **Commercial Ready** — architecture ready for Style Packs (payments later).
+
+## 6. Main modules
+
+| Module | Role |
+|--------|------|
+| Page Templates | Simple page types (SaaS, store, portfolio…) as system showcases |
+| Visual Styles | Design-systems library |
+| Live Preview | Template × Style → live landing |
+| Style Customizer | Optional basics (later) |
+| Prompt Generator | Agent + Constructor prompts (RU + EN) |
+| Design Pack Export | ZIP of style materials |
+
+## 7. Primary content unit
+
+**Visual Style** — a design system (tokens, type, composition, components, agent + constructor prompts, DESIGN.md, preview).
+
+**Page Template** — page structure + neutral demo copy (Russian). Not a style.
+
+## 8. Architecture principle
+
+```
+CONTENT DATA + STYLE TOKENS + TEMPLATE STRUCTURE
+  → STYLE RENDERER → VISUAL PREVIEW → PROMPT / EXPORT
+```
+
+Do not hand-build a unique site for every template×style pair.
+
+Details: [ADR-0009](decisions/ADR-0009-template-style-preview-prompt.md), [ADR-0011](decisions/ADR-0011-dual-prompt-surfaces.md), [ARCHITECTURE.md](ARCHITECTURE.md).
+
+## 9. Commercial direction
+
+**Now:** free library, previews, dual prompts (RU+EN), Free Design Pack.
+
+**Later:** paid Style Packs, full systems, Premium Gallery, Agent Skills, MCP.
+
+No payment system until a dedicated product decision.
+
+## 10. Quality bar
+
+A user must be able to:
+
+1. open the product;
+2. pick a template;
+3. pick a design system;
+4. see it on a recognizable landing;
+5. copy Agent and/or Constructor prompts (RU + EN);
+6. give them to Cursor **or** a constructor agent;
+7. get an implementation that matches the preview.
+
+If the UI forces long design study, dozens of knobs, or building the final site inside Atlas — the product has drifted.
+
+## Glossary
+
+| Term | Meaning |
+|------|---------|
+| Visual Style / Design system | System in `content/styles/<id>/` |
+| Page Template | Page type in `content/templates/<id>/` |
+| Preview | Live render of template in a style |
+| Agent prompt | Instructions for coding agents |
+| Constructor prompt | Instructions for page-builder / constructor agents |
+| Design Pack | ZIP export of style materials |
+| App shell | Product chrome (not catalog style) |

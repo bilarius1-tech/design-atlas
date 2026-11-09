@@ -1,14 +1,16 @@
 ---
-description: Философия Design Atlas — Visual first, Agent ready, без AI slop
+description: Design Atlas philosophy — Template × Style → Prompt; language policy
 alwaysApply: true
 ---
 
-# Философия проекта
+# Project philosophy
 
-- **Продукт:** knowledge platform + design system library ([docs/PRODUCT.md](docs/PRODUCT.md), [AGENTS.md](AGENTS.md)).
-- **Порядок:** сначала **дизайн-система приложения** (`design/`, `src/`), потом библиотека визуальных стилей (`content/styles/`). Не наоборот.
-- **Источник истины:** Git — `docs/`, `content/`, `design/`; **без БД/CMS в v1** ([docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)).
-- **Референс-стиль:** `swiss-international` — эталон для будущего контента; **не реализовывать** без тикета.
-- **Качество:** редакторский тон, проверяемые факты; запрещён шаблонный «AI slop» ([CONTRIBUTING.md](CONTRIBUTING.md)).
-- **Фаза 1:** документация и каркас; **без** публичного каталога, playground, массового наполнения `content/`.
-- Менять философию или bans из [AGENTS.md](AGENTS.md) — **только** с явным одобрением человека + ADR.
+- **Locked essence:** [docs/ESSENCE.md](docs/ESSENCE.md) — Atlas is **not** a site constructor; pick a design system → preview → Agent + Constructor prompts → **build elsewhere** (Cursor / Tilda-class agent).
+- **Product:** design-system library + dual prompt bridge ([docs/PRODUCT.md](docs/PRODUCT.md)). Not an encyclopedia, design course, or page builder.
+- **One loop:** see design system on a landing → get Agent + Constructor prompts (+ files) → build the unique project elsewhere.
+- **Core flow:** template + style → preview → dual prompt / Design Pack → Cursor or constructor agent ([ADR-0009](docs/decisions/ADR-0009-template-style-preview-prompt.md), [ADR-0011](docs/decisions/ADR-0011-dual-prompt-surfaces.md)).
+- **Reference ≠ copy:** DesignPrompts is a product reference only — no copying code, texts, style names, or graphics without rights; build an original library.
+- **Language:** UI/demo **Russian**; prompts **RU+EN**; technical docs **English** ([ADR-0010](docs/decisions/ADR-0010-russian-only-locale.md)).
+- **Source of truth:** Git — `docs/`, `content/`, `design/`; no DB/CMS in v1.
+- **Quality:** no AI slop; No Learning Required.
+- Philosophy / essence changes require explicit human approval + ADR.

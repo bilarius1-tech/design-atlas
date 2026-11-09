@@ -116,7 +116,7 @@ describe("style schemas", () => {
 describe("content registry against repo fixtures", () => {
   it("loads swiss-international reference bundle", () => {
     const bundle = loadStyleBundle("swiss-international");
-    expect(bundle.style.status).toBe("review");
+    expect(bundle.style.status).toBe("published");
     expect(bundle.tokens.colors.accent).toBe("#E30613");
     expect(bundle.typography?.roles.h1.size).toBe("44px");
   });
@@ -124,7 +124,8 @@ describe("content registry against repo fixtures", () => {
   it("builds registry entry from disk", () => {
     const registry = buildStyleRegistry();
     expect(registry.knownIds.has("swiss-international")).toBe(true);
-    expect(registry.styles[0]?.title.en).toContain("Swiss");
+    const swiss = registry.styles.find((style) => style.id === "swiss-international");
+    expect(swiss?.title.en).toContain("Swiss");
   });
 
   it("validates repository content without errors", () => {

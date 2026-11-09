@@ -1,86 +1,90 @@
 import { Container, Section, Stack } from "@/components/layout";
-import { Badge, Card, Divider, buttonClassName } from "@/components/ui";
+import { Badge, Card, buttonClassName } from "@/components/ui";
+import { ArrowRight, Boxes, Eye, Sparkles } from "lucide-react";
 import Link from "next/link";
-
-const phases = [
-  { id: "P0", title: "Фундамент", status: "done", note: "Репозиторий и harness" },
-  { id: "P1", title: "Design System Core", status: "done", note: "Оболочка продукта" },
-  { id: "P2", title: "Engines", status: "done", note: "Content · Playground · Demo" },
-  { id: "P3", title: "Эталон Swiss", status: "active", note: "review → human accept" },
-] as const;
 
 export default function Home() {
   return (
     <main id="main-content">
       <section className="border-b border-border bg-surface">
-        <Container className="grid gap-10 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:py-24">
+        <Container className="grid gap-10 py-16 lg:grid-cols-[1.25fr_0.75fr] lg:items-end lg:py-24">
           <div className="space-y-6">
             <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-              Knowledge Platform · Design System Library
+              Библиотека дизайн-систем · dual prompt
             </p>
             <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl lg:text-display">
               DESIGN ATLAS
             </h1>
             <p className="max-w-2xl text-lg text-muted sm:text-xl">
-              Выбери визуальный стиль. Изучи его. Передай своей AI-команде готовую
-              дизайн-систему.
+              Выберите готовую дизайн-систему, наденьте на простой лендинг и заберите промпт для{" "}
+              <strong className="font-medium text-foreground">Cursor</strong> или{" "}
+              <strong className="font-medium text-foreground">агента Тильды</strong>. Мы не
+              конструктор сайтов — сборка снаружи.
             </p>
             <Stack direction="horizontal" gap="md">
-              <Link href="/design-system" className={buttonClassName()}>
-                Смотреть дизайн-систему
+              <Link
+                href="/studio?template=saas-landing&style=swiss-international"
+                className={buttonClassName()}
+              >
+                Открыть студию
+                <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
-              <a
-                href="https://github.com/bilarius1-tech/design-atlas"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/api/export/swiss-international?pack=free"
                 className={buttonClassName({ variant: "secondary" })}
               >
-                Репозиторий
-              </a>
+                Free Design Pack
+              </Link>
             </Stack>
           </div>
           <Card className="space-y-4">
-            <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-              Принцип
-            </p>
+            <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">Суть</p>
             <p className="font-serif text-2xl tracking-tight">
-              Сначала фундамент и эталонная дизайн-система. Затем — библиотека стилей.
+              Система → превью → промпт → сборка снаружи
             </p>
-            <Divider />
             <p className="text-sm text-muted">
-              Visual first · Agent ready · No AI slop · Editorial quality
+              Агент и конструктор получают одну систему. Блоки Тильды без системы — не наш путь.
             </p>
           </Card>
         </Container>
       </section>
 
       <Section
-        id="roadmap"
-        eyebrow="Roadmap"
-        title="Где мы сейчас"
-        description="Публичный каталог стилей появится после Content Engine и эталонного Swiss International."
+        id="start"
+        eyebrow="Быстрый старт"
+        title="Три шага"
+        description="Основной путь продукта. Playground остаётся для QA."
       >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {phases.map((phase) => (
-            <Card key={phase.id} className="space-y-3">
-              <div className="flex items-center justify-between gap-3">
-                <span className="font-mono text-xs text-muted">{phase.id}</span>
-                <Badge
-                  tone={
-                    phase.status === "done"
-                      ? "success"
-                      : phase.status === "active"
-                        ? "accent"
-                        : "neutral"
-                  }
-                >
-                  {phase.status === "done" ? "готово" : "сейчас"}
-                </Badge>
-              </div>
-              <h3 className="font-serif text-xl tracking-tight">{phase.title}</h3>
-              <p className="text-sm text-muted">{phase.note}</p>
-            </Card>
-          ))}
+        <div className="grid gap-4 md:grid-cols-3">
+          <Card className="space-y-3">
+            <Badge>
+              <Boxes className="mr-1 inline h-3 w-3" aria-hidden />1
+            </Badge>
+            <h3 className="font-serif text-xl tracking-tight">Шаблон</h3>
+            <p className="text-sm text-muted">Каркас страницы (сейчас SaaS-лендинг).</p>
+          </Card>
+          <Card className="space-y-3">
+            <Badge>
+              <Eye className="mr-1 inline h-3 w-3" aria-hidden />2
+            </Badge>
+            <h3 className="font-serif text-xl tracking-tight">Дизайн-система</h3>
+            <p className="text-sm text-muted">Стиль на том же контенте — сразу видно look.</p>
+          </Card>
+          <Card className="space-y-3">
+            <Badge>
+              <Sparkles className="mr-1 inline h-3 w-3" aria-hidden />3
+            </Badge>
+            <h3 className="font-serif text-xl tracking-tight">Промпт наружу</h3>
+            <p className="text-sm text-muted">Агент (Cursor) или конструктор (Тильда…) — RU/EN.</p>
+          </Card>
+        </div>
+        <div className="mt-8">
+          <Link
+            href="/studio?template=saas-landing&style=swiss-international"
+            className={buttonClassName({ size: "lg" })}
+          >
+            Перейти в студию
+          </Link>
         </div>
       </Section>
     </main>

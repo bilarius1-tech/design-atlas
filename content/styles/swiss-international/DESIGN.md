@@ -4,9 +4,9 @@ title:
   ru: Швейцарский интернациональный стиль
   en: Swiss International Style
 version: 1.0.0
-status: review
+status: published
 schemaVersion: 1.0.0
-generatedAt: 2026-11-09T02:00:00.000Z
+generatedAt: 2026-11-09T03:10:00.000Z
 compositionId: swiss-editorial-grid
 ---
 

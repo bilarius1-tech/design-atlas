@@ -1,23 +1,26 @@
 ---
-description: Модульный монолит Next.js, контент в Git, Design System First
+description: Modular Next.js monolith, Git content, Template × Style pipeline
 alwaysApply: true
 ---
 
-# Архитектура
+# Architecture
 
-Сверяться с [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) и ADR в [docs/decisions/](docs/decisions/).
+Follow [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and ADRs in [docs/decisions/](docs/decisions/).
 
-| Слой | Путь | Роль |
-|------|------|------|
-| Приложение | `src/` | Next.js App Router, `@/*` → `src/*` |
-| DS продукта | `design/` | foundations, tokens, themes, components |
-| Контент стилей | `content/styles/<id>/` | `style.json`, `tokens.json`, MD/MDX |
-| Спеки | `docs/`, `docs/specification/` | Контракты и процессы |
+| Layer | Path | Role |
+|-------|------|------|
+| App | `src/` | Next.js App Router, `@/*` → `src/*` |
+| Product DS | `design/` | App-shell foundations, tokens, themes |
+| Visual styles | `content/styles/<id>/` | `style.json`, `tokens.json`, prompts RU+EN, MD |
+| Page templates | `content/templates/<id>/` | Structure + RU demo copy (R1+) |
+| Specs | `docs/` | English technical contracts |
 
-**Запрещено без ADR:** БД, CMS, GraphQL, микросервисы, отдельный репозиторий контента.
+**Pipeline:** Template + Style → Renderer → Preview → Prompt / Export ([ADR-0009](docs/decisions/ADR-0009-template-style-preview-prompt.md)).
 
-**Экспорт:** единый источник токенов для артефактов — `design/tokens/` и `content/styles/<id>/tokens.json` ([docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md)); не дублировать hex/spacing в UI.
+**Forbidden without ADR:** DB, CMS, GraphQL, microservices, separate content repo.
 
-**ID:** kebab-case, language-independent (`swiss-international`).
+**Export:** token SSOT `content/styles/<id>/tokens.json` ([docs/EXPORT_FORMAT.md](docs/EXPORT_FORMAT.md)); do not hardcode hex/spacing in UI.
 
-Перед правками Next.js 16 — гайды в `node_modules/next/dist/docs/` (см. блок в [AGENTS.md](AGENTS.md)).
+**IDs:** kebab-case, language-independent (`swiss-international`).
+
+Before Next.js 16 edits — guides in `node_modules/next/dist/docs/` (see [AGENTS.md](AGENTS.md)).

@@ -1,57 +1,74 @@
 # CONTENT MODEL
 
-## Принципы
+Canonical product direction: [PRODUCT.md](PRODUCT.md), [ADR-0009](decisions/ADR-0009-template-style-preview-prompt.md).
 
-- Стабильный `id` (kebab-case, ASCII, language-independent).
-- Названия — в localized полях / Markdown, не в id.
-- Данные стиля не содержат React/JSX.
-- Токены стиля живут рядом с метаданными: `content/styles/<id>/tokens.json`.
+## Principles
 
-## Дерево
+- Stable `id` (kebab-case, ASCII, language-independent).
+- Display names live in fields / Markdown — never in the id.
+- Style data contains no React/JSX.
+- Style tokens live at `content/styles/<id>/tokens.json`.
+- **Templates and styles are separate.** Do not bind page structure exclusively inside a style forever (`demo.json` is interim).
+
+## Language
+
+- Template / demo sample copy: **Russian**
+- Prompts: agent **`prompt.ru.md` / `prompt.en.md`** and constructor **`prompt.constructor.ru.md` / `prompt.constructor.en.md`** (all required for published styles; [ADR-0011](decisions/ADR-0011-dual-prompt-surfaces.md))
+- Technical documentation: **English**
+
+## Tree (target)
 
 ```
 content/
 ├── index.json
 ├── styles/
 │   └── <id>/
-│       ├── style.json              # обязательно
-│       ├── tokens.json             # обязательно
-│       ├── typography.json         # обязательно для review/published
-│       ├── components.json         # обязательно для review/published
-│       ├── demo.json               # обязательно для review/published
+│       ├── style.json
+│       ├── tokens.json
+│       ├── typography.json
+│       ├── components.json
+│       ├── demo.json              # INTERIM — migrate to templates (R1/R3)
 │       ├── rules.md
-│       ├── prompt.ru.md
-│       ├── prompt.en.md
+│       ├── prompt.ru.md           # required (agent)
+│       ├── prompt.en.md           # required (agent)
+│       ├── prompt.constructor.ru.md  # required (constructor)
+│       ├── prompt.constructor.en.md  # required (constructor)
 │       ├── DESIGN.md
 │       ├── TOKENS.md
 │       ├── AGENT-INSTRUCTIONS.md
 │       ├── CHANGELOG.md
 │       └── assets/
+├── templates/                     # NEW (R1+)
+│   └── <id>/                      # e.g. saas-landing, online-store, portfolio
+│       ├── template.json          # structure + meta
+│       └── content.ru.json        # neutral demo copy (RU)
 ├── glossary/
-└── categories/ | collections/      # позже
+└── categories/ | collections/     # later
 ```
 
-## Жизненный цикл
+## Lifecycle (styles)
 
-1. `draft` — минимально `style.json` + `tokens.json`; прочие файлы warning.
-2. `review` — полный набор JSON + markdown; готовность к аудиту.
-3. `published` — проходит `pnpm content:validate` без error; публичный каталог.
-4. `archived` — остаётся в Git, скрыт из публичного индекса (UI — позже).
+1. `draft` — at least `style.json` + `tokens.json`
+2. `review` — full JSON + markdown set
+3. `published` — `pnpm content:validate` clean; public library
+4. `archived` — kept in Git, hidden from public index
 
-## Связи
+## Relations
 
 ```
 content/index.json ──► content/styles/<id>/
 style.json.id === folder name === tokens.meta.styleId
-style.relatedStyles[] ──► другие style id
+
+Preview (target) = render(templateId, styleId)
 ```
 
-## Правила для агентов
+## Agent rules
 
-- Не создавать параллельные id одной сущности.
-- Не переводить id/slug.
-- Новый стиль: папка + запись в `content/index.json` + `pnpm content:validate`.
-- Эталон `swiss-international` до PHASE 6 остаётся `draft` (не published).
-- `demo.json.compositionId` выбирает раскладку; движок **не** подменяет порядок секций — он берётся из массива `sections`.
+- Do not create parallel ids for one entity.
+- Do not translate id/slug.
+- New style: folder + `content/index.json` entry + `pnpm content:validate`.
+- `swiss-international` is the published editorial reference; R2 also ships `midnight-console` and `poster-brutal` for Same Content / Different Looks.
+- Until templates land: `demo.json.compositionId` selects layout; section order comes from `sections`.
+- Do not copy third-party closed content; open repos (e.g. design-prompts) are inspiration only — cite, do not paste wholesale.
 
-Детали полей: [DATA_CONTRACTS.md](DATA_CONTRACTS.md).
+Field details: [DATA_CONTRACTS.md](DATA_CONTRACTS.md).

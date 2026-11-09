@@ -12,6 +12,10 @@ export function getStylesRoot(): string {
   return path.join(getContentRoot(), "styles");
 }
 
+export function getTemplatesRoot(): string {
+  return path.join(getContentRoot(), "templates");
+}
+
 export function getContentIndexPath(): string {
   return path.join(getContentRoot(), "index.json");
 }
@@ -28,6 +32,8 @@ export const STYLE_MARKDOWN_FILES = [
   "rules.md",
   "prompt.ru.md",
   "prompt.en.md",
+  "prompt.constructor.ru.md",
+  "prompt.constructor.en.md",
   "DESIGN.md",
   "TOKENS.md",
   "AGENT-INSTRUCTIONS.md",
@@ -43,4 +49,12 @@ export function styleDirectory(styleId: string): string {
 
 export function styleFilePath(styleId: string, fileName: string): string {
   return path.join(styleDirectory(styleId), fileName);
+}
+
+export function templateDirectory(templateId: string): string {
+  return path.join(getTemplatesRoot(), templateId);
+}
+
+export function templateFilePath(templateId: string, fileName: string): string {
+  return path.join(templateDirectory(templateId), fileName);
 }

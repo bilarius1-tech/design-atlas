@@ -1,6 +1,8 @@
 import { Container } from "@/components/layout";
 import { Badge, buttonClassName } from "@/components/ui";
 import { listStyleIdsFromDisk, loadStyleBundle } from "@/core/content";
+import { prepareDesignPack } from "@/features/export";
+import { ExportPanel } from "@/features/export/export-panel";
 import { StylePlayground } from "@/features/style-playground";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -47,7 +49,9 @@ export default async function StylePlaygroundPage({ params }: PlaygroundPageProp
               </p>
               <Badge>{bundle.style.status}</Badge>
             </div>
-            <h1 className="font-serif text-4xl tracking-tight">{bundle.style.title.ru}</h1>
+            <h1 className="max-w-full break-words font-serif text-4xl tracking-tight">
+              {bundle.style.title.ru}
+            </h1>
             <p className="max-w-2xl text-muted">{bundle.style.shortDescription.ru}</p>
           </div>
           <Link href="/playground" className={buttonClassName({ variant: "secondary", size: "sm" })}>
@@ -61,7 +65,40 @@ export default async function StylePlaygroundPage({ params }: PlaygroundPageProp
           tokens={bundle.tokens}
           groups={bundle.components?.groups}
         />
+
+        {bundle.style.status === "published" ? (
+          <ExportSection styleId={bundle.id} styleTitle={bundle.style.title.ru} />
+        ) : null}
       </Container>
     </main>
+  );
+}
+
+function ExportSection({ styleId, styleTitle }: { styleId: string; styleTitle: string }) {
+  const prepared = prepareDesignPack(styleId, "free");
+  if (!prepared.ok) {
+    return (
+      <ExportPanel
+        styleId={styleId}
+        styleTitle={styleTitle}
+        freeManifest={null}
+        freeError={prepared.message}
+        freeFileCount={0}
+        freeTotalBytes={0}
+      />
+    );
+  }
+
+  const totalBytes = [...prepared.pack.files.values()].reduce((sum, file) => sum + file.byteLength, 0);
+
+  return (
+    <ExportPanel
+      styleId={styleId}
+      styleTitle={styleTitle}
+      freeManifest={prepared.pack.manifest}
+      freeError={null}
+      freeFileCount={prepared.pack.files.size}
+      freeTotalBytes={totalBytes}
+    />
   );
 }

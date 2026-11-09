@@ -4,6 +4,14 @@
     {
       "id": "swiss-international",
       "path": "content/styles/swiss-international"
+    },
+    {
+      "id": "midnight-console",
+      "path": "content/styles/midnight-console"
+    },
+    {
+      "id": "poster-brutal",
+      "path": "content/styles/poster-brutal"
     }
   ],
   "glossary": []
