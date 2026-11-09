@@ -10,5 +10,6 @@
 | [competitive-prompt-landscape-2026-11-10.md](./competitive-prompt-landscape-2026-11-10.md) | Competitors + prompt UX (DP, Vibe, shadcn, Shipper, UIDrop, RampStack, …) | **FROZEN** |
 | [dizain-prompty-system-import-2026-11-09.md](./dizain-prompty-system-import-2026-11-09.md) | Owned catalog → Atlas System / tokens / style backlog (Neu/Clay/Glass) | working |
 | [claymorphism.md](./claymorphism.md) | Soft clay volume proof style | authored |
+| [neumorphism.md](./neumorphism.md) | Soft extruded / paired-shadow proof style | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

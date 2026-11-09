@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neumorphism",
+  "slug": "neumorphism",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Неоморфизм",
+    "en": "Neumorphism"
+  },
+  "shortDescription": {
+    "ru": "Выдавленные из фона элементы: один цвет с фоном, объём только через светлую и тёмную мягкую тень.",
+    "en": "Extruded soft UI: fills match the ground; volume comes only from paired light and dark soft shadows."
+  },
+  "philosophy": {
+    "ru": "Интерфейс как мягкий пластик: форма читается тенью, не рамкой. Акцент — только на активных контролах. Контраст текста важнее «красоты тени».",
+    "en": "UI as soft plastic: form is read through shadow, not borders. Accent only on active controls. Text contrast beats decorative depth."
+  },
+  "category": "soft-volume",
+  "tags": [
+    "neumorphism",
+    "soft-ui",
+    "extruded",
+    "dashboard",
+    "controls",
+    "light"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "medium",
+  "bestUseCases": [
+    "Smart-home and calculator-like control UIs",
+    "Compact dashboards and media players",
+    "Small product apps that need tactile soft controls"
+  ],
+  "avoidFor": [
+    "High-contrast editorial / Swiss posters",
+    "Playful multi-pastel clay consumer brands",
+    "Dark neon tech landing pages"
+  ],
+  "relatedStyles": [
+    "claymorphism",
+    "swiss-international",
+    "midnight-console"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "Inter"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:10:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Neumorphism (owned catalog)",
+      "url": "https://ztim2008.github.io/dizain-prompty/stil/neumorphism/",
+      "note": "SSOT for palette, dual soft shadow, and inset pressed rules."
+    },
+    {
+      "title": "docs/research/neumorphism.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Accent-filled controls and body text must remain verifiable."
+    }
+  ]
+}

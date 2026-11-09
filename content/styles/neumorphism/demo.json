@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "neumorphism",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Neumorphism", "en": "Neumorphism" },
+      "headline": {
+        "ru": "Объём только тенью, не рамкой",
+        "en": "Volume from shadow, not frames"
+      },
+      "body": {
+        "ru": "Элементы того же цвета, что фон. Светлая и тёмная мягкая тень создают выдавливание — акцент только на активных контролах.",
+        "en": "Fills match the ground. Paired soft shadows create extrusion — accent only on active controls."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Один цвет с фоном", "en": "Same as ground" },
+          "body": { "ru": "Surface ≈ background `#E6EBF2`.", "en": "Surface ≈ background `#E6EBF2`." }
+        },
+        {
+          "title": { "ru": "Парные тени", "en": "Paired shadows" },
+          "body": { "ru": "Свет + тёмная soft shadow; inset для pressed.", "en": "Light + dark soft shadow; inset for pressed." }
+        },
+        {
+          "title": { "ru": "Акцент точечно", "en": "Accent sparingly" },
+          "body": { "ru": "Indigo только на активных кнопках.", "en": "Indigo only on active buttons." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "20px", "en": "20px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=neumorphism"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Neumorphism · DESIGN ATLAS", "en": "Neumorphism · DESIGN ATLAS" }
+    }
+  ]
+}
