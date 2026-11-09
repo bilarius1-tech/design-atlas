@@ -93,8 +93,8 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 3 | `warm-premium` | InfoStyle `premium` | done |
 | 4 | `soft-editorial` | InfoStyle `catalog` | done |
 | 5 | `clinical-minimal` | InfoStyle `clinical` | done |
-| 6 | `eco-botanical` | InfoStyle `eco` | next |
-| 7 | `vintage-gold` | InfoStyle `vintage` | queued |
+| 6 | `eco-botanical` | InfoStyle `eco` | done |
+| 7 | `vintage-gold` | InfoStyle `vintage` | next |
 | 8 | `industrial-power` | InfoStyle `industrial` | queued — prefer `dense-tile` + `gap: 0px` |
 | 9 | `scandi-calm` | InfoStyle `scandi` | queued |
 | 10 | `neo-brutalism` | dizain-prompty | queued (≠ `poster-brutal`; dense optional) |

@@ -48,6 +48,10 @@
     {
       "id": "clinical-minimal",
       "path": "content/styles/clinical-minimal"
+    },
+    {
+      "id": "eco-botanical",
+      "path": "content/styles/eco-botanical"
     }
   ],
   "glossary": []

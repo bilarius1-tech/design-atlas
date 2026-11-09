@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "eco-botanical",
+  "slug": "eco-botanical",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Эко-ботанический",
+    "en": "Eco Botanical"
+  },
+  "shortDescription": {
+    "ru": "Тёплая бумажная поверхность, листовая зелень и глиняные акценты — натуральная эко-подача для веба.",
+    "en": "Warm paper surface, leaf green, and clay accents — a natural eco presentation for the web."
+  },
+  "philosophy": {
+    "ru": "Тактильность без зелёногоwashing. Бумажный ground, мягкий дневной свет, спокойная природная палитра. Не выдумываем сертификаты и состав — только визуальный язык.",
+    "en": "Tactile without greenwashing. Paper ground, soft daylight, calm natural palette. No invented certificates or composition claims — visual language only."
+  },
+  "category": "organic",
+  "tags": [
+    "eco",
+    "botanical",
+    "craft",
+    "natural",
+    "warm",
+    "paper"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Natural / craft brand landings",
+    "Wellness lifestyle sites without medical claims",
+    "Sustainable product marketing that stays honest"
+  ],
+  "avoidFor": [
+    "Neon tech gadget shells",
+    "Loud streetwear campaigns",
+    "Cold clinical lab UIs"
+  ],
+  "relatedStyles": [
+    "soft-editorial",
+    "warm-premium",
+    "claymorphism"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "DM Sans",
+    "Playfair Display"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:05:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Eco botanical (owned catalog)",
+      "note": "SSOT for #EAE5D8 ground, leaf/clay/honey accents. Adapted for Atlas web DS — no eco-cert claims."
+    },
+    {
+      "title": "docs/research/eco-botanical.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Ink on kraft and green/clay CTAs must remain AA."
+    }
+  ]
+}

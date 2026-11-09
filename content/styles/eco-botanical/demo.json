@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "eco-botanical",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Eco Botanical", "en": "Eco Botanical" },
+      "headline": {
+        "ru": "Бумага, свет и спокойная зелень",
+        "en": "Paper, light, and calm green"
+      },
+      "body": {
+        "ru": "Крафтовый ground, листовой зелёный и глиняные акценты — натуральный язык без сертификатов и greenwashing.",
+        "en": "Kraft ground, leaf green, and clay accents — a natural language without certificates or greenwashing."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Крафт-ground", "en": "Kraft ground" },
+          "body": { "ru": "Paper `#EAE5D8`, ink `#34372C`.", "en": "Paper `#EAE5D8`, ink `#34372C`." }
+        },
+        {
+          "title": { "ru": "Лист + глина", "en": "Leaf + clay" },
+          "body": { "ru": "Primary `#73865B`, accent `#C47A4A`.", "en": "Primary `#73865B`, accent `#C47A4A`." }
+        },
+        {
+          "title": { "ru": "Без seals", "en": "No seals" },
+          "body": { "ru": "Только визуал — без выдуманных эко-знаков.", "en": "Visual only — no invented eco marks." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "16px", "en": "16px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1100", "en": "1100" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=eco-botanical"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Eco Botanical · DESIGN ATLAS", "en": "Eco Botanical · DESIGN ATLAS" }
+    }
+  ]
+}

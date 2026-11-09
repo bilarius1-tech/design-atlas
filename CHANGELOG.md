@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`eco-botanical`** (kraft paper, leaf/clay/honey; InfoStyle `eco` adapted — no greenwashing seals).
 - Published style pack **`clinical-minimal`** (cool light stage, Manrope, steel/teal; InfoStyle `clinical` adapted — no medical claims).
 - Published style pack **`soft-editorial`** (warm paper journal, Playfair, terracotta/sage; InfoStyle `catalog` adapted).
 - Dense-tile composition + optional `spacing.gap` (`--sp-gap`); `blueprint-grid` proof with flush mosaic (not a global 0px default).

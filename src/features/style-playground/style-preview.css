@@ -517,3 +517,25 @@
 .style-preview[data-style-id="clinical-minimal"] .dl-brand-mark {
   color: #ffffff;
 }
+
+/* Eco Botanical — kraft wash + cream ink on leaf CTAs */
+.style-preview[data-style-id="eco-botanical"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse 55% 45% at 78% 12%, color-mix(in srgb, var(--sp-color-primary) 18%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 12% 88%, color-mix(in srgb, var(--sp-color-accent-secondary) 16%, transparent), transparent 68%),
+    linear-gradient(145deg, #eee7d7, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="eco-botanical"] .sp-btn-primary,
+.style-preview[data-style-id="eco-botanical"] .sp-btn-accent,
+.style-preview[data-style-id="eco-botanical"] .sp-badge-accent,
+.style-preview[data-style-id="eco-botanical"] .dl-brand-mark {
+  color: #f7f3ea;
+}
+
+.style-preview[data-style-id="eco-botanical"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #f7f3ea;
+}
