@@ -18,5 +18,6 @@
 | [warm-premium.md](./warm-premium.md) | Warm dark premium (InfoStyle) | authored |
 | [dense-tile-gap.md](./dense-tile-gap.md) | Flush mosaic gap token + dense-tile composition | decided |
 | [soft-editorial.md](./soft-editorial.md) | Calm journal / soft editorial (InfoStyle catalog) | authored |
+| [clinical-minimal.md](./clinical-minimal.md) | Cool clinical minimalism (InfoStyle) | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

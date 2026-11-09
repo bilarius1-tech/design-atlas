@@ -44,6 +44,10 @@
     {
       "id": "soft-editorial",
       "path": "content/styles/soft-editorial"
+    },
+    {
+      "id": "clinical-minimal",
+      "path": "content/styles/clinical-minimal"
     }
   ],
   "glossary": []

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "clinical-minimal",
+  "slug": "clinical-minimal",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Клинический минимализм",
+    "en": "Clinical Minimal"
+  },
+  "shortDescription": {
+    "ru": "Светлый холодный фон, строгая сетка и нейтральная типографика — чистая клиническая подача для веба.",
+    "en": "Cool light ground, strict grid, and neutral type — a clean clinical presentation for the web."
+  },
+  "philosophy": {
+    "ru": "Ясность без «медицинских обещаний». Равномерный свет, компактные блоки, спокойные холодные акценты. Структура читается раньше декора.",
+    "en": "Clarity without medical promises. Even light, compact blocks, calm cool accents. Structure reads before decoration."
+  },
+  "category": "minimal",
+  "tags": [
+    "clinical",
+    "minimal",
+    "cool",
+    "clean",
+    "saas",
+    "grid"
+  ],
+  "complexity": "low",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Health-adjacent product marketing without medical claims",
+    "Clean B2B / lab-tech SaaS landings",
+    "Precision service sites that need calm trust"
+  ],
+  "avoidFor": [
+    "Warm editorial magazines",
+    "Loud streetwear campaigns",
+    "Neon gadget shells"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "soft-editorial",
+    "midnight-console"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "DM Sans",
+    "Roboto"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:00:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Clinical minimalism (owned catalog)",
+      "note": "SSOT for #F3F7F8 ground, steel/teal accents, Manrope. Adapted for Atlas web DS — no medical claims."
+    },
+    {
+      "title": "docs/research/clinical-minimal.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Cool ink and blue CTAs on light ground must remain AA."
+    }
+  ]
+}

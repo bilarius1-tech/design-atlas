@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`clinical-minimal`** (cool light stage, Manrope, steel/teal; InfoStyle `clinical` adapted — no medical claims).
 - Published style pack **`soft-editorial`** (warm paper journal, Playfair, terracotta/sage; InfoStyle `catalog` adapted).
 - Dense-tile composition + optional `spacing.gap` (`--sp-gap`); `blueprint-grid` proof with flush mosaic (not a global 0px default).
 - Locked **approved style authoring queue** (14 packs) in ROADMAP; started with InfoStyle adaptations.

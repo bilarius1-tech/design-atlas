@@ -493,3 +493,27 @@
 .style-preview[data-style-id="soft-editorial"] .sp-display {
   letter-spacing: -0.02em;
 }
+
+/* Clinical Minimal — cool wash + inset frame + white ink on steel CTAs */
+.style-preview[data-style-id="clinical-minimal"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: linear-gradient(145deg, #f8fbfc, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="clinical-minimal"]::after {
+  content: "";
+  position: absolute;
+  inset: 3.5%;
+  border: 1px solid color-mix(in srgb, var(--sp-color-primary) 22%, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.style-preview[data-style-id="clinical-minimal"] .sp-btn-primary,
+.style-preview[data-style-id="clinical-minimal"] .sp-btn-accent,
+.style-preview[data-style-id="clinical-minimal"] .sp-badge-accent,
+.style-preview[data-style-id="clinical-minimal"] .dl-brand-mark {
+  color: #ffffff;
+}
