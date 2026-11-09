@@ -32,6 +32,10 @@
     {
       "id": "streetwear",
       "path": "content/styles/streetwear"
+    },
+    {
+      "id": "blueprint-grid",
+      "path": "content/styles/blueprint-grid"
     }
   ],
   "glossary": []

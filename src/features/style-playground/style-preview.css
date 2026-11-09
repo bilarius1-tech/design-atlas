@@ -421,3 +421,32 @@
   text-transform: uppercase;
   letter-spacing: -0.03em;
 }
+
+/* Blueprint Grid — coordinate grid + dark ink on cyan CTAs */
+.style-preview[data-style-id="blueprint-grid"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background-color: var(--sp-color-background);
+  background-image:
+    linear-gradient(rgba(98, 213, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(98, 213, 255, 0.07) 1px, transparent 1px);
+  background-size: 18px 18px, 18px 18px;
+}
+
+.style-preview[data-style-id="blueprint-grid"] .sp-btn-primary,
+.style-preview[data-style-id="blueprint-grid"] .sp-btn-accent,
+.style-preview[data-style-id="blueprint-grid"] .sp-badge-accent,
+.style-preview[data-style-id="blueprint-grid"] .dl-brand-mark {
+  color: #102631;
+}
+
+.style-preview[data-style-id="blueprint-grid"] .sp-card,
+.style-preview[data-style-id="blueprint-grid"] .dl-media-frame {
+  outline: 1px solid color-mix(in srgb, var(--sp-color-primary) 35%, transparent);
+  outline-offset: 0;
+}
+
+.style-preview[data-style-id="blueprint-grid"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #102631;
+}

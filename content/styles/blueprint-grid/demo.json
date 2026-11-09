@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "blueprint-grid",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Blueprint Grid", "en": "Blueprint Grid" },
+      "headline": {
+        "ru": "Сетка. Контур. Точность",
+        "en": "Grid. Contour. Precision"
+      },
+      "body": {
+        "ru": "Сине-графитовый stage, координатная сетка и cyan-маркеры — инженерный чертёж как веб-система.",
+        "en": "Blue-graphite stage, coordinate grid, and cyan markers — an engineering drawing as a web system."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Graphite stage", "en": "Graphite stage" },
+          "body": { "ru": "Ground `#102631`, panels `#163040`.", "en": "Ground `#102631`, panels `#163040`." }
+        },
+        {
+          "title": { "ru": "Сетка + cyan", "en": "Grid + cyan" },
+          "body": { "ru": "Координаты и маркеры `#62D5FF`.", "en": "Coordinates and markers `#62D5FF`." }
+        },
+        {
+          "title": { "ru": "Roboto Mono", "en": "Roboto Mono" },
+          "body": { "ru": "Display и технические подписи.", "en": "Display and technical captions." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "4px", "en": "4px" }, "body": { "ru": "radius кнопок", "en": "button radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=blueprint-grid"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Blueprint Grid · DESIGN ATLAS", "en": "Blueprint Grid · DESIGN ATLAS" }
+    }
+  ]
+}

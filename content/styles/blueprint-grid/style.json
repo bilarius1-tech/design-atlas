@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "blueprint-grid",
+  "slug": "blueprint-grid",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Инженерный чертёж",
+    "en": "Blueprint Grid"
+  },
+  "shortDescription": {
+    "ru": "Сине-графитовый фон, координатная сетка и cyan-маркеры — точность инженерного чертежа для веба.",
+    "en": "Blue-graphite ground, coordinate grid, and cyan markers — engineering-drawing precision for the web."
+  },
+  "philosophy": {
+    "ru": "Точность важнее декора. Сетка, контур и mono-типографика держат порядок. Акценты — тонкие линии и маркеры, не кислотное свечение.",
+    "en": "Precision over decoration. Grid, contour, and mono type keep order. Accents are fine lines and markers — not acid bloom."
+  },
+  "category": "technical",
+  "tags": [
+    "blueprint",
+    "engineering",
+    "grid",
+    "technical",
+    "dark",
+    "mono"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Hardware / industrial product landings",
+    "Engineering and CAD-adjacent SaaS",
+    "Docs-forward technical marketing"
+  ],
+  "avoidFor": [
+    "Soft consumer clay UIs",
+    "Loud streetwear campaigns",
+    "Warm editorial magazine looks"
+  ],
+  "relatedStyles": [
+    "midnight-console",
+    "neon-tech",
+    "swiss-international"
+  ],
+  "fontFamilies": [
+    "Roboto Mono",
+    "Oswald",
+    "Manrope",
+    "DM Sans"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:40:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Blueprint (owned catalog)",
+      "note": "SSOT for #102631 ground, cyan/amber/lime signals, Roboto Mono. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/blueprint-grid.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Cyan controls and light ink on graphite must remain AA."
+    }
+  ]
+}

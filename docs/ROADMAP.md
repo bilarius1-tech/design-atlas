@@ -89,8 +89,8 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | # | Atlas `id` | Source | Status |
 |---|------------|--------|--------|
 | 1 | `streetwear` | InfoStyle `market` | done |
-| 2 | `blueprint-grid` | InfoStyle `blueprint` | next |
-| 3 | `warm-premium` | InfoStyle `premium` | queued |
+| 2 | `blueprint-grid` | InfoStyle `blueprint` | done |
+| 3 | `warm-premium` | InfoStyle `premium` | next |
 | 4 | `soft-editorial` | InfoStyle `catalog` | queued |
 | 5 | `clinical-minimal` | InfoStyle `clinical` | queued |
 | 6 | `eco-botanical` | InfoStyle `eco` | queued |

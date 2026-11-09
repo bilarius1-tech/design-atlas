@@ -8,6 +8,7 @@
 ### Added
 
 - Locked **approved style authoring queue** (14 packs) in ROADMAP; started with InfoStyle adaptations.
+- Published style pack **`blueprint-grid`** (graphite stage, cyan coordinate grid, Roboto Mono; InfoStyle `blueprint` adapted).
 - Published style pack **`streetwear`** (peach ground, Unbounded, coral/lime/violet; InfoStyle `market` adapted).
 - Published style pack **`neon-tech`** (dark stage, lime/cyan/magenta signals, Unbounded; adapted from owned InfoStyle neon).
 - Published style pack **`glassmorphism`** (frosted panels, blur, light border, navy + violet/cyan orbs).
