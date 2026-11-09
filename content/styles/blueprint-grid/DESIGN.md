@@ -3,11 +3,11 @@ id: blueprint-grid
 title:
   ru: Инженерный чертёж
   en: Blueprint Grid
-version: 1.0.0
+version: 1.0.1
 status: published
 schemaVersion: 1.0.0
 generatedAt: 2026-11-09T12:40:00.000Z
-compositionId: modular-stack
+compositionId: dense-tile
 ---
 
 # DESIGN.md · blueprint-grid

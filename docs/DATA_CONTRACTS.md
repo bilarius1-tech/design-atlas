@@ -64,6 +64,7 @@ Optional fields (R4 / complex styles; omit when unused):
 | `colors.accentSecondary` | Clay / multi-accent packs |
 | `effects.shadowInset` | Neumorphism pressed / clay inner light |
 | `effects.blur` | Glassmorphism surface blur (CSS length) |
+| `spacing.gap` | Grid/stack gap → `--sp-gap`. Use `0px` for flush dense-tile styles; omit for default `unit * 4` |
 
 `effects.shadow` remains a full CSS `box-shadow` string and may already contain multi-layer stacks.
 
@@ -79,7 +80,8 @@ Optional fields (R4 / complex styles; omit when unused):
 
 ## DemoDefinition (`demo.json`)
 
-- `compositionId`: `modular-stack` | `swiss-editorial-grid` | `editorial-split`
+- `compositionId`: `modular-stack` | `swiss-editorial-grid` | `editorial-split` | `dense-tile`
+- `dense-tile`: flush features/stats mosaic (hairline gutters). Pair with `spacing.gap: "0px"` on fitting styles only — see [research/dense-tile-gap.md](./research/dense-tile-gap.md)
 - `localeDefault`: `ru` | `en`
 - Секции (порядок = порядок на лендинге): `header`, `hero`, `features`, `editorial`, `showcase`, `statistics`, `testimonials`, `pricing`, `faq`, `cta`, `footer`
 - Поля секции: `eyebrow?`, `headline?`, `body?`, `ctaLabel?`, `ctaHref?`, `items[]?`, `notes?`

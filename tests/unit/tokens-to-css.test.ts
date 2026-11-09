@@ -46,6 +46,16 @@ describe("tokensToCssVars", () => {
     expect(css).toContain("--sp-color-background: #F4F2EC;");
   });
 
+  it("defaults --sp-gap from spacing.unit and honors explicit gap", () => {
+    const defaults = tokensToCssVars(sampleTokens);
+    expect(defaults["--sp-gap"]).toBe("16px");
+    const flush = tokensToCssVars({
+      ...sampleTokens,
+      spacing: { ...sampleTokens.spacing, gap: "0px" },
+    });
+    expect(flush["--sp-gap"]).toBe("0px");
+  });
+
   it("stacks optional inset shadow and exposes blur for glass packs", () => {
     const vars = tokensToCssVars({
       ...sampleTokens,

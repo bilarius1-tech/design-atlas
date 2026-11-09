@@ -35,12 +35,12 @@
 
 .style-preview .dl-grid-2 {
   display: grid;
-  gap: calc(var(--sp-space-unit) * 6);
+  gap: var(--sp-gap, calc(var(--sp-space-unit) * 6));
 }
 
 .style-preview .dl-grid-3 {
   display: grid;
-  gap: calc(var(--sp-space-unit) * 4);
+  gap: var(--sp-gap, calc(var(--sp-space-unit) * 4));
 }
 
 @media (min-width: 768px) {
@@ -121,7 +121,7 @@
 
 .style-preview .dl-stats {
   display: grid;
-  gap: calc(var(--sp-space-unit) * 4);
+  gap: var(--sp-gap, calc(var(--sp-space-unit) * 4));
 }
 
 .style-preview .dl-stats-4 {
@@ -492,6 +492,40 @@
 
 .style-preview.dl-composition-stack .dl-hero-title {
   max-width: 18ch;
+}
+
+/* Dense tile — flush mosaic (no air). Hairline = border color as 1px “gutter”. */
+.style-preview.dl-composition-dense-tile .dl-grid-3,
+.style-preview.dl-composition-dense-tile .dl-stats,
+.style-preview.dl-composition-dense-tile .dl-stats-4 {
+  gap: var(--sp-border-width, 1px);
+  border: var(--sp-border-width) solid var(--sp-color-border);
+  background: var(--sp-color-border);
+}
+
+.style-preview.dl-composition-dense-tile .dl-grid-3 > *,
+.style-preview.dl-composition-dense-tile .dl-stats > *,
+.style-preview.dl-composition-dense-tile .dl-stats-4 > * {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  background: var(--sp-color-surface);
+  outline: none;
+}
+
+.style-preview.dl-composition-dense-tile .dl-feature-card,
+.style-preview.dl-composition-dense-tile .dl-stat {
+  padding: calc(var(--sp-space-unit) * 5);
+  border-top: 0;
+}
+
+.style-preview.dl-composition-dense-tile .dl-section-features,
+.style-preview.dl-composition-dense-tile .dl-section-stats {
+  padding-block: calc(var(--sp-space-unit) * 8);
+}
+
+.style-preview.dl-composition-dense-tile .dl-hero-title {
+  max-width: 20ch;
 }
 
 .style-preview .dl-faq-item {

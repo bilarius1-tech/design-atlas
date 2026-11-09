@@ -16,4 +16,5 @@ Canonical: `tokens.json`.
 | radiusCard | `6px` |
 | display | `57px` |
 | container | `1120px` |
+| gap | `0px` (dense-tile mosaic) |
 | heading/mono | Roboto Mono |

@@ -48,6 +48,11 @@ export const StyleTokensSchema = z
         unit: z.number().positive(),
         section: CssValueSchema,
         container: CssValueSchema,
+        /**
+         * Optional grid / stack gap. Use `0px` for flush dense-tile systems
+         * (Taptop-like industrial mosaics). Omit for default unit-based gap.
+         */
+        gap: CssValueSchema.optional(),
       })
       .strict(),
     geometry: z

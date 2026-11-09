@@ -12,6 +12,11 @@ describe("demo landing compositions", () => {
   it("falls back to modular-stack for unknown ids", () => {
     expect(resolveComposition("unknown-composition").id).toBe("modular-stack");
   });
+
+  it("resolves dense-tile composition for flush mosaics", () => {
+    expect(resolveComposition("dense-tile").id).toBe("dense-tile");
+    expect(resolveComposition("dense-tile").className).toContain("dense-tile");
+  });
 });
 
 describe("swiss-international demo fixture", () => {

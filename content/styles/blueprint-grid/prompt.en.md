@@ -15,6 +15,7 @@ Implement an interface in the **Blueprint Grid** style using the DESIGN ATLAS sy
 - radius `4px`, radiusButton `4px`, radiusCard `6px`, borderWidth `1px`
 - shadow: soft dark + cyan hairline edge
 - container `1120px`, display `57px`, base `16px`
+- gap `0px` — flush dense-tile features/stats mosaic
 
 Grid and contours are the system. Do not invent product dimensions or specs.
 

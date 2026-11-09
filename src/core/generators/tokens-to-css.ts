@@ -34,6 +34,7 @@ export function tokensToCssVars(tokens: StyleTokens): StylePreviewCssVars {
     "--sp-space-unit": `${tokens.spacing.unit}px`,
     "--sp-space-section": tokens.spacing.section,
     "--sp-size-container": tokens.spacing.container,
+    "--sp-gap": tokens.spacing.gap ?? `${tokens.spacing.unit * 4}px`,
     "--sp-radius": tokens.geometry.radius,
     "--sp-radius-button": tokens.geometry.radiusButton ?? tokens.geometry.radius,
     "--sp-radius-card": tokens.geometry.radiusCard ?? tokens.geometry.radius,

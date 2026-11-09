@@ -146,7 +146,7 @@ export function DemoFeaturesSection({
 }) {
   const items = section.items ?? [];
   return (
-    <SectionShell id={section.id}>
+    <SectionShell id={section.id} className="dl-section-features">
       <div className="mb-8 max-w-2xl space-y-2">
         {section.eyebrow ? <p className="dl-kicker">{t(section.eyebrow, locale)}</p> : null}
         {section.headline ? <h2 className="sp-heading sp-h1">{t(section.headline, locale)}</h2> : null}

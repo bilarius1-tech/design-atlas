@@ -16,5 +16,6 @@
 | [streetwear.md](./streetwear.md) | Bold streetwear campaign (InfoStyle market) | authored |
 | [blueprint-grid.md](./blueprint-grid.md) | Engineering blueprint grid (InfoStyle) | authored |
 | [warm-premium.md](./warm-premium.md) | Warm dark premium (InfoStyle) | authored |
+| [dense-tile-gap.md](./dense-tile-gap.md) | Flush mosaic gap token + dense-tile composition | decided |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

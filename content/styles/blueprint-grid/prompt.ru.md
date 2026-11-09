@@ -15,6 +15,7 @@
 - radius `4px`, radiusButton `4px`, radiusCard `6px`, borderWidth `1px`
 - shadow: soft dark + cyan hairline edge
 - container `1120px`, display `57px`, base `16px`
+- gap `0px` — плотная плиточная сетка features/stats (встык)
 
 Сетка и контуры — система. Не придумывай размеры и спецификации товара.
 

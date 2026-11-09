@@ -18,7 +18,7 @@
 
 ## Composition
 
-- Default: `modular-stack`
+- Default: `dense-tile` (flush feature/stat mosaic, `spacing.gap: 0px`)
 - Structure from user chat; Atlas = visual system only
 - Preview may add coordinate grid via scoped CSS
 

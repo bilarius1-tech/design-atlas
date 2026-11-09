@@ -7,7 +7,7 @@ Blocks are already set by the user — apply the visual system only.
 
 - Background `#102631`, panels `#163040`, text `#E8F5F5`
 - Primary `#62D5FF`, accent `#FFB547`, lime `#A9E66E`
-- Radius `4–6px`, border `1px`
+- Card radius `0` (dense-tile), buttons `4px`, border `1px`, gap `0px`
 - Roboto Mono / Oswald; display `57px`; container `1120px`
 
 ## Map onto blocks

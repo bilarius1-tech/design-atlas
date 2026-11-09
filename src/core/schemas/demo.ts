@@ -19,6 +19,8 @@ export const DemoCompositionIdSchema = z.enum([
   "modular-stack",
   "swiss-editorial-grid",
   "editorial-split",
+  /** Flush tile mosaic (0 gutter features/stats) — not a page builder. */
+  "dense-tile",
 ]);
 
 export const DemoItemSchema = z

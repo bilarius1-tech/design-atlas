@@ -95,13 +95,15 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 5 | `clinical-minimal` | InfoStyle `clinical` | queued |
 | 6 | `eco-botanical` | InfoStyle `eco` | queued |
 | 7 | `vintage-gold` | InfoStyle `vintage` | queued |
-| 8 | `industrial-power` | InfoStyle `industrial` | queued |
+| 8 | `industrial-power` | InfoStyle `industrial` | queued — prefer `dense-tile` + `gap: 0px` |
 | 9 | `scandi-calm` | InfoStyle `scandi` | queued |
-| 10 | `neo-brutalism` | dizain-prompty | queued (≠ `poster-brutal`) |
+| 10 | `neo-brutalism` | dizain-prompty | queued (≠ `poster-brutal`; dense optional) |
 | 11 | `aurora-mesh` | dizain-prompty | queued |
 | 12 | `y2k` | dizain-prompty | queued |
 | 13 | `retro-terminal` | dizain-prompty | queued |
-| 14 | `bento-grid` | dizain-prompty | queued (atmosphere only; no Studio grid editor) |
+| 14 | `bento-grid` | dizain-prompty | queued (atmosphere only; no Studio grid editor; may use dense-tile) |
+
+**Dense tile (locked approach):** optional `spacing.gap` + composition `dense-tile` — not a global 0px default. Proof on `blueprint-grid`; soft-volume / premium styles keep air. Details: [research/dense-tile-gap.md](./research/dense-tile-gap.md).
 
 ## R5 — Commerce / Pro
 

@@ -62,6 +62,22 @@ export const COMPOSITIONS: Record<DemoCompositionId, CompositionProfile> = {
     ],
     className: "dl-composition-editorial",
   },
+  "dense-tile": {
+    id: "dense-tile",
+    label: "Dense tile",
+    description:
+      "Flush feature/stat mosaics with 0 gutter — industrial / Taptop-like atmosphere, not a grid editor.",
+    suggestedOrder: [
+      "header",
+      "hero",
+      "features",
+      "statistics",
+      "showcase",
+      "cta",
+      "footer",
+    ],
+    className: "dl-composition-dense-tile",
+  },
 };
 
 export function resolveComposition(compositionId: string): CompositionProfile {

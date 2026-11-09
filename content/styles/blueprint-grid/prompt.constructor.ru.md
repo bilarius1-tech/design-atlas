@@ -7,7 +7,7 @@
 
 - Фон `#102631`, панели `#163040`, текст `#E8F5F5`
 - Primary `#62D5FF`, accent `#FFB547`, lime `#A9E66E`
-- Радиус `4–6px`, border `1px`
+- Радиус карточек `0` (dense-tile), кнопки `4px`, border `1px`, gap `0px`
 - Roboto Mono / Oswald; display `57px`; контейнер `1120px`
 
 ## Наложение
