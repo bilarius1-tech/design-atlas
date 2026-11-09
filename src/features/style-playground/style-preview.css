@@ -78,8 +78,9 @@
   justify-content: center;
   gap: calc(var(--sp-space-unit) * 2);
   max-width: 100%;
-  min-height: calc(var(--sp-space-unit) * 10);
-  padding: 0 calc(var(--sp-space-unit) * 4);
+  /* unit×7 → 56px at default unit 8 — denser than ×10, still touch-friendly */
+  min-height: calc(var(--sp-space-unit) * 7);
+  padding: 0 calc(var(--sp-space-unit) * 3.5);
   border: var(--sp-border-width) solid transparent;
   border-radius: var(--sp-radius-button, var(--sp-radius));
   font-family: var(--sp-font-body);

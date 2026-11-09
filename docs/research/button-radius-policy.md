@@ -21,5 +21,5 @@ Most published styles use `geometry.radiusButton: 999px` so Studio CTAs read as 
 
 ## Notes
 
-- Height stays global in preview CSS (`min-height: unit × 10`); separate from radius.
+- Height stays global in preview CSS (`min-height: unit × 7` → 56px at unit 8); separate from radius.
 - System drawer can still override session radius without writing Git.

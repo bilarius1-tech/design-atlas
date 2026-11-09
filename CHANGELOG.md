@@ -15,6 +15,7 @@
 
 ### Changed
 
+- Studio preview buttons denser: `min-height` `unit × 7` (56px at unit 8) instead of `× 10`.
 - **Button radius policy:** pill `999px` by default across styles; sharp exceptions only for kinetic / retro-terminal / neo-brutal / poster-brutal / swiss / industrial / blueprint (`docs/research/button-radius-policy.md`).
 - **`claymorphism` v1.1.0** — multi-pastel kid clay (pink/mint/sky/cream), card radius 38px, dual-shadow preview polish.
 - Published style pack **`y2k`** (lavender ground, chrome Unbounded, pink/cyan pills; dizain-prompty adapted).
