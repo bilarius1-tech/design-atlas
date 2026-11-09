@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`scandi-calm`** (warm white, Manrope, clay/sage/slate; InfoStyle `scandi` adapted).
 - Published style pack **`industrial-power`** (graphite stage, signal yellow, dense-tile + gap 0; InfoStyle `industrial` adapted).
 - Published style pack **`vintage-gold`** (aged paper, Playfair, sparing gold frames; InfoStyle `vintage` adapted — no fake seals).
 - Published style pack **`eco-botanical`** (kraft paper, leaf/clay/honey; InfoStyle `eco` adapted — no greenwashing seals).

@@ -600,3 +600,43 @@
 .style-preview[data-style-id="industrial-power"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #252522;
 }
+
+/* Scandi Calm — soft daylight wash + cream ink on clay CTAs */
+.style-preview[data-style-id="scandi-calm"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: linear-gradient(160deg, #f3f0e8, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="scandi-calm"]::before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  width: min(22%, 180px);
+  height: 38%;
+  background: #d6d1c4;
+  opacity: 0.45;
+  border-radius: 50% 50% 8px 8px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.style-preview[data-style-id="scandi-calm"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+.style-preview[data-style-id="scandi-calm"] .sp-btn-primary,
+.style-preview[data-style-id="scandi-calm"] .sp-btn-accent,
+.style-preview[data-style-id="scandi-calm"] .sp-badge-accent,
+.style-preview[data-style-id="scandi-calm"] .dl-brand-mark {
+  color: #faf8f3;
+}
+
+.style-preview[data-style-id="scandi-calm"] .sp-heading,
+.style-preview[data-style-id="scandi-calm"] .sp-display {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}

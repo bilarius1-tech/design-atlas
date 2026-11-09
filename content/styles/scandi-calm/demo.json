@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "scandi-calm",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Scandi Calm", "en": "Scandi Calm" },
+      "headline": {
+        "ru": "Тёплый белый и тихий свет",
+        "en": "Warm white and quiet light"
+      },
+      "body": {
+        "ru": "Спокойный скандинавский stage: воздух, простые плоскости, Manrope и мягкие натуральные акценты.",
+        "en": "A calm Scandinavian stage: air, simple planes, Manrope, and soft natural accents."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Warm white", "en": "Warm white" },
+          "body": { "ru": "Ground `#F1EEE7`, ink `#35342F`.", "en": "Ground `#F1EEE7`, ink `#35342F`." }
+        },
+        {
+          "title": { "ru": "Натурали sparingly", "en": "Naturals sparingly" },
+          "body": { "ru": "Clay / sage / slate — дозированно.", "en": "Clay / sage / slate — sparingly." }
+        },
+        {
+          "title": { "ru": "Воздух", "en": "Air" },
+          "body": { "ru": "Не dense-tile; мягкий Manrope.", "en": "Not dense-tile; soft Manrope." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "14px", "en": "14px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1100", "en": "1100" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=scandi-calm"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Scandi Calm · DESIGN ATLAS", "en": "Scandi Calm · DESIGN ATLAS" }
+    }
+  ]
+}

@@ -96,8 +96,8 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 6 | `eco-botanical` | InfoStyle `eco` | done |
 | 7 | `vintage-gold` | InfoStyle `vintage` | done |
 | 8 | `industrial-power` | InfoStyle `industrial` | done — `dense-tile` + `gap: 0px` |
-| 9 | `scandi-calm` | InfoStyle `scandi` | next |
-| 10 | `neo-brutalism` | dizain-prompty | queued (≠ `poster-brutal`; dense optional) |
+| 9 | `scandi-calm` | InfoStyle `scandi` | done |
+| 10 | `neo-brutalism` | dizain-prompty | next (≠ `poster-brutal`; dense optional) |
 | 11 | `aurora-mesh` | dizain-prompty | queued |
 | 12 | `y2k` | dizain-prompty | queued |
 | 13 | `retro-terminal` | dizain-prompty | queued |

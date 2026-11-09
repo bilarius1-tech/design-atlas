@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scandi-calm",
+  "slug": "scandi-calm",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Скандинавский уют",
+    "en": "Scandi Calm"
+  },
+  "shortDescription": {
+    "ru": "Тёплый белый, мягкий дневной свет и простые геометричные плоскости — спокойный скандинавский веб.",
+    "en": "Warm white, soft daylight, and simple geometric planes — calm Scandinavian web."
+  },
+  "philosophy": {
+    "ru": "Уют через воздух и ясность, не через декор. Тёплый белый ground, дружелюбный Manrope, акценты дозированно в натуральных тонах.",
+    "en": "Comfort through air and clarity, not decoration. Warm white ground, friendly Manrope, naturals used sparingly."
+  },
+  "category": "organic",
+  "tags": [
+    "scandi",
+    "calm",
+    "warm-white",
+    "home",
+    "minimal",
+    "natural"
+  ],
+  "complexity": "low",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Home / furniture brand landings",
+    "Calm wellness lifestyle sites",
+    "Quiet product marketing with soft daylight"
+  ],
+  "avoidFor": [
+    "Industrial dense-tile mosaics",
+    "Neon tech gadget shells",
+    "Loud streetwear campaigns"
+  ],
+  "relatedStyles": [
+    "soft-editorial",
+    "eco-botanical",
+    "swiss-international"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "DM Sans",
+    "Playfair Display"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:20:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Scandi calm (owned catalog)",
+      "note": "SSOT for #F1EEE7 warm white, clay/sage/slate, Manrope. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/scandi-calm.md",
+      "note": "Atlas research note: traits, distinction from soft-editorial/eco."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Ink on warm white and clay CTAs must remain AA."
+    }
+  ]
+}

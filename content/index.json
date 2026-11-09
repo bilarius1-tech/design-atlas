@@ -60,6 +60,10 @@
     {
       "id": "industrial-power",
       "path": "content/styles/industrial-power"
+    },
+    {
+      "id": "scandi-calm",
+      "path": "content/styles/scandi-calm"
     }
   ],
   "glossary": []
