@@ -24,6 +24,10 @@
     {
       "id": "glassmorphism",
       "path": "content/styles/glassmorphism"
+    },
+    {
+      "id": "neon-tech",
+      "path": "content/styles/neon-tech"
     }
   ],
   "glossary": []

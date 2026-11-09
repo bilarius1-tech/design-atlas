@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neon-tech",
+  "slug": "neon-tech",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Неоновый техно",
+    "en": "Neon Tech"
+  },
+  "shortDescription": {
+    "ru": "Тёмная сцена, световые контуры и кислотные акценты — техно-подача для IT и гаджетов.",
+    "en": "Dark stage, light contours, and acid accents — tech presentation for IT and gadgets."
+  },
+  "philosophy": {
+    "ru": "Неон — сигнал, не шум. Глубокий угольный фон, тонкая сетка и дозированное свечение держат иерархию. Текст всегда читается; свечение подчёркивает контролы, а не перекрывает их.",
+    "en": "Neon is a signal, not noise. A deep charcoal ground, a fine grid, and controlled glow keep hierarchy. Type stays readable; glow accents controls instead of burying them."
+  },
+  "category": "dark-tech",
+  "tags": [
+    "neon",
+    "tech",
+    "dark",
+    "gadgets",
+    "saas",
+    "cyber",
+    "high-contrast"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Electronics and gadget marketing",
+    "Devtools / AI product landings",
+    "Night-mode SaaS shells with neon signal accents"
+  ],
+  "avoidFor": [
+    "Warm editorial or Swiss print systems",
+    "Clay pastel consumer toys",
+    "Soft frosted-glass fintech (use glassmorphism)"
+  ],
+  "relatedStyles": [
+    "midnight-console",
+    "glassmorphism",
+    "poster-brutal"
+  ],
+  "fontFamilies": [
+    "Unbounded",
+    "Oswald",
+    "Manrope",
+    "Roboto Mono"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:30:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Neon Tech (owned catalog)",
+      "note": "SSOT for palette (#171A22, lime/cyan/magenta), Unbounded + mono, glow contour idea. Adapted for Atlas web DS, not product-card image prompts."
+    },
+    {
+      "title": "docs/research/neon-tech.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Dark labels on lime CTAs; light body on charcoal must remain AA."
+    }
+  ]
+}

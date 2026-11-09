@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "neon-tech",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Neon Tech", "en": "Neon Tech" },
+      "headline": {
+        "ru": "Свет как сигнал, не как шум",
+        "en": "Light as signal, not noise"
+      },
+      "body": {
+        "ru": "Угольный фон, тонкая сетка и дозированные lime / cyan / magenta контуры. Техно-система для IT и гаджетов.",
+        "en": "Charcoal ground, fine grid, and controlled lime / cyan / magenta contours. A tech system for IT and gadgets."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Тёмный stage", "en": "Dark stage" },
+          "body": { "ru": "Ground `#171A22`, panels `#222633`.", "en": "Ground `#171A22`, panels `#222633`." }
+        },
+        {
+          "title": { "ru": "Неон дозированно", "en": "Neon sparingly" },
+          "body": { "ru": "Lime CTA, cyan/magenta signals.", "en": "Lime CTA, cyan/magenta signals." }
+        },
+        {
+          "title": { "ru": "Unbounded + mono", "en": "Unbounded + mono" },
+          "body": { "ru": "Геометрия display, tech captions.", "en": "Geometric display, tech captions." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "12px", "en": "12px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=neon-tech"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Neon Tech · DESIGN ATLAS", "en": "Neon Tech · DESIGN ATLAS" }
+    }
+  ]
+}

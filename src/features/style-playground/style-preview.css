@@ -358,3 +358,36 @@
 .style-preview[data-style-id="glassmorphism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #ffffff;
 }
+
+/* Neon Tech — radial stage, fine grid, dark ink on lime CTAs */
+.style-preview[data-style-id="neon-tech"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    linear-gradient(rgba(0, 213, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 213, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(ellipse 55% 48% at 50% 28%, #31344b, transparent 70%),
+    var(--sp-color-background);
+  background-size:
+    22px 22px,
+    22px 22px,
+    auto,
+    auto;
+}
+
+.style-preview[data-style-id="neon-tech"] .sp-btn-primary,
+.style-preview[data-style-id="neon-tech"] .sp-btn-accent,
+.style-preview[data-style-id="neon-tech"] .sp-badge-accent,
+.style-preview[data-style-id="neon-tech"] .dl-brand-mark {
+  color: #0b0f14;
+}
+
+.style-preview[data-style-id="neon-tech"] .sp-card,
+.style-preview[data-style-id="neon-tech"] .dl-media-frame {
+  box-shadow: var(--sp-shadow);
+}
+
+.style-preview[data-style-id="neon-tech"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #0b0f14;
+}
