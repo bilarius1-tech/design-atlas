@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "retro-terminal",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Retro Terminal", "en": "Retro Terminal" },
+      "headline": {
+        "ru": "> boot phosphor",
+        "en": "> boot phosphor"
+      },
+      "body": {
+        "ru": "Чёрный CRT, зелёный mono и scanlines — интерфейс как shell для разработчиков и хакатонов.",
+        "en": "Black CRT, green mono, and scanlines — UI as a shell for developers and hackathons."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "CRT black", "en": "CRT black" },
+          "body": { "ru": "Ground `#0A0F0A` + scanlines.", "en": "Ground `#0A0F0A` + scanlines." }
+        },
+        {
+          "title": { "ru": "Phosphor / amber", "en": "Phosphor / amber" },
+          "body": { "ru": "`#33FF66` текст, `#FFB000` CTA.", "en": "`#33FF66` type, `#FFB000` CTA." }
+        },
+        {
+          "title": { "ru": "All mono", "en": "All mono" },
+          "body": { "ru": "JetBrains Mono; radius `0`.", "en": "JetBrains Mono; radius `0`." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "0px", "en": "0px" }, "body": { "ru": "radius everywhere", "en": "radius everywhere" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1040", "en": "1040" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=retro-terminal"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Retro Terminal · DESIGN ATLAS", "en": "Retro Terminal · DESIGN ATLAS" }
+    }
+  ]
+}

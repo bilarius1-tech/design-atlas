@@ -51,7 +51,7 @@ Grid and site width stay **tokens**, not a builder: `spacing.container` + spacin
 | bento-grid | `bento-grid` | queue #14 (atmosphere only) |
 | aurora-mesh-gradient | `aurora-mesh` | done #11 |
 | y2k | `y2k` | done #12 |
-| retro-terminal | `retro-terminal` | queue #13 |
+| retro-terminal | `retro-terminal` | done #13 |
 | journal layout | `soft-editorial` | queue #4 (InfoStyle `catalog`) |
 | InfoStyle RU set | see ROADMAP queue #1–9 | locked 2026-11-09 |
 

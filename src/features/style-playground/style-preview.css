@@ -855,3 +855,90 @@
 .style-preview[data-style-id="y2k"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #ffffff;
 }
+
+/* Retro Terminal — CRT scanlines, phosphor glow, CLI caret */
+.style-preview[data-style-id="retro-terminal"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background-color: var(--sp-color-background);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(51, 255, 102, 0.055) 0 1px,
+      transparent 1px 3px
+    ),
+    radial-gradient(ellipse 70% 55% at 50% 0%, rgba(51, 255, 102, 0.12), transparent 60%);
+  text-shadow: 0 0 6px rgba(51, 255, 102, 0.55);
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-btn-primary,
+.style-preview[data-style-id="retro-terminal"] .sp-btn-accent,
+.style-preview[data-style-id="retro-terminal"] .sp-badge-accent,
+.style-preview[data-style-id="retro-terminal"] .dl-brand-mark {
+  color: #0a0f0a;
+  background: #ffb000;
+  border-color: #ffb000;
+  text-shadow: none;
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-btn-primary::before,
+.style-preview[data-style-id="retro-terminal"] .sp-btn-accent::before,
+.style-preview[data-style-id="retro-terminal"] .dl-brand-mark::before {
+  content: "[ ";
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-btn-primary::after,
+.style-preview[data-style-id="retro-terminal"] .sp-btn-accent::after,
+.style-preview[data-style-id="retro-terminal"] .dl-brand-mark::after {
+  content: " ]";
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-heading,
+.style-preview[data-style-id="retro-terminal"] .sp-display {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-display::before,
+.style-preview[data-style-id="retro-terminal"] .dl-hero-title::before {
+  content: "> ";
+  color: #ffb000;
+  text-shadow: 0 0 8px rgba(255, 176, 0, 0.45);
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-display::after,
+.style-preview[data-style-id="retro-terminal"] .dl-hero-title::after {
+  content: "_";
+  margin-left: 0.08em;
+  color: #33ff66;
+  animation: retro-terminal-caret 1s steps(1) infinite;
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-card,
+.style-preview[data-style-id="retro-terminal"] .dl-feature-card,
+.style-preview[data-style-id="retro-terminal"] .dl-stat {
+  border-style: dashed;
+  border-color: #33ff66;
+  border-radius: 0;
+  background: rgba(15, 22, 15, 0.72);
+  box-shadow: none;
+}
+
+.style-preview[data-style-id="retro-terminal"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #0a0f0a;
+}
+
+@keyframes retro-terminal-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .style-preview[data-style-id="retro-terminal"] .sp-display::after,
+  .style-preview[data-style-id="retro-terminal"] .dl-hero-title::after {
+    animation: none;
+  }
+}

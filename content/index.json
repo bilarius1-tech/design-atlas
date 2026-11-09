@@ -76,6 +76,10 @@
     {
       "id": "y2k",
       "path": "content/styles/y2k"
+    },
+    {
+      "id": "retro-terminal",
+      "path": "content/styles/retro-terminal"
     }
   ],
   "glossary": []

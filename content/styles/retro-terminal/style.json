@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "retro-terminal",
+  "slug": "retro-terminal",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Ретро-терминал",
+    "en": "Retro Terminal"
+  },
+  "shortDescription": {
+    "ru": "Чёрный CRT-экран, фосфорный моноширинный текст, scanlines и мигающий курсор — интерфейс как командная строка.",
+    "en": "Black CRT screen, phosphor monospace type, scanlines, and a blinking cursor — UI as a command line."
+  },
+  "philosophy": {
+    "ru": "Характер через shell, не через неон-шум. Один фосфор, один янтарь, ноль скруглений: читаемый CLI-ритм, который агент воспроизводит правилами.",
+    "en": "Character through the shell, not neon noise. One phosphor, one amber, zero radius: a readable CLI rhythm an agent can reproduce with rules."
+  },
+  "category": "retro-tech",
+  "tags": [
+    "terminal",
+    "crt",
+    "monospace",
+    "developer",
+    "hackathon",
+    "retro",
+    "dark"
+  ],
+  "complexity": "low",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Developer portfolio and techno-blog landings",
+    "Hackathon / CTF / IT community pages",
+    "CLI-flavored product marketing for engineers"
+  ],
+  "avoidFor": [
+    "Warm lifestyle / fashion campaigns",
+    "Soft glass / aurora mesh premium shells",
+    "Y2K glitter or neo-brutal poster systems"
+  ],
+  "relatedStyles": [
+    "midnight-console",
+    "neon-tech",
+    "blueprint-grid"
+  ],
+  "fontFamilies": [
+    "JetBrains Mono",
+    "PT Mono"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T14:00:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Retro Terminal (owned catalog)",
+      "note": "SSOT for #0A0F0A / #33FF66 / #FFB000 / #1C2A1C, JetBrains Mono+PT Mono, scanlines, CLI brackets. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/retro-terminal.md",
+      "note": "Atlas research note: traits, distinction from midnight-console / neon-tech."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Phosphor and amber on black must remain AA for body/CTA text."
+    }
+  ]
+}

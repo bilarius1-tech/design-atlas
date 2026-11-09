@@ -100,7 +100,7 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 10 | `neo-brutalism` | dizain-prompty | done (≠ `poster-brutal`; modular-stack, not dense-tile) |
 | 11 | `aurora-mesh` | dizain-prompty | done (night mesh aurora; soft drift) |
 | 12 | `y2k` | dizain-prompty | done (lavender chrome + pink/cyan) |
-| 13 | `retro-terminal` | dizain-prompty | queued |
+| 13 | `retro-terminal` | dizain-prompty | done (CRT phosphor + amber CLI) |
 | 14 | `bento-grid` | dizain-prompty | queued (atmosphere only; no Studio grid editor; may use dense-tile) |
 
 **Dense tile (locked approach):** optional `spacing.gap` + composition `dense-tile` — not a global 0px default. Proof on `blueprint-grid`; soft-volume / premium styles keep air. Details: [research/dense-tile-gap.md](./research/dense-tile-gap.md).

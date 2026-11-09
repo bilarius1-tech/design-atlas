@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`retro-terminal`** (CRT black, phosphor mono, amber CTAs, scanlines; dizain-prompty adapted).
 - Published style pack **`y2k`** (lavender ground, chrome Unbounded, pink/cyan pills; dizain-prompty adapted).
 - Published style pack **`aurora-mesh`** (night field, cyan/violet/pink mesh blooms, glass panels, white CTA; dizain-prompty adapted).
 - Published style pack **`neo-brutalism`** (butter ground, Unbounded+Rubik, pink/mint, 3px rules + hard offset; dizain-prompty adapted — ≠ `poster-brutal`).

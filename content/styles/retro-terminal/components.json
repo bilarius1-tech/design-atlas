@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "retro-terminal",
+  "groups": [
+    {
+      "id": "typography",
+      "label": "Typography",
+      "items": [
+        "display",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "body-large",
+        "body",
+        "caption",
+        "label",
+        "quote",
+        "code",
+        "link"
+      ],
+      "notes": "All JetBrains Mono; phosphor glow; CLI prompt voice."
+    },
+    {
+      "id": "buttons",
+      "label": "Buttons",
+      "items": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "ghost",
+        "icon",
+        "disabled",
+        "loading",
+        "hover",
+        "focus",
+        "active"
+      ],
+      "notes": "Amber bracket CTAs `[ label ]`; ghost phosphor outlines; radius 0."
+    },
+    {
+      "id": "forms",
+      "label": "Forms",
+      "items": [
+        "text-input",
+        "email-input",
+        "search-input",
+        "textarea",
+        "select",
+        "checkbox",
+        "radio",
+        "switch",
+        "range",
+        "validation-error",
+        "success"
+      ]
+    },
+    {
+      "id": "shapes",
+      "label": "Shapes & geometry",
+      "items": [
+        "circle",
+        "square",
+        "rectangle",
+        "divider",
+        "horizontal-line",
+        "vertical-line",
+        "dots",
+        "grid",
+        "hairline-rule"
+      ],
+      "notes": "Square frames; dashed phosphor rules; no soft radii."
+    },
+    {
+      "id": "cards",
+      "label": "Cards",
+      "items": [
+        "feature",
+        "product",
+        "article",
+        "profile",
+        "pricing",
+        "testimonial",
+        "statistics"
+      ],
+      "notes": "Dashed #33FF66 / #1C2A1C frames on CRT black; scanline stage behind."
+    },
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "items": [
+        "header",
+        "main-nav",
+        "mobile-nav",
+        "tabs",
+        "breadcrumbs",
+        "pagination"
+      ]
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback",
+      "items": [
+        "badge",
+        "tag",
+        "alert",
+        "tooltip",
+        "progress",
+        "skeleton",
+        "empty-state"
+      ]
+    },
+    {
+      "id": "icons",
+      "label": "Icons",
+      "items": [
+        "functional",
+        "navigation",
+        "status",
+        "action"
+      ],
+      "notes": "Block / caret markers; keep sparse like a shell prompt."
+    }
+  ]
+}
