@@ -43,7 +43,7 @@
 }
 
 .style-preview .sp-display {
-  font-size: clamp(2.75rem, 11vw, var(--sp-text-display));
+  font-size: clamp(2rem, 6vw, var(--sp-text-display));
 }
 
 .style-preview .sp-h1 {
@@ -81,7 +81,7 @@
   min-height: calc(var(--sp-space-unit) * 10);
   padding: 0 calc(var(--sp-space-unit) * 4);
   border: var(--sp-border-width) solid transparent;
-  border-radius: var(--sp-radius);
+  border-radius: var(--sp-radius-button, var(--sp-radius));
   font-family: var(--sp-font-body);
   font-size: var(--sp-text-sm);
   font-weight: 600;
@@ -179,9 +179,10 @@
 .style-preview .sp-card {
   background: var(--sp-color-surface);
   border: var(--sp-border-width) solid var(--sp-color-border);
-  border-radius: var(--sp-radius);
+  border-radius: var(--sp-radius-card, var(--sp-radius));
   padding: calc(var(--sp-space-unit) * 5);
   box-shadow: var(--sp-shadow);
+  backdrop-filter: blur(var(--sp-blur, 0px));
 }
 
 .style-preview .sp-badge {

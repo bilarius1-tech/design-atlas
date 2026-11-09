@@ -57,6 +57,16 @@ type Source = { title: string; url?: string; note?: string };
 
 `meta.styleId` === имя папки.
 
+Optional fields (R4 / complex styles; omit when unused):
+
+| Path | Use |
+|------|-----|
+| `colors.accentSecondary` | Clay / multi-accent packs |
+| `effects.shadowInset` | Neumorphism pressed / clay inner light |
+| `effects.blur` | Glassmorphism surface blur (CSS length) |
+
+`effects.shadow` remains a full CSS `box-shadow` string and may already contain multi-layer stacks.
+
 ## TypographyDefinition (`typography.json`)
 
 Роли: `display`, `h1`–`h4`, `bodyLarge`, `body`, `caption`, `label`, `quote`, `code`.

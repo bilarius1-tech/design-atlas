@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "corporate-blog",
+  "title": {
+    "ru": "Корпоративный + новости",
+    "en": "Corporate + news"
+  },
+  "shortDescription": {
+    "ru": "Сайт компании: о нас, услуги, лента новостей/блога, доказательства и контакт.",
+    "en": "Company site: about, services, news/blog strip, proof, and contact."
+  },
+  "category": "marketing",
+  "defaultCompositionId": "editorial-split",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": {
+        "ru": "Арк",
+        "en": "Ark"
+      },
+      "ctaLabel": {
+        "ru": "Связаться",
+        "en": "Contact"
+      },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": {
+        "ru": "Инженерный холдинг",
+        "en": "Engineering group"
+      },
+      "headline": {
+        "ru": "Строим системы, о которых можно рассказать спокойно",
+        "en": "We build systems you can explain calmly"
+      },
+      "body": {
+        "ru": "Атмосфера системы: цвет, типографика, отступы и скругления. Новости и «о компании» показывают пару шрифтов и ритм. Сборку сайта делает агент снаружи.",
+        "en": "System atmosphere: color, type, spacing, radius. News and about show the type pair and rhythm. An agent builds the site elsewhere."
+      },
+      "ctaLabel": {
+        "ru": "О компании",
+        "en": "About us"
+      },
+      "ctaHref": "#demo-editorial"
+    },
+    {
+      "id": "editorial",
+      "eyebrow": {
+        "ru": "Кто мы",
+        "en": "Who we are"
+      },
+      "headline": {
+        "ru": "Промышленный дизайн процессов, не презентаций",
+        "en": "Industrial process design — not slide decks"
+      },
+      "body": {
+        "ru": "Арк сопровождает заводы и инфраструктуру: аудит, внедрение и обучение команд. Этот текст — демо для превью стиля.",
+        "en": "Ark supports plants and infrastructure: audit, rollout, and team training. Demo copy for style preview."
+      },
+      "ctaLabel": {
+        "ru": "К новостям",
+        "en": "To news"
+      },
+      "ctaHref": "#demo-showcase"
+    },
+    {
+      "id": "features",
+      "eyebrow": {
+        "ru": "Направления",
+        "en": "Practices"
+      },
+      "headline": {
+        "ru": "Чем занимаемся",
+        "en": "What we do"
+      },
+      "body": {
+        "ru": "Три линии услуг — в реальном проекте сюда поставят ваши оферты.",
+        "en": "Three service lines — swap in your offers in the real project."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Операционный аудит",
+            "en": "Operations audit"
+          },
+          "body": {
+            "ru": "Карта потерь и узких мест на площадке за 3–4 недели.",
+            "en": "Loss and bottleneck map on site in 3–4 weeks."
+          }
+        },
+        {
+          "title": {
+            "ru": "Внедрение стандарта",
+            "en": "Standard rollout"
+          },
+          "body": {
+            "ru": "Регламенты, роли и контрольные точки без лишней бюрократии.",
+            "en": "Playbooks, roles, and checkpoints without busywork."
+          }
+        },
+        {
+          "title": {
+            "ru": "Обучение смен",
+            "en": "Shift training"
+          },
+          "body": {
+            "ru": "Короткие программы для мастеров и линейных руководителей.",
+            "en": "Short programs for supervisors and line leads."
+          }
+        }
+      ]
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Новости и блог",
+        "en": "News and blog"
+      },
+      "body": {
+        "ru": "Лента материалов — дата акцентным цветом, заголовок гарнитурой стиля. Не товарная сетка: это сигнал корпоративного тона.",
+        "en": "A news strip — date in accent, headline in the style typeface. Not a product grid: a corporate tone signal."
+      },
+      "items": [
+        {
+          "meta": {
+            "ru": "12 окт 2026",
+            "en": "12 Oct 2026"
+          },
+          "title": {
+            "ru": "Отчёт с площадки в Нижнем",
+            "en": "Site note from Nizhny"
+          },
+          "body": {
+            "ru": "Как сократили очередь на входной контроль без нового оборудования.",
+            "en": "How inbound QC queues shrank without new equipment."
+          }
+        },
+        {
+          "meta": {
+            "ru": "28 сен 2026",
+            "en": "28 Sep 2026"
+          },
+          "title": {
+            "ru": "Школа мастеров: набор осени",
+            "en": "Supervisor school: autumn cohort"
+          },
+          "body": {
+            "ru": "Открыт набор на шестинедельный курс для линейных руководителей.",
+            "en": "Applications open for a six-week course for line supervisors."
+          }
+        },
+        {
+          "meta": {
+            "ru": "5 сен 2026",
+            "en": "5 Sep 2026"
+          },
+          "title": {
+            "ru": "Партнёрство с логистическим хабом",
+            "en": "Logistics hub partnership"
+          },
+          "body": {
+            "ru": "Совместный пилот по синхронизации смен и отгрузок.",
+            "en": "Joint pilot on shift and dispatch sync."
+          }
+        },
+        {
+          "meta": {
+            "ru": "18 авг 2026",
+            "en": "18 Aug 2026"
+          },
+          "title": {
+            "ru": "Почему мы не пишем «AI-first»",
+            "en": "Why we avoid “AI-first” copy"
+          },
+          "body": {
+            "ru": "Заметка о языке отчётов для советов директоров.",
+            "en": "A note on board-report language."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": {
+        "ru": "В цифрах",
+        "en": "In numbers"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "40+",
+            "en": "40+"
+          },
+          "body": {
+            "ru": "площадок за пять лет",
+            "en": "sites in five years"
+          }
+        },
+        {
+          "title": {
+            "ru": "11",
+            "en": "11"
+          },
+          "body": {
+            "ru": "регионов присутствия",
+            "en": "regions covered"
+          }
+        },
+        {
+          "title": {
+            "ru": "92%",
+            "en": "92%"
+          },
+          "body": {
+            "ru": "продлений контракта",
+            "en": "contract renewals"
+          }
+        },
+        {
+          "title": {
+            "ru": "6 нед",
+            "en": "6 wk"
+          },
+          "body": {
+            "ru": "типичный аудит",
+            "en": "typical audit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "headline": {
+        "ru": "Голоса клиентов",
+        "en": "Client voices"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Елена В.",
+            "en": "Elena V."
+          },
+          "meta": {
+            "ru": "Директор по производству",
+            "en": "Head of production"
+          },
+          "body": {
+            "ru": "Отчёт читается с первого экрана — без слайдов «для красоты».",
+            "en": "The report reads from the first screen — no vanity slides."
+          }
+        },
+        {
+          "title": {
+            "ru": "Павел Н.",
+            "en": "Pavel N."
+          },
+          "meta": {
+            "ru": "COO",
+            "en": "COO"
+          },
+          "body": {
+            "ru": "Новости на сайте совпадают с тем, что происходит на площадке — редкость.",
+            "en": "Site news matches what happens on the floor — rare."
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": {
+        "ru": "Частые вопросы",
+        "en": "FAQ"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Работаете только с заводами?",
+            "en": "Plants only?"
+          },
+          "body": {
+            "ru": "Нет, также логистика и инфраструктура. Демо-ответ — замените своим.",
+            "en": "No — logistics and infrastructure too. Demo answer — replace with yours."
+          }
+        },
+        {
+          "title": {
+            "ru": "Где публикуются новости?",
+            "en": "Where do news live?"
+          },
+          "body": {
+            "ru": "В каркасе это статичный блок. В проекте — блог, CMS или Telegram-зеркало.",
+            "en": "In the frame it’s static. In your project — blog, CMS, or a Telegram mirror."
+          }
+        },
+        {
+          "title": {
+            "ru": "Можно белую этикетку?",
+            "en": "White-label?"
+          },
+          "body": {
+            "ru": "Обсуждается отдельно. Не выдумывайте условия в промпте без брифа.",
+            "en": "Discussed case by case. Don’t invent terms in the prompt without a brief."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "eyebrow": {
+        "ru": "Контакт",
+        "en": "Contact"
+      },
+      "headline": {
+        "ru": "Расскажите о площадке",
+        "en": "Tell us about the site"
+      },
+      "body": {
+        "ru": "Короткая заявка: город, тип производства, что болит. Форма демо Studio — обработку сделаете снаружи.",
+        "en": "Short request: city, plant type, the pain. Studio demo form — handle it outside Atlas."
+      },
+      "ctaLabel": {
+        "ru": "Отправить",
+        "en": "Send"
+      },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "footer",
+      "eyebrow": {
+        "ru": "Арк",
+        "en": "Ark"
+      },
+      "body": {
+        "ru": "Демо корпоративного шаблона Design Atlas. Публикацию и блог собирайте во внешнем инструменте.",
+        "en": "Design Atlas corporate template demo. Publish and blog in an external tool."
+      }
+    }
+  ]
+}

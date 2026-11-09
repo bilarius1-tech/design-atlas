@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "product-catalog",
+  "title": {
+    "ru": "Магазин / каталог",
+    "en": "Store / catalog"
+  },
+  "shortDescription": {
+    "ru": "Каталог продукции с карточками товаров, преимуществами, отзывами и заявкой.",
+    "en": "Product catalog with item cards, benefits, social proof, and a request form."
+  },
+  "category": "store",
+  "defaultCompositionId": "modular-stack",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": {
+        "ru": "Полка",
+        "en": "Polka"
+      },
+      "ctaLabel": {
+        "ru": "Смотреть каталог",
+        "en": "Browse catalog"
+      },
+      "ctaHref": "#demo-showcase"
+    },
+    {
+      "id": "hero",
+      "eyebrow": {
+        "ru": "Каталог 2026",
+        "en": "2026 catalog"
+      },
+      "headline": {
+        "ru": "Предметы для спокойного дома",
+        "en": "Objects for a calmer home"
+      },
+      "body": {
+        "ru": "Смотрите палитру, шрифтовую пару, скругления и ритм отступов на витрине. Раскладку и корзину соберёт агент снаружи.",
+        "en": "Watch palette, type pair, radius, and spacing rhythm on the storefront. Layout and cart are built by an agent elsewhere."
+      },
+      "ctaLabel": {
+        "ru": "Открыть каталог",
+        "en": "Open catalog"
+      },
+      "ctaHref": "#demo-showcase"
+    },
+    {
+      "id": "showcase",
+      "headline": {
+        "ru": "Витрина",
+        "en": "Storefront"
+      },
+      "body": {
+        "ru": "Карточки товара с ценой и коротким описанием. В реальном проекте сюда подставят фото и артикулы.",
+        "en": "Product cards with price and a short blurb. Real projects swap in photos and SKUs."
+      },
+      "items": [
+        {
+          "meta": {
+            "ru": "4 800 ₽",
+            "en": "₽4,800"
+          },
+          "title": {
+            "ru": "Настольная лампа «Север»",
+            "en": "North desk lamp"
+          },
+          "body": {
+            "ru": "Матовый металл, тёплый свет, высота 42 см.",
+            "en": "Matte metal, warm light, 42 cm tall."
+          }
+        },
+        {
+          "meta": {
+            "ru": "2 200 ₽",
+            "en": "₽2,200"
+          },
+          "title": {
+            "ru": "Льняная дорожка",
+            "en": "Linen runner"
+          },
+          "body": {
+            "ru": "Неокрашенный лён, 180×40 см, для длинного стола.",
+            "en": "Undyed linen, 180×40 cm, for a long table."
+          }
+        },
+        {
+          "meta": {
+            "ru": "3 600 ₽",
+            "en": "₽3,600"
+          },
+          "title": {
+            "ru": "Керамический кувшин",
+            "en": "Ceramic pitcher"
+          },
+          "body": {
+            "ru": "Ручная глазурь, 1.2 л, подходит для воды и сухоцветов.",
+            "en": "Hand-glazed, 1.2 L, for water or dried stems."
+          }
+        },
+        {
+          "meta": {
+            "ru": "1 450 ₽",
+            "en": "₽1,450"
+          },
+          "title": {
+            "ru": "Набор салфеток ×4",
+            "en": "Napkin set ×4"
+          },
+          "body": {
+            "ru": "Плотный хлопок, тонкий кант в тон стола.",
+            "en": "Dense cotton with a fine edge to match the table."
+          }
+        },
+        {
+          "meta": {
+            "ru": "6 900 ₽",
+            "en": "₽6,900"
+          },
+          "title": {
+            "ru": "Полка из ясеня",
+            "en": "Ash shelf"
+          },
+          "body": {
+            "ru": "Масло без блеска, крепление скрытое, длина 90 см.",
+            "en": "Matte oil finish, hidden mounts, 90 cm long."
+          }
+        },
+        {
+          "meta": {
+            "ru": "980 ₽",
+            "en": "₽980"
+          },
+          "title": {
+            "ru": "Свеча «Хвоя»",
+            "en": "Pine candle"
+          },
+          "body": {
+            "ru": "Соевый воск, дерево фитиля, горение ~40 часов.",
+            "en": "Soy wax, wood wick, ~40 hours burn."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": {
+        "ru": "Коротко о линейке",
+        "en": "Line at a glance"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "48",
+            "en": "48"
+          },
+          "body": {
+            "ru": "позиций в каталоге",
+            "en": "catalog items"
+          }
+        },
+        {
+          "title": {
+            "ru": "12",
+            "en": "12"
+          },
+          "body": {
+            "ru": "мастерских-поставщиков",
+            "en": "workshop partners"
+          }
+        },
+        {
+          "title": {
+            "ru": "4.9",
+            "en": "4.9"
+          },
+          "body": {
+            "ru": "оценка покупателей",
+            "en": "buyer rating"
+          }
+        },
+        {
+          "title": {
+            "ru": "3–7д",
+            "en": "3–7d"
+          },
+          "body": {
+            "ru": "доставка по РФ",
+            "en": "shipping in RU"
+          }
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "eyebrow": {
+        "ru": "Почему так",
+        "en": "Why this"
+      },
+      "headline": {
+        "ru": "Как устроен каталог",
+        "en": "How the catalog works"
+      },
+      "body": {
+        "ru": "Те же блоки, что у любого магазина: ясная карточка, честная цена, путь к заказу.",
+        "en": "Same blocks as any store: a clear card, an honest price, a path to order."
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Карточка без шума",
+            "en": "Quiet product card"
+          },
+          "body": {
+            "ru": "Фото, имя, цена и одна фраза — без стикеров поверх превью.",
+            "en": "Photo, name, price, one line — no stickers over the preview."
+          }
+        },
+        {
+          "title": {
+            "ru": "Фильтры позже",
+            "en": "Filters later"
+          },
+          "body": {
+            "ru": "Каркас показывает витрину; сортировку и корзину агент добавит в вашем проекте.",
+            "en": "The frame shows the storefront; sorting and cart land in your project."
+          }
+        },
+        {
+          "title": {
+            "ru": "Один стиль на всё",
+            "en": "One style throughout"
+          },
+          "body": {
+            "ru": "Смените дизайн-систему в Studio — карточки и шапка перекрасятся вместе.",
+            "en": "Switch the design system in Studio — cards and header recolor together."
+          }
+        }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "headline": {
+        "ru": "Что пишут покупатели",
+        "en": "What buyers say"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Мария К.",
+            "en": "Maria K."
+          },
+          "meta": {
+            "ru": "Москва",
+            "en": "Moscow"
+          },
+          "body": {
+            "ru": "Лампа пришла целой, свет мягкий — как на фото в карточке.",
+            "en": "The lamp arrived intact; the light is soft — like the card photo."
+          }
+        },
+        {
+          "title": {
+            "ru": "Игорь П.",
+            "en": "Igor P."
+          },
+          "meta": {
+            "ru": "Казань",
+            "en": "Kazan"
+          },
+          "body": {
+            "ru": "Удобно, что цена сразу на витрине, без «уточняйте у менеджера».",
+            "en": "Helpful that the price sits on the card — no “ask a manager”."
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "headline": {
+        "ru": "Вопросы о заказе",
+        "en": "Order questions"
+      },
+      "items": [
+        {
+          "title": {
+            "ru": "Есть ли примерка / возврат?",
+            "en": "Returns?"
+          },
+          "body": {
+            "ru": "Да, 14 дней на возврат неиспользованного товара. Демо-текст — замените своими правилами.",
+            "en": "Yes, 14 days for unused items. Demo copy — replace with your policy."
+          }
+        },
+        {
+          "title": {
+            "ru": "Как узнать остаток?",
+            "en": "Stock?"
+          },
+          "body": {
+            "ru": "В каркасе остатки не подключены. В проекте агент свяжет каталог со складом.",
+            "en": "Stock is not wired in the frame. In your project the agent can connect inventory."
+          }
+        },
+        {
+          "title": {
+            "ru": "Работаете с юрлицами?",
+            "en": "B2B?"
+          },
+          "body": {
+            "ru": "Да — оставьте заявку ниже. Реквизиты и счёт появятся в вашей реализации.",
+            "en": "Yes — leave a request below. Invoices land in your implementation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "eyebrow": {
+        "ru": "Заявка",
+        "en": "Request"
+      },
+      "headline": {
+        "ru": "Нужна подборка под интерьер?",
+        "en": "Need a shortlist for your space?"
+      },
+      "body": {
+        "ru": "Опишите комнату и бюджет — пришлём 5–7 позиций из каталога. Это демо-форма Studio.",
+        "en": "Describe the room and budget — we’ll send 5–7 catalog picks. Studio demo form."
+      },
+      "ctaLabel": {
+        "ru": "Отправить заявку",
+        "en": "Send request"
+      },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "footer",
+      "eyebrow": {
+        "ru": "Полка",
+        "en": "Polka"
+      },
+      "body": {
+        "ru": "Демо-каталог Design Atlas. Сборку магазина делайте во внешнем агенте или конструкторе.",
+        "en": "Design Atlas demo catalog. Build the store in an external agent or constructor."
+      }
+    }
+  ]
+}

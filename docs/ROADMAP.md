@@ -53,15 +53,32 @@ flowchart LR
 - [x] Studio IA: tabs **Шаблон** | **Стиль** + system summary + tweak scaffold (disabled until R4)
 - No new styles; no block-builder
 
+## R2.7 — Prompt composer v1
+
+Research freeze: [competitive-prompt-landscape-2026-11-10](research/competitive-prompt-landscape-2026-11-10.md).
+
+- [x] Assemble Agent prompt: Role + style prompt + template section outline + optional product brief + handoff checklist
+- [x] Modal: outline jump chips + character estimate
+- [x] Explicit “build elsewhere” (no Shipper-like host; no block Builder; no site scrape)
+- Out: MCP, live tweaks, mass styles
+
 ## R3 — Template library
 
-- `online-store`, `portfolio`, …
-- Migrate style-bound `demo.json` into templates + renderer
+- [x] `product-catalog` — store / product cards
+- [x] `corporate-blog` — company site + news/blog strip
+- [x] Prompt modal polish: clear **текст для ИИ** vs **ZIP файлы**
+- [ ] More templates as needed (`portfolio`, …)
+- Migrate remaining style-bound `demo.json` into templates over time
 - Reuse richer landing chrome from R2.5
 
-## R4 — Optional Style Customizer
+## R4 — Optional Style Customizer (Система)
 
-- Minimal: color / accent / font family only
+Source map: [research/dizain-prompty-system-import-2026-11-09.md](./research/dizain-prompty-system-import-2026-11-09.md).
+
+- [x] Live System drawer: **Accent / Font / Radius / Container** → preview CSS vars + composed prompt appendix
+- [x] Token richness for complex packs: optional `accentSecondary`, `shadowInset`, `blur` (Neu / Clay / Glass)
+- [x] Proof styles from owned catalog: `claymorphism` (next: `neumorphism`, then glass / neo-brutal / dark-tech)
+- Not in R4: block builder, freeform grid editor, persisting tweaks into Git content
 
 ## R5 — Commerce / Pro
 

@@ -20,6 +20,8 @@ export const StyleTokensSchema = z
         muted: CssValueSchema,
         primary: CssValueSchema,
         accent: CssValueSchema,
+        /** Optional second accent for clay / multi-accent packs. */
+        accentSecondary: CssValueSchema.optional(),
         border: CssValueSchema,
       })
       .strict(),
@@ -50,13 +52,23 @@ export const StyleTokensSchema = z
       .strict(),
     geometry: z
       .object({
+        /** Default / shared radius (inputs, media, fallback). */
         radius: CssValueSchema,
+        /** Optional button radius; falls back to `radius` in CSS. */
+        radiusButton: CssValueSchema.optional(),
+        /** Optional card / panel radius; falls back to `radius` in CSS. */
+        radiusCard: CssValueSchema.optional(),
         borderWidth: CssValueSchema,
       })
       .strict(),
     effects: z
       .object({
+        /** Full CSS box-shadow; may be a multi-layer stack (neu/clay). */
         shadow: CssValueSchema,
+        /** Optional inset / pressed / inner-light layer appended in CSS vars. */
+        shadowInset: CssValueSchema.optional(),
+        /** Optional blur length for glass surfaces. */
+        blur: CssValueSchema.optional(),
         transition: CssValueSchema,
       })
       .strict(),

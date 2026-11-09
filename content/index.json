@@ -12,6 +12,10 @@
     {
       "id": "poster-brutal",
       "path": "content/styles/poster-brutal"
+    },
+    {
+      "id": "claymorphism",
+      "path": "content/styles/claymorphism"
     }
   ],
   "glossary": []

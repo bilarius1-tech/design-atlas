@@ -14,7 +14,7 @@
   "roles": {
     "display": {
       "family": "heading",
-      "size": "64px",
+      "size": "57px",
       "weight": "600",
       "lineHeight": "1.05",
       "letterSpacing": "-0.03em"

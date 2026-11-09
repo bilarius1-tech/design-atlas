@@ -7,6 +7,21 @@
 
 ### Added
 
+- Published style pack **`claymorphism`** (pastel soft volume, dual shadows, split radii) + research note; Studio style list uses mini layout thumbs instead of flat color squares.
+- System session history: save / restore / delete tweak variants per style (sessionStorage for the browser tab).
+
+### Changed
+
+- Studio shell is viewport-locked: toolbar / sidebar / **Система** stay put while only the preview scrolls; System docks beside preview (Bootstrap-like token tweaks: palette, Cyrillic Google Fonts, H1–body px, separate button/card radius).
+- Handoff prompt is **style-only**: no template section outline / demo block order (structure stays in the user’s agent chat; Studio template remains preview-only).
+
+### Added
+
+- R4 System drawer live tweaks: Accent / Font / Radius / Container → preview + composed prompt appendix; optional token fields `accentSecondary`, `shadowInset`, `blur` for Neu/Clay/Glass packs; import map from owned dizain-prompty catalog.
+- R3 atmosphere polish: store vs corporate media mocks, product prices / news list styling via tokens (no new block types).
+- R3 templates: `product-catalog` (store cards) + `corporate-blog` (company + news); prompt modal clarifies AI text vs ZIP files.
+- Studio **prompt composer v1** (R2.7): optional product brief + assembled Role/Product/Template/Style/Checklist prompt; section chips + character count.
+- Research freeze: competitive prompt landscape (DP, VibePrompt, shadcn, Shipper, UIDrop, RampStack, …) → ROADMAP **R2.7**.
 - Studio UX: right **Система** drawer over preview for system summary + tweak scaffold; left sidebar stays Template|Style selection only.
 - Studio UX foundation (R2.6): Template|Style sidebar tabs, prompt modal with visible text, Lucide + hints, nav/home ESSENCE copy; Style tweak scaffold (disabled until R4).
 - Dual handoff: Agent + Constructor prompts (RU+EN), ADR-0011; Free pack includes constructor prompts.

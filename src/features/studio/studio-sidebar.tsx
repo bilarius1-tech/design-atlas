@@ -20,6 +20,8 @@ export type StudioSidebarStyle = {
   };
   geometry: {
     radius: string;
+    radiusButton?: string;
+    radiusCard?: string;
     borderWidth: string;
   };
   typography: {
@@ -78,7 +80,7 @@ export function StudioSidebar({ templates, styles, templateId, styleId }: Studio
   }, [mode, styles]);
 
   return (
-    <aside className="flex h-full min-h-0 w-full flex-col border-border bg-surface lg:w-[300px] lg:shrink-0 lg:border-r">
+    <aside className="flex h-full min-h-0 w-full flex-col border-border bg-surface lg:w-[300px] lg:max-w-[300px] lg:shrink-0 lg:border-r">
       <div className="space-y-3 border-b border-border px-4 py-4">
         <div>
           <p className="font-serif text-xl tracking-tight">Студия</p>
@@ -100,7 +102,7 @@ export function StudioSidebar({ templates, styles, templateId, styleId }: Studio
                 "style",
                 "Стиль",
                 Palette,
-                "Каталог дизайн-систем. Правка открывается справа поверх превью.",
+                "Каталог дизайн-систем. Лёгкая правка — в закреплённой панели «Система».",
               ],
             ] as const
           ).map(([value, label, Icon, hint]) => (
@@ -213,15 +215,50 @@ export function StudioSidebar({ templates, styles, templateId, styleId }: Studio
                       aria-current={active ? "page" : undefined}
                     >
                       <span
-                        className="mt-0.5 flex h-10 w-10 shrink-0 overflow-hidden border"
-                        style={{ borderColor: style.colors.border }}
+                        className="relative mt-0.5 h-12 w-[4.25rem] shrink-0 overflow-hidden border"
+                        style={{
+                          background: style.colors.background,
+                          borderColor: style.colors.border,
+                          borderRadius: style.geometry.radiusCard ?? style.geometry.radius,
+                          boxShadow: style.effects.shadow === "none" ? undefined : style.effects.shadow,
+                        }}
                         aria-hidden
                       >
-                        <span className="w-1/2" style={{ background: style.colors.background }} />
-                        <span className="flex w-1/2 flex-col">
-                          <span className="h-1/2" style={{ background: style.colors.primary }} />
-                          <span className="h-1/2" style={{ background: style.colors.accent }} />
-                        </span>
+                        <span
+                          className="absolute top-1.5 right-1.5 left-1.5 h-1.5"
+                          style={{
+                            background: style.colors.text,
+                            opacity: 0.85,
+                            borderRadius: style.geometry.radius,
+                          }}
+                        />
+                        <span
+                          className="absolute top-4 right-1.5 left-1.5 h-1"
+                          style={{
+                            background: style.colors.text,
+                            opacity: 0.35,
+                            borderRadius: style.geometry.radius,
+                          }}
+                        />
+                        <span
+                          className="absolute bottom-1.5 left-1.5 h-3 w-5"
+                          style={{
+                            background: style.colors.primary,
+                            borderRadius: style.geometry.radiusButton ?? style.geometry.radius,
+                          }}
+                        />
+                        <span
+                          className="absolute right-1.5 bottom-1.5 h-4 w-6 border"
+                          style={{
+                            background: style.colors.surface,
+                            borderColor: style.colors.border,
+                            borderRadius: style.geometry.radiusCard ?? style.geometry.radius,
+                          }}
+                        />
+                        <span
+                          className="absolute top-1 right-1 size-1.5"
+                          style={{ background: style.colors.accent, borderRadius: "999px" }}
+                        />
                       </span>
                       <span className="min-w-0 flex-1">
                         <span className="flex items-center justify-between gap-2">

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "claymorphism",
+  "families": {
+    "heading": "Nunito",
+    "body": "Manrope",
+    "mono": "IBM Plex Mono",
+    "fallbacks": [
+      "Montserrat Alternates",
+      "Helvetica Neue",
+      "Arial",
+      "sans-serif"
+    ]
+  },
+  "roles": {
+    "display": {
+      "family": "heading",
+      "size": "57px",
+      "weight": "800",
+      "lineHeight": "1.08",
+      "letterSpacing": "-0.02em"
+    },
+    "h1": {
+      "family": "heading",
+      "size": "40px",
+      "weight": "800",
+      "lineHeight": "1.12",
+      "letterSpacing": "-0.02em"
+    },
+    "h2": {
+      "family": "heading",
+      "size": "28px",
+      "weight": "700",
+      "lineHeight": "1.2"
+    },
+    "h3": {
+      "family": "heading",
+      "size": "20px",
+      "weight": "700",
+      "lineHeight": "1.25"
+    },
+    "h4": {
+      "family": "heading",
+      "size": "16px",
+      "weight": "700",
+      "lineHeight": "1.3"
+    },
+    "bodyLarge": {
+      "family": "body",
+      "size": "18px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "body": {
+      "family": "body",
+      "size": "16px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "caption": {
+      "family": "body",
+      "size": "12px",
+      "weight": "500",
+      "lineHeight": "1.4"
+    },
+    "label": {
+      "family": "body",
+      "size": "12px",
+      "weight": "600",
+      "lineHeight": "1.2",
+      "letterSpacing": "0.06em"
+    },
+    "quote": {
+      "family": "heading",
+      "size": "24px",
+      "weight": "600",
+      "lineHeight": "1.35"
+    },
+    "code": {
+      "family": "mono",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "1.45"
+    }
+  },
+  "rules": [
+    "Headings use Nunito 700–800; body uses Manrope.",
+    "Keep letter-spacing slightly tight on display only.",
+    "Avoid condensed or aggressive display faces."
+  ],
+  "constraints": [
+    "Do not swap to Inter as a silent default.",
+    "Do not drop Cyrillic-capable families.",
+    "Do not pair clay volume with hard neo-brutal type."
+  ]
+}

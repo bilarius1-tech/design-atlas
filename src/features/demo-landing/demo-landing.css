@@ -317,13 +317,177 @@
   background: color-mix(in srgb, var(--sp-color-primary) 12%, var(--sp-color-background));
 }
 
+/* Store atmosphere — product surface, not app chrome */
+.style-preview .dl-media-frame-store {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: color-mix(in srgb, var(--sp-color-primary) 8%, var(--sp-color-background));
+}
+
+.style-preview .dl-media-store-stage {
+  display: grid;
+  place-items: end center;
+  gap: calc(var(--sp-space-unit) * 3);
+  padding: calc(var(--sp-space-unit) * 6) calc(var(--sp-space-unit) * 4) calc(var(--sp-space-unit) * 4);
+  min-height: 220px;
+}
+
+.style-preview .dl-media-store-object {
+  width: min(58%, 200px);
+  height: 120px;
+  border: var(--sp-border-width) solid var(--sp-color-border);
+  border-radius: var(--sp-radius);
+  background: var(--sp-color-surface);
+  box-shadow: var(--sp-shadow);
+}
+
+.style-preview .dl-media-store-object-secondary {
+  width: min(42%, 140px);
+  height: 72px;
+  background: color-mix(in srgb, var(--sp-color-accent) 22%, var(--sp-color-surface));
+  border-color: var(--sp-color-accent);
+}
+
+.style-preview .dl-media-store-meta {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--sp-space-unit) * 2);
+  padding: calc(var(--sp-space-unit) * 3) calc(var(--sp-space-unit) * 4);
+  border-top: var(--sp-border-width) solid var(--sp-color-border);
+  background: var(--sp-color-surface);
+}
+
+.style-preview .dl-media-store-swatch {
+  width: calc(var(--sp-space-unit) * 4);
+  height: calc(var(--sp-space-unit) * 4);
+  border-radius: var(--sp-radius);
+  border: var(--sp-border-width) solid var(--sp-color-border);
+  background: var(--sp-color-primary);
+}
+
+.style-preview .dl-media-store-swatch-accent {
+  background: var(--sp-color-accent);
+}
+
+.style-preview .dl-media-store-swatch:last-of-type {
+  background: var(--sp-color-border);
+}
+
+/* Editorial / corporate atmosphere — type slab */
+.style-preview .dl-media-frame-editorial {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  min-height: 260px;
+  background: var(--sp-color-background);
+}
+
+.style-preview .dl-media-editorial-slab {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: calc(var(--sp-space-unit) * 3);
+  padding: calc(var(--sp-space-unit) * 6) calc(var(--sp-space-unit) * 5);
+  border-right: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-media-editorial-rule {
+  display: block;
+  height: calc(var(--sp-space-unit) * 2);
+  width: 78%;
+  background: var(--sp-color-text);
+  border-radius: var(--sp-radius);
+}
+
+.style-preview .dl-media-editorial-rule-short {
+  width: 48%;
+  background: var(--sp-color-muted);
+}
+
+.style-preview .dl-media-editorial-block {
+  margin-top: calc(var(--sp-space-unit) * 2);
+  height: 72px;
+  border: var(--sp-border-width) solid var(--sp-color-border);
+  border-radius: var(--sp-radius);
+  background: color-mix(in srgb, var(--sp-color-primary) 10%, var(--sp-color-surface));
+}
+
+.style-preview .dl-media-editorial-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: calc(var(--sp-space-unit) * 4);
+  background: var(--sp-color-surface);
+}
+
+.style-preview .dl-media-editorial-date {
+  display: block;
+  width: 44%;
+  height: 10px;
+  border-radius: var(--sp-radius);
+  background: var(--sp-color-accent);
+}
+
+/* Product cards — price as token signal */
+.style-preview .dl-product-card .dl-media-thumb {
+  min-height: 112px;
+  background: color-mix(in srgb, var(--sp-color-background) 80%, var(--sp-color-surface));
+  border: var(--sp-border-width) solid var(--sp-color-border);
+  border-radius: var(--sp-radius);
+  padding: calc(var(--sp-space-unit) * 2);
+}
+
+.style-preview .dl-price {
+  font-family: var(--sp-font-mono);
+  font-size: var(--sp-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--sp-color-primary);
+}
+
+/* News atmosphere — list of stories, not product tiles */
+.style-preview .dl-news-list {
+  display: grid;
+  gap: 0;
+  border-top: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-news-row {
+  padding-block: calc(var(--sp-space-unit) * 5);
+  border-bottom: var(--sp-border-width) solid var(--sp-color-border);
+}
+
+.style-preview .dl-news-row .dl-kicker {
+  color: var(--sp-color-accent);
+}
+
+/* Template atmospheres (tokens only — no new block types) */
+.style-preview[data-template="product-catalog"] .dl-section-stats {
+  background: color-mix(in srgb, var(--sp-color-primary) 6%, var(--sp-color-background));
+}
+
+.style-preview[data-template="product-catalog"] .dl-showcase-product {
+  padding-block: calc(var(--sp-space-unit) * 12);
+}
+
+.style-preview[data-template="corporate-blog"] .dl-hero-title {
+  max-width: 16ch;
+}
+
+.style-preview[data-template="corporate-blog"] .dl-editorial {
+  gap: calc(var(--sp-space-unit) * 8);
+}
+
+.style-preview[data-template="corporate-blog"] .dl-section-stats .dl-stat {
+  border-color: color-mix(in srgb, var(--sp-color-accent) 35%, var(--sp-color-border));
+}
+
 /* Composition tweaks */
 .style-preview.dl-composition-swiss .dl-hero {
   gap: calc(var(--sp-space-unit) * 8);
 }
 
 .style-preview.dl-composition-editorial .dl-hero-title {
-  font-size: clamp(2.5rem, 8vw, var(--sp-text-display));
+  font-size: clamp(2rem, 6vw, var(--sp-text-display));
 }
 
 .style-preview.dl-composition-stack .dl-hero-title {

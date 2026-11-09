@@ -1,7 +1,7 @@
 import type { DemoSection } from "@/core/schemas";
 import type { ReactNode } from "react";
 import { t, type DemoLocale } from "./localize";
-import { ProductMediaFrame } from "./product-media-frame";
+import { ProductMediaFrame, type MediaFrameVariant } from "./product-media-frame";
 
 function SectionShell({
   id,
@@ -19,16 +19,30 @@ function SectionShell({
   );
 }
 
+const NAV_LABELS: Record<string, { ru: string; en: string }> = {
+  features: { ru: "Возможности", en: "Features" },
+  showcase: { ru: "Подборка", en: "Selection" },
+  editorial: { ru: "О нас", en: "About" },
+  statistics: { ru: "Цифры", en: "Metrics" },
+  testimonials: { ru: "Отзывы", en: "Stories" },
+  pricing: { ru: "Тарифы", en: "Pricing" },
+  faq: { ru: "FAQ", en: "FAQ" },
+  cta: { ru: "Контакты", en: "Contact" },
+};
+
 export function DemoHeaderSection({
   section,
   locale,
   styleTitle,
+  navSectionIds = [],
 }: {
   section: DemoSection;
   locale: DemoLocale;
   styleTitle: string;
+  navSectionIds?: string[];
 }) {
   const brand = t(section.eyebrow, locale) || styleTitle;
+  const linkIds = navSectionIds.filter((id) => id !== "header" && id !== "hero" && id !== "footer" && id !== "cta");
 
   return (
     <SectionShell id={section.id} className="dl-section-header">
@@ -43,10 +57,14 @@ export function DemoHeaderSection({
           </div>
         </div>
         <nav aria-label="Demo navigation" className="dl-nav-links">
-          <a href="#demo-features">{locale === "ru" ? "Возможности" : "Features"}</a>
-          <a href="#demo-statistics">{locale === "ru" ? "Метрики" : "Metrics"}</a>
-          <a href="#demo-pricing">{locale === "ru" ? "Тарифы" : "Pricing"}</a>
-          <a href="#demo-faq">FAQ</a>
+          {linkIds.slice(0, 4).map((id) => {
+            const labels = NAV_LABELS[id] ?? { ru: id, en: id };
+            return (
+              <a key={id} href={`#demo-${id}`}>
+                {locale === "ru" ? labels.ru : labels.en}
+              </a>
+            );
+          })}
           <a href="#demo-cta" className="sp-btn sp-btn-ghost no-underline dl-nav-ghost">
             {locale === "ru" ? "Войти" : "Sign in"}
           </a>
@@ -63,12 +81,30 @@ export function DemoHeroSection({
   section,
   locale,
   compositionId,
+  secondaryHref = "#demo-features",
+  secondaryLabel,
+  mediaVariant = "app",
 }: {
   section: DemoSection;
   locale: DemoLocale;
   compositionId: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  mediaVariant?: MediaFrameVariant;
 }) {
-  const secondaryLabel = locale === "ru" ? "Смотреть возможности" : "See features";
+  const fallbackSecondary = locale === "ru" ? "Смотреть дальше" : "See more";
+  const mediaCaption =
+    mediaVariant === "store"
+      ? locale === "ru"
+        ? "товар / поверхность"
+        : "product / surface"
+      : mediaVariant === "editorial"
+        ? locale === "ru"
+          ? "история / тип"
+          : "story / type"
+        : locale === "ru"
+          ? "панель / продукт"
+          : "app / panel";
 
   return (
     <SectionShell id={section.id}>
@@ -85,17 +121,17 @@ export function DemoHeroSection({
                 {t(section.ctaLabel, locale)}
               </a>
             ) : null}
-            <a href="#demo-features" className="sp-btn sp-btn-secondary no-underline">
-              {secondaryLabel}
+            <a href={secondaryHref} className="sp-btn sp-btn-secondary no-underline">
+              {secondaryLabel || fallbackSecondary}
             </a>
           </div>
           <p className="sp-caption sp-muted">
             {locale === "ru"
-              ? "Демо-каркас · дизайн-система применяется к тем же блокам"
-              : "Demo frame · design system applies to the same blocks"}
+              ? "Демо-каркас · смотрите цвет, шрифт, отступы и скругления стиля"
+              : "Demo frame · watch color, type, spacing, and radius of the style"}
           </p>
         </div>
-        <ProductMediaFrame caption={locale === "ru" ? "панель / продукт" : "app / panel"} />
+        <ProductMediaFrame caption={mediaCaption} variant={mediaVariant} />
       </div>
     </SectionShell>
   );
@@ -134,9 +170,11 @@ export function DemoFeaturesSection({
 export function DemoEditorialSection({
   section,
   locale,
+  mediaVariant = "editorial",
 }: {
   section: DemoSection;
   locale: DemoLocale;
+  mediaVariant?: MediaFrameVariant;
 }) {
   return (
     <SectionShell id={section.id}>
@@ -145,11 +183,28 @@ export function DemoEditorialSection({
           {section.eyebrow ? <p className="dl-kicker">{t(section.eyebrow, locale)}</p> : null}
           {section.headline ? <h2 className="sp-heading sp-h1">{t(section.headline, locale)}</h2> : null}
           {section.body ? <p className="sp-muted">{t(section.body, locale)}</p> : null}
-          <a href="#demo-showcase" className="sp-btn sp-btn-tertiary no-underline">
-            {locale === "ru" ? "К модулям" : "See modules"}
-          </a>
+          {section.ctaLabel ? (
+            <a href={section.ctaHref || "#demo-showcase"} className="sp-btn sp-btn-tertiary no-underline">
+              {t(section.ctaLabel, locale)}
+            </a>
+          ) : (
+            <a href="#demo-showcase" className="sp-btn sp-btn-tertiary no-underline">
+              {locale === "ru" ? "К материалам" : "See materials"}
+            </a>
+          )}
         </div>
-        <ProductMediaFrame caption={locale === "ru" ? "дорожная карта" : "roadmap"} />
+        <ProductMediaFrame
+          caption={
+            mediaVariant === "editorial"
+              ? locale === "ru"
+                ? "история / тип"
+                : "story / type"
+              : locale === "ru"
+                ? "дорожная карта"
+                : "roadmap"
+          }
+          variant={mediaVariant}
+        />
       </div>
     </SectionShell>
   );
@@ -158,24 +213,34 @@ export function DemoEditorialSection({
 export function DemoShowcaseSection({
   section,
   locale,
+  atmosphere = "default",
 }: {
   section: DemoSection;
   locale: DemoLocale;
+  atmosphere?: "default" | "product" | "news";
 }) {
   const items = section.items ?? [];
   return (
-    <SectionShell id={section.id}>
+    <SectionShell id={section.id} className={`dl-showcase dl-showcase-${atmosphere}`}>
       <div className="mb-8 space-y-2">
         {section.headline ? <h2 className="sp-heading sp-h1">{t(section.headline, locale)}</h2> : null}
         {section.body ? <p className="sp-muted max-w-2xl">{t(section.body, locale)}</p> : null}
       </div>
-      <div className="dl-grid-3">
+      <div className={atmosphere === "news" ? "dl-news-list" : "dl-grid-3"}>
         {items.map((item) => (
-          <article key={t(item.title, locale)} className="sp-card space-y-3">
-            <div className="dl-media-thumb" aria-hidden>
-              <span />
-              <span />
-            </div>
+          <article
+            key={t(item.title, locale)}
+            className={atmosphere === "news" ? "dl-news-row space-y-2" : "sp-card dl-product-card space-y-3"}
+          >
+            {atmosphere !== "news" ? (
+              <div className="dl-media-thumb" aria-hidden>
+                <span />
+                <span />
+              </div>
+            ) : null}
+            {item.meta ? (
+              <p className={atmosphere === "product" ? "dl-price" : "dl-kicker"}>{t(item.meta, locale)}</p>
+            ) : null}
             <h3 className="sp-heading sp-h3">{t(item.title, locale)}</h3>
             {item.body ? <p className="sp-muted text-[length:var(--sp-text-sm)]">{t(item.body, locale)}</p> : null}
           </article>

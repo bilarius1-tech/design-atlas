@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "claymorphism",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Claymorphism", "en": "Claymorphism" },
+      "headline": {
+        "ru": "Мягкий объём без жёстких рамок",
+        "en": "Soft volume without hard frames"
+      },
+      "body": {
+        "ru": "Пухлые карточки, пастельный фон и двойная тень — система для дружелюбных сервисов, не для консоли.",
+        "en": "Plump cards, pastel ground, dual shadow — a system for friendly services, not consoles."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Пухлый радиус", "en": "Plump radius" },
+          "body": { "ru": "Карточки ~32px, кнопки почти pill.", "en": "Cards ~32px, buttons near-pill." }
+        },
+        {
+          "title": { "ru": "Двойная тень", "en": "Dual shadow" },
+          "body": { "ru": "Внешняя фиолетовая + светлый inset.", "en": "Outer violet glow + light inset." }
+        },
+        {
+          "title": { "ru": "Пастель", "en": "Pastel" },
+          "body": { "ru": "Лавандовый фон, тёплый accent.", "en": "Lavender ground, warm accent." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "32px", "en": "32px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1200", "en": "1200" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=claymorphism"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Claymorphism · DESIGN ATLAS", "en": "Claymorphism · DESIGN ATLAS" }
+    }
+  ]
+}

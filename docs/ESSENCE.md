@@ -42,7 +42,7 @@ Studio is the handoff surface, not a site builder:
 - **Left:** tabs **Шаблон** | **Стиль** — selection only (lists). Inspired by DesignPrompts Builder Template/Look, without Blocks/Layers.
 - **Center:** live landing preview.
 - **Right drawer «Система»:** summary + future light tweaks (accent / font / radius), opens over the preview — keeps the style catalog free when the library grows.
-- **Получить промпт** opens a modal with the full prompt text visible.
+- **Получить промпт** opens a modal with the full prompt text visible — **visual system only** (tokens, type, radius, atmosphere). Page block order belongs to the user’s agent chat, not the Atlas prompt. Template in Studio is for preview.
 
 ## Agent reminder
 

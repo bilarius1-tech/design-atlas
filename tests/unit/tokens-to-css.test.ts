@@ -45,4 +45,21 @@ describe("tokensToCssVars", () => {
     const css = cssVarsToDeclaration(tokensToCssVars(sampleTokens));
     expect(css).toContain("--sp-color-background: #F4F2EC;");
   });
+
+  it("stacks optional inset shadow and exposes blur for glass packs", () => {
+    const vars = tokensToCssVars({
+      ...sampleTokens,
+      colors: { ...sampleTokens.colors, accentSecondary: "#FFB86B" },
+      effects: {
+        shadow: "8px 8px 24px rgba(0,0,0,.12)",
+        shadowInset: "inset -4px -4px 12px rgba(255,255,255,.7)",
+        blur: "16px",
+        transition: "180ms",
+      },
+    });
+    expect(vars["--sp-shadow"]).toContain("8px 8px 24px");
+    expect(vars["--sp-shadow"]).toContain("inset -4px -4px 12px");
+    expect(vars["--sp-blur"]).toBe("16px");
+    expect(vars["--sp-color-accent-secondary"]).toBe("#FFB86B");
+  });
 });

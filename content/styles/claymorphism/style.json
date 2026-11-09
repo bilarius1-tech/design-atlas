@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "claymorphism",
+  "slug": "claymorphism",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Клейморфизм",
+    "en": "Claymorphism"
+  },
+  "shortDescription": {
+    "ru": "Мягкий «пластилиновый» объём: пухлые формы, большие скругления, двойные тени и пастельная палитра.",
+    "en": "Soft clay volume: plump shapes, large radii, dual soft shadows, and a pastel palette."
+  },
+  "philosophy": {
+    "ru": "Интерфейс как дружелюбная игрушка из пластилина: объём читается тенью и радиусом, не жёсткой рамкой. Цвет пастельный, акцент тёплый, типографика круглая и спокойная.",
+    "en": "UI as friendly clay: volume comes from shadow and radius, not hard frames. Pastel ground, warm accent, rounded calm type."
+  },
+  "category": "soft-volume",
+  "tags": [
+    "claymorphism",
+    "pastel",
+    "soft-ui",
+    "friendly",
+    "consumer",
+    "rounded"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "medium",
+  "bestUseCases": [
+    "Family and kids services, household utilities",
+    "Friendly consumer apps and onboarding landings",
+    "Lifestyle products that need soft tactile UI"
+  ],
+  "avoidFor": [
+    "Strict B2B / legal editorial systems",
+    "Dense dark engineering consoles",
+    "Neo-brutal posters that need hard offset shadows"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "midnight-console",
+    "poster-brutal"
+  ],
+  "fontFamilies": [
+    "Nunito",
+    "Manrope",
+    "Montserrat Alternates"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:00:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Claymorphism (owned catalog)",
+      "url": "https://ztim2008.github.io/dizain-prompty/stil/claymorphism/",
+      "note": "SSOT for palette, Cyrillic fonts, and dual-shadow rules."
+    },
+    {
+      "title": "docs/research/claymorphism.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Pastel grounds still need readable text pairs."
+    }
+  ]
+}

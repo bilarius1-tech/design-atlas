@@ -11,11 +11,13 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import type { TemplateSectionOutline } from "./compose-prompt";
 import { PromptDialog } from "./prompt-dialog";
 
 export type StudioToolbarProps = {
   templateId: string;
   templateTitle: string;
+  templateSections: TemplateSectionOutline[];
   styleId: string;
   styleTitle: string;
   styleDescription: string;
@@ -24,6 +26,8 @@ export type StudioToolbarProps = {
   promptEn: string;
   promptConstructorRu: string;
   promptConstructorEn: string;
+  systemOverridesNoteRu?: string;
+  systemOverridesNoteEn?: string;
   modeLabel: "Light" | "Dark";
   onOpenSystem: () => void;
   systemOpen?: boolean;
@@ -37,6 +41,7 @@ function hrefFor(templateId: string, styleId: string) {
 export function StudioToolbar({
   templateId,
   templateTitle,
+  templateSections,
   styleId,
   styleTitle,
   styleDescription,
@@ -45,6 +50,8 @@ export function StudioToolbar({
   promptEn,
   promptConstructorRu,
   promptConstructorEn,
+  systemOverridesNoteRu = "",
+  systemOverridesNoteEn = "",
   modeLabel,
   onOpenSystem,
   systemOpen = false,
@@ -62,7 +69,7 @@ export function StudioToolbar({
 
   return (
     <>
-      <div className="sticky top-0 z-10 border-b border-border bg-background/95 px-4 py-4 backdrop-blur sm:px-6">
+      <div className="px-4 py-4 sm:px-6">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0 max-w-2xl space-y-1">
             <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
@@ -105,7 +112,7 @@ export function StudioToolbar({
               <SlidersHorizontal className="h-3.5 w-3.5" aria-hidden />
               Система
             </button>
-            <Hint label="Открывает правую панель поверх превью: сводка системы и будущая правка." />
+            <Hint label="Закреплённая панель справа: лёгкая правка токенов стиля. Превью листается отдельно." />
             <button
               type="button"
               className={buttonClassName({ variant: "primary", size: "sm" })}
@@ -114,7 +121,7 @@ export function StudioToolbar({
               <Sparkles className="h-3.5 w-3.5" aria-hidden />
               Получить промпт
             </button>
-            <Hint label="Откроет окно с полным текстом промпта: Агент или Конструктор, RU/EN." />
+            <Hint label="Промпт только про визуальную систему (токены, атмосфера). Структуру страницы агент уже берёт из вашего чата." />
             <a
               className={buttonClassName({ variant: "secondary", size: "sm" })}
               href={`/demo/${styleId}`}
@@ -133,10 +140,15 @@ export function StudioToolbar({
         onClose={() => setPromptOpen(false)}
         styleId={styleId}
         styleTitle={styleTitle}
+        templateId={templateId}
+        templateTitle={templateTitle}
+        templateSections={templateSections}
         promptRu={promptRu}
         promptEn={promptEn}
         promptConstructorRu={promptConstructorRu}
         promptConstructorEn={promptConstructorEn}
+        systemOverridesNoteRu={systemOverridesNoteRu}
+        systemOverridesNoteEn={systemOverridesNoteEn}
       />
     </>
   );

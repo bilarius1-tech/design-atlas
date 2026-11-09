@@ -4,6 +4,13 @@ import type { StyleTokens } from "@/core/schemas";
 /** CSS custom properties for a scoped style preview (ADR-0003). */
 export type StylePreviewCssVars = CSSProperties & Record<`--sp-${string}`, string>;
 
+function shadowStack(tokens: StyleTokens): string {
+  const layers = [tokens.effects.shadow, tokens.effects.shadowInset].filter(
+    (value): value is string => Boolean(value && value.trim() && value.trim() !== "none"),
+  );
+  return layers.length > 0 ? layers.join(", ") : "none";
+}
+
 export function tokensToCssVars(tokens: StyleTokens): StylePreviewCssVars {
   return {
     "--sp-color-background": tokens.colors.background,
@@ -12,6 +19,7 @@ export function tokensToCssVars(tokens: StyleTokens): StylePreviewCssVars {
     "--sp-color-muted": tokens.colors.muted,
     "--sp-color-primary": tokens.colors.primary,
     "--sp-color-accent": tokens.colors.accent,
+    "--sp-color-accent-secondary": tokens.colors.accentSecondary ?? tokens.colors.accent,
     "--sp-color-border": tokens.colors.border,
     "--sp-font-heading": tokens.typography.heading,
     "--sp-font-body": tokens.typography.body,
@@ -27,8 +35,11 @@ export function tokensToCssVars(tokens: StyleTokens): StylePreviewCssVars {
     "--sp-space-section": tokens.spacing.section,
     "--sp-size-container": tokens.spacing.container,
     "--sp-radius": tokens.geometry.radius,
+    "--sp-radius-button": tokens.geometry.radiusButton ?? tokens.geometry.radius,
+    "--sp-radius-card": tokens.geometry.radiusCard ?? tokens.geometry.radius,
     "--sp-border-width": tokens.geometry.borderWidth,
-    "--sp-shadow": tokens.effects.shadow,
+    "--sp-shadow": shadowStack(tokens),
+    "--sp-blur": tokens.effects.blur ?? "0px",
     "--sp-transition": tokens.effects.transition,
   };
 }

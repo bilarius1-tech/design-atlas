@@ -1,7 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Container } from "./container";
 
 export function SiteFooter() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/studio")) return null;
+
   return (
     <footer className="mt-auto border-t border-border bg-surface">
       <Container className="flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">

@@ -1,5 +1,46 @@
-/** Decorative product UI mock — values come from scoped `--sp-*` tokens only. */
-export function ProductMediaFrame({ caption }: { caption?: string }) {
+/** Decorative media mock — values come from scoped `--sp-*` tokens only. */
+export type MediaFrameVariant = "app" | "store" | "editorial";
+
+export function ProductMediaFrame({
+  caption,
+  variant = "app",
+}: {
+  caption?: string;
+  variant?: MediaFrameVariant;
+}) {
+  if (variant === "store") {
+    return (
+      <div className="dl-media-frame dl-media-frame-store" aria-hidden>
+        <div className="dl-media-store-stage">
+          <div className="dl-media-store-object" />
+          <div className="dl-media-store-object dl-media-store-object-secondary" />
+        </div>
+        <div className="dl-media-store-meta">
+          <span className="dl-media-store-swatch" />
+          <span className="dl-media-store-swatch dl-media-store-swatch-accent" />
+          <span className="dl-media-store-swatch" />
+          <span className="dl-media-chrome-label">{caption ?? "product / surface"}</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (variant === "editorial") {
+    return (
+      <div className="dl-media-frame dl-media-frame-editorial" aria-hidden>
+        <div className="dl-media-editorial-slab">
+          <span className="dl-media-editorial-rule" />
+          <span className="dl-media-editorial-rule dl-media-editorial-rule-short" />
+          <span className="dl-media-editorial-block" />
+        </div>
+        <div className="dl-media-editorial-aside">
+          <span className="dl-media-editorial-date" />
+          <span className="dl-media-chrome-label">{caption ?? "story / type"}</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="dl-media-frame" aria-hidden>
       <div className="dl-media-chrome">

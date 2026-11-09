@@ -64,6 +64,10 @@ export async function StudioView({ searchParams }: StudioViewProps) {
   const promptEn = readPrompt(styleId, "prompt.en.md");
   const promptConstructorRu = readPrompt(styleId, "prompt.constructor.ru.md");
   const promptConstructorEn = readPrompt(styleId, "prompt.constructor.en.md");
+  const templateSections = template.sections.map((section) => ({
+    id: section.id,
+    title: section.headline?.ru ?? section.eyebrow?.ru ?? section.id,
+  }));
 
   const templates = templateIds.map((id) => {
     const item = loadPageTemplate(id);
@@ -90,6 +94,8 @@ export async function StudioView({ searchParams }: StudioViewProps) {
       },
       geometry: {
         radius: item.tokens.geometry.radius,
+        radiusButton: item.tokens.geometry.radiusButton,
+        radiusCard: item.tokens.geometry.radiusCard,
         borderWidth: item.tokens.geometry.borderWidth,
       },
       typography: {
@@ -105,17 +111,20 @@ export async function StudioView({ searchParams }: StudioViewProps) {
   const modeLabel = isDarkBackground(bundle.tokens.colors.background) ? "Dark" : "Light";
 
   return (
-    <div className="flex min-h-[calc(100dvh-8rem)] flex-col border-y border-border bg-background lg:flex-row">
-      <StudioSidebar
-        templates={templates}
-        styles={styles}
-        templateId={templateId}
-        styleId={styleId}
-      />
+    <div className="flex h-[calc(100dvh-var(--da-size-header))] max-h-[calc(100dvh-var(--da-size-header))] flex-col overflow-hidden border-y border-border bg-background lg:flex-row">
+      <div className="min-h-0 max-h-[40vh] shrink-0 overflow-y-auto lg:h-full lg:max-h-none lg:w-auto">
+        <StudioSidebar
+          templates={templates}
+          styles={styles}
+          templateId={templateId}
+          styleId={styleId}
+        />
+      </div>
 
       <StudioWorkspace
         templateId={templateId}
         templateTitle={template.title.ru}
+        templateSections={templateSections}
         styleId={styleId}
         styleTitle={bundle.style.title.ru}
         styleDescription={bundle.style.shortDescription.ru}

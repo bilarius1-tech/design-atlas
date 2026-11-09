@@ -39,7 +39,7 @@ content/
 │       ├── CHANGELOG.md
 │       └── assets/
 ├── templates/                     # NEW (R1+)
-│   └── <id>/                      # e.g. saas-landing, online-store, portfolio
+│   └── <id>/                      # e.g. saas-landing, product-catalog, corporate-blog
 │       ├── template.json          # structure + meta
 │       └── content.ru.json        # neutral demo copy (RU)
 ├── glossary/
