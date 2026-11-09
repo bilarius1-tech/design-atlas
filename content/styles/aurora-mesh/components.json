@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "aurora-mesh",
+  "groups": [
+    {
+      "id": "typography",
+      "label": "Typography",
+      "items": [
+        "display",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "body-large",
+        "body",
+        "caption",
+        "label",
+        "quote",
+        "code",
+        "link"
+      ],
+      "notes": "White Manrope on night; Unbounded sparingly for short punches."
+    },
+    {
+      "id": "buttons",
+      "label": "Buttons",
+      "items": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "ghost",
+        "icon",
+        "disabled",
+        "loading",
+        "hover",
+        "focus",
+        "active"
+      ],
+      "notes": "White pill primary with #0B0A1F ink; cyan/pink as soft signals."
+    },
+    {
+      "id": "forms",
+      "label": "Forms",
+      "items": [
+        "text-input",
+        "email-input",
+        "search-input",
+        "textarea",
+        "select",
+        "checkbox",
+        "radio",
+        "switch",
+        "range",
+        "validation-error",
+        "success"
+      ]
+    },
+    {
+      "id": "shapes",
+      "label": "Shapes & geometry",
+      "items": [
+        "circle",
+        "square",
+        "rectangle",
+        "divider",
+        "horizontal-line",
+        "vertical-line",
+        "dots",
+        "grid",
+        "hairline-rule"
+      ],
+      "notes": "Soft radii 16–20px; no hard neo-brutal rules."
+    },
+    {
+      "id": "cards",
+      "label": "Cards",
+      "items": [
+        "feature",
+        "product",
+        "article",
+        "profile",
+        "pricing",
+        "testimonial",
+        "statistics"
+      ],
+      "notes": "Translucent glass over mesh; light border; soft glow shadow."
+    },
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "items": [
+        "header",
+        "main-nav",
+        "mobile-nav",
+        "tabs",
+        "breadcrumbs",
+        "pagination"
+      ]
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback",
+      "items": [
+        "badge",
+        "tag",
+        "alert",
+        "tooltip",
+        "progress",
+        "skeleton",
+        "empty-state"
+      ]
+    },
+    {
+      "id": "icons",
+      "label": "Icons",
+      "items": [
+        "functional",
+        "navigation",
+        "status",
+        "action"
+      ],
+      "notes": "Soft gradient markers cyan→pink; keep sparse."
+    }
+  ]
+}

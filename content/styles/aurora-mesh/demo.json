@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "aurora-mesh",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Aurora Mesh", "en": "Aurora Mesh" },
+      "headline": {
+        "ru": "Сияние. Мягкий mesh",
+        "en": "Glow. Soft mesh"
+      },
+      "body": {
+        "ru": "Ночное поле и размытые cyan / violet / pink переливы — аврора за минималистичным контентом.",
+        "en": "A night field and blurred cyan / violet / pink blooms — aurora behind minimal content."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Night stage", "en": "Night stage" },
+          "body": { "ru": "Ground `#0B0A1F`, белый текст.", "en": "Ground `#0B0A1F`, white type." }
+        },
+        {
+          "title": { "ru": "Mesh blooms", "en": "Mesh blooms" },
+          "body": { "ru": "Cyan / violet / pink с blur.", "en": "Cyan / violet / pink with blur." }
+        },
+        {
+          "title": { "ru": "Glass + white CTA", "en": "Glass + white CTA" },
+          "body": { "ru": "Полупрозрачные панели; CTA `#fff`.", "en": "Translucent panels; CTA `#fff`." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "14px", "en": "14px" }, "body": { "ru": "card blur", "en": "card blur" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=aurora-mesh"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Aurora Mesh · DESIGN ATLAS", "en": "Aurora Mesh · DESIGN ATLAS" }
+    }
+  ]
+}

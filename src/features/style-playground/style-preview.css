@@ -680,3 +680,97 @@
 .style-preview[data-style-id="neo-brutalism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #111111;
 }
+
+/* Aurora Mesh — soft multi-hue northern-lights blooms + glass panels */
+.style-preview[data-style-id="aurora-mesh"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: var(--sp-color-background);
+}
+
+.style-preview[data-style-id="aurora-mesh"]::before {
+  content: "";
+  position: absolute;
+  inset: -28%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(110, 231, 249, 0.78), transparent 42%),
+    radial-gradient(circle at 78% 16%, rgba(167, 139, 250, 0.82), transparent 44%),
+    radial-gradient(circle at 58% 86%, rgba(244, 114, 182, 0.72), transparent 43%),
+    radial-gradient(circle at 42% 52%, rgba(110, 231, 249, 0.28), transparent 48%),
+    radial-gradient(circle at 88% 62%, rgba(167, 139, 250, 0.35), transparent 46%);
+  filter: blur(56px) saturate(1.15);
+  transform-origin: center;
+  animation: aurora-mesh-drift 22s ease-in-out infinite alternate;
+}
+
+.style-preview[data-style-id="aurora-mesh"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: soft-light;
+  background-image:
+    repeating-radial-gradient(circle at 20% 30%, #fff 0 0.5px, transparent 0.6px 3px),
+    repeating-radial-gradient(circle at 80% 70%, #fff 0 0.4px, transparent 0.5px 2.5px);
+}
+
+.style-preview[data-style-id="aurora-mesh"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+.style-preview[data-style-id="aurora-mesh"] .sp-card,
+.style-preview[data-style-id="aurora-mesh"] .sp-surface,
+.style-preview[data-style-id="aurora-mesh"] .sp-input,
+.style-preview[data-style-id="aurora-mesh"] .sp-textarea,
+.style-preview[data-style-id="aurora-mesh"] .sp-select,
+.style-preview[data-style-id="aurora-mesh"] .sp-alert,
+.style-preview[data-style-id="aurora-mesh"] .dl-feature-card,
+.style-preview[data-style-id="aurora-mesh"] .dl-stat,
+.style-preview[data-style-id="aurora-mesh"] .dl-media-frame {
+  -webkit-backdrop-filter: blur(var(--sp-blur, 14px));
+  backdrop-filter: blur(var(--sp-blur, 14px));
+  background: rgba(11, 10, 31, 0.38);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.style-preview[data-style-id="aurora-mesh"] .sp-btn-primary,
+.style-preview[data-style-id="aurora-mesh"] .sp-btn-accent,
+.style-preview[data-style-id="aurora-mesh"] .sp-badge-accent,
+.style-preview[data-style-id="aurora-mesh"] .dl-brand-mark {
+  color: #0b0a1f;
+}
+
+.style-preview[data-style-id="aurora-mesh"] .sp-heading,
+.style-preview[data-style-id="aurora-mesh"] .sp-display {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-shadow: 0 0 42px rgba(110, 231, 249, 0.28);
+}
+
+.style-preview[data-style-id="aurora-mesh"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #0b0a1f;
+}
+
+@keyframes aurora-mesh-drift {
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(1.02) rotate(-1.5deg);
+  }
+  50% {
+    transform: translate3d(2%, 1.5%, 0) scale(1.06) rotate(1deg);
+  }
+  100% {
+    transform: translate3d(1%, -2%, 0) scale(1.04) rotate(2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .style-preview[data-style-id="aurora-mesh"]::before {
+    animation: none;
+  }
+}

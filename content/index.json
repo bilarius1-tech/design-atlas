@@ -68,6 +68,10 @@
     {
       "id": "neo-brutalism",
       "path": "content/styles/neo-brutalism"
+    },
+    {
+      "id": "aurora-mesh",
+      "path": "content/styles/aurora-mesh"
     }
   ],
   "glossary": []

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "aurora-mesh",
+  "slug": "aurora-mesh",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Аврора / Mesh",
+    "en": "Aurora Mesh"
+  },
+  "shortDescription": {
+    "ru": "Плавные mesh-переливы cyan/violet/pink на ночном фоне — сияние как северное сияние, контент сверху минималистичный.",
+    "en": "Soft cyan/violet/pink mesh blooms on a night field — northern-lights glow with minimal content on top."
+  },
+  "philosophy": {
+    "ru": "Глубина через размытые цветовые пятна, не через рамки. Mesh дышит сзади; стеклянные панели и белый CTA держат читаемость спереди.",
+    "en": "Depth through blurred color blooms, not frames. Mesh breathes behind; glass panels and a white CTA keep readability in front."
+  },
+  "category": "atmospheric",
+  "tags": [
+    "aurora",
+    "mesh-gradient",
+    "glow",
+    "saas",
+    "ai",
+    "premium",
+    "dark"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "AI / SaaS launch landings",
+    "Creative studio and premium brand presentations",
+    "Atmospheric product pages that need soft multi-hue depth"
+  ],
+  "avoidFor": [
+    "Neo-brutal hard-offset campaigns",
+    "Neon-tech grid / hard glow shells",
+    "Dense-tile industrial mosaics"
+  ],
+  "relatedStyles": [
+    "glassmorphism",
+    "neon-tech",
+    "midnight-console"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "Inter",
+    "Unbounded"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:40:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Aurora / Mesh gradient (owned catalog)",
+      "note": "SSOT for #0B0A1F / #6EE7F9 / #A78BFA / #F472B6, Manrope+Unbounded, radial mesh + blur, white CTA. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/aurora-mesh.md",
+      "note": "Atlas research note: traits, distinction from glassmorphism / neon-tech."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "White type on night field; dark labels on white CTAs."
+    }
+  ]
+}
