@@ -77,7 +77,7 @@ Source map: [research/dizain-prompty-system-import-2026-11-09.md](./research/diz
 
 - [x] Live System drawer: **Accent / Font / Radius / Container** → preview CSS vars + composed prompt appendix
 - [x] Token richness for complex packs: optional `accentSecondary`, `shadowInset`, `blur` (Neu / Clay / Glass)
-- [x] Proof styles from owned catalog: `claymorphism`, `neumorphism` (next: glass / neo-brutal / dark-tech)
+- [x] Proof styles from owned catalog: `claymorphism`, `neumorphism`, `glassmorphism` (next: neo-brutal / dark-tech)
 - Not in R4: block builder, freeform grid editor, persisting tweaks into Git content
 
 ## R5 — Commerce / Pro

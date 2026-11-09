@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "glassmorphism",
+  "slug": "glassmorphism",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Гласморфизм",
+    "en": "Glassmorphism"
+  },
+  "shortDescription": {
+    "ru": "Матовое стекло поверх тёмного градиента: полупрозрачные панели, blur, тонкая светлая рамка.",
+    "en": "Frosted glass over a deep gradient: translucent panels, blur, and a thin light border."
+  },
+  "philosophy": {
+    "ru": "Глубина через слои: яркие пятна сзади, читаемое стекло спереди. Размытие и прозрачность — система, не декор ради декора. Контраст белого текста на тёмном поле обязателен.",
+    "en": "Depth through layers: vivid orbs behind, readable glass in front. Blur and translucency are the system, not decoration for its own sake. White text contrast on the dark field is mandatory."
+  },
+  "category": "soft-volume",
+  "tags": [
+    "glassmorphism",
+    "frosted-glass",
+    "blur",
+    "fintech",
+    "saas",
+    "dark",
+    "premium"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Fintech and premium SaaS marketing",
+    "Music / IT product landings with atmospheric depth",
+    "Dashboard shells that need layered translucent panels"
+  ],
+  "avoidFor": [
+    "Print-like Swiss editorial systems",
+    "Clay pastel consumer toys",
+    "Neumorphic same-as-ground control UIs"
+  ],
+  "relatedStyles": [
+    "midnight-console",
+    "claymorphism",
+    "neumorphism"
+  ],
+  "fontFamilies": [
+    "Manrope",
+    "Golos Text",
+    "Inter"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:20:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Glassmorphism (owned catalog)",
+      "url": "https://ztim2008.github.io/dizain-prompty/stil/glassmorphism/",
+      "note": "SSOT for palette, blur/border rules, and Cyrillic fonts."
+    },
+    {
+      "title": "docs/research/glassmorphism.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "White text on navy/glass must remain AA."
+    }
+  ]
+}

@@ -324,3 +324,37 @@
   opacity: 0.12;
   border-radius: var(--sp-radius);
 }
+
+/* Glassmorphism — atmosphere orbs + opaque ink on solid CTAs */
+.style-preview[data-style-id="glassmorphism"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse 55% 45% at 12% 18%, color-mix(in srgb, var(--sp-color-primary) 55%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 88% 22%, color-mix(in srgb, var(--sp-color-accent) 45%, transparent), transparent 68%),
+    radial-gradient(ellipse 60% 50% at 70% 85%, color-mix(in srgb, var(--sp-color-primary) 35%, transparent), transparent 72%),
+    var(--sp-color-background);
+}
+
+.style-preview[data-style-id="glassmorphism"] .sp-card,
+.style-preview[data-style-id="glassmorphism"] .sp-surface,
+.style-preview[data-style-id="glassmorphism"] .sp-input,
+.style-preview[data-style-id="glassmorphism"] .sp-textarea,
+.style-preview[data-style-id="glassmorphism"] .sp-select,
+.style-preview[data-style-id="glassmorphism"] .sp-alert,
+.style-preview[data-style-id="glassmorphism"] .dl-media-frame {
+  -webkit-backdrop-filter: blur(var(--sp-blur, 16px));
+  backdrop-filter: blur(var(--sp-blur, 16px));
+}
+
+.style-preview[data-style-id="glassmorphism"] .sp-btn-primary,
+.style-preview[data-style-id="glassmorphism"] .sp-btn-accent,
+.style-preview[data-style-id="glassmorphism"] .sp-badge-accent,
+.style-preview[data-style-id="glassmorphism"] .dl-brand-mark {
+  color: #ffffff;
+}
+
+.style-preview[data-style-id="glassmorphism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #ffffff;
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "glassmorphism",
+  "families": {
+    "heading": "Manrope",
+    "body": "Manrope",
+    "mono": "IBM Plex Mono",
+    "fallbacks": ["Golos Text", "Inter", "Helvetica Neue", "Arial", "sans-serif"]
+  },
+  "roles": {
+    "display": {
+      "family": "heading",
+      "size": "57px",
+      "weight": "700",
+      "lineHeight": "1.08",
+      "letterSpacing": "-0.02em"
+    },
+    "h1": {
+      "family": "heading",
+      "size": "38px",
+      "weight": "700",
+      "lineHeight": "1.12",
+      "letterSpacing": "-0.02em"
+    },
+    "h2": {
+      "family": "heading",
+      "size": "26px",
+      "weight": "600",
+      "lineHeight": "1.2"
+    },
+    "h3": {
+      "family": "heading",
+      "size": "18px",
+      "weight": "600",
+      "lineHeight": "1.25"
+    },
+    "h4": {
+      "family": "heading",
+      "size": "14px",
+      "weight": "600",
+      "lineHeight": "1.3"
+    },
+    "bodyLarge": {
+      "family": "body",
+      "size": "18px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "body": {
+      "family": "body",
+      "size": "16px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "caption": {
+      "family": "body",
+      "size": "12px",
+      "weight": "500",
+      "lineHeight": "1.4"
+    },
+    "label": {
+      "family": "body",
+      "size": "12px",
+      "weight": "600",
+      "lineHeight": "1.2",
+      "letterSpacing": "0.06em"
+    },
+    "quote": {
+      "family": "heading",
+      "size": "22px",
+      "weight": "500",
+      "lineHeight": "1.35"
+    },
+    "code": {
+      "family": "mono",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "1.45"
+    }
+  },
+  "rules": [
+    "Prefer Manrope; Golos Text/Inter as Cyrillic-capable fallbacks.",
+    "Keep display at 57px — premium, not oversized poster type.",
+    "White text on glass must remain AA."
+  ],
+  "constraints": [
+    "Do not silently replace stacks with non-Cyrillic fonts.",
+    "Do not use thin gray text on translucent panels.",
+    "Do not mix glass type with neo-brutal display faces."
+  ]
+}

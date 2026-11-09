@@ -20,6 +20,10 @@
     {
       "id": "neumorphism",
       "path": "content/styles/neumorphism"
+    },
+    {
+      "id": "glassmorphism",
+      "path": "content/styles/glassmorphism"
     }
   ],
   "glossary": []

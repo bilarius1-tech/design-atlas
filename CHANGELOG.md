@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`glassmorphism`** (frosted panels, blur, light border, navy + violet/cyan orbs).
 - Published style pack **`neumorphism`** (ground-matched fills, paired soft shadows, inset pressed).
 - Published style pack **`claymorphism`** (pastel soft volume, dual shadows, split radii) + research note; Studio style list uses mini layout thumbs instead of flat color squares.
 - System session history: save / restore / delete tweak variants per style (sessionStorage for the browser tab).
