@@ -13,5 +13,6 @@
 | [neumorphism.md](./neumorphism.md) | Soft extruded / paired-shadow proof style | authored |
 | [glassmorphism.md](./glassmorphism.md) | Frosted glass + blur proof style | authored |
 | [neon-tech.md](./neon-tech.md) | Dark neon / tech proof style (InfoStyle adapted) | authored |
+| [streetwear.md](./streetwear.md) | Bold streetwear campaign (InfoStyle market) | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

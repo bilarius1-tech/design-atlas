@@ -28,6 +28,10 @@
     {
       "id": "neon-tech",
       "path": "content/styles/neon-tech"
+    },
+    {
+      "id": "streetwear",
+      "path": "content/styles/streetwear"
     }
   ],
   "glossary": []

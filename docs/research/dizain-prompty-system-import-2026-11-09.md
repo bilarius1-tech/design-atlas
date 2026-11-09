@@ -42,18 +42,20 @@ Grid and site width stay **tokens**, not a builder: `spacing.container` + spacin
 
 | Source slug | Planned Atlas `id` | Priority |
 |-------------|--------------------|----------|
-| claymorphism | `claymorphism` | P0 proof for soft volume |
-| neumorphism | `neumorphism` | P0 proof for dual soft shadow |
-| glassmorphism | `glassmorphism` | P1 |
-| neo-brutalism | `neo-brutalism` | P1 (distinct from `poster-brutal`) |
-| swiss-minimalizm | keep / align `swiss-international` | done (reference) |
-| bento-grid | `bento-grid` | P2 (atmosphere via template + cards, not Studio grid editor) |
-| dark-tech-neon | `dark-tech-neon` | P1 |
-| aurora-mesh-gradient | `aurora-mesh` | P2 |
-| y2k | `y2k` | P2 |
-| retro-terminal | `retro-terminal` | P2 |
-| journal layout | `editorial-magazine` | P2 |
-| RU market set | kebab ids per research notes | after P0/P1 |
+| claymorphism | `claymorphism` | done |
+| neumorphism | `neumorphism` | done |
+| glassmorphism | `glassmorphism` | done |
+| dark-tech-neon | `neon-tech` | done (Atlas id) |
+| neo-brutalism | `neo-brutalism` | queue #10 (≠ `poster-brutal`) |
+| swiss-minimalizm | `swiss-international` | done (reference) |
+| bento-grid | `bento-grid` | queue #14 (atmosphere only) |
+| aurora-mesh-gradient | `aurora-mesh` | queue #11 |
+| y2k | `y2k` | queue #12 |
+| retro-terminal | `retro-terminal` | queue #13 |
+| journal layout | `soft-editorial` | queue #4 (InfoStyle `catalog`) |
+| InfoStyle RU set | see ROADMAP queue #1–9 | locked 2026-11-09 |
+
+**Locked authoring queue:** [docs/ROADMAP.md](../ROADMAP.md) — Approved style authoring queue.
 
 Authoring order: research note → tokens/effects → prompts RU+EN + constructor → STYLE-REVIEW → publish.
 

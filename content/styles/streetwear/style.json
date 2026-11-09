@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "streetwear",
+  "slug": "streetwear",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Дерзкий streetwear",
+    "en": "Bold Streetwear"
+  },
+  "shortDescription": {
+    "ru": "Тёплый персиковый фон, крупная Unbounded-типографика и кислотные акценты — уличная кампания для веба.",
+    "en": "Warm peach ground, dense Unbounded type, and acid accents — a street campaign look for the web."
+  },
+  "philosophy": {
+    "ru": "Энергия важнее «аккуратности». Крупный display, короткие подписи, смелые плоскости цвета. Акценты coral / lime / violet работают как плакатные пятна, не как пастельный декор.",
+    "en": "Energy over neatness. Large display, short labels, bold color planes. Coral / lime / violet accents act as poster blocks, not pastel decoration."
+  },
+  "category": "campaign",
+  "tags": [
+    "streetwear",
+    "youth",
+    "campaign",
+    "bold-type",
+    "warm",
+    "high-energy"
+  ],
+  "complexity": "medium",
+  "visualDensity": "dense",
+  "contrast": "high",
+  "bestUseCases": [
+    "Fashion / streetwear brand landings",
+    "Youth lifestyle campaigns",
+    "Launch pages that need loud type and accent blocks"
+  ],
+  "avoidFor": [
+    "Clinical / medical calm UIs",
+    "Soft clay or neumorphic control panels",
+    "Quiet Swiss editorial systems"
+  ],
+  "relatedStyles": [
+    "poster-brutal",
+    "neon-tech",
+    "swiss-international"
+  ],
+  "fontFamilies": [
+    "Unbounded",
+    "Oswald",
+    "Roboto",
+    "Manrope"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:35:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Bold streetwear / market (owned catalog)",
+      "note": "SSOT for peach ground, coral/lime/violet accents, Unbounded. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/streetwear.md",
+      "note": "Atlas research note: traits, anti-patterns, distinction from poster-brutal."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Coral and lime CTAs need verified label contrast."
+    }
+  ]
+}

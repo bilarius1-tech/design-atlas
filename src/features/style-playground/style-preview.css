@@ -391,3 +391,33 @@
 .style-preview[data-style-id="neon-tech"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #0b0f14;
 }
+
+/* Streetwear — peach stage, diagonal accent band, dark ink on lime */
+.style-preview[data-style-id="streetwear"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    linear-gradient(
+      155deg,
+      var(--sp-color-background) 0 58%,
+      color-mix(in srgb, var(--sp-color-primary) 88%, transparent) 58% 64%,
+      var(--sp-color-background) 64%
+    );
+}
+
+.style-preview[data-style-id="streetwear"] .sp-btn-accent,
+.style-preview[data-style-id="streetwear"] .sp-badge-accent {
+  color: #211c1a;
+}
+
+.style-preview[data-style-id="streetwear"] .sp-btn-primary,
+.style-preview[data-style-id="streetwear"] .dl-brand-mark {
+  color: #ffffff;
+}
+
+.style-preview[data-style-id="streetwear"] .sp-heading,
+.style-preview[data-style-id="streetwear"] .sp-display {
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "streetwear",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Streetwear", "en": "Streetwear" },
+      "headline": {
+        "ru": "Громко. Коротко. В лицо",
+        "en": "Loud. Short. Straight on"
+      },
+      "body": {
+        "ru": "Персиковый фон, Unbounded display и плакатные пятна coral / lime / violet — уличная кампания без случайных наклеек.",
+        "en": "Peach ground, Unbounded display, and coral / lime / violet poster blocks — a street campaign without random stickers."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Тёплый ground", "en": "Warm ground" },
+          "body": { "ru": "Peach `#FFF3E8`, ink `#211C1A`.", "en": "Peach `#FFF3E8`, ink `#211C1A`." }
+        },
+        {
+          "title": { "ru": "Три сигнала", "en": "Three signals" },
+          "body": { "ru": "Coral / lime / violet blocks.", "en": "Coral / lime / violet blocks." }
+        },
+        {
+          "title": { "ru": "Unbounded", "en": "Unbounded" },
+          "body": { "ru": "Плотный display, короткие подписи.", "en": "Dense display, short labels." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "2px", "en": "2px" }, "body": { "ru": "border width", "en": "border width" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1100", "en": "1100" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=streetwear"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Streetwear · DESIGN ATLAS", "en": "Streetwear · DESIGN ATLAS" }
+    }
+  ]
+}

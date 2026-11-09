@@ -77,8 +77,31 @@ Source map: [research/dizain-prompty-system-import-2026-11-09.md](./research/diz
 
 - [x] Live System drawer: **Accent / Font / Radius / Container** → preview CSS vars + composed prompt appendix
 - [x] Token richness for complex packs: optional `accentSecondary`, `shadowInset`, `blur` (Neu / Clay / Glass)
-- [x] Proof styles from owned catalog: `claymorphism`, `neumorphism`, `glassmorphism`, `neon-tech` (next: streetwear / blueprint / premium from InfoStyle)
+- [x] Proof styles from owned catalog: `claymorphism`, `neumorphism`, `glassmorphism`, `neon-tech`
 - Not in R4: block builder, freeform grid editor, persisting tweaks into Git content
+
+## Approved style authoring queue (locked 2026-11-09)
+
+One pack at a time: research → tokens → dual prompts → commit → rebuild. Adapt visual systems for Atlas web DS — do not copy InfoStyle marketplace image-gen prompts.
+
+**Done:** `swiss-international`, `midnight-console`, `poster-brutal`, `claymorphism`, `neumorphism`, `glassmorphism`, `neon-tech`
+
+| # | Atlas `id` | Source | Status |
+|---|------------|--------|--------|
+| 1 | `streetwear` | InfoStyle `market` | done |
+| 2 | `blueprint-grid` | InfoStyle `blueprint` | next |
+| 3 | `warm-premium` | InfoStyle `premium` | queued |
+| 4 | `soft-editorial` | InfoStyle `catalog` | queued |
+| 5 | `clinical-minimal` | InfoStyle `clinical` | queued |
+| 6 | `eco-botanical` | InfoStyle `eco` | queued |
+| 7 | `vintage-gold` | InfoStyle `vintage` | queued |
+| 8 | `industrial-power` | InfoStyle `industrial` | queued |
+| 9 | `scandi-calm` | InfoStyle `scandi` | queued |
+| 10 | `neo-brutalism` | dizain-prompty | queued (≠ `poster-brutal`) |
+| 11 | `aurora-mesh` | dizain-prompty | queued |
+| 12 | `y2k` | dizain-prompty | queued |
+| 13 | `retro-terminal` | dizain-prompty | queued |
+| 14 | `bento-grid` | dizain-prompty | queued (atmosphere only; no Studio grid editor) |
 
 ## R5 — Commerce / Pro
 
