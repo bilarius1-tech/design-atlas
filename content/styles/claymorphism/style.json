@@ -3,23 +3,24 @@
   "id": "claymorphism",
   "slug": "claymorphism",
   "status": "published",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": {
     "ru": "Клейморфизм",
     "en": "Claymorphism"
   },
   "shortDescription": {
-    "ru": "Мягкий «пластилиновый» объём: пухлые формы, большие скругления, двойные тени и пастельная палитра.",
-    "en": "Soft clay volume: plump shapes, large radii, dual soft shadows, and a pastel palette."
+    "ru": "Детский пластилиновый объём: пухлые формы, огромные радиусы и многопастельные плоскости pink/mint/sky/cream.",
+    "en": "Kid-friendly clay volume: plump shapes, huge radii, and multi-pastel pink/mint/sky/cream planes."
   },
   "philosophy": {
-    "ru": "Интерфейс как дружелюбная игрушка из пластилина: объём читается тенью и радиусом, не жёсткой рамкой. Цвет пастельный, акцент тёплый, типографика круглая и спокойная.",
-    "en": "UI as friendly clay: volume comes from shadow and radius, not hard frames. Pastel ground, warm accent, rounded calm type."
+    "ru": "Интерфейс как дружелюбная игрушка из пластилина: объём через dual shadow и радиус 38px+, не через рамку. Пастельные пятна разных оттенков — как набор пластилина, не один фиолетовый wash.",
+    "en": "UI as friendly clay toy: volume via dual shadow and 38px+ radii, not frames. Multi-pastel planes feel like a clay set — not a single violet wash."
   },
   "category": "soft-volume",
   "tags": [
     "claymorphism",
     "pastel",
+    "kids",
     "soft-ui",
     "friendly",
     "consumer",
@@ -50,7 +51,7 @@
     "Montserrat Alternates"
   ],
   "author": "design-atlas",
-  "updatedAt": "2026-11-09T12:00:00.000Z",
+  "updatedAt": "2026-11-09T14:25:00.000Z",
   "sources": [
     {
       "title": "dizain-prompty — Claymorphism (owned catalog)",

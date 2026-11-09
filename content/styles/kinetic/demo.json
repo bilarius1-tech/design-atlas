@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "kinetic",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Kinetic", "en": "Kinetic" },
+      "headline": {
+        "ru": "Тип. Движение. Сигнал",
+        "en": "Type. Motion. Signal"
+      },
+      "body": {
+        "ru": "Чёрная сцена, stacked uppercase и один оранжевый блок — кинетик без soft UI.",
+        "en": "Black stage, stacked uppercase, and one orange block — kinetic without soft UI."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Black stage", "en": "Black stage" },
+          "body": { "ru": "Ground `#0A0A0B`, ink white.", "en": "Ground `#0A0A0B`, white ink." }
+        },
+        {
+          "title": { "ru": "Orange block", "en": "Orange block" },
+          "body": { "ru": "Signal `#FF5E00` — одно пятно.", "en": "Signal `#FF5E00` — one field." }
+        },
+        {
+          "title": { "ru": "Motion grammar", "en": "Motion grammar" },
+          "body": { "ru": "Marquee / wipe; body still.", "en": "Marquee / wipe; body still." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "0px", "en": "0px" }, "body": { "ru": "radius everywhere", "en": "radius everywhere" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1200", "en": "1200" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=kinetic"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Kinetic · DESIGN ATLAS", "en": "Kinetic · DESIGN ATLAS" }
+    }
+  ]
+}

@@ -6,14 +6,14 @@ Canonical source: `tokens.json`.
 
 | Token | Value |
 |-------|-------|
-| background | `#F4EEFF` |
-| surface | `#FFFCFF` |
-| text | `#2B2140` |
-| muted | `#6B5F8A` |
-| primary | `#7C5CFF` |
-| accent | `#FFB86B` |
-| accentSecondary | `#7C5CFF` |
-| border | `#E4D9F7` |
+| background | `#F1F2FA` |
+| surface | `#FFFDF7` |
+| text | `#383139` |
+| muted | `#48404B` |
+| primary | `#F6A3CA` |
+| accent | `#C0EFDC` |
+| accentSecondary | `#C5E5FB` |
+| border | `#E8E4F2` |
 
 ## Typography
 
@@ -34,10 +34,10 @@ Canonical source: `tokens.json`.
 |-------|-------|
 | radius | `28px` |
 | radiusButton | `999px` |
-| radiusCard | `32px` |
+| radiusCard | `38px` |
 | borderWidth | `1px` |
-| shadow | `10px 14px 32px rgba(124, 92, 255, 0.22)` |
-| shadowInset | `inset -4px -6px 14px rgba(255, 255, 255, 0.85)` |
+| shadow | `12px 16px 34px rgba(120, 100, 140, 0.18)` |
+| shadowInset | `inset -5px -7px 16px rgba(255, 255, 255, 0.9)` |
 | container | `1200px` |
 | section | `104px` |
 | unit | `8` |

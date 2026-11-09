@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "kinetic",
+  "slug": "kinetic",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Кинетик",
+    "en": "Kinetic"
+  },
+  "shortDescription": {
+    "ru": "Чёрная сцена, гигантский uppercase-гротеск и один оранжевый сигнал — тип как движение.",
+    "en": "Black stage, giant uppercase grotesk, and one orange signal — type as motion."
+  },
+  "philosophy": {
+    "ru": "Слово — картинка. Крупный stacked display, жёсткие прямоугольные поля и дозированный motion (marquee / wipe). Тело текста стоит; двигается только заголовок и полосы.",
+    "en": "The word is the image. Huge stacked display, hard rectangular fields, and controlled motion (marquee / wipe). Body stays still; only headlines and strips move."
+  },
+  "category": "motion-expression",
+  "tags": [
+    "kinetic",
+    "motion",
+    "typography",
+    "marquee",
+    "high-contrast",
+    "launch"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Launch / campaign landings with type-as-hero",
+    "Creative studio and portfolio marketing",
+    "Product drops that need bold motion without soft UI"
+  ],
+  "avoidFor": [
+    "Long-form reading / documentation",
+    "Soft clay / glass consumer shells",
+    "Dense operational dashboards"
+  ],
+  "relatedStyles": [
+    "poster-brutal",
+    "neon-tech",
+    "streetwear"
+  ],
+  "fontFamilies": [
+    "Inter",
+    "Unbounded",
+    "Oswald"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T14:20:00.000Z",
+  "sources": [
+    {
+      "title": "Kinetic / motion-type visual direction (industry patterns)",
+      "note": "Stacked uppercase display, black stage, single signal accent, marquee grammar."
+    },
+    {
+      "title": "docs/research/kinetic.md",
+      "note": "Atlas research: traits, anti-patterns; designprompts.dev cited as visual direction reference only — not a clone."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "White on black and black on orange blocks must remain AA; respect prefers-reduced-motion."
+    }
+  ]
+}

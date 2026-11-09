@@ -942,3 +942,137 @@
     animation: none;
   }
 }
+
+/* Kinetic — black stage, orange signal block, uppercase type + marquee */
+.style-preview[data-style-id="kinetic"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: var(--sp-color-background);
+}
+
+.style-preview[data-style-id="kinetic"]::before {
+  content: "KINETIC · TYPE AS MOTION · SIGNAL · LAUNCH · ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: max-content;
+  padding: 10px 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0a0a0b;
+  background: #ff5e00;
+  white-space: nowrap;
+  animation: kinetic-marquee 18s linear infinite;
+  pointer-events: none;
+}
+
+.style-preview[data-style-id="kinetic"] > * {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+}
+
+.style-preview[data-style-id="kinetic"] .sp-btn-primary,
+.style-preview[data-style-id="kinetic"] .sp-btn-accent,
+.style-preview[data-style-id="kinetic"] .sp-badge-accent,
+.style-preview[data-style-id="kinetic"] .dl-brand-mark {
+  color: #0a0a0b;
+  border-radius: 0;
+}
+
+.style-preview[data-style-id="kinetic"] .sp-heading,
+.style-preview[data-style-id="kinetic"] .sp-display {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.style-preview[data-style-id="kinetic"] .sp-display,
+.style-preview[data-style-id="kinetic"] .dl-hero-title {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background-image: linear-gradient(#ff5e00, #ff5e00);
+  background-repeat: no-repeat;
+  background-size: 100% 0.42em;
+  background-position: 0 88%;
+  padding-inline: 0.06em;
+}
+
+.style-preview[data-style-id="kinetic"] .sp-card,
+.style-preview[data-style-id="kinetic"] .dl-feature-card,
+.style-preview[data-style-id="kinetic"] .dl-stat {
+  border-radius: 0;
+  border-color: #26282c;
+  box-shadow: none;
+}
+
+.style-preview[data-style-id="kinetic"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #0a0a0b;
+}
+
+@keyframes kinetic-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .style-preview[data-style-id="kinetic"]::before {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* Claymorphism — multi-pastel kid clay volume */
+.style-preview[data-style-id="claymorphism"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(246, 163, 202, 0.45), transparent 42%),
+    radial-gradient(circle at 86% 14%, rgba(197, 229, 251, 0.55), transparent 40%),
+    radial-gradient(circle at 70% 88%, rgba(192, 239, 220, 0.5), transparent 44%),
+    radial-gradient(circle at 24% 78%, rgba(249, 231, 168, 0.45), transparent 38%),
+    linear-gradient(165deg, #f7f8fd, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="claymorphism"] .sp-card,
+.style-preview[data-style-id="claymorphism"] .dl-feature-card,
+.style-preview[data-style-id="claymorphism"] .dl-stat,
+.style-preview[data-style-id="claymorphism"] .sp-surface {
+  background: #fffdf7;
+  border-color: transparent;
+  box-shadow:
+    12px 16px 34px rgba(120, 100, 140, 0.18),
+    inset -5px -7px 16px rgba(255, 255, 255, 0.9),
+    inset 4px 5px 12px rgba(200, 180, 220, 0.22);
+}
+
+.style-preview[data-style-id="claymorphism"] .sp-btn-primary,
+.style-preview[data-style-id="claymorphism"] .sp-btn-accent,
+.style-preview[data-style-id="claymorphism"] .sp-badge-accent,
+.style-preview[data-style-id="claymorphism"] .dl-brand-mark {
+  color: #383139;
+  box-shadow:
+    6px 8px 18px rgba(246, 163, 202, 0.35),
+    inset -3px -4px 10px rgba(255, 255, 255, 0.75);
+}
+
+.style-preview[data-style-id="claymorphism"] .sp-heading,
+.style-preview[data-style-id="claymorphism"] .sp-display {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.style-preview[data-style-id="claymorphism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #383139;
+}

@@ -4,56 +4,30 @@ Implement an interface in the **Claymorphism** style using the DESIGN ATLAS syst
 
 ## Context
 
-- Soft clay volume: plump shapes, large radii, dual soft shadows, pastel ground.
-- Cyrillic-capable type: Nunito (headings), Manrope (body).
-- Original DESIGN ATLAS pack; page structure comes from the user’s chat — this prompt is visual system only.
+- Kid-friendly clay volume: plump shapes, ~38px card radius, dual soft shadow, multi-pastel pink/mint/sky/cream.
+- Cyrillic-ready fonts: Nunito (headings), Manrope (body).
+- Original DESIGN ATLAS pack; page structure comes from the user’s chat.
 
-## Mandatory tokens (do not invent replacements)
+## Mandatory tokens
 
-Use values only from `tokens.json` / `TOKENS.md`:
-
-- background `#F4EEFF`, surface `#FFFCFF`, text `#2B2140`, muted `#6B5F8A`
-- primary `#7C5CFF`, accent `#FFB86B`, border `#E4D9F7`
-- radius `28px`, radiusButton `999px`, radiusCard `32px`, borderWidth `1px`
-- shadow `10px 14px 32px rgba(124, 92, 255, 0.22)` + inset light
-- spacing unit `8`, section `104px`, container `1200px`
-- type scale: xs 12 / sm 14 / base 16 / lg 20 / xl 28 / 2xl 40 / display 57
+- background `#F1F2FA`, surface `#FFFDF7`, text `#383139`, muted `#48404B`
+- primary `#F6A3CA`, accent `#C0EFDC`, accentSecondary `#C5E5FB`, border `#E8E4F2`
+- radius `28px`, radiusButton `999px`, radiusCard `38px`
+- dual soft shadow + inset light; container `1200px`; display `57px`
 - fonts: Nunito headings; Manrope body
 
-Do not hardcode arbitrary hex when CSS variables / tokens are available.
-
-## Layout
-
-1. Soft vertical rhythm; cards feel inflated.
-2. Hero budget: title / one paragraph / CTA — no collage or stickers on media.
-3. Plump buttons; dual soft shadow on cards.
-4. Do not reshape the user’s section outline — atmosphere and tokens only.
-
-## Components
-
-Primary = violet fill. Peach accent = secondary warmth / highlight — not large washes.
-Fields on surface with the style’s radius family.
-
-## States
-
-Implement hover (light scale), focus-visible, disabled, loading, validation error.
-
-## Responsive
-
-Check 1440, 1024, 768, 390, 360. No horizontal scroll.
+CTA: dark ink `#383139` on pink primary (not white on pale pink).
 
 ## Bans
 
-- Neo-brutal hard offsets
-- Dark console / neon glow
-- Inter as a silent default
+- Neo-brutal hard offsets / neon glow
+- Single violet wash without multi-pastel planes
 - Hairline cards without volume
-- Fake metrics and AI-slop copy
+- A second “taste” palette
 
 ## Acceptance
 
-1. Ground stays pastel; text remains readable.
-2. Button vs card radii follow tokens.
-3. Shadow is soft dual, not a hard drop.
-4. Values match `tokens.json` one-to-one.
-5. Copy is realistic — no lorem.
+1. Multi-pastel clay volume reads immediately.
+2. Button/card radii match tokens; dual shadow.
+3. Values match `tokens.json`.
+4. User structure is not rewritten.

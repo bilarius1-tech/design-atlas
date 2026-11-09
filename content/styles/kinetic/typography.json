@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "kinetic",
+  "families": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "IBM Plex Mono",
+    "fallbacks": ["Unbounded", "Oswald", "system-ui", "sans-serif"]
+  },
+  "roles": {
+    "display": {
+      "family": "heading",
+      "size": "57px",
+      "weight": "800",
+      "lineHeight": "0.95",
+      "letterSpacing": "-0.04em"
+    },
+    "h1": {
+      "family": "heading",
+      "size": "48px",
+      "weight": "800",
+      "lineHeight": "0.98",
+      "letterSpacing": "-0.03em"
+    },
+    "h2": {
+      "family": "heading",
+      "size": "32px",
+      "weight": "700",
+      "lineHeight": "1.05",
+      "letterSpacing": "-0.02em"
+    },
+    "h3": {
+      "family": "heading",
+      "size": "18px",
+      "weight": "700",
+      "lineHeight": "1.2"
+    },
+    "h4": {
+      "family": "heading",
+      "size": "14px",
+      "weight": "700",
+      "lineHeight": "1.25",
+      "letterSpacing": "0.06em"
+    },
+    "bodyLarge": {
+      "family": "body",
+      "size": "18px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "body": {
+      "family": "body",
+      "size": "16px",
+      "weight": "400",
+      "lineHeight": "1.55"
+    },
+    "caption": {
+      "family": "body",
+      "size": "12px",
+      "weight": "500",
+      "lineHeight": "1.4"
+    },
+    "label": {
+      "family": "body",
+      "size": "11px",
+      "weight": "700",
+      "lineHeight": "1.2",
+      "letterSpacing": "0.12em"
+    },
+    "quote": {
+      "family": "heading",
+      "size": "22px",
+      "weight": "700",
+      "lineHeight": "1.2"
+    },
+    "code": {
+      "family": "mono",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "1.45"
+    }
+  },
+  "rules": [
+    "Inter 800 uppercase for display — stacked lines, tight tracking.",
+    "Body stays still; motion belongs to headlines and strips only.",
+    "Keep display at 57px minimum hero scale."
+  ],
+  "constraints": [
+    "Do not soft-round into clay / glass.",
+    "Do not animate long paragraphs.",
+    "Do not run marquees under prefers-reduced-motion."
+  ]
+}

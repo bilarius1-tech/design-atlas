@@ -2,11 +2,11 @@
 
 ## Do
 
-1. Keep the pastel lavender ground (`#F4EEFF`); lift cards with soft dual shadow, not hard borders.
-2. Use large radii: cards ~`32px`, buttons plump / near-pill.
-3. Primary violet (`#7C5CFF`) for main actions; peach accent (`#FFB86B`) for warmth — not neon.
+1. Keep cool pastel ground (`#F1F2FA`); cream surfaces (`#FFFDF7`); lift cards with soft dual shadow.
+2. Use large radii: cards ~`38px`, buttons plump / near-pill.
+3. Primary pink (`#F6A3CA`) with dark ink; mint/sky as secondary clay planes — not neon.
 4. Headings in Nunito (heavy), body in Manrope; keep Cyrillic support.
-5. Friendly consumer tone — soft icons, rounded media frames.
+5. Friendly kids/family tone — soft icons, rounded media frames, multi-pastel spots.
 
 ## Don’t
 
@@ -24,6 +24,6 @@
 
 ## Accessibility
 
-- Verify `#2B2140` on pastel surfaces (AA)
+- Verify `#383139` on pastel surfaces (AA); dark labels on pink CTAs
 - Visible `:focus-visible` on plump controls
 - Respect `prefers-reduced-motion` for hover scale

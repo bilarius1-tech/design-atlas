@@ -6,10 +6,14 @@ Soft “clay / plasticine” volume for DESIGN ATLAS — first complex soft-volu
 
 ## Traits (facts)
 
-- Pastel lavender ground; plump cards; large radii (~28–36px)
+- Cool pastel ground `#F1F2FA`; cream surface `#FFFDF7`; plump cards; radii ~28–38px
 - Dual soft shadow: outer tinted bottom-right + light inner top-left
-- Friendly consumer tone; Cyrillic-safe Nunito / Manrope / Montserrat Alternates
-- Second accent (warm peach) beside violet brand
+- Multi-pastel planes: pink / mint / sky / warm cream (kid clay set, not single violet wash)
+- Friendly family/kids tone; Cyrillic-safe Nunito / Manrope / Montserrat Alternates
+
+## 1.1.0 note
+
+Aligned toward multi-pastel “детский” clay volume after visual-direction review of designprompts.dev/claymorphism (reference only — no clone of DP fonts/copy/graphics).
 
 ## Anti-patterns
 
@@ -22,10 +26,10 @@ Soft “clay / plasticine” volume for DESIGN ATLAS — first complex soft-volu
 
 | Token | Direction |
 |-------|-----------|
-| colors.background | `#F4EEFF` |
-| colors.primary | `#7C5CFF` |
-| colors.accent / accentSecondary | peach `#FFB86B` + violet |
-| geometry.radiusCard | `32px` |
+| colors.background | `#F1F2FA` |
+| colors.primary | `#F6A3CA` |
+| colors.accent / accentSecondary | mint `#C0EFDC` / sky `#C5E5FB` |
+| geometry.radiusCard | `38px` |
 | geometry.radiusButton | plump / near-pill |
 | effects.shadow + shadowInset | dual soft clay stack |
 

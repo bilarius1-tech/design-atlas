@@ -80,6 +80,10 @@
     {
       "id": "retro-terminal",
       "path": "content/styles/retro-terminal"
+    },
+    {
+      "id": "kinetic",
+      "path": "content/styles/kinetic"
     }
   ],
   "glossary": []

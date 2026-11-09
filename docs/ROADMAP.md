@@ -102,6 +102,8 @@ One pack at a time: research → tokens → dual prompts → commit → rebuild.
 | 12 | `y2k` | dizain-prompty | done (lavender chrome + pink/cyan) |
 | 13 | `retro-terminal` | dizain-prompty | done (CRT phosphor + amber CLI) |
 | 14 | `bento-grid` | dizain-prompty | queued (atmosphere only; no Studio grid editor; may use dense-tile) |
+| — | `kinetic` | Atlas original (DP visual direction) | done — black stage + orange signal + marquee |
+| — | `claymorphism` | dizain-prompty + kid multi-pastel polish | done — v1.1.0 multi-pastel |
 
 **Dense tile (locked approach):** optional `spacing.gap` + composition `dense-tile` — not a global 0px default. Proof on `blueprint-grid`; soft-volume / premium styles keep air. Details: [research/dense-tile-gap.md](./research/dense-tile-gap.md).
 

@@ -4,56 +4,30 @@
 
 ## Контекст
 
-- Мягкий «пластилиновый» объём: пухлые формы, большие скругления, двойные мягкие тени, пастель.
+- Детский пластилиновый объём: пухлые формы, радиус карточек ~38px, dual soft shadow, многопастель pink/mint/sky/cream.
 - Шрифты с кириллицей: Nunito (заголовки), Manrope (текст).
-- Оригинальный pack DESIGN ATLAS; структура страницы уже задана в чате с пользователем — здесь только визуальная система.
+- Оригинальный pack DESIGN ATLAS; структура страницы уже в чате пользователя.
 
-## Обязательные токены (не подменять)
+## Обязательные токены
 
-Бери значения только из `tokens.json` / `TOKENS.md`:
-
-- background `#F4EEFF`, surface `#FFFCFF`, text `#2B2140`, muted `#6B5F8A`
-- primary `#7C5CFF`, accent `#FFB86B`, border `#E4D9F7`
-- radius `28px`, radiusButton `999px`, radiusCard `32px`, borderWidth `1px`
-- shadow `10px 14px 32px rgba(124, 92, 255, 0.22)` + inset light
-- spacing unit `8`, section `104px`, container `1200px`
-- type scale: xs 12 / sm 14 / base 16 / lg 20 / xl 28 / 2xl 40 / display 57
+- background `#F1F2FA`, surface `#FFFDF7`, text `#383139`, muted `#48404B`
+- primary `#F6A3CA`, accent `#C0EFDC`, accentSecondary `#C5E5FB`, border `#E8E4F2`
+- radius `28px`, radiusButton `999px`, radiusCard `38px`
+- dual soft shadow + inset light; container `1200px`; display `57px`
 - fonts: Nunito headings; Manrope body
 
-Не вшивай произвольные hex, если можно использовать CSS variables / токены.
-
-## Макет
-
-1. Мягкий вертикальный ритм; карточки «надутые».
-2. Hero: заголовок / один абзац / CTA — без коллажа и стикеров поверх медиа.
-3. Кнопки plump; карточки с dual soft shadow.
-4. Не перестраивай структуру секций пользователя — только атмосфера и токены.
-
-## Компоненты
-
-Primary = violet fill. Accent peach — вторичная теплота / highlight, не заливка половины экрана.
-Поля на surface со скруглением семьи стиля.
-
-## Состояния
-
-Реализуй hover (лёгкий scale), focus-visible, disabled, loading, validation error.
-
-## Адаптив
-
-Контрольные ширины: 1440, 1024, 768, 390, 360. Без горизонтального скролла.
+CTA: тёмный ink `#383139` на pink primary (не белый на бледном).
 
 ## Запреты
 
-- Neo-brutal hard offsets
-- Тёмная консоль / neon glow
-- Inter как тихий default
+- Neo-brutal hard offsets / neon glow
+- Один фиолетовый wash без multi-pastel плоскостей
 - Hairline-карточки без объёма
-- Фальшивая статистика и AI-slop копирайт
+- Вторая палитра «на вкус»
 
 ## Критерии приёмки
 
-1. Фон остаётся пастельным; текст читается.
-2. Радиусы кнопок и карточек разделены по токенам.
-3. Тень — soft dual, не hard drop.
-4. Значения сопоставимы с `tokens.json` один-в-один.
-5. Контент реалистичен, без lorem.
+1. Multi-pastel clay volume читается сразу.
+2. Радиусы кнопок/карточек по токенам; dual shadow.
+3. Значения = `tokens.json`.
+4. Структура пользователя не переписана.
