@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "bento-grid",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    { "id": "header", "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" }, "ctaLabel": { "ru": "К системе", "en": "To system" }, "ctaHref": "#demo-cta" },
+    { "id": "hero", "eyebrow": { "ru": "Bento Grid", "en": "Bento Grid" }, "headline": { "ru": "Плитки. Одна мысль", "en": "Tiles. One thought" }, "body": { "ru": "Светло-серая бенто-атмосфера: gap 16px, radius 24px, blue/yellow акценты — без редактора сетки.", "en": "Light-gray bento atmosphere: 16px gap, 24px radius, blue/yellow accents — no grid editor." }, "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" }, "ctaHref": "#demo-features" },
+    { "id": "features", "eyebrow": { "ru": "Принципы", "en": "Principles" }, "headline": { "ru": "Три опоры стиля", "en": "Three foundations" }, "items": [
+      { "title": { "ru": "Light gray", "en": "Light gray" }, "body": { "ru": "Ground ``#F5F5F7``.", "en": "Ground ``#F5F5F7``." } },
+      { "title": { "ru": "Gap 16px", "en": "Gap 16px" }, "body": { "ru": "Воздух, не dense-tile.", "en": "Воздух, не dense-tile." } },
+      { "title": { "ru": "Accent tiles", "en": "Accent tiles" }, "body": { "ru": "Blue CTA + yellow tile.", "en": "Blue CTA + yellow tile." } }
+    ]},
+    { "id": "statistics", "headline": { "ru": "Ориентиры", "en": "Signals" }, "items": [
+      { "title": { "ru": "16px", "en": "16px" }, "body": { "ru": "gap / soft air", "en": "gap / soft air" } },
+      { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+      { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "контейнер ~", "en": "container ~" } }
+    ]},
+    { "id": "cta", "headline": { "ru": "Забрать систему", "en": "Take the system" }, "body": { "ru": "Скопируйте промпт и соберите проект снаружи Atlas.", "en": "Copy the prompt and build outside Atlas." }, "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" }, "ctaHref": "/studio?style=bento-grid" },
+    { "id": "footer", "headline": { "ru": "Bento Grid · DESIGN ATLAS", "en": "Bento Grid · DESIGN ATLAS" } }
+  ]
+}

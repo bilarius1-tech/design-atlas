@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "apple-materials",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    { "id": "header", "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" }, "ctaLabel": { "ru": "К системе", "en": "To system" }, "ctaHref": "#demo-cta" },
+    { "id": "hero", "eyebrow": { "ru": "Apple Materials", "en": "Apple Materials" }, "headline": { "ru": "Ясность. Воздух. Blue", "en": "Clarity. Air. Blue" }, "body": { "ru": "Светло-серая HIG-сцена, мягкие materials и system blue — веб-адаптация без SF Pro.", "en": "Light-gray HIG stage, soft materials, and system blue — web adaptation without SF Pro." }, "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" }, "ctaHref": "#demo-features" },
+    { "id": "features", "eyebrow": { "ru": "Принципы", "en": "Principles" }, "headline": { "ru": "Три опоры стиля", "en": "Three foundations" }, "items": [
+      { "title": { "ru": "Gray stage", "en": "Gray stage" }, "body": { "ru": "Ground ``#F5F5F7``.", "en": "Ground ``#F5F5F7``." } },
+      { "title": { "ru": "System blue", "en": "System blue" }, "body": { "ru": "CTA ``#0071E3``.", "en": "CTA ``#0071E3``." } },
+      { "title": { "ru": "Soft materials", "en": "Soft materials" }, "body": { "ru": "Radius 12–18 + light blur.", "en": "Radius 12–18 + light blur." } }
+    ]},
+    { "id": "statistics", "headline": { "ru": "Ориентиры", "en": "Signals" }, "items": [
+      { "title": { "ru": "18px", "en": "18px" }, "body": { "ru": "card radius", "en": "card radius" } },
+      { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+      { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "контейнер ~", "en": "container ~" } }
+    ]},
+    { "id": "cta", "headline": { "ru": "Забрать систему", "en": "Take the system" }, "body": { "ru": "Скопируйте промпт и соберите проект снаружи Atlas.", "en": "Copy the prompt and build outside Atlas." }, "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" }, "ctaHref": "/studio?style=apple-materials" },
+    { "id": "footer", "headline": { "ru": "Apple Materials · DESIGN ATLAS", "en": "Apple Materials · DESIGN ATLAS" } }
+  ]
+}

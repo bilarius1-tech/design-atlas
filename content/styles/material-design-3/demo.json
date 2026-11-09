@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "material-design-3",
+  "compositionId": "modular-stack",
+  "localeDefault": "ru",
+  "sections": [
+    { "id": "header", "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" }, "ctaLabel": { "ru": "К системе", "en": "To system" }, "ctaHref": "#demo-cta" },
+    { "id": "hero", "eyebrow": { "ru": "Material Design 3", "en": "Material Design 3" }, "headline": { "ru": "Тон. Форма. Seed", "en": "Tone. Shape. Seed" }, "body": { "ru": "Material You: тональные поверхности и primary seed для продуктового UI.", "en": "Material You: tonal surfaces and a primary seed for product UI." }, "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" }, "ctaHref": "#demo-features" },
+    { "id": "features", "eyebrow": { "ru": "Принципы", "en": "Principles" }, "headline": { "ru": "Три опоры стиля", "en": "Three foundations" }, "items": [
+      { "title": { "ru": "Tonal surface", "en": "Tonal surface" }, "body": { "ru": "Ground ``#FEF7FF``.", "en": "Ground ``#FEF7FF``." } },
+      { "title": { "ru": "Primary seed", "en": "Primary seed" }, "body": { "ru": "``#6750A4`` actions.", "en": "``#6750A4`` actions." } },
+      { "title": { "ru": "Shape", "en": "Shape" }, "body": { "ru": "12–20px component radii.", "en": "12–20px component radii." } }
+    ]},
+    { "id": "statistics", "headline": { "ru": "Ориентиры", "en": "Signals" }, "items": [
+      { "title": { "ru": "16px", "en": "16px" }, "body": { "ru": "card radius", "en": "card radius" } },
+      { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+      { "title": { "ru": "1120", "en": "1120" }, "body": { "ru": "контейнер ~", "en": "container ~" } }
+    ]},
+    { "id": "cta", "headline": { "ru": "Забрать систему", "en": "Take the system" }, "body": { "ru": "Скопируйте промпт и соберите проект снаружи Atlas.", "en": "Copy the prompt and build outside Atlas." }, "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" }, "ctaHref": "/studio?style=material-design-3" },
+    { "id": "footer", "headline": { "ru": "Material Design 3 · DESIGN ATLAS", "en": "Material Design 3 · DESIGN ATLAS" } }
+  ]
+}

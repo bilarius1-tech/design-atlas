@@ -48,7 +48,7 @@ Grid and site width stay **tokens**, not a builder: `spacing.container` + spacin
 | dark-tech-neon | `neon-tech` | done (Atlas id) |
 | neo-brutalism | `neo-brutalism` | done #10 (≠ `poster-brutal`) |
 | swiss-minimalizm | `swiss-international` | done (reference) |
-| bento-grid | `bento-grid` | queue #14 (atmosphere only) |
+| bento-grid | `bento-grid` | done #14 (atmosphere only) |
 | aurora-mesh-gradient | `aurora-mesh` | done #11 |
 | y2k | `y2k` | done #12 |
 | retro-terminal | `retro-terminal` | done #13 |

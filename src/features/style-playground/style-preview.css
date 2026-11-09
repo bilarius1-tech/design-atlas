@@ -1076,3 +1076,117 @@
 .style-preview[data-style-id="claymorphism"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #383139;
 }
+
+/* Bento Grid — soft tiles, air gap, yellow accent cell */
+.style-preview[data-style-id="bento-grid"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: linear-gradient(180deg, #fafafc, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="bento-grid"] .sp-btn-primary,
+.style-preview[data-style-id="bento-grid"] .sp-btn-accent,
+.style-preview[data-style-id="bento-grid"] .sp-badge-accent,
+.style-preview[data-style-id="bento-grid"] .dl-brand-mark {
+  color: #ffffff;
+}
+
+.style-preview[data-style-id="bento-grid"] .sp-heading,
+.style-preview[data-style-id="bento-grid"] .sp-display {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.style-preview[data-style-id="bento-grid"] .dl-grid-3,
+.style-preview[data-style-id="bento-grid"] .dl-stats,
+.style-preview[data-style-id="bento-grid"] .dl-stats-4 {
+  gap: var(--sp-gap, 16px);
+}
+
+.style-preview[data-style-id="bento-grid"] .sp-card,
+.style-preview[data-style-id="bento-grid"] .dl-feature-card,
+.style-preview[data-style-id="bento-grid"] .dl-stat {
+  border-radius: 24px;
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(29, 29, 31, 0.06);
+}
+
+.style-preview[data-style-id="bento-grid"] .dl-feature-card:first-child,
+.style-preview[data-style-id="bento-grid"] .dl-stat:first-child {
+  background: #ffd60a;
+  color: #1d1d1f;
+}
+
+.style-preview[data-style-id="bento-grid"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #ffffff;
+}
+
+/* Material Design 3 — tonal lilac stage */
+.style-preview[data-style-id="material-design-3"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse 50% 40% at 90% 10%, rgba(103, 80, 164, 0.12), transparent 60%),
+    linear-gradient(165deg, #fffbff, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="material-design-3"] .sp-btn-primary,
+.style-preview[data-style-id="material-design-3"] .sp-btn-accent,
+.style-preview[data-style-id="material-design-3"] .sp-badge-accent,
+.style-preview[data-style-id="material-design-3"] .dl-brand-mark {
+  color: #ffffff;
+}
+
+.style-preview[data-style-id="material-design-3"] .sp-heading,
+.style-preview[data-style-id="material-design-3"] .sp-display {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.style-preview[data-style-id="material-design-3"] .sp-card,
+.style-preview[data-style-id="material-design-3"] .dl-feature-card,
+.style-preview[data-style-id="material-design-3"] .dl-stat {
+  background: #f7f2fa;
+  border-color: transparent;
+}
+
+.style-preview[data-style-id="material-design-3"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #ffffff;
+}
+
+/* Apple Materials — HIG calm gray + frosted chrome */
+.style-preview[data-style-id="apple-materials"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: linear-gradient(180deg, #ffffff, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="apple-materials"] .sp-btn-primary,
+.style-preview[data-style-id="apple-materials"] .sp-btn-accent,
+.style-preview[data-style-id="apple-materials"] .sp-badge-accent,
+.style-preview[data-style-id="apple-materials"] .dl-brand-mark {
+  color: #ffffff;
+}
+
+.style-preview[data-style-id="apple-materials"] .sp-heading,
+.style-preview[data-style-id="apple-materials"] .sp-display {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.style-preview[data-style-id="apple-materials"] .sp-card,
+.style-preview[data-style-id="apple-materials"] .dl-feature-card,
+.style-preview[data-style-id="apple-materials"] .dl-stat,
+.style-preview[data-style-id="apple-materials"] .sp-surface {
+  -webkit-backdrop-filter: blur(var(--sp-blur, 20px));
+  backdrop-filter: blur(var(--sp-blur, 20px));
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(210, 210, 215, 0.8);
+}
+
+.style-preview[data-style-id="apple-materials"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #ffffff;
+}

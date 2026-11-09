@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "apple-materials",
+  "slug": "apple-materials",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Apple Materials",
+    "en": "Apple Materials"
+  },
+  "shortDescription": {
+    "ru": "Светло-серая HIG-сцена, мягкие materials, system blue — веб-адаптация яблочного языка без SF Pro.",
+    "en": "Light-gray HIG stage, soft materials, system blue — a web adaptation of Apple language without SF Pro."
+  },
+  "philosophy": {
+    "ru": "Ясность и воздух. Белые поверхности на `#F5F5F7`, один system blue, мягкие углы. Шрифты Inter/Manrope как веб-замена SF.",
+    "en": "Clarity and air. White surfaces on `#F5F5F7`, one system blue, soft corners. Inter/Manrope stand in for SF on the web."
+  },
+  "category": "platform-standard",
+  "tags": [
+    "apple",
+    "hig",
+    "materials",
+    "ios",
+    "macos",
+    "product"
+  ],
+  "complexity": "low",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "iOS / macOS-adjacent product marketing",
+    "Consumer apps that want Apple-like calm",
+    "Agent handoff targeting HIG materials patterns"
+  ],
+  "avoidFor": [
+    "Material You tonal seed systems as identity",
+    "Neo-brutal / kinetic hard campaigns",
+    "Dense industrial mosaics"
+  ],
+  "relatedStyles": [
+    "bento-grid",
+    "scandi-calm",
+    "material-design-3"
+  ],
+  "fontFamilies": [
+    "Inter",
+    "Manrope",
+    "SF Pro"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T14:55:00.000Z",
+  "sources": [
+    {
+      "title": "Apple Human Interface Guidelines — Materials",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/materials",
+      "note": "Official materials / clarity concepts — adapted for Atlas web dual handoff (no SF font binary)."
+    },
+    {
+      "title": "docs/research/apple-materials.md",
+      "note": "Atlas research note and token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "System blue CTAs and gray grounds must remain AA."
+    }
+  ]
+}

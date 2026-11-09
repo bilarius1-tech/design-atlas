@@ -84,6 +84,18 @@
     {
       "id": "kinetic",
       "path": "content/styles/kinetic"
+    },
+    {
+      "id": "bento-grid",
+      "path": "content/styles/bento-grid"
+    },
+    {
+      "id": "material-design-3",
+      "path": "content/styles/material-design-3"
+    },
+    {
+      "id": "apple-materials",
+      "path": "content/styles/apple-materials"
     }
   ],
   "glossary": []

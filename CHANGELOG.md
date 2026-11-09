@@ -7,6 +7,9 @@
 
 ### Added
 
+- Published style pack **`bento-grid`** (light-gray tiles, gap 16px, blue/yellow accents; atmosphere only — no Studio grid editor).
+- Published style pack **`material-design-3`** (Material You tonal surfaces, primary seed `#6750A4`, Roboto).
+- Published style pack **`apple-materials`** (HIG-like gray stage, system blue `#0071E3`, Inter as SF stand-in).
 - Published style pack **`kinetic`** (black stage, Inter uppercase, orange signal, marquee grammar; Atlas-original, DP visual direction only).
 - Published style pack **`retro-terminal`** (CRT black, phosphor mono, amber CTAs, scanlines; dizain-prompty adapted).
 

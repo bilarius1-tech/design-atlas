@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "material-design-3",
+  "slug": "material-design-3",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Material Design 3",
+    "en": "Material Design 3"
+  },
+  "shortDescription": {
+    "ru": "Тональные поверхности Material You, seed-primary и скругления компонентов — стандартный продуктовый язык MD3.",
+    "en": "Material You tonal surfaces, seed primary, and component shapes — a standard MD3 product language."
+  },
+  "philosophy": {
+    "ru": "Иерархия через тон и форму, не через тяжёлую тень. Primary seed задаёт систему; контейнеры surface держат спокойный продукт.",
+    "en": "Hierarchy through tone and shape, not heavy shadow. A primary seed drives the system; surface containers keep product calm."
+  },
+  "category": "platform-standard",
+  "tags": [
+    "material",
+    "md3",
+    "material-you",
+    "android",
+    "product",
+    "tonal"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "Android-adjacent product marketing",
+    "SaaS shells that want familiar MD3 affordances",
+    "Agent handoff targeting Material component patterns"
+  ],
+  "avoidFor": [
+    "Apple materials / SF-led marketing",
+    "Neo-brutal poster campaigns",
+    "CRT / neon experimental shells"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "midnight-console",
+    "apple-materials"
+  ],
+  "fontFamilies": [
+    "Roboto",
+    "Manrope",
+    "Google Sans"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T14:50:00.000Z",
+  "sources": [
+    {
+      "title": "Material Design 3 (m3.material.io)",
+      "url": "https://m3.material.io/",
+      "note": "Official MD3 color, type, and shape guidance — adapted for Atlas web dual handoff."
+    },
+    {
+      "title": "docs/research/material-design-3.md",
+      "note": "Atlas research note and token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "On-primary / on-surface pairs must remain AA."
+    }
+  ]
+}

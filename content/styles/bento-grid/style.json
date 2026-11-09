@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bento-grid",
+  "slug": "bento-grid",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Bento Grid",
+    "en": "Bento Grid"
+  },
+  "shortDescription": {
+    "ru": "Светло-серая сцена и мягкие плитки разного веса — бенто-атмосфера без редактора сетки.",
+    "en": "Light-gray stage and soft tiles of uneven weight — bento atmosphere without a grid editor."
+  },
+  "philosophy": {
+    "ru": "Одна плитка — одна мысль. Воздух 16px, радиус 24px, 1–2 цветных акцента. Atlas даёт атмосферу, не конструктор бенто.",
+    "en": "One tile, one thought. 16px air, 24px radius, 1–2 color accents. Atlas ships atmosphere, not a bento builder."
+  },
+  "category": "layout-atmosphere",
+  "tags": [
+    "bento",
+    "grid",
+    "tiles",
+    "saas",
+    "product",
+    "modular"
+  ],
+  "complexity": "medium",
+  "visualDensity": "balanced",
+  "contrast": "high",
+  "bestUseCases": [
+    "SaaS / product feature landings",
+    "Personal sites presenting capabilities as tiles",
+    "Capability overviews with short facts per cell"
+  ],
+  "avoidFor": [
+    "Flush industrial dense-tile mosaics",
+    "Long-form editorial reading",
+    "Studio freeform grid editing (out of scope)"
+  ],
+  "relatedStyles": [
+    "swiss-international",
+    "apple-materials",
+    "soft-editorial"
+  ],
+  "fontFamilies": [
+    "Inter",
+    "Manrope",
+    "Onest"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T14:45:00.000Z",
+  "sources": [
+    {
+      "title": "dizain-prompty — Bento grid (owned catalog)",
+      "note": "SSOT for #F5F5F7 / #0A84FF / #FFD60A, gap 16px, radius 24px. Atmosphere only."
+    },
+    {
+      "title": "docs/research/bento-grid.md",
+      "note": "Atlas research: ≠ dense-tile; no Studio grid editor."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Blue CTAs and yellow tiles need verified ink pairs."
+    }
+  ]
+}
