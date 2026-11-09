@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "vintage-gold",
+  "slug": "vintage-gold",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Премиум золото винтаж",
+    "en": "Vintage Gold"
+  },
+  "shortDescription": {
+    "ru": "Тёплая старая бумага, Playfair и тонкое золото — винтажный люкс без фейковых печатей.",
+    "en": "Warm aged paper, Playfair, and thin gold — vintage luxury without fake seals."
+  },
+  "philosophy": {
+    "ru": "Наследие через материал и типографику, не через выдуманные награды. Тёплая бумага, сдержанный serif display, золото только в линиях и рамках.",
+    "en": "Heritage through material and type, not invented awards. Warm paper, restrained serif display, gold only in lines and frames."
+  },
+  "category": "premium",
+  "tags": [
+    "vintage",
+    "gold",
+    "premium",
+    "serif",
+    "paper",
+    "heritage"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Heritage / craft brand landings",
+    "Premium product storytelling with restraint",
+    "Editorial luxury sites that avoid glitter"
+  ],
+  "avoidFor": [
+    "Neon tech gadget shells",
+    "Loud streetwear campaigns",
+    "Clinical cool lab UIs"
+  ],
+  "relatedStyles": [
+    "warm-premium",
+    "soft-editorial",
+    "eco-botanical"
+  ],
+  "fontFamilies": [
+    "Playfair Display",
+    "Cormorant Garamond",
+    "Manrope"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:10:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Vintage gold (owned catalog)",
+      "note": "SSOT for #E9DDC6 paper, gold/bronze/olive, Playfair. Adapted for Atlas web DS — no fake seals."
+    },
+    {
+      "title": "docs/research/vintage-gold.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Ink on aged paper and gold CTAs must remain AA."
+    }
+  ]
+}

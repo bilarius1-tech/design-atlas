@@ -20,5 +20,6 @@
 | [soft-editorial.md](./soft-editorial.md) | Calm journal / soft editorial (InfoStyle catalog) | authored |
 | [clinical-minimal.md](./clinical-minimal.md) | Cool clinical minimalism (InfoStyle) | authored |
 | [eco-botanical.md](./eco-botanical.md) | Eco / botanical craft (InfoStyle) | authored |
+| [vintage-gold.md](./vintage-gold.md) | Vintage gold paper luxury (InfoStyle) | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

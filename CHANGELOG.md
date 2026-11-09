@@ -7,6 +7,7 @@
 
 ### Added
 
+- Published style pack **`vintage-gold`** (aged paper, Playfair, sparing gold frames; InfoStyle `vintage` adapted — no fake seals).
 - Published style pack **`eco-botanical`** (kraft paper, leaf/clay/honey; InfoStyle `eco` adapted — no greenwashing seals).
 - Published style pack **`clinical-minimal`** (cool light stage, Manrope, steel/teal; InfoStyle `clinical` adapted — no medical claims).
 - Published style pack **`soft-editorial`** (warm paper journal, Playfair, terracotta/sage; InfoStyle `catalog` adapted).

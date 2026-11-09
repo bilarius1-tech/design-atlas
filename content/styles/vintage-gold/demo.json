@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "vintage-gold",
+  "compositionId": "editorial-split",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Vintage Gold", "en": "Vintage Gold" },
+      "headline": {
+        "ru": "Бумага, золото и сдержанный serif",
+        "en": "Paper, gold, and restrained serif"
+      },
+      "body": {
+        "ru": "Тёплая старая бумага, Playfair и тонкие золотые линии — наследие без фейковых наград и печатей.",
+        "en": "Warm aged paper, Playfair, and thin gold lines — heritage without fake awards or seals."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Aged paper", "en": "Aged paper" },
+          "body": { "ru": "Ground `#E9DDC6`, ink `#352A20`.", "en": "Ground `#E9DDC6`, ink `#352A20`." }
+        },
+        {
+          "title": { "ru": "Золото sparingly", "en": "Gold sparingly" },
+          "body": { "ru": "Primary `#B58A45` — линии и рамки.", "en": "Primary `#B58A45` — lines and frames." }
+        },
+        {
+          "title": { "ru": "Без seals", "en": "No seals" },
+          "body": { "ru": "Ни наград, ни дат, ни логотипов «от стиля».", "en": "No awards, dates, or style-invented logos." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "10px", "en": "10px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1080", "en": "1080" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=vintage-gold"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Vintage Gold · DESIGN ATLAS", "en": "Vintage Gold · DESIGN ATLAS" }
+    }
+  ]
+}
