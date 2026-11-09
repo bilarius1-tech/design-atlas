@@ -27,5 +27,5 @@
 
 | Дата | Фокус |
 |------|--------|
-| [2026-11-09](./2026-11-09.md) | Essence, R2–R2.6 Studio, System drawer; [session close](../sessions/2026-11-09-close.md) |
+| [2026-11-09](./2026-11-09.md) | Essence → Studio → **prod freeze** (бренд, `/cards`, Vercel); [evening close](../sessions/2026-11-09-evening-close.md) |
 | [2026-11-10](./2026-11-10.md) | Competitive research freeze → R2.7 prompt composer queued |

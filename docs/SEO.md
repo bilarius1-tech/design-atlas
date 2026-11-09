@@ -36,10 +36,12 @@ Do **not** index private APIs (`/api/*`) or thin duplicate query variants beyond
 ## Environment
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://example.com
+NEXT_PUBLIC_SITE_URL=https://design-atlas-wine.vercel.app
 ```
 
-Required for correct canonicals and sitemap absolute URLs in production.
+Required for correct canonicals and sitemap absolute URLs in production. After custom domain: update to `https://your-domain` and redeploy — see [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md).
+
+**Live maps:** `/sitemap.xml`, `/robots.txt`, `/llms.txt` on the production host.
 
 ## Anti-patterns
 

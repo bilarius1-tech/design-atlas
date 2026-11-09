@@ -7,6 +7,7 @@
 
 ### Added
 
+- **Production** on Vercel: https://design-atlas-wine.vercel.app (team `bill`); domain cutover guide [docs/DOMAIN_CUTOVER.md](docs/DOMAIN_CUTOVER.md).
 - Brand home: H1 **Анти ИИ-слоп**, product name **Дизайн Атлас**; dual CTAs Studio (primary) + Cards.
 - Cards surface `/cards` + `content/card-styles/` (8 styles from stil) with live preview and RU/EN image-gen prompts ([ADR-0012](docs/decisions/ADR-0012-cards-surface.md)).
 - SEO / AI discovery: `sitemap.xml`, `robots.txt`, root `metadataBase` + OG/Twitter, JSON-LD on `/` and `/cards`, `public/llms.txt` ([docs/SEO.md](docs/SEO.md)).
