@@ -569,3 +569,34 @@
 .style-preview[data-style-id="vintage-gold"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #352a20;
 }
+
+/* Industrial Power — metal stripe wash + dark ink on signal yellow */
+.style-preview[data-style-id="industrial-power"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 23px,
+      rgba(255, 255, 255, 0.03) 24px 25px
+    ),
+    linear-gradient(145deg, #373631, var(--sp-color-background));
+}
+
+.style-preview[data-style-id="industrial-power"] .sp-btn-primary,
+.style-preview[data-style-id="industrial-power"] .sp-btn-accent,
+.style-preview[data-style-id="industrial-power"] .sp-badge-accent,
+.style-preview[data-style-id="industrial-power"] .dl-brand-mark {
+  color: #252522;
+}
+
+.style-preview[data-style-id="industrial-power"] .sp-heading,
+.style-preview[data-style-id="industrial-power"] .sp-display {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.style-preview[data-style-id="industrial-power"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
+  background: #252522;
+}

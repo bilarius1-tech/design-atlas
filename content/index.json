@@ -56,6 +56,10 @@
     {
       "id": "vintage-gold",
       "path": "content/styles/vintage-gold"
+    },
+    {
+      "id": "industrial-power",
+      "path": "content/styles/industrial-power"
     }
   ],
   "glossary": []

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "industrial-power",
+  "slug": "industrial-power",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Промышленная мощь",
+    "en": "Industrial Power"
+  },
+  "shortDescription": {
+    "ru": "Тёмный графит, сигнальный жёлтый и плотная плитка — брутальная промышленная система для веба.",
+    "en": "Dark graphite, signal yellow, and flush tiles — a brutal industrial system for the web."
+  },
+  "philosophy": {
+    "ru": "Сила через структуру: графитовый stage, жёсткие кромки, dense-tile без воздуха. Сигнальный жёлтый — маркер действия, не украшение.",
+    "en": "Strength through structure: graphite stage, hard edges, dense-tile without air. Signal yellow is an action marker, not decoration."
+  },
+  "category": "industrial",
+  "tags": [
+    "industrial",
+    "brutal",
+    "dense-tile",
+    "graphite",
+    "signal",
+    "hardware"
+  ],
+  "complexity": "medium",
+  "visualDensity": "dense",
+  "contrast": "high",
+  "bestUseCases": [
+    "Industrial / manufacturing corporate landings",
+    "Hardware and heavy-equipment marketing",
+    "B2B sites that need flush mosaic structure"
+  ],
+  "avoidFor": [
+    "Soft lifestyle editorial",
+    "Clay / neu / glass soft volume",
+    "Quiet clinical calm UIs"
+  ],
+  "relatedStyles": [
+    "blueprint-grid",
+    "poster-brutal",
+    "neon-tech"
+  ],
+  "fontFamilies": [
+    "Oswald",
+    "Unbounded",
+    "Roboto"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T13:15:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Industrial power (owned catalog)",
+      "note": "SSOT for #252522 graphite, signal yellow/orange/red, Oswald. Adapted for Atlas web DS + dense-tile."
+    },
+    {
+      "title": "docs/research/industrial-power.md",
+      "note": "Atlas research note: traits, dense-tile pairing, anti-patterns."
+    },
+    {
+      "title": "docs/research/dense-tile-gap.md",
+      "note": "Flush mosaic contract: spacing.gap + dense-tile composition."
+    }
+  ]
+}

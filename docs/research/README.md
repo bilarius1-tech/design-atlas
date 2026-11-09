@@ -21,5 +21,6 @@
 | [clinical-minimal.md](./clinical-minimal.md) | Cool clinical minimalism (InfoStyle) | authored |
 | [eco-botanical.md](./eco-botanical.md) | Eco / botanical craft (InfoStyle) | authored |
 | [vintage-gold.md](./vintage-gold.md) | Vintage gold paper luxury (InfoStyle) | authored |
+| [industrial-power.md](./industrial-power.md) | Industrial graphite + dense-tile (InfoStyle) | authored |
 
 Frozen landscape docs: правки только addendum или новый файл с новой датой.

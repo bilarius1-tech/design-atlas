@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "industrial-power",
+  "compositionId": "dense-tile",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Industrial Power", "en": "Industrial Power" },
+      "headline": {
+        "ru": "Графит. Сигнал. Плитка встык",
+        "en": "Graphite. Signal. Flush tiles"
+      },
+      "body": {
+        "ru": "Тёмный промышленный stage, сигнальный жёлтый и dense-tile без воздуха — сила через структуру.",
+        "en": "Dark industrial stage, signal yellow, and dense-tile without air — strength through structure."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Graphite stage", "en": "Graphite stage" },
+          "body": { "ru": "Ground `#252522`, cream ink.", "en": "Ground `#252522`, cream ink." }
+        },
+        {
+          "title": { "ru": "Signal yellow", "en": "Signal yellow" },
+          "body": { "ru": "Primary `#FFC400` — маркер действия.", "en": "Primary `#FFC400` — action marker." }
+        },
+        {
+          "title": { "ru": "Dense-tile", "en": "Dense-tile" },
+          "body": { "ru": "`gap: 0` — плитки встык.", "en": "`gap: 0` — flush tiles." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "0px", "en": "0px" }, "body": { "ru": "gap / radius карточек", "en": "gap / card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1140", "en": "1140" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=industrial-power"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Industrial Power · DESIGN ATLAS", "en": "Industrial Power · DESIGN ATLAS" }
+    }
+  ]
+}

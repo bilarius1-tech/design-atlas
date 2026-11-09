@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "industrial-power",
+  "families": {
+    "heading": "Oswald",
+    "body": "Roboto",
+    "mono": "Roboto Mono",
+    "fallbacks": ["Unbounded", "system-ui", "sans-serif"]
+  },
+  "roles": {
+    "display": {
+      "family": "heading",
+      "size": "57px",
+      "weight": "600",
+      "lineHeight": "1.02",
+      "letterSpacing": "-0.02em"
+    },
+    "h1": {
+      "family": "heading",
+      "size": "42px",
+      "weight": "600",
+      "lineHeight": "1.08",
+      "letterSpacing": "-0.01em"
+    },
+    "h2": {
+      "family": "heading",
+      "size": "28px",
+      "weight": "600",
+      "lineHeight": "1.15"
+    },
+    "h3": {
+      "family": "heading",
+      "size": "18px",
+      "weight": "600",
+      "lineHeight": "1.25"
+    },
+    "h4": {
+      "family": "heading",
+      "size": "14px",
+      "weight": "600",
+      "lineHeight": "1.3"
+    },
+    "bodyLarge": {
+      "family": "body",
+      "size": "18px",
+      "weight": "400",
+      "lineHeight": "1.5"
+    },
+    "body": {
+      "family": "body",
+      "size": "16px",
+      "weight": "400",
+      "lineHeight": "1.5"
+    },
+    "caption": {
+      "family": "mono",
+      "size": "12px",
+      "weight": "500",
+      "lineHeight": "1.35"
+    },
+    "label": {
+      "family": "mono",
+      "size": "11px",
+      "weight": "700",
+      "lineHeight": "1.2",
+      "letterSpacing": "0.1em"
+    },
+    "quote": {
+      "family": "heading",
+      "size": "22px",
+      "weight": "500",
+      "lineHeight": "1.3"
+    },
+    "code": {
+      "family": "mono",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "1.45"
+    }
+  },
+  "rules": [
+    "Oswald for display/headings — dense, uppercase-friendly.",
+    "Keep display at 57px.",
+    "Short industrial labels; mono for technical captions."
+  ],
+  "constraints": [
+    "Do not soften into Inter/Playfair editorial.",
+    "Do not invent safety seals or fake certifications.",
+    "Do not replace dense-tile with airy soft gaps."
+  ]
+}
