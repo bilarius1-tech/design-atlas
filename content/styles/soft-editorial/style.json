@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "soft-editorial",
+  "slug": "soft-editorial",
+  "status": "published",
+  "version": "1.0.0",
+  "title": {
+    "ru": "Спокойный журнал",
+    "en": "Soft Editorial"
+  },
+  "shortDescription": {
+    "ru": "Тёплый бумажный фон, Playfair и мягкие акценты — спокойная журнальная система для веба.",
+    "en": "Warm paper ground, Playfair, and soft accents — a calm journal system for the web."
+  },
+  "philosophy": {
+    "ru": "Воздух и мягкий свет важнее декора. Короткий выразительный заголовок, широкие поля, акценты только в тонких маркерах.",
+    "en": "Air and soft light matter more than decoration. A short expressive headline, wide margins, accents only in thin markers."
+  },
+  "category": "editorial",
+  "tags": [
+    "editorial",
+    "journal",
+    "soft",
+    "warm",
+    "serif",
+    "fashion"
+  ],
+  "complexity": "medium",
+  "visualDensity": "sparse",
+  "contrast": "high",
+  "bestUseCases": [
+    "Lifestyle and fashion brand landings",
+    "Magazine-like content sites",
+    "Calm portfolio / studio marketing"
+  ],
+  "avoidFor": [
+    "Industrial dense-tile mosaics",
+    "Neon tech gadget shells",
+    "Loud streetwear campaigns"
+  ],
+  "relatedStyles": [
+    "warm-premium",
+    "swiss-international",
+    "claymorphism"
+  ],
+  "fontFamilies": [
+    "Playfair Display",
+    "Manrope",
+    "DM Sans"
+  ],
+  "author": "design-atlas",
+  "updatedAt": "2026-11-09T12:55:00.000Z",
+  "sources": [
+    {
+      "title": "InfoStyle — Soft editorial / catalog (owned catalog)",
+      "note": "SSOT for #F5F1E9 ground, terracotta/sage/slate, Playfair. Adapted for Atlas web DS."
+    },
+    {
+      "title": "docs/research/soft-editorial.md",
+      "note": "Atlas research note: traits, anti-patterns, token hints."
+    },
+    {
+      "title": "WCAG 2.2 contrast guidance",
+      "note": "Ink on warm paper and terracotta CTAs must remain AA."
+    }
+  ]
+}

@@ -471,3 +471,25 @@
 .style-preview[data-style-id="warm-premium"] .sp-switch[aria-checked="true"] .sp-switch-thumb {
   background: #26211f;
 }
+
+/* Soft Editorial — warm paper lift + cream ink on terracotta CTAs */
+.style-preview[data-style-id="soft-editorial"] {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 0%, #fffaf3 0%, transparent 62%),
+    var(--sp-color-background);
+}
+
+.style-preview[data-style-id="soft-editorial"] .sp-btn-primary,
+.style-preview[data-style-id="soft-editorial"] .sp-btn-accent,
+.style-preview[data-style-id="soft-editorial"] .sp-badge-accent,
+.style-preview[data-style-id="soft-editorial"] .dl-brand-mark {
+  color: #fffaf3;
+}
+
+.style-preview[data-style-id="soft-editorial"] .sp-heading,
+.style-preview[data-style-id="soft-editorial"] .sp-display {
+  letter-spacing: -0.02em;
+}

@@ -40,6 +40,10 @@
     {
       "id": "warm-premium",
       "path": "content/styles/warm-premium"
+    },
+    {
+      "id": "soft-editorial",
+      "path": "content/styles/soft-editorial"
     }
   ],
   "glossary": []

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "styleId": "soft-editorial",
+  "compositionId": "editorial-split",
+  "localeDefault": "ru",
+  "sections": [
+    {
+      "id": "header",
+      "eyebrow": { "ru": "Демо-лендинг", "en": "Demo landing" },
+      "ctaLabel": { "ru": "К системе", "en": "To system" },
+      "ctaHref": "#demo-cta"
+    },
+    {
+      "id": "hero",
+      "eyebrow": { "ru": "Soft Editorial", "en": "Soft Editorial" },
+      "headline": {
+        "ru": "Тихий ритм журнальной страницы",
+        "en": "The quiet rhythm of a journal page"
+      },
+      "body": {
+        "ru": "Тёплая бумага, Playfair и мягкие terracotta / sage акценты — спокойная редакция без шума и стикеров.",
+        "en": "Warm paper, Playfair, and soft terracotta / sage accents — a calm editorial without noise or stickers."
+      },
+      "ctaLabel": { "ru": "Смотреть принципы", "en": "See principles" },
+      "ctaHref": "#demo-features"
+    },
+    {
+      "id": "features",
+      "eyebrow": { "ru": "Принципы", "en": "Principles" },
+      "headline": { "ru": "Три опоры стиля", "en": "Three foundations" },
+      "items": [
+        {
+          "title": { "ru": "Бумажный ground", "en": "Paper ground" },
+          "body": { "ru": "Warm `#F5F1E9`, ink `#302B27`.", "en": "Warm `#F5F1E9`, ink `#302B27`." }
+        },
+        {
+          "title": { "ru": "Мягкие сигналы", "en": "Soft signals" },
+          "body": { "ru": "Terracotta / sage / slate sparingly.", "en": "Terracotta / sage / slate sparingly." }
+        },
+        {
+          "title": { "ru": "Playfair + воздух", "en": "Playfair + air" },
+          "body": { "ru": "Короткий display, широкие поля.", "en": "Short display, wide margins." }
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "headline": { "ru": "Ориентиры", "en": "Signals" },
+      "items": [
+        { "title": { "ru": "12px", "en": "12px" }, "body": { "ru": "radius карточек", "en": "card radius" } },
+        { "title": { "ru": "57px", "en": "57px" }, "body": { "ru": "display hero", "en": "display hero" } },
+        { "title": { "ru": "1080", "en": "1080" }, "body": { "ru": "ширина контейнера", "en": "container width" } }
+      ]
+    },
+    {
+      "id": "cta",
+      "headline": { "ru": "Забрать систему", "en": "Take the system" },
+      "body": {
+        "ru": "Скопируйте промпт и соберите уникальный проект снаружи Atlas.",
+        "en": "Copy the prompt and build your unique project outside Atlas."
+      },
+      "ctaLabel": { "ru": "Получить промпт", "en": "Get prompt" },
+      "ctaHref": "/studio?style=soft-editorial"
+    },
+    {
+      "id": "footer",
+      "headline": { "ru": "Soft Editorial · DESIGN ATLAS", "en": "Soft Editorial · DESIGN ATLAS" }
+    }
+  ]
+}
