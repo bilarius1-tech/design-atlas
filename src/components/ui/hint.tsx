@@ -1,5 +1,6 @@
 "use client";
 
+import { focusRingClass } from "@/components/ui/control-classes";
 import { cn } from "@/lib/cn";
 import { CircleHelp } from "lucide-react";
 import { useId, useState } from "react";
@@ -9,7 +10,7 @@ export type HintProps = {
   className?: string;
 };
 
-/** Accessible one-line tip for “что это и зачем”. */
+/** Accessible one-line tip for “что это и зачем”, opened by click or keyboard. */
 export function Hint({ label, className }: HintProps) {
   const id = useId();
   const [open, setOpen] = useState(false);
@@ -18,7 +19,10 @@ export function Hint({ label, className }: HintProps) {
     <span className={cn("relative inline-flex align-middle", className)}>
       <button
         type="button"
-        className="inline-flex h-5 w-5 items-center justify-center rounded-sm text-muted transition-colors hover:text-foreground"
+        className={cn(
+          "text-muted hover:text-foreground inline-flex h-7 w-7 items-center justify-center rounded-sm transition-colors",
+          focusRingClass,
+        )}
         aria-label="Подсказка"
         aria-describedby={open ? id : undefined}
         aria-expanded={open}
@@ -28,13 +32,13 @@ export function Hint({ label, className }: HintProps) {
           if (event.key === "Escape") setOpen(false);
         }}
       >
-        <CircleHelp className="h-3.5 w-3.5" aria-hidden />
+        <CircleHelp className="size-4" aria-hidden />
       </button>
       {open ? (
         <span
           id={id}
           role="tooltip"
-          className="absolute top-full left-0 z-20 mt-1 w-56 border border-border bg-surface px-2.5 py-2 text-left text-xs leading-snug text-foreground shadow-sm"
+          className="border-border bg-surface text-foreground absolute top-full left-0 z-20 mt-1 w-56 border px-2.5 py-2 text-left text-xs leading-snug shadow-sm"
         >
           {label}
         </span>

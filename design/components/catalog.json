@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "source": "design-atlas-shell",
+  "components": [
+    {
+      "id": "button",
+      "name": "Button",
+      "path": "src/components/ui/button.tsx",
+      "doc": "design/components/Button.md",
+      "variants": ["primary", "secondary", "tertiary", "ghost", "danger"],
+      "sizes": ["sm", "md", "lg"],
+      "states": ["default", "hover", "focus-visible", "active", "disabled", "loading"]
+    },
+    {
+      "id": "input",
+      "name": "Input",
+      "path": "src/components/ui/input.tsx",
+      "doc": "design/components/Input.md",
+      "states": ["default", "hover", "focus-visible", "disabled", "readonly", "invalid"]
+    },
+    {
+      "id": "textarea",
+      "name": "Textarea",
+      "path": "src/components/ui/textarea.tsx",
+      "doc": "design/components/Textarea.md",
+      "states": ["default", "hover", "focus-visible", "disabled", "readonly", "invalid"]
+    },
+    {
+      "id": "label",
+      "name": "Label",
+      "path": "src/components/ui/label.tsx",
+      "doc": "design/components/Label.md",
+      "states": ["default", "required", "disabled"]
+    },
+    {
+      "id": "alert",
+      "name": "Alert",
+      "path": "src/components/ui/alert.tsx",
+      "doc": "design/components/Alert.md",
+      "variants": ["info", "success", "warning", "danger"],
+      "states": ["default"]
+    },
+    {
+      "id": "badge",
+      "name": "Badge",
+      "path": "src/components/ui/badge.tsx",
+      "doc": "design/components/Badge.md",
+      "variants": ["neutral", "accent", "success", "warning", "danger"],
+      "states": ["default"]
+    },
+    {
+      "id": "card",
+      "name": "Card",
+      "path": "src/components/ui/card.tsx",
+      "doc": "design/components/Card.md",
+      "states": ["default", "interactive-hover"]
+    },
+    {
+      "id": "dialog",
+      "name": "Dialog",
+      "path": "src/components/ui/dialog.tsx",
+      "doc": "design/components/Dialog.md",
+      "states": ["open", "closed", "focus-visible"]
+    },
+    {
+      "id": "divider",
+      "name": "Divider",
+      "path": "src/components/ui/divider.tsx",
+      "doc": "design/components/Divider.md",
+      "variants": ["horizontal", "vertical"]
+    },
+    {
+      "id": "empty-state",
+      "name": "EmptyState",
+      "path": "src/components/ui/empty-state.tsx",
+      "doc": "design/components/EmptyState.md",
+      "states": ["default"]
+    },
+    {
+      "id": "hint",
+      "name": "Hint",
+      "path": "src/components/ui/hint.tsx",
+      "doc": "design/components/Hint.md",
+      "states": ["default", "open", "hover", "focus-visible"]
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "path": "src/components/ui/table.tsx",
+      "doc": "design/components/Table.md",
+      "states": ["default", "row-hover"]
+    },
+    {
+      "id": "link",
+      "name": "Link",
+      "path": "src/components/ui/link.tsx",
+      "doc": "design/components/Link.md",
+      "variants": ["underline", "subtle"],
+      "states": ["default", "hover", "focus-visible"]
+    },
+    {
+      "id": "checkbox",
+      "name": "Checkbox",
+      "path": "src/components/ui/checkbox.tsx",
+      "doc": "design/components/Checkbox.md",
+      "states": ["default", "hover", "focus-visible", "checked", "disabled", "invalid"]
+    },
+    {
+      "id": "radio",
+      "name": "Radio",
+      "path": "src/components/ui/radio.tsx",
+      "doc": "design/components/Radio.md",
+      "states": ["default", "focus-visible", "checked", "disabled", "invalid"]
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "path": "src/components/ui/switch.tsx",
+      "doc": "design/components/Switch.md",
+      "states": ["off", "on", "hover", "focus-visible", "disabled"]
+    },
+    {
+      "id": "select",
+      "name": "Select",
+      "path": "src/components/ui/select.tsx",
+      "doc": "design/components/Select.md",
+      "states": ["default", "hover", "focus-visible", "disabled", "invalid"]
+    },
+    {
+      "id": "tabs",
+      "name": "Tabs",
+      "path": "src/components/ui/tabs.tsx",
+      "doc": "design/components/Tabs.md",
+      "states": ["selected", "unselected", "hover", "focus-visible"]
+    },
+    {
+      "id": "tooltip",
+      "name": "Tooltip",
+      "path": "src/components/ui/tooltip.tsx",
+      "doc": "design/components/Tooltip.md",
+      "states": ["hidden", "open"]
+    }
+  ]
+}

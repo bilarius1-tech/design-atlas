@@ -14,7 +14,7 @@ Native `<button>` with label and optional leading/trailing icon.
 
 ## States
 
-default · hover · focus-visible · disabled · loading (`aria-busy`)
+default · hover · focus-visible · active · disabled · loading (`aria-busy`, spinner, label «Загрузка»)
 
 ## Tokens
 
@@ -25,3 +25,5 @@ default · hover · focus-visible · disabled · loading (`aria-busy`)
 - Always a real button (or link with `buttonClassName` for navigation)
 - Visible focus ring
 - Loading exposes `aria-busy` and screen-reader text
+
+Loading keeps the button width (children stay in layout, visually hidden) and shows a spinner.

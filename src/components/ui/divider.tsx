@@ -5,16 +5,12 @@ export type DividerProps = HTMLAttributes<HTMLHRElement> & {
   orientation?: "horizontal" | "vertical";
 };
 
-export function Divider({
-  className,
-  orientation = "horizontal",
-  ...props
-}: DividerProps) {
+export function Divider({ className, orientation = "horizontal", ...props }: DividerProps) {
   return (
     <hr
       aria-orientation={orientation}
       className={cn(
-        "border-0 bg-border",
+        "bg-border border-0",
         orientation === "horizontal" ? "h-px w-full" : "h-full w-px self-stretch",
         className,
       )}

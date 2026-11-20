@@ -7,23 +7,17 @@ export type EmptyStateProps = HTMLAttributes<HTMLDivElement> & {
   action?: ReactNode;
 };
 
-export function EmptyState({
-  className,
-  title,
-  description,
-  action,
-  ...props
-}: EmptyStateProps) {
+export function EmptyState({ className, title, description, action, ...props }: EmptyStateProps) {
   return (
     <div
       className={cn(
-        "flex flex-col items-start gap-3 border border-dashed border-border bg-surface px-6 py-10",
+        "border-border bg-surface flex flex-col items-start gap-3 border border-dashed px-6 py-10",
         className,
       )}
       {...props}
     >
-      <h2 className="font-serif text-2xl tracking-tight text-foreground">{title}</h2>
-      {description ? <p className="max-w-xl text-muted">{description}</p> : null}
+      <h2 className="text-foreground font-serif text-2xl tracking-tight">{title}</h2>
+      {description ? <p className="text-muted max-w-xl">{description}</p> : null}
       {action}
     </div>
   );

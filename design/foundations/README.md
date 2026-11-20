@@ -12,11 +12,11 @@
 
 ## Шрифты
 
-| Роль | Семейство |
-| --- | --- |
+| Роль               | Семейство      |
+| ------------------ | -------------- |
 | Display / headings | Source Serif 4 |
-| UI / body | Source Sans 3 |
-| Code | Geist Mono |
+| UI / body          | Source Sans 3  |
+| Code               | Geist Mono     |
 
 Inter не используется как default оболочки.
 
@@ -25,3 +25,11 @@ Inter не используется как default оболочки.
 - Container: 1120px (wide 1280, narrow 720)
 - Base spacing unit: 4px
 - Section vertical rhythm: 48–96px
+
+## Иконки
+
+Lucide. Размеры из токенов: `icon.sm` 16px, `icon.md` 20px, `icon.lg` 24px.
+
+## Тема
+
+Оболочка только светлая. Тёмной темы оболочки нет. Цвета Вайбика — отдельная тема, не этот файл.

@@ -8,6 +8,8 @@ import {
   EmptyState,
   Input,
   Label,
+  Link,
+  Select,
   Table,
   TBody,
   TD,
@@ -16,6 +18,13 @@ import {
   TR,
   Textarea,
 } from "@/components/ui";
+import {
+  ChoiceDemo,
+  DialogDemo,
+  OverlayDemo,
+  SwitchDemo,
+  TabsDemo,
+} from "@/features/design-system/gallery-demos";
 import type { Metadata } from "next";
 import { ArrowRight, Check, Search } from "lucide-react";
 
@@ -29,13 +38,11 @@ export default function DesignSystemPage() {
     <main id="main-content">
       <section className="border-border bg-surface border-b">
         <Container className="space-y-4 py-14">
-          <p className="text-muted text-xs font-semibold tracking-[0.14em] uppercase">
-            App Shell · PHASE 2
-          </p>
+          <p className="text-muted text-xs font-semibold tracking-[0.14em] uppercase">App Shell</p>
           <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">Дизайн-система</h1>
           <p className="text-muted max-w-2xl text-lg">
-            Нейтральная редакционная оболочка продукта. Это не один из каталожных стилей — каталог
-            будет жить внутри этой оболочки.
+            Нейтральная светлая оболочка продукта. Это не каталожный стиль и не цвета Вайбика — тема{" "}
+            <code className="font-mono text-sm">vaybik</code> живёт отдельно, для агентов студии.
           </p>
         </Container>
       </section>
@@ -62,7 +69,7 @@ export default function DesignSystemPage() {
       <Section
         eyebrow="Color"
         title="Цветовая система"
-        description="Холодная бумажная база, ink accent, без фиолетовых AI-градиентов."
+        description="Холодная бумажная база, ink accent, без фиолетовых AI-градиентов. Только светлая тема."
       >
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
@@ -82,45 +89,105 @@ export default function DesignSystemPage() {
         </div>
       </Section>
 
-      <Section eyebrow="Controls" title="Кнопки и формы">
-        <Stack gap="xl">
+      <Section
+        eyebrow="Controls"
+        title="Кнопки"
+        description="Варианты, размеры и состояния: default, hover, focus-visible, active, disabled, loading."
+      >
+        <Stack gap="lg">
           <Stack direction="horizontal" gap="md">
             <Button>Primary</Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="tertiary">Tertiary</Button>
             <Button variant="ghost">Ghost</Button>
             <Button variant="danger">Danger</Button>
-            <Button loading>Loading</Button>
-            <Button disabled>Disabled</Button>
+          </Stack>
+          <Stack direction="horizontal" gap="md">
+            <Button size="sm">Small</Button>
+            <Button size="md">Medium</Button>
+            <Button size="lg">Large</Button>
             <Button size="sm" aria-label="Далее">
               <ArrowRight className="size-4" aria-hidden />
             </Button>
           </Stack>
+          <Stack direction="horizontal" gap="md">
+            <Button loading>Loading</Button>
+            <Button disabled>Disabled</Button>
+            <Button variant="secondary" disabled>
+              Disabled secondary
+            </Button>
+          </Stack>
+        </Stack>
+      </Section>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <Stack gap="sm">
-              <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="hello@designatlas.dev" />
-            </Stack>
-            <Stack gap="sm">
-              <Label htmlFor="search">Поиск</Label>
-              <div className="relative">
-                <Search
-                  className="text-muted pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2"
-                  aria-hidden
-                />
-                <Input id="search" className="pl-10" placeholder="Стиль, компонент, термин" />
-              </div>
-            </Stack>
-            <Stack gap="sm" className="md:col-span-2">
-              <Label htmlFor="notes">Заметка</Label>
-              <Textarea id="notes" placeholder="Короткое редакционное описание" />
-            </Stack>
-            <Stack gap="sm">
-              <Label htmlFor="broken">Ошибка валидации</Label>
-              <Input id="broken" invalid defaultValue="некорректное значение" />
-            </Stack>
+      <Section eyebrow="Forms" title="Поля, подписи, выбор">
+        <div className="grid gap-6 md:grid-cols-2">
+          <Stack gap="sm">
+            <Label htmlFor="email" required>
+              Email
+            </Label>
+            <Input id="email" type="email" placeholder="hello@designatlas.dev" />
+          </Stack>
+          <Stack gap="sm">
+            <Label htmlFor="search">Поиск</Label>
+            <div className="relative">
+              <Search
+                className="text-muted pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2"
+                aria-hidden
+              />
+              <Input id="search" className="pl-10" placeholder="Стиль, компонент, термин" />
+            </div>
+          </Stack>
+          <Stack gap="sm" className="md:col-span-2">
+            <Label htmlFor="notes">Заметка</Label>
+            <Textarea id="notes" placeholder="Короткое редакционное описание" />
+          </Stack>
+          <Stack gap="sm">
+            <Label htmlFor="broken">Ошибка валидации</Label>
+            <Input
+              id="broken"
+              invalid
+              defaultValue="некорректное значение"
+              errorMessage="Проверьте формат поля"
+            />
+          </Stack>
+          <Stack gap="sm">
+            <Label htmlFor="readonly-field">Только чтение</Label>
+            <Input id="readonly-field" readOnly defaultValue="нельзя изменить" />
+          </Stack>
+          <Stack gap="sm">
+            <Label htmlFor="disabled-field" disabled>
+              Недоступно
+            </Label>
+            <Input id="disabled-field" disabled placeholder="disabled" />
+          </Stack>
+          <Stack gap="sm">
+            <Label htmlFor="style-select">Стиль (select)</Label>
+            <Select id="style-select" defaultValue="swiss">
+              <option value="swiss">Swiss International</option>
+              <option value="scandi">Scandi Calm</option>
+            </Select>
+          </Stack>
+          <div className="md:col-span-2">
+            <ChoiceDemo />
           </div>
+          <div className="md:col-span-2">
+            <SwitchDemo />
+          </div>
+        </div>
+      </Section>
+
+      <Section eyebrow="Navigation" title="Ссылки, вкладки, подсказки, диалог">
+        <Stack gap="xl">
+          <Stack direction="horizontal" gap="md">
+            <Link href="/studio">Студия (underline)</Link>
+            <Link href="/cards" variant="subtle">
+              Карточки (subtle)
+            </Link>
+          </Stack>
+          <TabsDemo />
+          <OverlayDemo />
+          <DialogDemo />
         </Stack>
       </Section>
 
@@ -134,12 +201,12 @@ export default function DesignSystemPage() {
             <Badge tone="danger">danger</Badge>
           </Stack>
           <div className="grid gap-4 lg:grid-cols-2">
-            <Alert title="Информация">Оболочка готова принимать каталог стилей.</Alert>
+            <Alert title="Информация">Оболочка показывает примитивы и состояния.</Alert>
             <Alert tone="success" title="Успех">
               Токены подключены через CSS variables.
             </Alert>
             <Alert tone="warning" title="Внимание">
-              Не смешивать токены оболочки с токенами каталожных стилей.
+              Не смешивать токены оболочки с токенами каталожных стилей и темы vaybik.
             </Alert>
             <Alert tone="danger" title="Ошибка">
               Контент без валидации схем публиковать нельзя.
@@ -148,7 +215,7 @@ export default function DesignSystemPage() {
         </Stack>
       </Section>
 
-      <Section eyebrow="Surfaces" title="Карточки, таблица, empty state">
+      <Section eyebrow="Surfaces" title="Карточки, таблица, empty state, разделитель">
         <Stack gap="xl">
           <div className="grid gap-4 md:grid-cols-3">
             <Card className="space-y-3">
@@ -165,10 +232,12 @@ export default function DesignSystemPage() {
                 `design/system/tokens.json` — источник истины для оболочки.
               </p>
             </Card>
-            <Card className="space-y-3">
+            <Card interactive className="space-y-3">
               <Badge tone="success">a11y</Badge>
               <h3 className="font-serif text-2xl tracking-tight">Focus first</h3>
-              <p className="text-muted text-sm">Видимый focus ring и skip link в layout.</p>
+              <p className="text-muted text-sm">
+                Видимый focus ring, skip link, не меньше 28px у Hint.
+              </p>
             </Card>
           </div>
 
@@ -192,9 +261,9 @@ export default function DesignSystemPage() {
                 <TD>Заголовки editorial shell</TD>
               </TR>
               <TR>
-                <TD className="font-mono text-xs">size.container</TD>
-                <TD>layout</TD>
-                <TD>Ширина основного контейнера</TD>
+                <TD className="font-mono text-xs">icon.md</TD>
+                <TD>icon</TD>
+                <TD>Базовый размер иконки (20px)</TD>
               </TR>
             </TBody>
           </Table>
@@ -209,14 +278,14 @@ export default function DesignSystemPage() {
               </Button>
             }
           />
+          <Divider />
         </Stack>
       </Section>
 
       <Section>
-        <Divider className="mb-8" />
         <p className="text-muted text-sm">
-          Оболочка продукта и витрина примитивов. Каталог стилей, Студия и карточки уже в
-          продакшене. Цвета Вайбика сюда не подмешиваются — это отдельная тема для агентов.
+          Спеки компонентов: <code className="font-mono">design/components/</code>. Каталог для
+          агентов: <code className="font-mono">design/components/catalog.json</code>.
         </p>
       </Section>
     </main>

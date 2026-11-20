@@ -1,4 +1,5 @@
 import { cn } from "@/lib/cn";
+import { focusRingClass } from "@/components/ui/control-classes";
 import type { ButtonHTMLAttributes } from "react";
 
 export type ButtonVariant = "primary" | "secondary" | "tertiary" | "ghost" | "danger";
@@ -12,12 +13,14 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-accent text-inverse hover:bg-accent-hover disabled:bg-border-strong disabled:text-muted",
+    "bg-accent text-inverse hover:bg-accent-hover active:brightness-90 disabled:bg-border-strong disabled:text-muted disabled:hover:bg-border-strong",
   secondary:
-    "border border-border-strong bg-surface text-foreground hover:border-accent hover:text-accent disabled:opacity-50",
-  tertiary: "bg-surface-muted text-foreground hover:bg-border disabled:opacity-50",
-  ghost: "bg-transparent text-foreground hover:bg-surface-muted disabled:opacity-50",
-  danger: "bg-danger text-inverse hover:opacity-90 disabled:opacity-50",
+    "border border-border-strong bg-surface text-foreground hover:border-accent hover:text-accent active:bg-surface-muted disabled:opacity-50 disabled:hover:border-border-strong disabled:hover:text-foreground",
+  tertiary:
+    "bg-surface-muted text-foreground hover:bg-border active:brightness-95 disabled:opacity-50",
+  ghost:
+    "bg-transparent text-foreground hover:bg-surface-muted active:bg-border disabled:opacity-50",
+  danger: "bg-danger text-inverse hover:opacity-90 active:brightness-90 disabled:opacity-50",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -36,8 +39,8 @@ export function buttonClassName({
   className?: string;
 } = {}): string {
   return cn(
-    "inline-flex items-center justify-center rounded-md font-medium transition-colors no-underline",
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
+    "relative inline-flex items-center justify-center rounded-md font-medium transition-colors no-underline",
+    focusRingClass,
     "disabled:cursor-not-allowed",
     variantClasses[variant],
     sizeClasses[size],
@@ -65,8 +68,21 @@ export function Button({
       aria-busy={loading || undefined}
       {...props}
     >
+      {loading ? (
+        <span
+          className="absolute inline-flex size-4 animate-spin rounded-full border-2 border-current border-t-transparent"
+          aria-hidden
+        />
+      ) : null}
       {loading ? <span className="sr-only">Загрузка</span> : null}
-      {children}
+      <span
+        className={cn(
+          "gap-inherit inline-flex items-center justify-center",
+          loading && "invisible",
+        )}
+      >
+        {children}
+      </span>
     </button>
   );
 }

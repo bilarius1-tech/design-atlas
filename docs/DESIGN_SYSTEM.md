@@ -35,17 +35,18 @@ CSS prefix: `--da-...`. Tailwind mapping: `src/app/globals.css` (`@theme inline`
 
 ## Реализованные компоненты
 
-| Компонент                          | Путь                           |
-| ---------------------------------- | ------------------------------ |
-| Button                             | `src/components/ui/button.tsx` |
-| Input / Textarea / Label           | `src/components/ui/`           |
-| Badge / Alert / Divider            | `src/components/ui/`           |
-| Card / Table / EmptyState          | `src/components/ui/`           |
-| Dialog / Hint                      | `src/components/ui/`           |
-| Container / Stack / Section        | `src/components/layout/`       |
-| SiteHeader / SiteFooter / SkipLink | `src/components/layout/`       |
+| Компонент                                        | Путь                           |
+| ------------------------------------------------ | ------------------------------ |
+| Button                                           | `src/components/ui/button.tsx` |
+| Input / Textarea / Label                         | `src/components/ui/`           |
+| Badge / Alert / Divider                          | `src/components/ui/`           |
+| Card / Table / EmptyState                        | `src/components/ui/`           |
+| Dialog / Hint / Tooltip                          | `src/components/ui/`           |
+| Link / Checkbox / Radio / Switch / Select / Tabs | `src/components/ui/`           |
+| Container / Stack / Section                      | `src/components/layout/`       |
+| SiteHeader / SiteFooter / SkipLink               | `src/components/layout/`       |
 
-Gallery: `/design-system`.
+Gallery: `/design-system`. Specs: `design/components/*.md`. Catalog for agents: `design/components/catalog.json`. Icon sizes: tokens `icon.sm|md|lg`.
 
 ## Иконки
 

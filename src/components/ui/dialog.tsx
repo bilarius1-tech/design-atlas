@@ -1,13 +1,9 @@
 "use client";
 
+import { focusRingClass } from "@/components/ui/control-classes";
 import { cn } from "@/lib/cn";
 import { X } from "lucide-react";
-import {
-  useEffect,
-  useId,
-  useRef,
-  type ReactNode,
-} from "react";
+import { useEffect, useId, useRef, type ReactNode } from "react";
 
 export type DialogProps = {
   open: boolean;
@@ -38,7 +34,7 @@ export function Dialog({ open, onClose, title, description, children, className 
     <dialog
       ref={dialogRef}
       className={cn(
-        "m-auto w-[min(100%-1.5rem,42rem)] max-h-[min(90dvh,40rem)] border border-border bg-background p-0 text-foreground shadow-md open:flex open:flex-col",
+        "border-border bg-background text-foreground m-auto max-h-[min(90dvh,40rem)] w-[min(100%-1.5rem,42rem)] border p-0 shadow-md open:flex open:flex-col",
         "backdrop:bg-foreground/40",
         className,
       )}
@@ -49,20 +45,23 @@ export function Dialog({ open, onClose, title, description, children, className 
         if (event.target === dialogRef.current) onClose();
       }}
     >
-      <div className="flex items-start justify-between gap-3 border-b border-border px-4 py-3 sm:px-5">
+      <div className="border-border flex items-start justify-between gap-3 border-b px-4 py-3 sm:px-5">
         <div className="min-w-0 space-y-1">
           <h2 id={titleId} className="font-serif text-xl tracking-tight">
             {title}
           </h2>
           {description ? (
-            <p id={descriptionId} className="text-sm text-muted">
+            <p id={descriptionId} className="text-muted text-sm">
               {description}
             </p>
           ) : null}
         </div>
         <button
           type="button"
-          className="inline-flex h-9 w-9 shrink-0 items-center justify-center border border-border text-muted hover:text-foreground"
+          className={cn(
+            "border-border text-muted hover:text-foreground inline-flex h-9 w-9 shrink-0 items-center justify-center border",
+            focusRingClass,
+          )}
           aria-label="Закрыть"
           onClick={onClose}
         >

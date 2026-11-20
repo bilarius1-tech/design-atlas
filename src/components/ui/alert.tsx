@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 import type { HTMLAttributes } from "react";
 
-type AlertTone = "info" | "success" | "warning" | "danger";
+export type AlertTone = "info" | "success" | "warning" | "danger";
 
 export type AlertProps = HTMLAttributes<HTMLDivElement> & {
   tone?: AlertTone;
@@ -18,7 +18,7 @@ const toneClasses: Record<AlertTone, string> = {
 export function Alert({ className, tone = "info", title, children, ...props }: AlertProps) {
   return (
     <div
-      role="status"
+      role={tone === "danger" ? "alert" : "status"}
       className={cn("rounded-md border px-4 py-3 text-sm", toneClasses[tone], className)}
       {...props}
     >
