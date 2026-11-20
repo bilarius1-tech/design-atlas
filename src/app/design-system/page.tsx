@@ -27,15 +27,15 @@ export const metadata: Metadata = {
 export default function DesignSystemPage() {
   return (
     <main id="main-content">
-      <section className="border-b border-border bg-surface">
+      <section className="border-border bg-surface border-b">
         <Container className="space-y-4 py-14">
-          <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
+          <p className="text-muted text-xs font-semibold tracking-[0.14em] uppercase">
             App Shell · PHASE 2
           </p>
           <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">Дизайн-система</h1>
-          <p className="max-w-2xl text-lg text-muted">
-            Нейтральная редакционная оболочка продукта. Это не один из каталожных стилей —
-            каталог будет жить внутри этой оболочки.
+          <p className="text-muted max-w-2xl text-lg">
+            Нейтральная редакционная оболочка продукта. Это не один из каталожных стилей — каталог
+            будет жить внутри этой оболочки.
           </p>
         </Container>
       </section>
@@ -46,15 +46,15 @@ export default function DesignSystemPage() {
         description="Source Serif 4 для заголовков, Source Sans 3 для интерфейса."
       >
         <Stack gap="lg">
-          <p className="font-serif text-display tracking-tight">Display</p>
+          <p className="text-display font-serif tracking-tight">Display</p>
           <p className="font-serif text-4xl tracking-tight">Заголовок H1</p>
           <p className="font-serif text-3xl tracking-tight">Заголовок H2</p>
           <p className="font-serif text-2xl tracking-tight">Заголовок H3</p>
-          <p className="text-lg text-foreground">Lead — поясняющий абзац для секций и вводных.</p>
-          <p className="text-base text-foreground">
+          <p className="text-foreground text-lg">Lead — поясняющий абзац для секций и вводных.</p>
+          <p className="text-foreground text-base">
             Body — основной текст. Информационная плотность без декоративного шума.
           </p>
-          <p className="text-sm text-muted">Caption / muted — вторичная информация.</p>
+          <p className="text-muted text-sm">Caption / muted — вторичная информация.</p>
           <p className="font-mono text-sm">code.token = &quot;design-atlas-shell&quot;</p>
         </Stack>
       </Section>
@@ -75,7 +75,7 @@ export default function DesignSystemPage() {
             ["Warning", "bg-warning-bg", "text-warning"],
             ["Border", "bg-border", "text-foreground"],
           ].map(([name, bg, fg]) => (
-            <div key={name} className={`border border-border p-4 ${bg} ${fg}`}>
+            <div key={name} className={`border-border border p-4 ${bg} ${fg}`}>
               <p className="text-sm font-medium">{name}</p>
             </div>
           ))}
@@ -106,7 +106,7 @@ export default function DesignSystemPage() {
               <Label htmlFor="search">Поиск</Label>
               <div className="relative">
                 <Search
-                  className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted"
+                  className="text-muted pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2"
                   aria-hidden
                 />
                 <Input id="search" className="pl-10" placeholder="Стиль, компонент, термин" />
@@ -154,19 +154,21 @@ export default function DesignSystemPage() {
             <Card className="space-y-3">
               <Badge tone="accent">feature</Badge>
               <h3 className="font-serif text-2xl tracking-tight">Редакционная плотность</h3>
-              <p className="text-sm text-muted">Карточки только там, где нужна отдельная единица.</p>
+              <p className="text-muted text-sm">
+                Карточки только там, где нужна отдельная единица.
+              </p>
             </Card>
             <Card className="space-y-3">
               <Badge>system</Badge>
               <h3 className="font-serif text-2xl tracking-tight">Токены как SSOT</h3>
-              <p className="text-sm text-muted">
+              <p className="text-muted text-sm">
                 `design/system/tokens.json` — источник истины для оболочки.
               </p>
             </Card>
             <Card className="space-y-3">
               <Badge tone="success">a11y</Badge>
               <h3 className="font-serif text-2xl tracking-tight">Focus first</h3>
-              <p className="text-sm text-muted">Видимый focus ring и skip link в layout.</p>
+              <p className="text-muted text-sm">Видимый focus ring и skip link в layout.</p>
             </Card>
           </div>
 
@@ -198,12 +200,12 @@ export default function DesignSystemPage() {
           </Table>
 
           <EmptyState
-            title="Каталог стилей пока пуст"
-            description="Это ожидаемо: сначала Design System Core, затем Content Engine и эталонный стиль."
+            title="Пустой список — пример состояния"
+            description="Витрина оболочки. Живой каталог из 24 стилей открывается в Студии, а не на этой странице."
             action={
               <Button variant="secondary">
                 <Check className="size-4" aria-hidden />
-                PHASE 2 в работе
+                Пример действия
               </Button>
             }
           />
@@ -212,8 +214,9 @@ export default function DesignSystemPage() {
 
       <Section>
         <Divider className="mb-8" />
-        <p className="text-sm text-muted">
-          Следующая фаза: Content Engine — Zod-схемы, registry и валидатор контента стилей.
+        <p className="text-muted text-sm">
+          Оболочка продукта и витрина примитивов. Каталог стилей, Студия и карточки уже в
+          продакшене. Цвета Вайбика сюда не подмешиваются — это отдельная тема для агентов.
         </p>
       </Section>
     </main>

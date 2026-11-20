@@ -36,4 +36,6 @@ Docs language: English
 
 ## Contact / source
 
+- Current site: https://design-atlas-wine.vercel.app
+- Planned site: https://design.vaybik.ru (free public service)
 - Repository: https://github.com/bilarius1-tech/design-atlas

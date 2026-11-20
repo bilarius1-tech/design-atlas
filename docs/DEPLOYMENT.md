@@ -8,13 +8,14 @@
 
 ## Current production
 
-| Item | Value |
-|------|--------|
-| Team | `bill` (`bill-2f6c`) |
-| Project | `design-atlas` |
-| URL | https://design-atlas-wine.vercel.app |
-| Repo | https://github.com/bilarius1-tech/design-atlas |
-| Custom domain | pending — see [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md) |
+| Item          | Value                                                                                                              |
+| ------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Team          | `bill` (`bill-2f6c`)                                                                                               |
+| Project       | `design-atlas`                                                                                                     |
+| URL           | https://design-atlas-wine.vercel.app                                                                               |
+| Repo          | https://github.com/bilarius1-tech/design-atlas                                                                     |
+| Custom domain | pending `design.vaybik.ru` — see [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md) and [PHASE5_CUTOVER.md](PHASE5_CUTOVER.md) |
+| Access        | Public and free: no sign-up, no payments                                                                           |
 
 CLI (local, authenticated as `bilarius1-tech`):
 
@@ -26,16 +27,16 @@ vercel deploy --prod --yes --scope bill-2f6c
 
 ## Environments
 
-| Env | Назначение |
-|-----|------------|
-| Preview | PR / preview URLs (SSO protection may apply) |
+| Env        | Назначение                                        |
+| ---------- | ------------------------------------------------- |
+| Preview    | PR / preview URLs (SSO protection may apply)      |
 | Production | Current prod alias `design-atlas-wine.vercel.app` |
 
 ## Переменные окружения
 
-| Variable | Required | Описание |
-|----------|----------|----------|
-| `NODE_ENV` | auto | production |
+| Variable               | Required        | Описание                                                                                                                     |
+| ---------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `NODE_ENV`             | auto            | production                                                                                                                   |
 | `NEXT_PUBLIC_SITE_URL` | **yes on prod** | Canonical base (no trailing slash). Now: `https://design-atlas-wine.vercel.app`. After domain: set to `https://your-domain`. |
 
 Set via:

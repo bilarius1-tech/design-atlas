@@ -15,32 +15,35 @@ design/
 └── tokens/                 # reserved / legacy placeholder
 ```
 
-Каталожные стили (позже): `content/styles/<id>/tokens.json`.
+Каталожные стили: `content/styles/<id>/tokens.json` (сейчас 24 published-пака).
 
 ## Token model (ADR-0004)
 
 Источник: [`design/system/tokens.json`](../design/system/tokens.json).
 
-| Категория | Примеры |
-|-----------|---------|
-| color | `bg`, `surface`, `fg`, `accent`, `border`, `danger` |
-| font | `family.sans/serif/mono`, `size.*`, `lineHeight.*` |
-| space | `1`…`24` (4px scale) |
-| size | `container`, `header`, `controlMd` |
-| radius / shadow / motion / zIndex | shell geometry and motion |
+| Категория                         | Примеры                                             |
+| --------------------------------- | --------------------------------------------------- |
+| color                             | `bg`, `surface`, `fg`, `accent`, `border`, `danger` |
+| font                              | `family.sans/serif/mono`, `size.*`, `lineHeight.*`  |
+| space                             | `1`…`24` (4px scale)                                |
+| size                              | `container`, `header`, `controlMd`                  |
+| radius / shadow / motion / zIndex | shell geometry and motion                           |
 
 CSS prefix: `--da-...`. Tailwind mapping: `src/app/globals.css` (`@theme inline`).
 
+Оболочка **только светлая** (бумажный editorial shell). Тёмная тема оболочки в этот заход не входит. Цвета сайта Вайбика — отдельная тема `vaybik`, не перекраска этой оболочки.
+
 ## Реализованные компоненты
 
-| Компонент | Путь |
-|-----------|------|
-| Button | `src/components/ui/button.tsx` |
-| Input / Textarea / Label | `src/components/ui/` |
-| Badge / Alert / Divider | `src/components/ui/` |
-| Card / Table / EmptyState | `src/components/ui/` |
-| Container / Stack / Section | `src/components/layout/` |
-| SiteHeader / SiteFooter / SkipLink | `src/components/layout/` |
+| Компонент                          | Путь                           |
+| ---------------------------------- | ------------------------------ |
+| Button                             | `src/components/ui/button.tsx` |
+| Input / Textarea / Label           | `src/components/ui/`           |
+| Badge / Alert / Divider            | `src/components/ui/`           |
+| Card / Table / EmptyState          | `src/components/ui/`           |
+| Dialog / Hint                      | `src/components/ui/`           |
+| Container / Stack / Section        | `src/components/layout/`       |
+| SiteHeader / SiteFooter / SkipLink | `src/components/layout/`       |
 
 Gallery: `/design-system`.
 
@@ -58,7 +61,6 @@ Lucide React. Размер через `className` (`size-4` и т.п.).
 - `DemoLandingEngine` — `src/features/demo-landing/` (композиции, секции из `demo.json`)
 - Токены стиля → scoped CSS vars `--sp-*` (не смешиваются с shell `--da-*`)
 - Маршруты: `/playground`, `/playground/<styleId>`, `/demo`, `/demo/<styleId>`
-
 
 ## Качество
 

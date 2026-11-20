@@ -1,6 +1,11 @@
 # Design Atlas
 
-**Design Atlas** — платформа знаний о визуальных стилях и дизайне плюс библиотека дизайн-системы для их представления. Принципы: **Visual first · Agent ready**. Контент и контракты живут в Git; в v1 базы данных нет.
+**Design Atlas** («Анти ИИ-слоп · Дизайн Атлас») — библиотека визуальных стилей и мост к промптам. Принципы: **Visual first · Agent ready**. Шаблон × стиль → живое превью → промпт (агент и конструктор, RU/EN) + ZIP-пак. Сайт за клиента Atlas сам не собирает: сборка идёт снаружи (Cursor / конструктор). Контент и контракты живут в Git; в v1 базы данных нет.
+
+Сервис **бесплатный** и публичный: без регистрации и без оплаты.
+
+- Сейчас: https://design-atlas-wine.vercel.app
+- Планируемый адрес: https://design.vaybik.ru (отдельное приложение, не внутри vaybik-hub). Чеклист переноса домена: [docs/DOMAIN_CUTOVER.md](docs/DOMAIN_CUTOVER.md) и [docs/PHASE5_CUTOVER.md](docs/PHASE5_CUTOVER.md).
 
 Документация для людей и AI-агентов: [docs/](docs/). Точка входа для агентов — [AGENTS.md](AGENTS.md).
 
@@ -17,17 +22,17 @@ pnpm install
 
 ## Скрипты
 
-| Команда | Назначение |
-|---------|------------|
-| `pnpm dev` | Локальный dev-сервер Next.js (App Router) |
-| `pnpm build` | Production-сборка |
-| `pnpm start` | Запуск собранного приложения |
-| `pnpm lint` | ESLint |
-| `pnpm typecheck` | TypeScript (`tsc --noEmit`) |
-| `pnpm test` | Unit-тесты (Vitest) |
-| `pnpm content:validate` | Валидация `content/` по Zod-контрактам |
-| `pnpm format` / `pnpm format:check` | Prettier |
-| `pnpm ci` | lint + typecheck + test + content:validate + build |
+| Команда                             | Назначение                                         |
+| ----------------------------------- | -------------------------------------------------- |
+| `pnpm dev`                          | Локальный dev-сервер Next.js (App Router)          |
+| `pnpm build`                        | Production-сборка                                  |
+| `pnpm start`                        | Запуск собранного приложения                       |
+| `pnpm lint`                         | ESLint                                             |
+| `pnpm typecheck`                    | TypeScript (`tsc --noEmit`)                        |
+| `pnpm test`                         | Unit-тесты (Vitest)                                |
+| `pnpm content:validate`             | Валидация `content/` по Zod-контрактам             |
+| `pnpm format` / `pnpm format:check` | Prettier                                           |
+| `pnpm ci`                           | lint + typecheck + test + content:validate + build |
 
 Спецификация: [docs/specification/](docs/specification/). Тесты: [docs/TESTING.md](docs/TESTING.md).
 
@@ -51,12 +56,12 @@ design-atlas/
 └── ...
 ```
 
-**Порядок реализации:** сначала дизайн-система приложения, затем библиотека визуальных стилей. Публичные страницы, playground и каталог стилей в Phase 1 **не** реализуются — только документация и фундамент.
+**Что уже сделано:** публичные страницы Studio, Cards, Demo, Playground и `/design-system`; **24** опубликованных стиля, **8** стилей карточек, **3** шаблона страниц; ZIP-экспорт `GET /api/export/[styleId]`. Репозиторий публичный (`bilarius1-tech/design-atlas`). Поле `private` в `package.json` означает только «не публиковать пакет в npm».
 
 ## Фазы
 
-Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md).
+Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md). Дальше: доводка оболочки дизайн-системы, тема `vaybik` для агентов студии, публичный JSON API и MCP, затем домен `design.vaybik.ru`.
 
 ## Лицензия
 
-Приватный репозиторий (`private: true`).
+Публичный исходный код на GitHub. Отдельного SPDX-файла в репозитории пока нет.

@@ -1,30 +1,32 @@
 # Domain cutover checklist
 
-Use this when a custom domain is purchased and ready to point at Design Atlas on Vercel.
+Целевой домен: **https://design.vaybik.ru**. Сервис остаётся бесплатным и публичным. Подробный человеческий чеклист (Git auto-deploy, DNS, проверки API): [PHASE5_CUTOVER.md](PHASE5_CUTOVER.md).
+
+Use this when the domain is ready to point at Design Atlas on Vercel.
 
 ## Current production (until cutover)
 
-| Item | Value |
-|------|--------|
-| Host | Vercel team `bill` (`bill-2f6c`) |
-| Project | `design-atlas` (`prj_Zn11scK3DYfHcbR7pyAaGTuDZeqs`) |
-| Production URL | https://design-atlas-wine.vercel.app |
-| GitHub | https://github.com/bilarius1-tech/design-atlas |
+| Item                    | Value                                                                |
+| ----------------------- | -------------------------------------------------------------------- |
+| Host                    | Vercel team `bill` (`bill-2f6c`)                                     |
+| Project                 | `design-atlas` (`prj_Zn11scK3DYfHcbR7pyAaGTuDZeqs`)                  |
+| Production URL          | https://design-atlas-wine.vercel.app                                 |
+| GitHub                  | https://github.com/bilarius1-tech/design-atlas                       |
 | Auto-deploy from GitHub | **Not connected yet** — connect in Vercel → Project → Settings → Git |
 
 ## When you have the domain
 
 1. **DNS**
-   - In Vercel: Project → **Domains** → Add `example.com` (and `www` if needed).
+   - In Vercel: Project → **Domains** → Add `design.vaybik.ru` (этот адрес согласован; не класть приложение на корень `vaybik.ru`).
    - At the registrar: set the records Vercel shows (usually `A`/`CNAME` or nameservers).
    - Wait until domain status is **Valid**.
 
 2. **Canonical URL**
-   - Update env `NEXT_PUBLIC_SITE_URL` for **Production** (and Preview if desired) to `https://example.com` (no trailing slash).
+   - Update env `NEXT_PUBLIC_SITE_URL` for **Production** (and Preview if desired) to `https://design.vaybik.ru` (no trailing slash).
    - Redeploy production (`vercel deploy --prod` or Git push after Git is linked).
 
 3. **SEO / AI maps**
-   - Confirm `https://example.com/sitemap.xml` and `/robots.txt` use the new host.
+   - Confirm `https://design.vaybik.ru/sitemap.xml` and `/robots.txt` use the new host.
    - Confirm `/llms.txt` loads.
    - Optionally submit sitemap in Search Console / Yandex Webmaster.
 
