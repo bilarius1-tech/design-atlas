@@ -7,6 +7,7 @@
 
 ### Added
 
+- Public read-only JSON API `/api/v1` (styles, shell tokens, theme `vaybik`, components, templates, search). ZIP `/api/export` is unchanged.
 - Project theme `vaybik` (`design/themes/vaybik/`) from the live vaybik.ru homepage CSS (20 Nov 2026 MSK), with source notes and a swatch on `/design-system`. Not applied to the Atlas shell.
 - Shell design system: icon size tokens; full states for existing primitives; Link, Checkbox, Radio, Switch, Select, Tabs, Tooltip; component specs and `design/components/catalog.json`; expanded `/design-system` gallery.
 - Docs: сервис бесплатный и публичный; целевой домен `design.vaybik.ru`; чеклист фазы 5 в `docs/PHASE5_CUTOVER.md`. README и витрина `/design-system` больше не утверждают, что каталог и публичные страницы «ещё не сделаны».

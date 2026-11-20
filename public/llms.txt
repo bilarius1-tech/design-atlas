@@ -30,6 +30,10 @@ Docs language: English
 
 ## Machine-readable maps
 
+- Public JSON API (read-only, free): /api/v1 — see docs/API.md
+  - /api/v1/health, /api/v1/styles, /api/v1/shell/tokens, /api/v1/themes/vaybik, /api/v1/components, /api/v1/search?q=
+- ZIP export (unchanged): /api/export/{styleId}?pack=free
+
 - Sitemap: /sitemap.xml
 - Robots: /robots.txt
 - This file: /llms.txt

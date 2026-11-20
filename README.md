@@ -7,7 +7,7 @@
 - Сейчас: https://design-atlas-wine.vercel.app
 - Планируемый адрес: https://design.vaybik.ru (отдельное приложение, не внутри vaybik-hub). Чеклист переноса домена: [docs/DOMAIN_CUTOVER.md](docs/DOMAIN_CUTOVER.md) и [docs/PHASE5_CUTOVER.md](docs/PHASE5_CUTOVER.md).
 
-Документация для людей и AI-агентов: [docs/](docs/). Точка входа для агентов — [AGENTS.md](AGENTS.md).
+Документация для людей и AI-агентов: [docs/](docs/). Точка входа для агентов — [AGENTS.md](AGENTS.md). Публичный JSON API (только чтение): [docs/API.md](docs/API.md).
 
 ## Требования
 
