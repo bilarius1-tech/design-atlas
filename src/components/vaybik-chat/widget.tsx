@@ -10,7 +10,6 @@ export const VAYBIK_CHAT_WIDGET_ID = "xA6FHnneH5CW";
 
 export function VaybikChatWidget() {
   return (
-    // eslint-disable-next-line @next/next/no-sync-scripts -- async native tag; needed for currentScript
     <script src={VAYBIK_CHAT_WIDGET_SRC} data-id={VAYBIK_CHAT_WIDGET_ID} async />
   );
 }
