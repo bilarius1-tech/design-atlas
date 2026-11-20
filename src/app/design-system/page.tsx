@@ -25,6 +25,7 @@ import {
   SwitchDemo,
   TabsDemo,
 } from "@/features/design-system/gallery-demos";
+import vaybikTokens from "../../../design/themes/vaybik/tokens.json";
 import type { Metadata } from "next";
 import { ArrowRight, Check, Search } from "lucide-react";
 
@@ -282,6 +283,34 @@ export default function DesignSystemPage() {
         </Stack>
       </Section>
 
+      <Section
+        eyebrow="Тема Вайбик"
+        title="Отдельная тема для продуктов студии"
+        description="Снято с живой главной vaybik.ru. Эти цвета не подключены к оболочке Atlas — только витрина и API."
+      >
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {(
+            [
+              ["Фон", vaybikTokens.color.bg, vaybikTokens.color.fg],
+              ["Акцент", vaybikTokens.color.accent, "#fff"],
+              ["Тёплый hover", vaybikTokens.color.accentWarm, "#07051a"],
+              ["Успех", vaybikTokens.color.success, "#fff"],
+            ] as const
+          ).map(([name, bg, fg]) => (
+            <div
+              key={name}
+              className="border-border border p-4"
+              style={{ background: bg, color: fg }}
+            >
+              <p className="text-sm font-medium">{name}</p>
+              <p className="font-mono text-xs">{bg}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-muted mt-4 text-sm">
+          Шрифты: Unbounded + Manrope. Источник и дата съёма — `design/themes/vaybik/SOURCE.md`.
+        </p>
+      </Section>
       <Section>
         <p className="text-muted text-sm">
           Спеки компонентов: <code className="font-mono">design/components/</code>. Каталог для

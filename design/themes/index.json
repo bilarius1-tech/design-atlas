@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "vaybik",
+      "path": "design/themes/vaybik",
+      "name": "Vaybik",
+      "description": "Tokens and guidelines for Vaybik studio products. Not the Atlas shell."
+    }
+  ]
+}
