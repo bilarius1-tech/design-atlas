@@ -1,5 +1,12 @@
 import { Container, Section, Stack } from "@/components/layout";
 import { buttonClassName } from "@/components/ui";
+import {
+  McpConnectBlock,
+  getClaudeMcpCommand,
+  getCursorInstallLink,
+  getMcpCursorMcpJson,
+  getMcpUrl,
+} from "@/features/mcp-http";
 import { absoluteUrl, ogImage } from "@/lib/site-url";
 import { ArrowRight, Images, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
@@ -167,6 +174,20 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </Section>
+
+      <Section
+        id="mcp"
+        eyebrow="Для агентов"
+        title="Подключить MCP"
+        description="Одна строка в Cursor. Без клонирования репозитория и без ключей."
+      >
+        <McpConnectBlock
+          mcpUrl={getMcpUrl()}
+          cursorLink={getCursorInstallLink()}
+          mcpJson={getMcpCursorMcpJson()}
+          claudeCommand={getClaudeMcpCommand()}
+        />
       </Section>
     </main>
   );

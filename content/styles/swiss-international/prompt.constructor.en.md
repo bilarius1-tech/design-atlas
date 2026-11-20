@@ -10,7 +10,7 @@ Do not invent a second design system. Reproduce this one. Atlas is not a constru
 ## Mandatory tokens
 
 - Background `#F2F0EA`, surface `#FFFFFF`, text `#111111`, muted `#5C5C5C`
-- Primary `#111111`, accent `#E30613`, border `#C9C4BA`
+- Primary `#111111`, accent `#D10512`, border `#C9C4BA`
 - Radius `0px`, border width `1px`, shadow `none`
 - Heading font: `Helvetica Neue, Helvetica, Arial, sans-serif`
 - Body font: `Helvetica Neue, Helvetica, Arial, sans-serif`

@@ -16,11 +16,13 @@ Repository: https://github.com/bilarius1-tech/design-atlas
 - Cards: /cards — marketplace product-card visual styles → image-gen prompts (RU+EN) → generate elsewhere
 - Example landings: /demo and /demo/{styleId}
 - Style playground: /playground and /playground/{styleId}
-- App shell / design-system chrome: /design-system
+- App chrome / design-system: /design-system
+- Connect MCP (human docs): /#mcp
+- Remote MCP (Streamable HTTP): /mcp
 
 ## How agents should use this service
 
-Call `GET /api/v1/styles/{id}/design-spec?lang=ru|en&surface=agent|constructor` or the MCP tool `get_design_spec`. The response includes `markdown` (a complete design specification) and `tokens` (JSON). That markdown is enough: apply the system to the user's current project and create token files there. Do not treat this website as required reading at build time, and do not load Google Fonts or external CDNs.
+Connect to `https://design.vaybik.ru/mcp` (Streamable HTTP, no key, no repo clone) or call `GET /api/v1/styles/{id}/design-spec?lang=ru|en&surface=agent|constructor`. The MCP tool `get_design_spec` is the same payload. The response includes `markdown` (a complete design specification) and `tokens` (JSON). That markdown is enough: apply the system to the user's current project and create token files there. Do not treat this website as required reading at build time, and do not load Google Fonts or external CDNs.
 
 ## Content SSOT (Git)
 
@@ -38,7 +40,7 @@ Call `GET /api/v1/styles/{id}/design-spec?lang=ru|en&surface=agent|constructor` 
 
 - Public JSON API (read-only, free): /api/v1 — see docs/API.md
   - /api/v1/health, /api/v1/styles, /api/v1/styles/{id}/design-spec, /api/v1/shell/tokens, /api/v1/themes/vaybik, /api/v1/components, /api/v1/search?q=
-- MCP: packages/mcp (default base https://design.vaybik.ru)
+- Remote MCP: POST https://design.vaybik.ru/mcp (Cursor: {"mcpServers":{"design-atlas":{"url":"https://design.vaybik.ru/mcp"}}}). Stdio fallback: packages/mcp
 - ZIP export: /api/export/{styleId}?pack=free (contains the same DESIGN-SPEC.ru.md / .en.md)
 
 - Sitemap: /sitemap.xml

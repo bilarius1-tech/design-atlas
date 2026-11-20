@@ -39,7 +39,7 @@ export default function DesignSystemPage() {
     <main id="main-content">
       <section className="border-border bg-surface border-b">
         <Container className="space-y-4 py-14">
-          <p className="text-muted text-xs font-semibold tracking-[0.14em] uppercase">App Shell</p>
+          <p className="text-muted text-xs font-semibold tracking-[0.14em] uppercase">Интерфейс сервиса</p>
           <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">Дизайн-система</h1>
           <p className="text-muted max-w-2xl text-lg">
             Нейтральная светлая оболочка продукта. Это не каталожный стиль и не цвета Вайбика — тема{" "}

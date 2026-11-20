@@ -24,7 +24,7 @@ Source: `tokens.json` (also mirrored in `TOKENS.md`).
 
 - **Ground:** `#F2F0EA` background, `#FFFFFF` surface
 - **Ink:** `#111111` text/primary, `#5C5C5C` muted
-- **Signal:** `#E30613` accent
+- **Signal:** `#D10512` accent
 - **Line:** `#C9C4BA` border, `1px`, radius `0`, shadow `none`
 - **Type:** Helvetica Neue stack; display `57px`; base `16px`
 - **Space:** unit `8`, section `112px`, container `1180px`

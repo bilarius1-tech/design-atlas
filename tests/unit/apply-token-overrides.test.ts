@@ -15,7 +15,7 @@ const base: StyleTokens = {
     text: "#171717",
     muted: "#6B6B6B",
     primary: "#171717",
-    accent: "#E30613",
+    accent: "#D10512",
     border: "#D8D5CD",
   },
   typography: {

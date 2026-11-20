@@ -1,8 +1,24 @@
 # Design Atlas MCP
 
-Тонкий stdio MCP-сервер над публичным JSON API `/api/v1`. Своих данных нет: все инструменты делают GET.
+Основной способ подключения — удалённый MCP по Streamable HTTP, без клонирования этого пакета:
 
-Сервис бесплатный, ключ не нужен. База API по умолчанию — **https://design.vaybik.ru**. При необходимости её можно переопределить переменной `DESIGN_ATLAS_API_BASE`.
+```json
+{
+  "mcpServers": {
+    "design-atlas": {
+      "url": "https://design.vaybik.ru/mcp"
+    }
+  }
+}
+```
+
+```bash
+claude mcp add --transport http design-atlas https://design.vaybik.ru/mcp
+```
+
+На сайте: https://design.vaybik.ru/#mcp (кнопка «Добавить в Cursor»). Те же инструменты, что и у этого stdio-сервера, включая `get_design_spec`. Ключ не нужен.
+
+Ниже — запасной локальный stdio-сервер над публичным JSON API `/api/v1`. Своих данных нет: все инструменты делают GET. База API по умолчанию — **https://design.vaybik.ru**. При необходимости её можно переопределить переменной `DESIGN_ATLAS_API_BASE`.
 
 ## Инструменты
 
@@ -30,8 +46,6 @@ pnpm mcp
 
 По умолчанию запросы идут на `https://design.vaybik.ru`.
 
-## Cursor
+## Локальный Cursor (stdio)
 
-Скопируйте [mcp.json.example](./mcp.json.example) в `.cursor/mcp.json` проекта или в пользовательский MCP-конфиг. Секретов в примере нет.
-
-Адрес API уже указан в примере: `https://design.vaybik.ru`.
+Нужен только если удалённый `https://design.vaybik.ru/mcp` по какой-то причине недоступен. Скопируйте [mcp.json.example](./mcp.json.example) в `.cursor/mcp.json` после `pnpm install` в клоне. Секретов в примере нет.

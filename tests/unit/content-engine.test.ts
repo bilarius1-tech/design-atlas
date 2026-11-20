@@ -117,7 +117,7 @@ describe("content registry against repo fixtures", () => {
   it("loads swiss-international reference bundle", () => {
     const bundle = loadStyleBundle("swiss-international");
     expect(bundle.style.status).toBe("published");
-    expect(bundle.tokens.colors.accent).toBe("#E30613");
+    expect(bundle.tokens.colors.accent).toBe("#D10512");
     expect(bundle.typography?.roles.h1.size).toBe("44px");
   });
 

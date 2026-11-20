@@ -63,28 +63,31 @@ design-atlas/
 Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md). Прод на https://design.vaybik.ru. Дальше: доводка оболочки дизайн-системы и темы `vaybik` для агентов студии.
 
 
-## Подключить MCP в Cursor
+## Подключить MCP
 
-Один самодостаточный инструмент — `get_design_spec` (стиль → полный текст спецификации + JSON токенов).
+Удалённый сервер (предпочтительный способ, репозиторий клонировать не нужно): `https://design.vaybik.ru/mcp`. Ключ не нужен, доступ только на чтение. На сайте есть кнопка «Добавить в Cursor»: https://design.vaybik.ru/#mcp
 
-1. Нужны Node.js 22+ и pnpm. Склонируйте этот репозиторий и выполните `pnpm install`.
-2. Скопируйте конфиг в `.cursor/mcp.json` проекта (или в пользовательский MCP-конфиг Cursor):
+Конфиг Cursor (одна строка / этот JSON):
 
 ```json
 {
   "mcpServers": {
     "design-atlas": {
-      "command": "pnpm",
-      "args": ["exec", "tsx", "packages/mcp/src/index.ts"],
-      "env": {
-        "DESIGN_ATLAS_API_BASE": "https://design.vaybik.ru"
-      }
+      "url": "https://design.vaybik.ru/mcp"
     }
   }
 }
 ```
 
-Либо запуск из корня репозитория: `pnpm mcp`. Секреты не нужны: API только для чтения и бесплатное. Подробности — [packages/mcp/README.md](packages/mcp/README.md).
+Claude Code:
+
+```bash
+claude mcp add --transport http design-atlas https://design.vaybik.ru/mcp
+```
+
+Главный инструмент — `get_design_spec` (стиль → полный текст спецификации + JSON токенов).
+
+Запасной локальный запуск по stdio (нужен клон репозитория): `pnpm mcp`, пример — [packages/mcp/mcp.json.example](packages/mcp/mcp.json.example). Подробности — [packages/mcp/README.md](packages/mcp/README.md).
 
 ## Лицензия
 

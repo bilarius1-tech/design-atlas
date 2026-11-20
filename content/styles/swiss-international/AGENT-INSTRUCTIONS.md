@@ -19,7 +19,7 @@ Build UI that a reviewer can recognize as Swiss International Style **and** that
 1. **Tokens first.** No parallel palette in CSS modules.
 2. **Radius 0** for rectangles; circles may be fully round.
 3. **Shadow none** by default.
-4. **Accent sparingly** (`#E30613`) — CTA/error/signal, not washes.
+4. **Accent sparingly** (`#D10512`) — CTA/error/signal, not washes.
 5. **Flush-left** typography; modular grid; avoid centered triple-card heroes.
 6. **Accessible** focus states and AA contrast for text pairs.
 7. **No fake interactivity.**

@@ -12,7 +12,7 @@
 
 ### Changed
 
-- Token accent → `#E30613`; spacing unit → `8`; display → `80px`
+- Token accent → `#D10512`; spacing unit → `8`; display → `80px`
 - Philosophy and metadata expanded with verifiable sources
 - Demo landing copy clarified as digital interpretation (not museum facsimile)
 - Acceptance gate: responsive overflow fixes (shell nav, playground wrap/clip, display clamp)

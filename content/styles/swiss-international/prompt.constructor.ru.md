@@ -10,7 +10,7 @@
 ## Токены (обязательны)
 
 - Фон `#F2F0EA`, поверхность `#FFFFFF`, текст `#111111`, приглушённый `#5C5C5C`
-- Primary `#111111`, accent `#E30613`, border `#C9C4BA`
+- Primary `#111111`, accent `#D10512`, border `#C9C4BA`
 - Радиус `0px`, толщина линии `1px`, тень `none`
 - Шрифт заголовков: `Helvetica Neue, Helvetica, Arial, sans-serif`
 - Шрифт текста: `Helvetica Neue, Helvetica, Arial, sans-serif`

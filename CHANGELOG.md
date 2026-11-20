@@ -7,6 +7,7 @@
 
 ### Added
 
+- Remote Streamable HTTP MCP at `https://design.vaybik.ru/mcp` (stateless, read-only, no key). Same tools as `packages/mcp`, including `get_design_spec`. Homepage block «Подключить MCP» with a Cursor install deeplink and a Claude Code one-liner.
 - Self-contained design spec: Studio copy, ZIP (`DESIGN-SPEC.ru.md` / `.en.md`, same text as the prompt files), `GET /api/v1/styles/:id/design-spec`, and MCP tool `get_design_spec` share one generator. The text tells the agent to apply the system to the current project and create local token files; no extra DESIGN.md / pack / site reading is required.
 - Token alignment check (`pnpm content:align`, also part of `pnpm content:validate`) so typography sizes in markdown stay in sync with `tokens.json`.
 - Open Graph image `/og.png`; Yandex rule in `robots.txt`; optional `NEXT_PUBLIC_YANDEX_VERIFICATION`.
@@ -16,7 +17,9 @@
 
 - Studio handoff prompts now include full tokens, typography, components, do/don't, and a ban on Google Fonts / external CDNs.
 - Nav labels: «Дизайн-система», «Песочница», «Примеры». Removed leftover «PHASE 4/5» eyebrow text.
-- README, `llms.txt`, MCP docs, and API docs point only at https://design.vaybik.ru and document MCP setup.
+- README, `llms.txt`, MCP docs, and API docs point only at https://design.vaybik.ru and document the remote MCP URL as the default setup.
+- Design-system gallery eyebrow: «Интерфейс сервиса» instead of «App Shell».
+- Swiss International accent `#E30613` → `#D10512` so accent-on-paper contrast meets WCAG AA (4.9:1) without leaving the poster-red family.
 
 - Self-host on the Vaybik VPS at https://design.vaybik.ru: production Dockerfile (Next standalone), Compose with Traefik labels, `scripts/deploy.sh` / `make deploy`. See [docs/DEPLOY.md](docs/DEPLOY.md).
 

@@ -33,7 +33,7 @@ describe("api v1 service", () => {
     const style = getStyle("swiss-international");
     expect(style.kind).toBe("style");
     const tokens = getStyleTokens("swiss-international");
-    expect(tokens.data.colors.accent).toBe("#E30613");
+    expect(tokens.data.colors.accent).toBe("#D10512");
     const guides = getStyleGuidelines("swiss-international");
     expect(guides.data["DESIGN.md"]?.length).toBeGreaterThan(20);
     expect(guides.data["prompt.ru.md"]?.length).toBeGreaterThan(20);

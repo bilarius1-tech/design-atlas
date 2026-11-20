@@ -30,3 +30,9 @@ Canonical host: https://design.vaybik.ru.
 Successful bodies include `schemaVersion` (`1.0.0`) and a `kind` field so shell tokens, catalog style tokens, and the `vaybik` theme are not mixed up. Errors: `{ "error": "not_found" \| "invalid_id" \| "invalid_query" \| "internal_error", "message": "..." }`.
 
 Unpublished styles are hidden (404). Path traversal in ids is rejected (400).
+
+## Remote MCP
+
+Streamable HTTP endpoint: `https://design.vaybik.ru/mcp` (POST; GET/DELETE return 405 — the server is stateless). Same tools as `packages/mcp`, including `get_design_spec`. Read-only, no API key. This is not a JSON REST route; use an MCP client (Cursor, Claude Code, the official SDK).
+
+Cursor config: `{ "mcpServers": { "design-atlas": { "url": "https://design.vaybik.ru/mcp" } } }`.

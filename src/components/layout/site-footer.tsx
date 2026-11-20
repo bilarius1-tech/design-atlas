@@ -22,6 +22,9 @@ export function SiteFooter() {
           <Link href="/cards" className="text-muted hover:text-foreground">
             Карточки
           </Link>
+          <Link href="/#mcp" className="text-muted hover:text-foreground">
+            MCP
+          </Link>
           <Link href="/llms.txt" className="text-muted hover:text-foreground">
             llms.txt
           </Link>

@@ -23,9 +23,11 @@
     "mcp": "tsx packages/mcp/src/index.ts"
   },
   "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
     "clsx": "^2.1.1",
     "fflate": "^0.8.3",
     "lucide-react": "^1.70.0",
+    "mcp-handler": "^2.4.0",
     "next": "16.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0",

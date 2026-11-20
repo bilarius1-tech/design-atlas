@@ -13,7 +13,7 @@
 Бери значения только из `tokens.json` / `TOKENS.md`:
 
 - background `#F2F0EA`, surface `#FFFFFF`, text `#111111`, muted `#5C5C5C`
-- primary `#111111`, accent `#E30613`, border `#C9C4BA`
+- primary `#111111`, accent `#D10512`, border `#C9C4BA`
 - radius `0px`, borderWidth `1px`, shadow `none`
 - spacing unit `8`, section `112px`, container `1180px`
 - type scale: xs 12 / sm 14 / base 16 / lg 20 / xl 28 / 2xl 44 / display 57

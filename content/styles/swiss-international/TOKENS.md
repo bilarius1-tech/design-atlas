@@ -15,7 +15,7 @@ Generated from `tokens.json` (SSOT). Do not edit hex values here without updatin
 | colors.text | `#111111` |
 | colors.muted | `#5C5C5C` |
 | colors.primary | `#111111` |
-| colors.accent | `#E30613` |
+| colors.accent | `#D10512` |
 | colors.border | `#C9C4BA` |
 
 ## Typography
