@@ -1,6 +1,6 @@
 import { Container, Section, Stack } from "@/components/layout";
 import { buttonClassName } from "@/components/ui";
-import { absoluteUrl } from "@/lib/site-url";
+import { absoluteUrl, ogImage } from "@/lib/site-url";
 import { ArrowRight, Images, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -20,12 +20,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
     siteName: "Дизайн Атлас",
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Анти ИИ-слоп · Дизайн Атлас",
     description:
       "Готовые дизайн-системы и стили карточек. Превью → промпт → сборка снаружи.",
+    images: [ogImage.url],
   },
 };
 

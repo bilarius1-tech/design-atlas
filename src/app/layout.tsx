@@ -1,5 +1,5 @@
 import { SiteFooter, SiteHeader, SkipLink } from "@/components/layout";
-import { getSiteUrl } from "@/lib/site-url";
+import { getSiteUrl, ogImage } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { Geist_Mono, Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
@@ -54,21 +54,14 @@ export const metadata: Metadata = {
     title: "Анти ИИ-слоп · Дизайн Атлас",
     description:
       "Готовые дизайн-системы и стили карточек. Смотрите превью, забирайте промпт — собирайте снаружи.",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Дизайн Атлас — готовые визуальные системы, design.vaybik.ru",
-      },
-    ],
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Анти ИИ-слоп · Дизайн Атлас",
     description:
       "Готовые дизайн-системы и стили карточек. Превью → промпт → сборка снаружи.",
-    images: ["/og.png"],
+    images: [ogImage.url],
   },
   verification: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION
     ? { yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION }

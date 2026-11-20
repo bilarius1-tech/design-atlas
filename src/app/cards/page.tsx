@@ -1,6 +1,6 @@
 import { loadActiveCardStyles } from "@/core/content/load-card-styles";
 import { CardsLibrary } from "@/features/cards/cards-library";
-import { absoluteUrl } from "@/lib/site-url";
+import { absoluteUrl, ogImage } from "@/lib/site-url";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: absoluteUrl("/cards"),
     type: "website",
     locale: "ru_RU",
+    images: [ogImage],
   },
 };
 

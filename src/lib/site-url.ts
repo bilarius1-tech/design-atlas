@@ -17,3 +17,11 @@ export function absoluteUrl(pathname = "/"): string {
   const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
   return `${getSiteUrl()}${path === "/" ? "" : path}`;
 }
+
+/** Default share image (1200×630). Pages that override `openGraph` must include this, or Next.js will drop the layout image. */
+export const ogImage = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: "Дизайн Атлас — готовые визуальные системы, design.vaybik.ru",
+} as const;
