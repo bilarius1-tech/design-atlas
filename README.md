@@ -4,8 +4,8 @@
 
 Сервис **бесплатный** и публичный: без регистрации и без оплаты.
 
-- Сейчас: https://design-atlas-wine.vercel.app
-- Планируемый адрес: https://design.vaybik.ru (отдельное приложение, не внутри vaybik-hub). Чеклист переноса домена: [docs/DOMAIN_CUTOVER.md](docs/DOMAIN_CUTOVER.md) и [docs/PHASE5_CUTOVER.md](docs/PHASE5_CUTOVER.md).
+- Прод: https://design.vaybik.ru (отдельное приложение на VPS Вайбика, не внутри vaybik-hub). Деплой: [docs/DEPLOY.md](docs/DEPLOY.md).
+- Запасной адрес: https://design-atlas-wine.vercel.app
 
 Документация для людей и AI-агентов: [docs/](docs/). Точка входа для агентов — [AGENTS.md](AGENTS.md). Публичный JSON API (только чтение): [docs/API.md](docs/API.md).
 
@@ -61,7 +61,7 @@ design-atlas/
 
 ## Фазы
 
-Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md). Дальше: доводка оболочки дизайн-системы, тема `vaybik` для агентов студии, публичный JSON API и MCP, затем домен `design.vaybik.ru`.
+Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md). Прод на https://design.vaybik.ru. Дальше: доводка оболочки дизайн-системы и темы `vaybik` для агентов студии.
 
 ## Лицензия
 

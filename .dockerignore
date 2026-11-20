@@ -1,0 +1,18 @@
+# Keep content/, design/, and public/ in the build context —
+# the runtime image reads content and design from disk.
+.git
+.github
+.agents
+.cursor
+.vercel
+.node_modules
+node_modules
+.next
+tmp
+coverage
+*.tsbuildinfo
+.DS_Store
+*.pem
+.env
+.env.*
+!.env.example

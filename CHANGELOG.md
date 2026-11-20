@@ -7,12 +7,14 @@
 
 ### Added
 
+- Self-host on the Vaybik VPS at https://design.vaybik.ru: production Dockerfile (Next standalone), Compose with Traefik labels, `scripts/deploy.sh` / `make deploy`. See [docs/DEPLOY.md](docs/DEPLOY.md).
+
 - Stdio MCP server `packages/mcp` over `/api/v1` (default base `https://design.vaybik.ru`, override `DESIGN_ATLAS_API_BASE`). Example Cursor config: `packages/mcp/mcp.json.example` and `.cursor/mcp.json.example`.
 - Public read-only JSON API `/api/v1` (styles, shell tokens, theme `vaybik`, components, templates, search). ZIP `/api/export` is unchanged.
 - Project theme `vaybik` (`design/themes/vaybik/`) from the live vaybik.ru homepage CSS (20 Nov 2026 MSK), with source notes and a swatch on `/design-system`. Not applied to the Atlas shell.
 - Shell design system: icon size tokens; full states for existing primitives; Link, Checkbox, Radio, Switch, Select, Tabs, Tooltip; component specs and `design/components/catalog.json`; expanded `/design-system` gallery.
 - Docs: сервис бесплатный и публичный; целевой домен `design.vaybik.ru`; чеклист фазы 5 в `docs/PHASE5_CUTOVER.md`. README и витрина `/design-system` больше не утверждают, что каталог и публичные страницы «ещё не сделаны».
-- **Production** on Vercel: https://design-atlas-wine.vercel.app (team `bill`); domain cutover guide [docs/DOMAIN_CUTOVER.md](docs/DOMAIN_CUTOVER.md).
+- Spare Vercel URL: https://design-atlas-wine.vercel.app (team `bill`). Current production is the VPS; see [docs/DEPLOY.md](docs/DEPLOY.md).
 - Brand home: H1 **Анти ИИ-слоп**, product name **Дизайн Атлас**; dual CTAs Studio (primary) + Cards.
 - Cards surface `/cards` + `content/card-styles/` (8 styles from stil) with live preview and RU/EN image-gen prompts ([ADR-0012](docs/decisions/ADR-0012-cards-surface.md)).
 - SEO / AI discovery: `sitemap.xml`, `robots.txt`, root `metadataBase` + OG/Twitter, JSON-LD on `/` and `/cards`, `public/llms.txt` ([docs/SEO.md](docs/SEO.md)).
@@ -23,6 +25,8 @@
 - Published style pack **`retro-terminal`** (CRT black, phosphor mono, amber CTAs, scanlines; dizain-prompty adapted).
 
 ### Changed
+
+- Production host is the VPS behind Traefik; Vercel (`design-atlas-wine.vercel.app`) is kept only as a spare.
 
 - Studio preview buttons denser: `min-height` `unit × 7` (56px at unit 8) instead of `× 10`.
 - `pnpm typecheck` runs `next typegen` first so CI gets `LayoutProps` / route types without a prior build.

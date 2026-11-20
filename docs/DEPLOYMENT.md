@@ -2,79 +2,63 @@
 
 ## Целевые платформы
 
-- **Vercel** — основной путь для Next.js (zero-config App Router). **In use.**
-- Альтернатива: Node hosting (`pnpm build && pnpm start`) на VPS с reverse proxy.
+- **Основной VPS Вайбика** (`199.189.250.208`) за Traefik — текущий прод. Команды и откат: [DEPLOY.md](DEPLOY.md).
+- **Vercel** — запасной адрес, проект не удаляем.
 - **GitHub Pages** — не подходит (нужен Node для Studio / `/api/export`).
 
 ## Current production
 
-| Item          | Value                                                                                                              |
-| ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Team          | `bill` (`bill-2f6c`)                                                                                               |
-| Project       | `design-atlas`                                                                                                     |
-| URL           | https://design-atlas-wine.vercel.app                                                                               |
-| Repo          | https://github.com/bilarius1-tech/design-atlas                                                                     |
-| Custom domain | pending `design.vaybik.ru` — see [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md) and [PHASE5_CUTOVER.md](PHASE5_CUTOVER.md) |
-| Access        | Public and free: no sign-up, no payments                                                                           |
-
-CLI (local, authenticated as `bilarius1-tech`):
-
-```bash
-vercel whoami
-vercel link --yes --project design-atlas --scope bill-2f6c
-vercel deploy --prod --yes --scope bill-2f6c
-```
+| Item          | Value                                                                          |
+| ------------- | ------------------------------------------------------------------------------ |
+| Host          | FirstVDS VPS `199.189.250.208`, checkout `/opt/apps/design-atlas`              |
+| URL           | https://design.vaybik.ru                                                       |
+| Health        | https://design.vaybik.ru/api/v1/health                                         |
+| Repo          | https://github.com/bilarius1-tech/design-atlas                                 |
+| Deploy        | `./scripts/deploy.sh` or `make deploy` as user `deploy` — see [DEPLOY.md](DEPLOY.md) |
+| Access        | Public and free: no sign-up, no payments                                       |
+| Spare         | https://design-atlas-wine.vercel.app (Vercel team `bill` / `bill-2f6c`)        |
 
 ## Environments
 
 | Env        | Назначение                                        |
 | ---------- | ------------------------------------------------- |
-| Preview    | PR / preview URLs (SSO protection may apply)      |
-| Production | Current prod alias `design-atlas-wine.vercel.app` |
+| Local      | `pnpm dev` — `http://localhost:3000`              |
+| Production | `https://design.vaybik.ru` on the VPS             |
+| Spare      | Vercel alias `design-atlas-wine.vercel.app`       |
 
 ## Переменные окружения
 
-| Variable               | Required        | Описание                                                                                                                     |
-| ---------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `NODE_ENV`             | auto            | production                                                                                                                   |
-| `NEXT_PUBLIC_SITE_URL` | **yes on prod** | Canonical base (no trailing slash). Now: `https://design-atlas-wine.vercel.app`. After domain: set to `https://your-domain`. |
+| Variable               | Required        | Описание                                                                                          |
+| ---------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| `NODE_ENV`             | auto            | production                                                                                        |
+| `NEXT_PUBLIC_SITE_URL` | **yes on prod** | Canonical base (no trailing slash). Production: `https://design.vaybik.ru`. Inlined at image build. |
 
-Set via:
-
-```bash
-vercel env add NEXT_PUBLIC_SITE_URL production --scope bill-2f6c
-```
-
-Secrets not required until analytics/API.
+Secrets not required until analytics/API. Compose also uses `APP_NAME`, `APP_HOST`, `APP_PORT`, `COMPOSE_PROJECT_NAME` — see [DEPLOY.md](DEPLOY.md).
 
 ## Build
+
+Local:
 
 ```bash
 pnpm install --frozen-lockfile
 pnpm build
 ```
 
-- Node 22+ locally / CI; Vercel project may show a newer Node — keep `engines.node` in `package.json` aligned.
-- `packageManager: pnpm@10.23.0` — Corepack on CI.
+On the VPS the image is a multi-stage Dockerfile (`output: "standalone"`). Build one image at a time with `NODE_OPTIONS=--max-old-space-size=2048`. Node 22+, `packageManager: pnpm@10.23.0`.
 
 ## GitHub Actions
 
 - Workflow `ci.yml` — lint, typecheck, test, validate-content, build (см. [TESTING.md](TESTING.md)).
-- **Git → Vercel auto-deploy:** not connected yet. Connect in dashboard (Settings → Git) so `main` pushes deploy without CLI.
-
-## Deployment protection
-
-- Production public (SSO limited to **preview**).
-- Do not re-enable Vercel Authentication on production unless intentional.
+- A push to `main` does **not** auto-deploy to the VPS. After CI is green, run `./scripts/deploy.sh` on the server.
 
 ## Кэш
 
 - pnpm store cache на CI.
-- Next build cache (Vercel default).
+- Docker layer cache on the VPS for `deps` / `builder` stages.
 
 ## Rollback
 
-- Vercel: promote previous deployment in dashboard / CLI.
+- VPS: `make rollback` or the `docker tag design-atlas:prev-<sha> …` command printed by the deploy script. See [DEPLOY.md](DEPLOY.md).
 - Git: revert commit on `main`, redeploy.
 
 ## Post-deploy checks
@@ -82,6 +66,7 @@ pnpm build
 - [templates/RELEASE-CHECKLIST.md](templates/RELEASE-CHECKLIST.md)
 - HTTP 200: `/`, `/studio`, `/cards`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`
 - Brand: H1 «Анти ИИ-слоп», product «Дизайн Атлас»
+- Neighbours still up: vaybik.ru, chat.vaybik.ru, region.vaybik.ru
 - Security headers — по мере настройки ([SECURITY.md](SECURITY.md))
 
 ## Content deploy
@@ -90,4 +75,4 @@ pnpm build
 
 ## Domain
 
-When a custom domain is ready: follow [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md).
+Cutover and leftover Vercel notes: [DOMAIN_CUTOVER.md](DOMAIN_CUTOVER.md) and [PHASE5_CUTOVER.md](PHASE5_CUTOVER.md).
