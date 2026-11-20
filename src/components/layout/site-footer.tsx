@@ -6,7 +6,7 @@ import { Container } from "./container";
 
 export function SiteFooter() {
   const pathname = usePathname();
-  if (pathname.startsWith("/studio")) return null;
+  if (pathname.startsWith("/studio") || pathname.startsWith("/primer")) return null;
 
   return (
     <footer className="mt-auto border-t border-border bg-surface">
@@ -16,6 +16,9 @@ export function SiteFooter() {
           <p className="text-sm text-muted">Анти ИИ-слоп · системы для сайтов и карточек.</p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm">
+          <a href="https://vaybik.ru" className="text-muted hover:text-foreground">
+            Сервис студии Вайбик
+          </a>
           <Link href="/studio" className="text-muted hover:text-foreground">
             Студия
           </Link>

@@ -14,7 +14,8 @@ Repository: https://github.com/bilarius1-tech/design-atlas
 - Home: / — brand + entry to Studio (primary) and Cards (secondary)
 - Studio: /studio — Template × Style preview → one self-contained design spec (RU+EN, agent or constructor) → build elsewhere
 - Cards: /cards — marketplace product-card visual styles → image-gen prompts (RU+EN) → generate elsewhere
-- Example landings: /demo and /demo/{styleId}
+- Example site (share with clients): /primer?style={id}&niche=dental|construction|furniture
+- Legacy demo index: /demo (links to /primer); /demo/{styleId} redirects to /primer
 - Style playground: /playground and /playground/{styleId}
 - App chrome / design-system: /design-system
 - Connect MCP (human docs): /#mcp

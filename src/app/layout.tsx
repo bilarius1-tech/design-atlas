@@ -1,4 +1,5 @@
 import { SiteFooter, SiteHeader, SkipLink } from "@/components/layout";
+import { VaybikChatWidget } from "@/components/vaybik-chat/widget";
 import { getSiteUrl, ogImage } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { Geist_Mono, Source_Sans_3, Source_Serif_4 } from "next/font/google";
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <VaybikChatWidget />
       </body>
     </html>
   );

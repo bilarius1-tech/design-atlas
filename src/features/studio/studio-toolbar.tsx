@@ -119,11 +119,11 @@ export function StudioToolbar({
             <Hint label="Промпт только про визуальную систему (токены, атмосфера). Структуру страницы агент уже берёт из вашего чата." />
             <a
               className={buttonClassName({ variant: "secondary", size: "sm" })}
-              href={`/demo/${styleId}`}
+              href={`/primer?style=${styleId}&niche=dental`}
               target="_blank"
               rel="noreferrer"
             >
-              Открыть
+              Пример сайта
               <ExternalLink className="h-3.5 w-3.5" aria-hidden />
             </a>
           </div>

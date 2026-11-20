@@ -114,7 +114,7 @@ export function ExportPanel({
 
       <p className="text-sm text-muted">
         Также:{" "}
-        <Link href={`/demo/${styleId}`} className="underline">
+        <Link href={`/primer?style=${styleId}&niche=dental`} className="underline">
           Demo landing
         </Link>
         .

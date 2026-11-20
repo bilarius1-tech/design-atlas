@@ -7,6 +7,8 @@
 
 ### Added
 
+- Public example site `/primer?style=&niche=` — one full landing restyled by Atlas tokens, with dental / construction / furniture copy and local images. Style cards and the homepage link here as «Посмотреть на примере сайта».
+- Vaybik chat widget (`chat.vaybik.ru/widget.js`) on all pages, same public snippet as vaybik.ru. Header and footer link to https://vaybik.ru.
 - Remote Streamable HTTP MCP at `https://design.vaybik.ru/mcp` (stateless, read-only, no key). Same tools as `packages/mcp`, including `get_design_spec`. Homepage block «Подключить MCP» with a Cursor install deeplink and a Claude Code one-liner.
 - Self-contained design spec: Studio copy, ZIP (`DESIGN-SPEC.ru.md` / `.en.md`, same text as the prompt files), `GET /api/v1/styles/:id/design-spec`, and MCP tool `get_design_spec` share one generator. The text tells the agent to apply the system to the current project and create local token files; no extra DESIGN.md / pack / site reading is required.
 - Token alignment check (`pnpm content:align`, also part of `pnpm content:validate`) so typography sizes in markdown stay in sync with `tokens.json`.

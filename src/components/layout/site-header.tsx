@@ -40,16 +40,17 @@ const secondaryNav = [
     hint: "Песочница: цвета, кнопки и состояния выбранного стиля.",
   },
   {
-    href: "/demo",
-    match: "/demo",
+    href: "/primer",
+    match: "/primer",
     label: "Примеры",
     icon: Boxes,
-    hint: "Примеры лендингов в каждом стиле.",
+    hint: "Полноценный пример сайта: переключайте стиль и сферу.",
   },
 ] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
+  if (pathname.startsWith("/primer")) return null;
 
   return (
     <header className="sticky top-0 z-[var(--da-z-header)] border-b border-border bg-background/95 backdrop-blur-sm">
@@ -85,6 +86,15 @@ export function SiteHeader() {
               );
             })}
             <li aria-hidden className="mx-1 hidden h-4 w-px bg-border sm:block" />
+            <li>
+              <a
+                href="https://vaybik.ru"
+                className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-xs text-muted no-underline transition-colors hover:bg-surface-muted hover:text-foreground sm:px-2.5 sm:py-1.5"
+              >
+                <span className="hidden lg:inline">Сервис студии Вайбик</span>
+                <span className="lg:hidden">Вайбик</span>
+              </a>
+            </li>
             {secondaryNav.map((item) => {
               const Icon = item.icon;
               const active = pathname.startsWith(item.match);

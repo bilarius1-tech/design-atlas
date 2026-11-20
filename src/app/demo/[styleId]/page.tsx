@@ -1,10 +1,7 @@
-import { Container } from "@/components/layout";
-import { Badge, buttonClassName } from "@/components/ui";
 import { listStyleIdsFromDisk, loadStyleBundle } from "@/core/content";
-import { DemoLandingEngine, resolveComposition } from "@/features/demo-landing";
+import { primerHref } from "@/features/primer";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 type DemoPageProps = {
   params: Promise<{ styleId: string }>;
@@ -32,7 +29,7 @@ export async function generateMetadata({ params }: DemoPageProps): Promise<Metad
       description: bundle.style.shortDescription.ru,
     };
   } catch {
-    return { title: "Пример лендинга" };
+    return { title: "Пример сайта" };
   }
 }
 
@@ -41,52 +38,5 @@ export default async function StyleDemoPage({ params }: DemoPageProps) {
   if (!listStyleIdsFromDisk().includes(styleId)) {
     notFound();
   }
-
-  const bundle = loadStyleBundle(styleId);
-  if (!bundle.demo) {
-    notFound();
-  }
-
-  const composition = resolveComposition(bundle.demo.compositionId);
-
-  return (
-    <main id="main-content" className="pb-16">
-      <Container className="space-y-6 py-10">
-        <div className="flex flex-col gap-4 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between">
-          <div className="space-y-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-                Пример лендинга
-              </p>
-              <Badge>{bundle.style.status}</Badge>
-              <Badge tone="accent">{composition.id}</Badge>
-            </div>
-            <h1 className="max-w-full break-words font-serif text-4xl tracking-tight">
-              {bundle.style.title.ru}
-            </h1>
-            <p className="max-w-2xl text-muted">{composition.description}</p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <Link
-              href={`/playground/${styleId}`}
-              className={buttonClassName({ variant: "secondary", size: "sm" })}
-            >
-              Песочница
-            </Link>
-            <Link href="/demo" className={buttonClassName({ variant: "ghost", size: "sm" })}>
-              Все примеры
-            </Link>
-          </div>
-        </div>
-
-        <DemoLandingEngine
-          styleId={bundle.id}
-          styleTitle={bundle.style.title.ru}
-          tokens={bundle.tokens}
-          demo={bundle.demo}
-          locale="ru"
-        />
-      </Container>
-    </main>
-  );
+  redirect(primerHref(styleId, "dental"));
 }

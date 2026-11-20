@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Примеры лендингов",
-  description: "Примеры лендингов в каждом стиле Дизайн Атласа.",
+  description: "Полноценный пример сайта: один лендинг, все стили и три сферы.",
 };
 
 export default function DemoIndexPage() {
@@ -33,7 +33,7 @@ export default function DemoIndexPage() {
       <Section
         eyebrow="Примеры"
         title="Лендинги в каждом стиле"
-        description="Посмотрите, как один и тот же тип страницы выглядит в разных дизайн-системах."
+        description="Откройте общий пример сайта и переключайте стиль. Тексты можно сменить на стоматологию, строительство или мебель."
       >
         <div className="grid gap-4 md:grid-cols-2">
           {styles.map((style) => (
@@ -44,8 +44,8 @@ export default function DemoIndexPage() {
               </div>
               <p className="text-sm text-muted">{style.shortDescription.ru}</p>
               <p className="font-mono text-xs text-muted">{style.composition.id}</p>
-              <Link href={`/demo/${style.id}`} className={buttonClassName({ size: "sm" })}>
-                Открыть пример
+              <Link href={`/primer?style=${style.id}&niche=dental`} className={buttonClassName({ size: "sm" })}>
+                Посмотреть на примере сайта
               </Link>
             </Card>
           ))}

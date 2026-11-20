@@ -119,6 +119,9 @@ export default function Home() {
               <Link href="/cards" className={buttonClassName({ variant: "secondary" })}>
                 Стили карточек
               </Link>
+              <Link href="/primer?style=swiss-international&niche=dental" className={buttonClassName({ variant: "secondary" })}>
+                Посмотреть на примере сайта
+              </Link>
             </Stack>
           </div>
           <div className="space-y-4 border-l border-border pl-6">
@@ -157,6 +160,12 @@ export default function Home() {
               className={buttonClassName({ size: "lg" })}
             >
               Перейти в студию
+            </Link>
+            <Link
+              href="/primer?style=swiss-international&niche=dental"
+              className={buttonClassName({ variant: "secondary", size: "lg" })}
+            >
+              Посмотреть на примере сайта
             </Link>
           </div>
           <div className="space-y-4 border-t border-border pt-6">
