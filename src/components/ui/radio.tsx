@@ -12,7 +12,6 @@ export function Radio({ className, label, invalid = false, id, disabled, ...prop
     <input
       id={id}
       type="radio"
-      aria-invalid={invalid || undefined}
       disabled={disabled}
       className={cn(
         "border-border accent-accent size-4 shrink-0 border",

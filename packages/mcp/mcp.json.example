@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "design-atlas": {
+      "command": "pnpm",
+      "args": ["exec", "tsx", "packages/mcp/src/index.ts"],
+      "env": {
+        "DESIGN_ATLAS_API_BASE": "https://design.vaybik.ru"
+      }
+    }
+  }
+}

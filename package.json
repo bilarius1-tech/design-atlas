@@ -18,7 +18,8 @@
     "test:coverage": "vitest run --coverage",
     "content:validate": "tsx scripts/validate-content.ts",
     "export:pack": "tsx scripts/export-pack.ts",
-    "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm content:validate && pnpm build"
+    "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm content:validate && pnpm build",
+    "mcp": "tsx packages/mcp/src/index.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -7,6 +7,7 @@
 
 ### Added
 
+- Stdio MCP server `packages/mcp` over `/api/v1` (default base `https://design.vaybik.ru`, override `DESIGN_ATLAS_API_BASE`). Example Cursor config: `packages/mcp/mcp.json.example` and `.cursor/mcp.json.example`.
 - Public read-only JSON API `/api/v1` (styles, shell tokens, theme `vaybik`, components, templates, search). ZIP `/api/export` is unchanged.
 - Project theme `vaybik` (`design/themes/vaybik/`) from the live vaybik.ru homepage CSS (20 Nov 2026 MSK), with source notes and a swatch on `/design-system`. Not applied to the Atlas shell.
 - Shell design system: icon size tokens; full states for existing primitives; Link, Checkbox, Radio, Switch, Select, Tabs, Tooltip; component specs and `design/components/catalog.json`; expanded `/design-system` gallery.

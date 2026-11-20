@@ -1,0 +1,16 @@
+{
+  "name": "@design-atlas/mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stdio MCP server for the Design Atlas public JSON API",
+  "bin": {
+    "design-atlas-mcp": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
