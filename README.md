@@ -22,17 +22,18 @@ pnpm install
 
 ## Скрипты
 
-| Команда                             | Назначение                                         |
-| ----------------------------------- | -------------------------------------------------- |
-| `pnpm dev`                          | Локальный dev-сервер Next.js (App Router)          |
-| `pnpm build`                        | Production-сборка                                  |
-| `pnpm start`                        | Запуск собранного приложения                       |
-| `pnpm lint`                         | ESLint                                             |
-| `pnpm typecheck`                    | TypeScript (`tsc --noEmit`)                        |
-| `pnpm test`                         | Unit-тесты (Vitest)                                |
-| `pnpm content:validate`             | Валидация `content/` по Zod-контрактам             |
-| `pnpm format` / `pnpm format:check` | Prettier                                           |
-| `pnpm ci`                           | lint + typecheck + test + content:validate + build |
+| Команда                             | Назначение                                                                 |
+| ----------------------------------- | -------------------------------------------------------------------------- |
+| `pnpm dev`                          | Локальный dev-сервер Next.js (App Router)                                  |
+| `pnpm build`                        | Production-сборка                                                          |
+| `pnpm start`                        | Запуск собранного приложения                                               |
+| `pnpm lint`                         | ESLint                                                                     |
+| `pnpm typecheck`                    | TypeScript (`tsc --noEmit`)                                                |
+| `pnpm test`                         | Unit-тесты (Vitest)                                                        |
+| `pnpm content:validate`             | Валидация `content/` по Zod-контрактам                                     |
+| `pnpm format` / `pnpm format:check` | Prettier                                                                   |
+| `pnpm ci`                           | lint + typecheck + test + content:validate + build                         |
+| `pnpm mcp`                          | Stdio MCP-сервер поверх `/api/v1` ([packages/mcp](packages/mcp/README.md)) |
 
 Спецификация: [docs/specification/](docs/specification/). Тесты: [docs/TESTING.md](docs/TESTING.md).
 
