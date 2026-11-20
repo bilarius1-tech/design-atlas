@@ -10,6 +10,8 @@ import {
   STYLE_MARKDOWN_FILES,
 } from "@/core/content";
 import type { LoadedStyleBundle } from "@/core/content";
+import { composeDesignSpec, type DesignSpecLang, type DesignSpecSurface } from "@/features/design-spec";
+import { loadDesignSpecSource } from "@/features/design-spec/load-source";
 
 export const API_SCHEMA_VERSION = "1.0.0";
 
@@ -119,6 +121,51 @@ export function getStyleGuidelines(id: string) {
     kind: "style-guidelines" as const,
     id: bundle.id,
     data: documents,
+  };
+}
+
+
+function parseSpecLang(value: string | null | undefined): DesignSpecLang {
+  if (value == null || value === "" || value === "ru") return "ru";
+  if (value === "en") return "en";
+  throw new ApiError("invalid_query", "lang must be ru or en", 400);
+}
+
+function parseSpecSurface(value: string | null | undefined): DesignSpecSurface {
+  if (value == null || value === "" || value === "agent") return "agent";
+  if (value === "constructor") return "constructor";
+  throw new ApiError("invalid_query", "surface must be agent or constructor", 400);
+}
+
+export function getDesignSpec(
+  id: string,
+  query: {
+    lang?: string | null;
+    surface?: string | null;
+    productName?: string | null;
+    pageBrief?: string | null;
+  } = {},
+) {
+  const bundle = publishedStyle(id);
+  const source = loadDesignSpecSource(bundle.id);
+  const lang = parseSpecLang(query.lang);
+  const surface = parseSpecSurface(query.surface);
+  const composed = composeDesignSpec({
+    source,
+    lang,
+    surface,
+    productName: query.productName ?? undefined,
+    pageBrief: query.pageBrief ?? undefined,
+  });
+  return {
+    schemaVersion: API_SCHEMA_VERSION,
+    kind: "design-spec" as const,
+    id: bundle.id,
+    lang,
+    surface,
+    markdown: composed.markdown,
+    tokens: composed.tokensJson,
+    typography: composed.typography ?? null,
   };
 }
 

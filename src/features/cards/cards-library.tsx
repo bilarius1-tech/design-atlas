@@ -208,7 +208,7 @@ export function CardsLibrary({ styles }: CardsLibraryProps) {
                     aria-label={`Открыть стиль ${item.name}, пример ${item.index + 1}`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={item.src} alt="" loading="lazy" />
+                    <img src={item.src} alt={`${item.name}: пример карточки ${item.index + 1}`} loading="lazy" />
                     <span>{item.name}</span>
                     <b>↗</b>
                   </button>
@@ -289,7 +289,7 @@ export function CardsLibrary({ styles }: CardsLibraryProps) {
                         aria-label={`Открыть результат ${i + 1}`}
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={src} alt="" loading="lazy" />
+                        <img src={src} alt={`${selected.title.ru}: результат генерации ${i + 1}`} loading="lazy" />
                       </a>
                     ))}
                   </div>

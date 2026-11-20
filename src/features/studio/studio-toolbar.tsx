@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import type { DesignSpecSource } from "@/features/design-spec";
 import type { TemplateSectionOutline } from "./compose-prompt";
 import { PromptDialog } from "./prompt-dialog";
 
@@ -22,10 +23,7 @@ export type StudioToolbarProps = {
   styleTitle: string;
   styleDescription: string;
   styleIds: string[];
-  promptRu: string;
-  promptEn: string;
-  promptConstructorRu: string;
-  promptConstructorEn: string;
+  specSource: DesignSpecSource;
   systemOverridesNoteRu?: string;
   systemOverridesNoteEn?: string;
   modeLabel: "Light" | "Dark";
@@ -46,10 +44,7 @@ export function StudioToolbar({
   styleTitle,
   styleDescription,
   styleIds,
-  promptRu,
-  promptEn,
-  promptConstructorRu,
-  promptConstructorEn,
+  specSource,
   systemOverridesNoteRu = "",
   systemOverridesNoteEn = "",
   modeLabel,
@@ -143,10 +138,7 @@ export function StudioToolbar({
         templateId={templateId}
         templateTitle={templateTitle}
         templateSections={templateSections}
-        promptRu={promptRu}
-        promptEn={promptEn}
-        promptConstructorRu={promptConstructorRu}
-        promptConstructorEn={promptConstructorEn}
+        specSource={specSource}
         systemOverridesNoteRu={systemOverridesNoteRu}
         systemOverridesNoteEn={systemOverridesNoteEn}
       />

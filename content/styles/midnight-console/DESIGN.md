@@ -26,7 +26,7 @@ Source: `tokens.json` (also mirrored in `TOKENS.md`).
 - **Ink:** `#E8EEF5` text, `#8B98A8` muted
 - **Signal:** `#7DD3FC` primary, `#34D399` accent
 - **Line:** `#243041` border, `1px`, radius `6px`, deep shadow
-- **Type:** IBM Plex Sans + Mono; display `64px`; base `16px`
+- **Type:** IBM Plex Sans + Mono; display `57px`; base `16px`
 - **Space:** unit `8`, section `96px`, container `1120px`
 
 ## Typography roles

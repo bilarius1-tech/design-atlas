@@ -5,28 +5,13 @@ import {
   loadStyleBundle,
   templateToDemoDefinition,
 } from "@/core/content";
-import { styleFilePath } from "@/core/content/paths";
 import { StudioSidebar, StudioWorkspace } from "@/features/studio";
-import { existsSync, readFileSync } from "node:fs";
+import { loadDesignSpecSource } from "@/features/design-spec/load-source";
 import { notFound } from "next/navigation";
 
 type StudioViewProps = {
   searchParams: Promise<{ template?: string; style?: string }>;
 };
-
-type PromptFileName =
-  | "prompt.ru.md"
-  | "prompt.en.md"
-  | "prompt.constructor.ru.md"
-  | "prompt.constructor.en.md";
-
-function readPrompt(styleId: string, fileName: PromptFileName): string {
-  const full = styleFilePath(styleId, fileName);
-  if (!existsSync(full)) {
-    return `# Missing ${fileName}\n\nPrompt file not found for ${styleId}.`;
-  }
-  return readFileSync(full, "utf8");
-}
 
 function isDarkBackground(hex: string): boolean {
   const raw = hex.replace("#", "").trim();
@@ -60,10 +45,7 @@ export async function StudioView({ searchParams }: StudioViewProps) {
   const template = loadPageTemplate(templateId);
   const bundle = loadStyleBundle(styleId);
   const demo = templateToDemoDefinition(template, styleId);
-  const promptRu = readPrompt(styleId, "prompt.ru.md");
-  const promptEn = readPrompt(styleId, "prompt.en.md");
-  const promptConstructorRu = readPrompt(styleId, "prompt.constructor.ru.md");
-  const promptConstructorEn = readPrompt(styleId, "prompt.constructor.en.md");
+  const specSource = loadDesignSpecSource(styleId);
   const templateSections = template.sections.map((section) => ({
     id: section.id,
     title: section.headline?.ru ?? section.eyebrow?.ru ?? section.id,
@@ -130,10 +112,7 @@ export async function StudioView({ searchParams }: StudioViewProps) {
         styleDescription={bundle.style.shortDescription.ru}
         styleIds={styleIds}
         styles={styles}
-        promptRu={promptRu}
-        promptEn={promptEn}
-        promptConstructorRu={promptConstructorRu}
-        promptConstructorEn={promptConstructorEn}
+        specSource={specSource}
         modeLabel={modeLabel}
         tokens={bundle.tokens}
         demo={demo}

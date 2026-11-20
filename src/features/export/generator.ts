@@ -4,6 +4,8 @@ import { sha256Hex } from "./checksum";
 import { packIncludes } from "./pack-definitions";
 import { sanitizePackPath } from "./path-sanitize";
 import type { ResolvedExportSource } from "./resolver";
+import { composeDesignSpec } from "@/features/design-spec";
+import { buildAgentInstructions, loadDesignSpecSource } from "@/features/design-spec/load-source";
 import { tokensSummaryForReadme, tokensToExportCss } from "./tokens-css";
 
 export type PackFileMap = Map<string, Uint8Array>;
@@ -109,22 +111,20 @@ function buildReadme(source: ResolvedExportSource): string {
 
 ## What this is
 
-A Design Pack for humans, AI coding agents, and page-constructor agents. Source of truth: DESIGN ATLAS Git content (\`content/styles/${style.id}/\`).
-
-Atlas is **not** a site constructor — take this system and build elsewhere.
+A Design Pack you can take into any project. Atlas is **not** a site constructor — build elsewhere. The file \`DESIGN-SPEC.ru.md\` (or \`.en.md\`) is the complete handoff.
 
 ## Fast path · coding agent
 
-1. Read \`design-system/AGENT-INSTRUCTIONS.md\` and \`design-system/DESIGN.md\`.
-2. Open \`prompts/prompt.ru.md\` **or** \`prompts/prompt.en.md\`.
-3. Paste into Cursor (or similar) with your product brief.
-4. Point the agent at \`tokens/tokens.css\` (or \`tokens/tokens.json\`) as the token SSOT.
+1. Open \`DESIGN-SPEC.ru.md\` or \`DESIGN-SPEC.en.md\` (same text as \`prompts/prompt.ru.md\` / \`prompts/prompt.en.md\`). This one file is enough.
+2. Paste it into Cursor, Claude, Lovable, v0, Bolt, or a similar agent, and ask them to apply the system to the current project.
+3. Have the agent create \`tokens.css\` or \`tokens.json\` (and optionally \`DESIGN.md\`) in *your* project from that text.
+4. Do not load Google Fonts or external CDNs.
 
 ## Fast path · page constructor
 
-1. Open \`prompts/prompt.constructor.ru.md\` **or** \`prompts/prompt.constructor.en.md\`.
+1. Open \`prompts/prompt.constructor.ru.md\` or \`prompts/prompt.constructor.en.md\` (the constructor variant of the same specification).
 2. Paste into Tilda / LPmotor / Creatium / Kraftum (or their agents) with your unique copy.
-3. Keep tokens — do not invent a second palette or radius system.
+3. Keep the tokens — do not invent a second palette or radius system. Do not load Google Fonts or external CDNs.
 
 ## Key tokens
 
@@ -136,7 +136,7 @@ See \`manifest.json\` for the authoritative file list and SHA-256 checksums.
 
 ## Licence note
 
-This pack redistributes editorial design rules and token values from DESIGN ATLAS. Do **not** assume font binary redistribution rights — use license-aware webfonts that match the declared families.
+This pack redistributes editorial design rules and token values from DESIGN ATLAS. Prefer self-hosted or system fonts; do **not** load Google Fonts or other font CDNs. Do **not** assume font binary redistribution rights — use license-aware webfonts that match the declared families.
 `;
 }
 
@@ -178,11 +178,7 @@ export function generatePackFiles(source: ResolvedExportSource): GeneratedPack {
     put(files, prefix("design-system/TOKENS.md"), requireMarkdown(markdown.tokensMd, "TOKENS.md"));
   }
   if (packIncludes(kind, "agent-instructions")) {
-    put(
-      files,
-      prefix("design-system/AGENT-INSTRUCTIONS.md"),
-      requireMarkdown(markdown.agentInstructions, "AGENT-INSTRUCTIONS.md"),
-    );
+    put(files, prefix("design-system/AGENT-INSTRUCTIONS.md"), buildAgentInstructions("ru"));
   }
   if (packIncludes(kind, "style-philosophy")) {
     put(files, prefix("design-system/STYLE-PHILOSOPHY.md"), buildPhilosophyMarkdown(style));
@@ -201,25 +197,34 @@ export function generatePackFiles(source: ResolvedExportSource): GeneratedPack {
     put(files, prefix("design-system/COMPONENT-GUIDELINES.md"), buildComponentGuidelines(source));
   }
 
+  const specSource = loadDesignSpecSource(style.id);
+  const specRu = composeDesignSpec({ source: specSource, lang: "ru", surface: "agent" }).markdown;
+  const specEn = composeDesignSpec({ source: specSource, lang: "en", surface: "agent" }).markdown;
+  const specConstructorRu = composeDesignSpec({
+    source: specSource,
+    lang: "ru",
+    surface: "constructor",
+  }).markdown;
+  const specConstructorEn = composeDesignSpec({
+    source: specSource,
+    lang: "en",
+    surface: "constructor",
+  }).markdown;
+
+  put(files, prefix("DESIGN-SPEC.ru.md"), specRu);
+  put(files, prefix("DESIGN-SPEC.en.md"), specEn);
+
   if (packIncludes(kind, "prompt-ru")) {
-    put(files, prefix("prompts/prompt.ru.md"), requireMarkdown(markdown.promptRu, "prompt.ru.md"));
+    put(files, prefix("prompts/prompt.ru.md"), specRu);
   }
   if (packIncludes(kind, "prompt-en")) {
-    put(files, prefix("prompts/prompt.en.md"), requireMarkdown(markdown.promptEn, "prompt.en.md"));
+    put(files, prefix("prompts/prompt.en.md"), specEn);
   }
   if (packIncludes(kind, "prompt-constructor-ru")) {
-    put(
-      files,
-      prefix("prompts/prompt.constructor.ru.md"),
-      requireMarkdown(markdown.promptConstructorRu, "prompt.constructor.ru.md"),
-    );
+    put(files, prefix("prompts/prompt.constructor.ru.md"), specConstructorRu);
   }
   if (packIncludes(kind, "prompt-constructor-en")) {
-    put(
-      files,
-      prefix("prompts/prompt.constructor.en.md"),
-      requireMarkdown(markdown.promptConstructorEn, "prompt.constructor.en.md"),
-    );
+    put(files, prefix("prompts/prompt.constructor.en.md"), specConstructorEn);
   }
 
   if (packIncludes(kind, "tokens-json")) {

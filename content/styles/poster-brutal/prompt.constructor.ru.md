@@ -14,7 +14,7 @@
 - Радиус `0px`, толщина линии `3px`, тень `6px 6px 0 #0A0A0A`
 - Шрифт заголовков: `Arial Black, Impact, Haettenschweiler, sans-serif`
 - Шрифт текста: `Arial, Helvetica, sans-serif`
-- Базовый размер текста: `18px`, display: `88px`
+- Базовый размер текста: `18px`, display: `57px`
 - Ритм: unit `8`, секции ~`104px`, контейнер ~`1080px`
 
 ## Как накладывать на блоки конструктора

@@ -26,7 +26,7 @@ Source: `tokens.json` (also mirrored in `TOKENS.md`).
 - **Ink:** `#0A0A0A` text/primary, `#3F3F3F` muted
 - **Signal:** `#FF4D00` accent
 - **Line:** `#0A0A0A` border, `3px`, radius `0`, hard offset shadow
-- **Type:** Arial Black stack; display `88px`; base `18px`
+- **Type:** Arial Black stack; display `57px`; base `18px`
 - **Space:** unit `8`, section `104px`, container `1080px`
 
 ## Typography roles

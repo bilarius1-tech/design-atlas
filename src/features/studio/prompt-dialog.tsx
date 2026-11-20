@@ -4,6 +4,7 @@ import { buttonClassName, Dialog, Hint } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { Bot, Copy, Download, LayoutTemplate } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
+import type { DesignSpecSource } from "@/features/design-spec";
 import {
   composeHandoffPrompt,
   composeHandoffSections,
@@ -21,10 +22,7 @@ export type PromptDialogProps = {
   templateId: string;
   templateTitle: string;
   templateSections: TemplateSectionOutline[];
-  promptRu: string;
-  promptEn: string;
-  promptConstructorRu: string;
-  promptConstructorEn: string;
+  specSource: DesignSpecSource;
   systemOverridesNoteRu?: string;
   systemOverridesNoteEn?: string;
 };
@@ -37,10 +35,7 @@ export function PromptDialog({
   templateId,
   templateTitle,
   templateSections,
-  promptRu,
-  promptEn,
-  promptConstructorRu,
-  promptConstructorEn,
+  specSource,
   systemOverridesNoteRu = "",
   systemOverridesNoteEn = "",
 }: PromptDialogProps) {
@@ -49,7 +44,7 @@ export function PromptDialog({
   const [productName, setProductName] = useState("");
   const [pageBrief, setPageBrief] = useState("");
   const [copied, setCopied] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>("role");
+  const [activeSection, setActiveSection] = useState<string>("task");
   const previewRef = useRef<HTMLDivElement>(null);
 
   function handleClose() {
@@ -57,14 +52,6 @@ export function PromptDialog({
     setActiveSection("role");
     onClose();
   }
-
-  const stylePrompt = useMemo(() => {
-    const map = {
-      agent: { ru: promptRu, en: promptEn },
-      constructor: { ru: promptConstructorRu, en: promptConstructorEn },
-    } as const;
-    return map[surface][lang];
-  }, [lang, promptConstructorEn, promptConstructorRu, promptEn, promptRu, surface]);
 
   const systemOverridesNote = lang === "ru" ? systemOverridesNoteRu : systemOverridesNoteEn;
 
@@ -77,17 +64,17 @@ export function PromptDialog({
       templateId,
       templateTitle,
       templateSections,
-      stylePrompt,
       productName,
       pageBrief,
       systemOverridesNote,
+      specSource,
     }),
     [
       lang,
       pageBrief,
       productName,
+      specSource,
       styleId,
-      stylePrompt,
       styleTitle,
       surface,
       systemOverridesNote,
@@ -118,7 +105,7 @@ export function PromptDialog({
       open={open}
       onClose={handleClose}
       title="Получить промпт"
-      description={`${styleTitle} · только стиль и токены, без списка блоков лендинга.`}
+      description={`${styleTitle} · один самодостаточный текст: внедрите эту дизайн-систему в текущий проект.`}
     >
       <div className="space-y-4">
         <div className="flex flex-wrap items-center gap-2">

@@ -14,7 +14,7 @@
 - Радиус `6px`, толщина линии `1px`, тень `0 12px 40px rgba(0, 0, 0, 0.45)`
 - Шрифт заголовков: `IBM Plex Sans, Helvetica Neue, Arial, sans-serif`
 - Шрифт текста: `IBM Plex Sans, Helvetica Neue, Arial, sans-serif`
-- Базовый размер текста: `16px`, display: `64px`
+- Базовый размер текста: `16px`, display: `57px`
 - Ритм: unit `8`, секции ~`96px`, контейнер ~`1120px`
 
 ## Как накладывать на блоки конструктора

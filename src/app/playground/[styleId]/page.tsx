@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: PlaygroundPageProps): Promise
   try {
     const bundle = loadStyleBundle(styleId);
     return {
-      title: `Playground · ${bundle.style.title.ru}`,
+      title: `Песочница · ${bundle.style.title.ru}`,
       description: bundle.style.shortDescription.ru,
     };
   } catch {
-    return { title: "Playground" };
+    return { title: "Песочница" };
   }
 }
 
@@ -45,7 +45,7 @@ export default async function StylePlaygroundPage({ params }: PlaygroundPageProp
           <div className="space-y-3">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-                Style Playground
+                Песочница
               </p>
               <Badge>{bundle.style.status}</Badge>
             </div>

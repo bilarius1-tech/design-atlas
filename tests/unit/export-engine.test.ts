@@ -87,8 +87,13 @@ describe("free export · swiss-international", () => {
 
     expect(result.zip.byteLength).toBeGreaterThan(100);
     const readme = zipEntryAsText(result.zip, `${result.pack.rootDir}/README.md`);
-    expect(readme).toContain("AGENT-INSTRUCTIONS.md");
-    expect(readme).toContain("prompt");
+    expect(readme).toContain("DESIGN-SPEC");
+    expect(readme).toContain("Google Fonts");
+    const spec = zipEntryAsText(result.zip, `${result.pack.rootDir}/DESIGN-SPEC.ru.md`);
+    const prompt = zipEntryAsText(result.zip, `${result.pack.rootDir}/prompts/prompt.ru.md`);
+    expect(spec).toBe(prompt);
+    expect(spec).toContain("Внедри эту дизайн-систему в текущий проект");
+    expect(spec).not.toContain("design.vaybik.ru");
 
     const outDir = path.join(process.cwd(), "tmp", "exports");
     mkdirSync(outDir, { recursive: true });

@@ -114,6 +114,21 @@ export const TOOL_DEFINITIONS = [
     },
   },
   {
+    name: "get_design_spec",
+    description:
+      "Get a self-contained design specification (markdown + tokens JSON) to apply a published style to the user's current project. No other files are required.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        styleId: { type: "string", description: "Style id, for example swiss-international" },
+        lang: { type: "string", description: "ru (default) or en" },
+        surface: { type: "string", description: "agent (default) or constructor" },
+      },
+      required: ["styleId"],
+      additionalProperties: false,
+    },
+  },
+  {
     name: "get_theme",
     description: "Get a project theme. Use themeId=vaybik for Vaybik studio products.",
     inputSchema: {
@@ -157,6 +172,16 @@ export async function callTool(
       return get(`/api/v1/search?q=${encodeURIComponent(String(args.q ?? ""))}`);
     case "get_prompt":
       return get(`/api/v1/styles/${encodeURIComponent(String(args.styleId ?? ""))}/guidelines`);
+    case "get_design_spec": {
+      const params = new URLSearchParams();
+      if (typeof args.lang === "string" && args.lang) params.set("lang", args.lang);
+      if (typeof args.surface === "string" && args.surface) params.set("surface", args.surface);
+      const query = params.toString();
+      const suffix = query ? `?${query}` : "";
+      return get(
+        `/api/v1/styles/${encodeURIComponent(String(args.styleId ?? ""))}/design-spec${suffix}`,
+      );
+    }
     case "get_template":
       return get(`/api/v1/templates/${encodeURIComponent(String(args.id ?? ""))}`);
     case "get_theme":

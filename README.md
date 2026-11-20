@@ -5,7 +5,6 @@
 Сервис **бесплатный** и публичный: без регистрации и без оплаты.
 
 - Прод: https://design.vaybik.ru (отдельное приложение на VPS Вайбика, не внутри vaybik-hub). Деплой: [docs/DEPLOY.md](docs/DEPLOY.md).
-- Запасной адрес: https://design-atlas-wine.vercel.app
 
 Документация для людей и AI-агентов: [docs/](docs/). Точка входа для агентов — [AGENTS.md](AGENTS.md). Публичный JSON API (только чтение): [docs/API.md](docs/API.md).
 
@@ -62,6 +61,30 @@ design-atlas/
 ## Фазы
 
 Краткий обзор — [docs/ROADMAP.md](docs/ROADMAP.md). Прод на https://design.vaybik.ru. Дальше: доводка оболочки дизайн-системы и темы `vaybik` для агентов студии.
+
+
+## Подключить MCP в Cursor
+
+Один самодостаточный инструмент — `get_design_spec` (стиль → полный текст спецификации + JSON токенов).
+
+1. Нужны Node.js 22+ и pnpm. Склонируйте этот репозиторий и выполните `pnpm install`.
+2. Скопируйте конфиг в `.cursor/mcp.json` проекта (или в пользовательский MCP-конфиг Cursor):
+
+```json
+{
+  "mcpServers": {
+    "design-atlas": {
+      "command": "pnpm",
+      "args": ["exec", "tsx", "packages/mcp/src/index.ts"],
+      "env": {
+        "DESIGN_ATLAS_API_BASE": "https://design.vaybik.ru"
+      }
+    }
+  }
+}
+```
+
+Либо запуск из корня репозитория: `pnpm mcp`. Секреты не нужны: API только для чтения и бесплатное. Подробности — [packages/mcp/README.md](packages/mcp/README.md).
 
 ## Лицензия
 

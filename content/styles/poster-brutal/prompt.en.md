@@ -15,7 +15,7 @@ Use values only from `tokens.json` / `TOKENS.md`:
 - primary `#0A0A0A`, accent `#FF4D00`, border `#0A0A0A`
 - radius `0px`, borderWidth `3px`, shadow `6px 6px 0 #0A0A0A`
 - spacing unit `8`, section `104px`, container `1080px`
-- type scale: xs 12 / sm 14 / base 18 / lg 22 / xl 32 / 2xl 52 / display 88
+- type scale: xs 12 / sm 14 / base 18 / lg 22 / xl 32 / 2xl 52 / display 57
 - fonts: Arial Black → Impact → Haettenschweiler; body Arial
 
 Do not hardcode arbitrary hex when CSS variables / tokens are available.

@@ -16,7 +16,7 @@
 - primary `#111111`, accent `#E30613`, border `#C9C4BA`
 - radius `0px`, borderWidth `1px`, shadow `none`
 - spacing unit `8`, section `112px`, container `1180px`
-- type scale: xs 12 / sm 14 / base 16 / lg 20 / xl 28 / 2xl 44 / display 80
+- type scale: xs 12 / sm 14 / base 16 / lg 20 / xl 28 / 2xl 44 / display 57
 - fonts: Helvetica Neue → Helvetica → Arial; mono IBM Plex Mono
 
 Не вшивай произвольные hex в компоненты, если можно использовать CSS variables / токены.

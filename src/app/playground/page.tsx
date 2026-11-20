@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Playground",
-  description: "Интерактивные демонстрации визуальных стилей DESIGN ATLAS.",
+  title: "Песочница",
+  description: "Песочница токенов и состояний кнопок для каждого стиля Дизайн Атласа.",
 };
 
 export default function PlaygroundIndexPage() {
@@ -23,9 +23,9 @@ export default function PlaygroundIndexPage() {
   return (
     <main id="main-content">
       <Section
-        eyebrow="PHASE 4"
-        title="Style Playground"
-        description="Универсальная демонстрация токенов и UI-состояний. Стили изолированы от оболочки продукта."
+        eyebrow="Песочница"
+        title="Токены и состояния"
+        description="Демонстрация цветов, шрифтов и состояний кнопок. Стили отделены от оболочки самого Атласа."
       >
         <div className="grid gap-4 md:grid-cols-2">
           {styles.map((style) => (
@@ -38,7 +38,7 @@ export default function PlaygroundIndexPage() {
               </div>
               <p className="text-sm text-muted">{style.shortDescription.ru}</p>
               <Link href={`/playground/${style.id}`} className={buttonClassName({ size: "sm" })}>
-                Открыть playground
+                Открыть песочницу
               </Link>
             </Card>
           ))}

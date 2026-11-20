@@ -6,7 +6,7 @@ The older ZIP export stays at `GET /api/export/[styleId]?pack=free|full` and is 
 
 `robots.txt` disallows `/api/` for crawlers. Programmatic clients (agents, MCP, curl) can still call the API.
 
-Planned canonical host: https://design.vaybik.ru — until cutover, use the current Vercel origin.
+Canonical host: https://design.vaybik.ru.
 
 ## Endpoints
 
@@ -16,7 +16,8 @@ Planned canonical host: https://design.vaybik.ru — until cutover, use the curr
 | GET    | `/api/v1/styles`                | Published style list                         |
 | GET    | `/api/v1/styles/:id`            | Style metadata                               |
 | GET    | `/api/v1/styles/:id/tokens`     | Style tokens                                 |
-| GET    | `/api/v1/styles/:id/guidelines` | Markdown rules and prompts                   |
+| GET    | `/api/v1/styles/:id/guidelines` | Markdown rules and original prompt files     |
+| GET    | `/api/v1/styles/:id/design-spec` | Self-contained design spec (`markdown` + `tokens`). Query: `lang=ru\|en`, `surface=agent\|constructor` |
 | GET    | `/api/v1/shell/tokens`          | Atlas shell tokens                           |
 | GET    | `/api/v1/themes`                | Theme list                                   |
 | GET    | `/api/v1/themes/:id`            | Theme tokens + guidelines (`vaybik`)         |

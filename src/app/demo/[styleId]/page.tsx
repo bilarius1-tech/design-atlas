@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: DemoPageProps): Promise<Metad
   try {
     const bundle = loadStyleBundle(styleId);
     return {
-      title: `Demo · ${bundle.style.title.ru}`,
+      title: `Пример · ${bundle.style.title.ru}`,
       description: bundle.style.shortDescription.ru,
     };
   } catch {
-    return { title: "Demo landing" };
+    return { title: "Пример лендинга" };
   }
 }
 
@@ -56,7 +56,7 @@ export default async function StyleDemoPage({ params }: DemoPageProps) {
           <div className="space-y-3">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-                Demo Landing
+                Пример лендинга
               </p>
               <Badge>{bundle.style.status}</Badge>
               <Badge tone="accent">{composition.id}</Badge>
@@ -71,10 +71,10 @@ export default async function StyleDemoPage({ params }: DemoPageProps) {
               href={`/playground/${styleId}`}
               className={buttonClassName({ variant: "secondary", size: "sm" })}
             >
-              Playground
+              Песочница
             </Link>
             <Link href="/demo" className={buttonClassName({ variant: "ghost", size: "sm" })}>
-              Все demo
+              Все примеры
             </Link>
           </div>
         </div>

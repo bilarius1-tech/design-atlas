@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   ApiError,
   getComponent,
+  getDesignSpec,
   getHealth,
   getShellTokens,
   getStyle,

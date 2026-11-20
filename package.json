@@ -16,7 +16,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "content:validate": "tsx scripts/validate-content.ts",
+    "content:align": "tsx scripts/check-token-alignment.ts",
+    "content:validate": "tsx scripts/validate-content.ts && tsx scripts/check-token-alignment.ts",
     "export:pack": "tsx scripts/export-pack.ts",
     "ci": "pnpm lint && pnpm typecheck && pnpm test && pnpm content:validate && pnpm build",
     "mcp": "tsx packages/mcp/src/index.ts"

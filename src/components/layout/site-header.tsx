@@ -28,23 +28,23 @@ const secondaryNav = [
   {
     href: "/design-system",
     match: "/design-system",
-    label: "Оболочка",
+    label: "Дизайн-система",
     icon: LayoutTemplate,
-    hint: "UI-оболочка самого Atlas — не каталог стилей.",
+    hint: "Как устроена оболочка самого Атласа — не каталог стилей.",
   },
   {
     href: "/playground",
     match: "/playground",
-    label: "QA",
+    label: "Песочница",
     icon: FlaskConical,
-    hint: "Проверка компонентов стиля. Второстепенный путь.",
+    hint: "Песочница: цвета, кнопки и состояния выбранного стиля.",
   },
   {
     href: "/demo",
     match: "/demo",
-    label: "Demo",
+    label: "Примеры",
     icon: Boxes,
-    hint: "Демо лендинга по стилю вне Studio.",
+    hint: "Примеры лендингов в каждом стиле.",
   },
 ] as const;
 

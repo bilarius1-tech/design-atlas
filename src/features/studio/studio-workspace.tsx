@@ -1,3 +1,4 @@
+import type { DesignSpecSource } from "@/features/design-spec";
 "use client";
 
 import type { DemoDefinition, StyleTokens } from "@/core/schemas";
@@ -36,10 +37,7 @@ export type StudioWorkspaceProps = {
   styleDescription: string;
   styleIds: string[];
   styles: StudioSidebarStyle[];
-  promptRu: string;
-  promptEn: string;
-  promptConstructorRu: string;
-  promptConstructorEn: string;
+  specSource: DesignSpecSource;
   modeLabel: "Light" | "Dark";
   tokens: StyleTokens;
   demo: DemoDefinition;
@@ -54,10 +52,7 @@ export function StudioWorkspace({
   styleDescription,
   styleIds,
   styles,
-  promptRu,
-  promptEn,
-  promptConstructorRu,
-  promptConstructorEn,
+  specSource,
   modeLabel,
   tokens,
   demo,
@@ -140,10 +135,7 @@ export function StudioWorkspace({
           styleTitle={styleTitle}
           styleDescription={styleDescription}
           styleIds={styleIds}
-          promptRu={promptRu}
-          promptEn={promptEn}
-          promptConstructorRu={promptConstructorRu}
-          promptConstructorEn={promptConstructorEn}
+          specSource={specSource}
           systemOverridesNoteRu={systemOverridesNoteRu}
           systemOverridesNoteEn={systemOverridesNoteEn}
           modeLabel={modeLabel}

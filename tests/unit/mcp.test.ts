@@ -19,6 +19,7 @@ describe("MCP client", () => {
         "get_component",
         "search_guidelines",
         "get_theme",
+        "get_design_spec",
       ]),
     );
   });
@@ -53,6 +54,22 @@ describe("MCP client", () => {
       "https://design.vaybik.ru/api/v1/themes/vaybik",
       "https://design.vaybik.ru/api/v1/styles/swiss-international/tokens",
     ]);
+  });
+
+  it("routes get_design_spec with lang and surface query", async () => {
+    const fetchImpl = vi.fn(async (input: RequestInfo | URL) => {
+      expect(String(input)).toBe(
+        "https://design.vaybik.ru/api/v1/styles/swiss-international/design-spec?lang=ru&surface=agent",
+      );
+      return new Response(JSON.stringify({ kind: "design-spec" }), { status: 200 });
+    }) as unknown as typeof fetch;
+
+    await callTool(
+      "get_design_spec",
+      { styleId: "swiss-international", lang: "ru", surface: "agent" },
+      {},
+      fetchImpl,
+    );
   });
 });
 

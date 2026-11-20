@@ -14,7 +14,7 @@ Do not invent a second design system. Reproduce this one. Atlas is not a constru
 - Radius `0px`, border width `3px`, shadow `6px 6px 0 #0A0A0A`
 - Heading font: `Arial Black, Impact, Haettenschweiler, sans-serif`
 - Body font: `Arial, Helvetica, sans-serif`
-- Base size: `18px`, display: `88px`
+- Base size: `18px`, display: `57px`
 - Rhythm: unit `8`, sections ~`104px`, container ~`1080px`
 
 ## Map onto constructor blocks

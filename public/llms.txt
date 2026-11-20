@@ -6,15 +6,21 @@ Product: Дизайн Атлас
 Marketing promise: Анти ИИ-слоп
 Primary language (UI): Russian
 Docs language: English
+Canonical site: https://design.vaybik.ru
+Repository: https://github.com/bilarius1-tech/design-atlas
 
 ## Surfaces
 
 - Home: / — brand + entry to Studio (primary) and Cards (secondary)
-- Studio: /studio — Template × Style preview → Agent + Constructor prompts (RU+EN) → build elsewhere (Cursor / constructor agents)
+- Studio: /studio — Template × Style preview → one self-contained design spec (RU+EN, agent or constructor) → build elsewhere
 - Cards: /cards — marketplace product-card visual styles → image-gen prompts (RU+EN) → generate elsewhere
-- Demo landings: /demo and /demo/{styleId}
-- Style QA playground: /playground and /playground/{styleId}
+- Example landings: /demo and /demo/{styleId}
+- Style playground: /playground and /playground/{styleId}
 - App shell / design-system chrome: /design-system
+
+## How agents should use this service
+
+Call `GET /api/v1/styles/{id}/design-spec?lang=ru|en&surface=agent|constructor` or the MCP tool `get_design_spec`. The response includes `markdown` (a complete design specification) and `tokens` (JSON). That markdown is enough: apply the system to the user's current project and create token files there. Do not treat this website as required reading at build time, and do not load Google Fonts or external CDNs.
 
 ## Content SSOT (Git)
 
@@ -31,15 +37,10 @@ Docs language: English
 ## Machine-readable maps
 
 - Public JSON API (read-only, free): /api/v1 — see docs/API.md
-  - /api/v1/health, /api/v1/styles, /api/v1/shell/tokens, /api/v1/themes/vaybik, /api/v1/components, /api/v1/search?q=
-- ZIP export (unchanged): /api/export/{styleId}?pack=free
+  - /api/v1/health, /api/v1/styles, /api/v1/styles/{id}/design-spec, /api/v1/shell/tokens, /api/v1/themes/vaybik, /api/v1/components, /api/v1/search?q=
+- MCP: packages/mcp (default base https://design.vaybik.ru)
+- ZIP export: /api/export/{styleId}?pack=free (contains the same DESIGN-SPEC.ru.md / .en.md)
 
 - Sitemap: /sitemap.xml
 - Robots: /robots.txt
 - This file: /llms.txt
-
-## Contact / source
-
-- Current site: https://design-atlas-wine.vercel.app
-- Planned site: https://design.vaybik.ru (free public service)
-- Repository: https://github.com/bilarius1-tech/design-atlas

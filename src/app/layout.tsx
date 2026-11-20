@@ -54,13 +54,25 @@ export const metadata: Metadata = {
     title: "Анти ИИ-слоп · Дизайн Атлас",
     description:
       "Готовые дизайн-системы и стили карточек. Смотрите превью, забирайте промпт — собирайте снаружи.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Дизайн Атлас — готовые визуальные системы, design.vaybik.ru",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Анти ИИ-слоп · Дизайн Атлас",
     description:
       "Готовые дизайн-системы и стили карточек. Превью → промпт → сборка снаружи.",
+    images: ["/og.png"],
   },
+  verification: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION
+    ? { yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION }
+    : undefined,
   robots: {
     index: true,
     follow: true,
