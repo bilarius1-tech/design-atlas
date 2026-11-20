@@ -1,5 +1,6 @@
-import type { DesignSpecSource } from "@/features/design-spec";
 "use client";
+
+import type { DesignSpecSource } from "@/features/design-spec";
 
 import type { DemoDefinition, StyleTokens } from "@/core/schemas";
 import { DemoLandingEngine } from "@/features/demo-landing";
